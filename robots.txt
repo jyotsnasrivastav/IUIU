@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /font/
+Disallow: /Image/
+Disallow: /img/
+
+# Sitemap location
+Sitemap: https://symbolsemoji.com/sitemap.xml
