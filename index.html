@@ -12,7 +12,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#230AC7">
 	<meta name="apple-mobile-web-app-title" content="Cool Symbols">
 	<link rel="icon" type="img/ico" sizes="16x16" href="img/favicon.ico">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="main.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="main.css"></noscript>
 	<style>
 /* Critical CSS for above-the-fold content */
 *{box-sizing:border-box;padding:0;margin:0}
@@ -106,7 +107,7 @@ h1.titlesymbol{font-size:20px}
 
 			<div class="mainlogo">
 				<a href="index.html">
-					<img src="img/symbolsemoji.png" alt="CoolSymbol logo" width="200" height="50" loading="eager" decoding="async"></a>
+					<img src="img/symbolsemoji.webp" alt="CoolSymbol logo" width="200" height="50" loading="eager" decoding="async"></a>
 				<span></span>
 			</div>
 		</div>
@@ -1017,7 +1018,7 @@ h1.titlesymbol{font-size:20px}
 				<div class="info">
 					<p>Discover a searchable library of cool symbols, text emojis, kaomoji, and decorative characters you can copy and paste anywhere. Use these Unicode symbols to style bios, captions, and comments on platforms like TikTok, Instagram, Facebook, Discord, and Tumblr. Pick a style that matches your personality and paste it into posts, profiles, or messages—no installation required.</p>
 					<p>Browse hundreds of categories, including cute faces ʕっ• ᴥ • ʔっ, sparkles ✧･ﾟ, borders ┌───∘°❉°∘───┐, dividers ┊⋆┊, and fancy text accents. Click any symbol to copy it instantly, or collect multiple items in the box and copy them all at once.</p>
-					<p class="img"><img src="img/symbolsemoji.com.png" alt="Cool symbols preview"></p>
+					<p class="img"><img src="img/symbolsemoji.com.webp" alt="Cool symbols preview"></p>
 					<h3>What are cool symbols?</h3>
 					<p>Cool symbols are Unicode characters used to decorate text and express style—hearts, stars, borders, lines, arrows, and text faces. Creators use them to add personality to social posts, profile bios, chat messages, and website copy. Because they’re standard Unicode, they work across most devices and apps.</p>
 					<h3>How to make keyboard faces (kaomoji)</h3>
@@ -1061,7 +1062,8 @@ h1.titlesymbol{font-size:20px}
 	</div>
 	<link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'">
 	<noscript><link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'">
-	<noscript><link rel="stylesheet" href="footer-fix.css"></noscript></noscript>
+	<noscript><link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="footer-fix.css"></noscript></noscript></noscript>
 	<script src="script.min.js" async></script>
 	<script src="lazy-load.js" async></script>
 	<script src="ad-blocker.js" async></script>

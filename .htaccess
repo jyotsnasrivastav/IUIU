@@ -1,4 +1,9 @@
 # Performance Optimization .htaccess
+# Force server to respect cache headers
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>
+
 # Enable compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/plain
@@ -37,28 +42,29 @@
 
 # Cache Control Headers - Optimized for Performance
 <IfModule mod_headers.c>
+    # Override server defaults with explicit cache headers
+    Header unset Cache-Control
+    Header unset Expires
+    Header unset Pragma
+    
     <FilesMatch "\.(css|js)$">
-        ExpiresActive On
-        ExpiresDefault "access plus 1 year"
         Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
     </FilesMatch>
 
     <FilesMatch "\.(png|jpg|jpeg|gif|ico|svg|webp)$">
-        ExpiresActive On
-        ExpiresDefault "access plus 1 year"
         Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
     </FilesMatch>
 
     <FilesMatch "\.(woff|woff2|ttf|eot)$">
-        ExpiresActive On
-        ExpiresDefault "access plus 1 year"
         Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
     </FilesMatch>
 
     <FilesMatch "\.(html|htm)$">
-        ExpiresActive On
-        ExpiresDefault "access plus 1 hour"
         Header set Cache-Control "public, max-age=3600"
+        Header set Expires "access plus 1 hour"
     </FilesMatch>
 </IfModule>
 

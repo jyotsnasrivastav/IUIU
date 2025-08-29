@@ -22,6 +22,12 @@ htmlFiles.forEach(file => {
             '<link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media=\'all\'">\n\t<noscript><link rel="stylesheet" href="footer-fix.css"></noscript>'
         );
         
+        // Replace main.css with non-blocking version
+        content = content.replace(
+            /<link rel="stylesheet" href="main\.css">/g,
+            '<link rel="stylesheet" href="main.css" media="print" onload="this.media=\'all\'">\n\t<noscript><link rel="stylesheet" href="main.css"></noscript>'
+        );
+        
         fs.writeFileSync(file, content);
         console.log(`Updated: ${file}`);
     } catch (error) {
