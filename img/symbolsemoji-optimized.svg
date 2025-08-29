@@ -1,0 +1,17 @@
+<svg width="270" height="54" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#230AC7;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="270" height="54" fill="url(#grad)" rx="5"/>
+    <text x="135" y="30" font-family="Arial, sans-serif" font-size="18" 
+          font-weight="bold" text-anchor="middle" fill="white">
+        CoolSymbol
+    </text>
+    <text x="135" y="45" font-family="Arial, sans-serif" font-size="10" 
+          text-anchor="middle" fill="#E0E0E0">
+        Symbols & Emojis
+    </text>
+</svg>

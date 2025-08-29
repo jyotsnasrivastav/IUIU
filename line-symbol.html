@@ -17,6 +17,25 @@
         .maindata{min-height:200px;contain:layout style paint}
         .footer{min-height:80px;contain:layout style paint}
         img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint}
+        /* Image optimization for logo */
+        .mainlogo img {
+            image-rendering: optimizeQuality;
+            image-rendering: -webkit-optimize-contrast;
+            background: #230AC7;
+            transition: opacity 0.3s ease;
+        }
+        
+        .mainlogo img:not([src*="data:"]) {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    
         
         /* Fix H1 font-size deprecation warning */
         h1 {
@@ -67,7 +86,7 @@
 			</span>
 			<div class="mainlogo">
 				<a href="index.html">
-					<img  alt="CoolSymbol logo" width="270" height="54" loading="eager" decoding="async"src="img/symbolsemoji.webp"></a>
+					<img  alt="CoolSymbol logo" width="270" height="54" loading="eager" decoding="async"src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjcwIiBoZWlnaHQ9IjU0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMyMzBBQzc7c3RvcC1vcGFjaXR5OjEiIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNEE5MEUyO3N0b3Atb3BhY2l0eToxIiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIyNzAiIGhlaWdodD0iNTQiIGZpbGw9InVybCgjZ3JhZCkiIHJ4PSI1Ii8+PHRleHQgeD0iMTM1IiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPkNvb2xTeW1ib2w8L3RleHQ+PHRleHQgeD0iMTM1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRTBFMEUwIj5TeW1ib2xzICZhbXA7IEVtb2ppczwvdGV4dD48L3N2Zz4="></a>
 				<span></span>
 			</div>
 		</div>
