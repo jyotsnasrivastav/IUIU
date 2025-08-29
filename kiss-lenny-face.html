@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="main.css" media="print" onload="this.media='all'">
-	<noscript><link rel="stylesheet" href="main.css"></noscript>
-        <style>
-        /* Critical CSS */
+	<noscript><link rel="stylesheet" href="main.css"></noscript>        <style>
+        /* Critical CSS with Layout Stability */
         *{box-sizing:border-box;padding:0;margin:0}
-        body{font-family:arial,serif;background-color:#ebecef;margin:0}
-        header{width:100%;background-color:#230AC7}
+        body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap}
+        header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint}
         .headCont{max-width:1168px;margin:0 auto;text-align:center}
-        .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0}
-        .mainlogo img{width:270px;padding-top:2px;height:auto}
+        .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint}
+        .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint}
         .mainlogo a{color:white;font-size:2rem;text-decoration:none}
         #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px}
-        .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:.2s;cursor:pointer;contain:layout style paint}
-        .symbol:hover{background-color:#ececec;margin-top:-5px;box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)}
+        .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)}
+        .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)}
+        .maindata{min-height:200px;contain:layout style paint}
+        .footer{min-height:80px;contain:layout style paint}
+        img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint}
         </style>
         <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="main.min.css"></noscript>
@@ -62,7 +64,7 @@
 			</span>
 			<div class="mainlogo">
 				<a href="index.html">
-					<img src="img/symbolsemoji.webp" alt="CoolSymbol logo" width="200" height="50" loading="eager" decoding="async"></a>
+					<img  alt="CoolSymbol logo" width="200" height="50" loading="eager" decoding="async"src="img/symbolsemoji.webp"></a>
 				<span></span>
 			</div>
 		</div>
@@ -461,5 +463,6 @@
 	<script src="ad-blocker.js" async></script>
 	<script src="performance-audit.js" async></script>
 	<script src="treemap-analyzer.js" async></script>
+	<script src="layout-shift-prevention.js" defer></script>
 </body>
 </html>
