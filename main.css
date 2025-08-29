@@ -98,6 +98,8 @@ header {
     text-align: center !important;
 }
 
+/* Critical CSS - inline this in HTML head */
+
 /* Override any inline styles that prevent centering */
 body[style*="text-align"] {
     text-align: center !important;

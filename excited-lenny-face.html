@@ -335,7 +335,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 	</div>
-	<link rel="stylesheet" href="footer-fix.css">
+	<link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="footer-fix.css"></noscript>
 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -344,11 +345,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   gtag('config', 'G-M7MH3WM8');
 </script>
 
-	<script src="script.min.js" defer></script>
+	<script src="script.min.js" async></script>
 
-        <script src="lazy-load.js"></script>
-        <script src="script.min.js" defer></script>
-        <script src="performance-audit.js" defer></script>
+        <script src="lazy-load.js" async></script>
+        <script src="script.min.js" async></script>
+        <script src="performance-audit.js" async></script>
 </body>
 
 </html>
