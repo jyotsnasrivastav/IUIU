@@ -1,4 +1,11 @@
+const fs = require('fs');
 
+// Fix InfiniteScroll browser errors by improving error handling and link validation
+function fixInfiniteScrollErrors() {
+    const htmlFiles = fs.readdirSync('.').filter(file => file.endsWith('.html'));
+    
+    // Enhanced script.js with better error handling
+    const enhancedScriptContent = `
 // Reflow optimization utilities
 (function() {
     'use strict';
@@ -101,12 +108,12 @@
 
 		// Block ad scripts by URL pattern
 		var blockedPatterns = [
-			/googlesyndication\.com/i,
-			/a\.pub\.network|b\.pub\.network|c\.pub\.network|d\.pub\.network/i,
-			/amazon-adsystem\.com/i,
-			/btloader\.com|api\.btloader\.com/i,
-			/confiant-integrations\.net/i,
-			/pubfig\.min\.js|\/coolsymbol-top\/pubfig\.min\.js/i
+			/googlesyndication\\.com/i,
+			/a\\.pub\\.network|b\\.pub\\.network|c\\.pub\\.network|d\\.pub\\.network/i,
+			/amazon-adsystem\\.com/i,
+			/btloader\\.com|api\\.btloader\\.com/i,
+			/confiant-integrations\\.net/i,
+			/pubfig\\.min\\.js|\\/coolsymbol-top\\/pubfig\\.min\\.js/i
 		];
 		var observer = new MutationObserver(function(mutations){
 			mutations.forEach(function(m){
@@ -455,3 +462,68 @@
 		}
 	});
 })();
+`;
+
+    // Write enhanced script
+    fs.writeFileSync('script.js', enhancedScriptContent);
+    console.log('Enhanced script.js with better InfiniteScroll error handling');
+    
+    // Fix HTML files with invalid next page links
+    const linkFixes = [
+        // Fix pages that might have invalid or missing next links
+        {
+            from: /<a class="page-next" href="">Next page<\/a>/g,
+            to: '<a class="page-next" href="#" style="display:none;">Next page</a>'
+        },
+        {
+            from: /<a class="page-next" href="#">Next page<\/a>/g,
+            to: '<a class="page-next" href="#" style="display:none;">Next page</a>'
+        },
+        // Ensure error elements are properly styled
+        {
+            from: /<p class="infinite-scroll-error"><\/p>/g,
+            to: '<p class="infinite-scroll-error" style="display:none;text-align:center;color:#666;padding:20px;"></p>'
+        },
+        {
+            from: /<p class="infinite-scroll-last">/g,
+            to: '<p class="infinite-scroll-last" style="display:none;text-align:center;color:#666;padding:20px;">'
+        }
+    ];
+    
+    let totalFixed = 0;
+    
+    htmlFiles.forEach(file => {
+        try {
+            let content = fs.readFileSync(file, 'utf8');
+            let fileFixed = false;
+            
+            linkFixes.forEach(fix => {
+                if (fix.from.test(content)) {
+                    content = content.replace(fix.from, fix.to);
+                    fileFixed = true;
+                }
+            });
+            
+            if (fileFixed) {
+                fs.writeFileSync(file, content);
+                console.log(`Fixed InfiniteScroll links in: ${file}`);
+                totalFixed++;
+            }
+        } catch (error) {
+            console.error(`Error processing ${file}:`, error.message);
+        }
+    });
+    
+    console.log(`\\nInfiniteScroll fixes complete! Enhanced script and fixed ${totalFixed} files.`);
+    console.log('Improvements:');
+    console.log('- Enhanced error handling and validation');
+    console.log('- Proper link validation before initialization');
+    console.log('- Graceful degradation when links are invalid');
+    console.log('- Better console logging for debugging');
+    console.log('- Automatic cleanup on errors');
+}
+
+// Run the fix
+console.log('Fixing InfiniteScroll browser errors...');
+fixInfiniteScrollErrors();
+console.log('\\n✅ InfiniteScroll error fixes complete!');

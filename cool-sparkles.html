@@ -5,6 +5,9 @@
 	<noscript><link rel="stylesheet" href="main.css"></noscript>        <style>
         /* Critical CSS with Layout Stability */
         *{box-sizing:border-box;padding:0;margin:0}
+        html{scroll-behavior:smooth}
+        body{transform:translateZ(0);backface-visibility:hidden}
+        .maindata,.symbol{contain:layout style paint}
         body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap}
         header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint}
         .headCont{max-width:1168px;margin:0 auto;text-align:center}
@@ -13,28 +16,26 @@
         .mainlogo a{color:white;font-size:2rem;text-decoration:none}
         #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px}
         .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)}
-        .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)}
+        .symbol:hover{background-color:#ececec;transform:translateZ(0) translateY(-5px);box-shadow:0 4px 8px rgba(157,154,154,0.2);will-change:transform}
         .maindata{min-height:200px;contain:layout style paint}
         .footer{min-height:80px;contain:layout style paint}
         img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint}
         /* Image optimization for logo */
         .mainlogo img {
+            width: 270px;
+            height: 54px;
+            padding-top: 2px;
+            min-height: 54px;
+            contain: layout style paint size;
             image-rendering: optimizeQuality;
-            image-rendering: -webkit-optimize-contrast;
             background: #230AC7;
-            transition: opacity 0.3s ease;
+            transform: translateZ(0);
+            will-change: auto;
         }
         
-        .mainlogo img:not([src*="data:"]) {
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
-        }
         
-        @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
+        
+        
     
         
         /* Fix H1 font-size deprecation warning */
@@ -172,8 +173,8 @@
 					<span></span>
 					<span></span>
 				</div>
-				<p class="infinite-scroll-last">ღƪ(ˆ◡ˆ)ʃ♡ That's All Cool Symbols we have ♡ƪ(ˆ◡ˆ)ʃ♪</p>
-				<p class="infinite-scroll-error"></p>
+				<p class="infinite-scroll-last" style="display:none;text-align:center;color:#666;padding:20px;">ღƪ(ˆ◡ˆ)ʃ♡ That's All Cool Symbols we have ♡ƪ(ˆ◡ˆ)ʃ♪</p>
+				<p class="infinite-scroll-error" style="display:none;text-align:center;color:#666;padding:20px;"></p>
 			</div>
 			<p class="page">
 				<a class="page-next" href="cool-heart.html">Next page</a>
