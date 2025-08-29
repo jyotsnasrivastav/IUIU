@@ -62,10 +62,10 @@
 })();
 
 /*
-	Clean site script with enhanced InfiniteScroll error handling
+	Clean site script
 	- Adds, stores, and copies symbols
 	- Restores session state
-	- Robust Infinite Scroll with proper error handling
+	- Minimal Infinite Scroll bootstrap if jQuery plugin is present
 	- Auto-loads required CDNs if missing
 */
 
@@ -363,95 +363,26 @@
 		await ensureScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.6/infinite-scroll.pkgd.min.js', () => window.jQuery && (jQuery.fn.infiniteScroll || window.InfiniteScroll));
 	}
 
-	// Enhanced InfiniteScroll initialization with proper error handling
 	function initInfiniteScroll() {
-		if (!window.jQuery || !(jQuery.fn && jQuery.fn.infiniteScroll)) {
-			console.warn('InfiniteScroll: jQuery or plugin not available');
-			return;
-		}
-		
+		if (!window.jQuery || !(jQuery.fn && jQuery.fn.infiniteScroll)) return;
 		const $container = jQuery('.maindata');
-		if (!$container.length) {
-			console.warn('InfiniteScroll: Container .maindata not found');
-			return;
-		}
-		
-		// Validate next page link exists and is valid
-		const nextLink = document.querySelector('.page-next');
-		if (!nextLink || !nextLink.href) {
-			console.warn('InfiniteScroll: No valid next page link found');
-			return;
-		}
-		
-		// Validate href is a proper relative or absolute URL
-		const href = nextLink.getAttribute('href');
-		if (!href || href === '#' || href === '') {
-			console.warn('InfiniteScroll: Invalid next page href:', href);
-			return;
-		}
-		
-		try {
-			$container.infiniteScroll({
-				path: '.page-next',
-				append: '.symbol',
-				history: 'push',
-				status: '.page-load-status',
-				// Enhanced error handling
-				debug: false,
-				loadOnScroll: true,
-				scrollThreshold: 400,
-				// Handle errors gracefully
-				errorCallback: function(xhr, textStatus) {
-					console.warn('InfiniteScroll error:', textStatus);
-					const errorEl = document.querySelector('.infinite-scroll-error');
-					if (errorEl) {
-						errorEl.textContent = 'Unable to load more content';
-						errorEl.style.display = 'block';
-					}
-				}
-			})
-			.on('request.infiniteScroll', function() {
-				snapshotPage();
-				console.log('InfiniteScroll: Loading next page...');
-			})
-			.on('load.infiniteScroll', function(event, response, path) {
-				console.log('InfiniteScroll: Loaded page:', path);
-			})
-			.on('error.infiniteScroll', function(event, xhr, path) {
-				console.warn('InfiniteScroll: Failed to load:', path);
-				// Disable infinite scroll on error
-				$container.infiniteScroll('destroy');
-				const errorEl = document.querySelector('.infinite-scroll-error');
-				if (errorEl) {
-					errorEl.textContent = 'End of content reached';
-					errorEl.style.display = 'block';
-				}
-			})
-			.on('last.infiniteScroll', function() {
-				console.log('InfiniteScroll: Reached last page');
-				const lastEl = document.querySelector('.infinite-scroll-last');
-				if (lastEl) {
-					lastEl.style.display = 'block';
-				}
-			});
-			
-			console.log('InfiniteScroll: Successfully initialized');
-		} catch (error) {
-			console.error('InfiniteScroll: Initialization failed:', error);
-		}
+		if (!$container.length) return;
+		$container.infiniteScroll({
+			path: '.page-next',
+			append: '.symbol',
+			history: 'push',
+			status: '.page-load-status'
+		}).on('request.infiniteScroll', snapshotPage);
 	}
 
 	// DOMContentLoaded
 	document.addEventListener('DOMContentLoaded', async function () {
-		try {
-			setOutputFieldValue();
-			setTextboxValue();
-			onPageLoad();
-			await ensureDependencies();
-			// Add small delay to ensure DOM is fully ready
-			setTimeout(initInfiniteScroll, 100);
-		} catch (error) {
-			console.error('Script initialization error:', error);
-		}
+		setOutputFieldValue();
+		setTextboxValue();
+		onPageLoad();
+		await ensureDependencies();
+		initInfiniteScroll();
 	});
 })();
+
+
