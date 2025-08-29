@@ -18,13 +18,14 @@
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:title" content="Bear Lenny Face Generator: 50+ Cute Bear Kaomoji (ó㉨ò) | CoolSymbol">
 	<meta property="twitter:description" content="Generate and copy-paste 50+ adorable bear Lenny faces and kaomoji like (ó㉨ò), ʕ•ᴥ•ʔ, and (´(ェ)｀). Perfect cute bear emoticons for messages, social media, and chats.">
-	<meta property="twitter:image" content="https://symbolsemoji.com/img/symbolsemoji.com.gif">
+	<meta property="twitter:image" content="https://symbolsemoji.com/img/symbolsemoji.com.png">
 	<link rel="canonical" href="https://symbolsemoji.com/bear-lenny-face.html" />
 	<link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32">
 	<link rel="icon" href="img/favicon-16x16.png" type="image/png" sizes="16x16">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
-		<style>
+		<link rel="stylesheet" href="main.css">
+	<style>
 			@media only screen and (max-width: 600px) {
 			.lennyface {
 					font-size: 17px;
@@ -53,10 +54,32 @@
 		</div>
 	</header>
 
-				</a>
-
-			</div>
-		</div>
+	<div class="scrollmenu">
+		<a href="index.html">Home</a>
+		<a href="lenny-face.html">Lenny Face</a>
+		<a href="heart-symbol.html">Heart</a>
+		<a href="star-symbol.html">Star</a>
+		<a href="arrow-symbol.html">Arrow</a>
+		<a href="check-mark-symbol.html">Check Mark</a>
+		<a href="cross-symbol.html">Cross</a>
+		<a href="currency-symbol.html">Currency</a>
+		<a href="music-symbol.html">Music</a>
+		<a href="weather-symbol.html">Weather</a>
+		<a href="zodiac-symbol.html">Zodiac</a>
+		<a href="chess-symbol.html">Chess</a>
+		<a href="card-symbol.html">Card</a>
+		<a href="office-symbol.html">Office</a>
+		<a href="transport-symbol.html">Transport</a>
+		<a href="warning-symbol.html">Warning</a>
+		<a href="medical-symbol.html">Medical</a>
+		<a href="chinese-symbol.html">Chinese</a>
+		<a href="japanese-symbols.html">Japanese</a>
+		<a href="korean-symbols.html">Korean</a>
+		<a href="greek-alphabet-symbol.html">Greek</a>
+		<a href="bubble-text.html">Bubble Text</a>
+		<a href="cursive-letters.html">Cursive</a>
+		<a href="upside-down-text.html">Upside Down</a>
+		<a href="old-english-text.html">Old English</a>
 	</div>
 
 	<div class="mainbox">
@@ -98,6 +121,8 @@
 			<div class="symbol lennyface" onclick="copyToClipboard('ʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔ', event)">ʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔ</div>
 		
 		</div>
+
+		<p class="infinite-scroll-last">ღƪ(ˆ◡ˆ)ʃ♡ That's All Cool Symbols we have ♡ƪ(ˆ◡ˆ)ʃ♪</p>
 
 		<div class="symbolcat">
 			<a href="cute-lenny-face.html">Cute</a>
@@ -307,14 +332,22 @@
 			</div>
 		</div>
 	</div>
+	<div id="target">
+		<div class="copyboard">
+			<div class="input">
+				<input type="text" id="copyText" readonly placeholder="Click on any symbol to copy">
+			</div>
+			<div class="copy">
+				<button onclick="copyToClipboard2()" id="copyButton">Copy</button>
+			</div>
+		</div>
+	</div>
+
 	<link rel="stylesheet" href="footer-fix.css">
 
-
 	<script src="script.min.js" defer></script>
-
-        <script src="lazy-load.js"></script>
-        <script src="script.min.js" defer></script>
-        <script src="performance-audit.js" defer></script>
+	<script src="lazy-load.js"></script>
+	<script src="performance-audit.js" defer></script>
 </body>
 
 </html>
