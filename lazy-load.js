@@ -73,7 +73,7 @@
     // Preload critical resources
     function preloadCriticalResources() {
         const preloadLinks = [
-            { href: 'img/symbolsemoji.png', as: 'image' },
+            { href: 'img/symbolsemoji.webp', as: 'image' },
             { href: 'main.min.css', as: 'style' }
         ];
         

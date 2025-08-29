@@ -6,25 +6,24 @@ const path = require('path');
 const htmlFiles = fs.readdirSync('.').filter(file => file.endsWith('.html'));
 
 const fixes = [
-    // Fix relative path issues
-    { from: /href="cool-sparkles\.html"/g, to: 'href="./cool-sparkles.html"' },
-    { from: /href="cool-heart\.html"/g, to: 'href="./cool-heart.html"' },
-    { from: /href="cool-waves\.html"/g, to: 'href="./cool-waves.html"' },
-    { from: /href="cool-star\.html"/g, to: 'href="./cool-star.html"' },
-    { from: /href="cool-triangle\.html"/g, to: 'href="./cool-triangle.html"' },
-    { from: /href="cool-borders\.html"/g, to: 'href="./cool-borders.html"' },
-    { from: /href="cool-dividers\.html"/g, to: 'href="./cool-dividers.html"' },
-    { from: /href="cool-flower\.html"/g, to: 'href="./cool-flower.html"' },
-    { from: /href="cool-arrow\.html"/g, to: 'href="./cool-arrow.html"' },
-    { from: /href="cool-brackets\.html"/g, to: 'href="./cool-brackets.html"' },
-    { from: /href="cool-circle\.html"/g, to: 'href="./cool-circle.html"' },
-    { from: /href="cool-music\.html"/g, to: 'href="./cool-music.html"' },
-    { from: /href="cool-dot\.html"/g, to: 'href="./cool-dot.html"' },
-    { from: /href="cool-square\.html"/g, to: 'href="./cool-square.html"' },
+    // Remove ./ prefix from page-next links to fix InfiniteScroll parsing
+    { from: /class="page-next" href="\.\/([^"]+)"/g, to: 'class="page-next" href="$1"' },
     
-    // Fix any empty or malformed hrefs
-    { from: /href="\.html"/g, to: 'href="./index.html"' },
-    { from: /href=""/g, to: 'href="./index.html"' }
+    // Fix any remaining relative path issues in navigation
+    { from: /href="\.\/cool-sparkles\.html"/g, to: 'href="cool-sparkles.html"' },
+    { from: /href="\.\/cool-heart\.html"/g, to: 'href="cool-heart.html"' },
+    { from: /href="\.\/cool-waves\.html"/g, to: 'href="cool-waves.html"' },
+    { from: /href="\.\/cool-star\.html"/g, to: 'href="cool-star.html"' },
+    { from: /href="\.\/cool-triangle\.html"/g, to: 'href="cool-triangle.html"' },
+    { from: /href="\.\/cool-borders\.html"/g, to: 'href="cool-borders.html"' },
+    { from: /href="\.\/cool-dividers\.html"/g, to: 'href="cool-dividers.html"' },
+    { from: /href="\.\/cool-flower\.html"/g, to: 'href="cool-flower.html"' },
+    { from: /href="\.\/cool-arrow\.html"/g, to: 'href="cool-arrow.html"' },
+    { from: /href="\.\/cool-brackets\.html"/g, to: 'href="cool-brackets.html"' },
+    { from: /href="\.\/cool-circle\.html"/g, to: 'href="cool-circle.html"' },
+    { from: /href="\.\/cool-music\.html"/g, to: 'href="cool-music.html"' },
+    { from: /href="\.\/cool-dot\.html"/g, to: 'href="cool-dot.html"' },
+    { from: /href="\.\/cool-square\.html"/g, to: 'href="cool-square.html"' }
 ];
 
 let totalFixed = 0;
