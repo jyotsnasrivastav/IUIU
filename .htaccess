@@ -42,30 +42,37 @@
 
 # Cache Control Headers - Optimized for Performance
 <IfModule mod_headers.c>
-    # Override server defaults with explicit cache headers
-    Header unset Cache-Control
-    Header unset Expires
-    Header unset Pragma
+    # Force override server defaults with explicit cache headers
+    Header always unset Cache-Control
+    Header always unset Expires
+    Header always unset Pragma
+    Header always unset Last-Modified
     
+    # CSS and JavaScript files - 1 year cache
     <FilesMatch "\.(css|js)$">
-        Header set Cache-Control "public, max-age=31536000, immutable"
-        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
+        Header always set Cache-Control "public, max-age=31536000, immutable"
+        Header always set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
     </FilesMatch>
 
+    # Image files - 1 year cache
     <FilesMatch "\.(png|jpg|jpeg|gif|ico|svg|webp)$">
-        Header set Cache-Control "public, max-age=31536000, immutable"
-        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
+        Header always set Cache-Control "public, max-age=31536000, immutable"
+        Header always set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
     </FilesMatch>
 
+    # Font files - 1 year cache
     <FilesMatch "\.(woff|woff2|ttf|eot)$">
-        Header set Cache-Control "public, max-age=31536000, immutable"
-        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
+        Header always set Cache-Control "public, max-age=31536000, immutable"
+        Header always set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
     </FilesMatch>
 
+    # HTML files - 1 hour cache
     <FilesMatch "\.(html|htm)$">
-        Header set Cache-Control "public, max-age=3600"
-        Header set Expires "access plus 1 hour"
+        Header always set Cache-Control "public, max-age=3600, must-revalidate"
     </FilesMatch>
+    
+    # Force cache validation for all resources
+    Header always set Vary "Accept-Encoding"
 </IfModule>
 
 # Enable Keep-Alive

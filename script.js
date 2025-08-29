@@ -1,3 +1,66 @@
+
+// Reflow optimization utilities
+(function() {
+    'use strict';
+    
+    // Batch DOM reads and writes
+    let readQueue = [];
+    let writeQueue = [];
+    let scheduled = false;
+    
+    function flushQueues() {
+        // Execute all reads first
+        readQueue.forEach(fn => fn());
+        readQueue = [];
+        
+        // Then execute all writes
+        writeQueue.forEach(fn => fn());
+        writeQueue = [];
+        
+        scheduled = false;
+    }
+    
+    function scheduleFlush() {
+        if (!scheduled) {
+            scheduled = true;
+            requestAnimationFrame(flushQueues);
+        }
+    }
+    
+    // Public API for batching DOM operations
+    window.batchDOMRead = function(fn) {
+        readQueue.push(fn);
+        scheduleFlush();
+    };
+    
+    window.batchDOMWrite = function(fn) {
+        writeQueue.push(fn);
+        scheduleFlush();
+    };
+    
+    // Cache layout properties to avoid repeated reads
+    const layoutCache = new WeakMap();
+    
+    window.getCachedLayout = function(element, property) {
+        if (!layoutCache.has(element)) {
+            layoutCache.set(element, {});
+        }
+        
+        const cache = layoutCache.get(element);
+        if (!(property in cache)) {
+            cache[property] = element[property];
+        }
+        
+        return cache[property];
+    };
+    
+    // Clear cache on resize
+    window.addEventListener('resize', () => {
+        layoutCache.clear();
+    });
+    
+})();
+
 /*
 	Clean site script
 	- Adds, stores, and copies symbols
