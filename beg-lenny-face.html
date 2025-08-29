@@ -18,7 +18,17 @@
         .maindata{min-height:200px;contain:layout style paint}
         .footer{min-height:80px;contain:layout style paint}
         img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint}
-        </style>
+        
+        /* Fix H1 font-size deprecation warning */
+        h1 {
+            font-size: 25px !important;
+        }
+        
+        /* Ensure H1 within sectioning elements have explicit font-size */
+        article h1, aside h1, nav h1, section h1 {
+            font-size: 25px !important;
+        }
+    </style>
         <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="main.min.css"></noscript>
 		<style>
@@ -64,7 +74,7 @@
 			</span>
 			<div class="mainlogo">
 				<a href="index.html">
-					<img  alt="CoolSymbol logo" width="200" height="50" loading="eager" decoding="async"src="img/symbolsemoji.webp"></a>
+					<img  alt="CoolSymbol logo" width="270" height="54" loading="eager" decoding="async"src="img/symbolsemoji.webp"></a>
 				<span></span>
 			</div>
 		</div>
@@ -317,158 +327,28 @@
 	<noscript><link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'">
 	<noscript><link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'">
 	<noscript><link rel="stylesheet" href="footer-fix.css"></noscript></noscript></noscript>
-		<script>
-// Advanced Reflow Prevention and DOM Optimization
-(function() {
-    'use strict';
+		<script src="dom-optimizer.js" async></script>
+	<script src="script.min.js" defer></script>
+<script>
+// Load non-critical scripts after page load
+window.addEventListener('load', function() {
+    const scripts = [
+        'lazy-load.js',
+        'ad-blocker.js', 
+        'performance-audit.js',
+        'treemap-analyzer.js',
+        'layout-shift-prevention.js'
+    ];
     
-    // Batch DOM operations to prevent forced reflows
-    class DOMBatcher {
-        constructor() {
-            this.readQueue = [];
-            this.writeQueue = [];
-            this.scheduled = false;
-            this.layoutCache = new WeakMap();
-        }
-        
-        scheduleFlush() {
-            if (!this.scheduled) {
-                this.scheduled = true;
-                requestAnimationFrame(() => this.flushQueues());
-            }
-        }
-        
-        flushQueues() {
-            // Execute all reads first (batched)
-            this.readQueue.forEach(fn => fn());
-            this.readQueue = [];
-            
-            // Then execute all writes (batched)
-            this.writeQueue.forEach(fn => fn());
-            this.writeQueue = [];
-            
-            this.scheduled = false;
-        }
-        
-        read(fn) {
-            this.readQueue.push(fn);
-            this.scheduleFlush();
-        }
-        
-        write(fn) {
-            this.writeQueue.push(fn);
-            this.scheduleFlush();
-        }
-        
-        // Cache layout properties to avoid repeated calculations
-        getCachedLayout(element, property) {
-            if (!this.layoutCache.has(element)) {
-                this.layoutCache.set(element, {});
-            }
-            
-            const cache = this.layoutCache.get(element);
-            if (!(property in cache)) {
-                this.read(() => {
-                    cache[property] = element[property];
-                });
-            }
-            
-            return cache[property];
-        }
-        
-        clearCache() {
-            this.layoutCache.clear();
-        }
-    }
-    
-    const domBatcher = new DOMBatcher();
-    
-    // Optimize common DOM operations
-    const originalMethods = {};
-    
-    // Override problematic methods with batched versions
-    ['offsetWidth', 'offsetHeight', 'clientWidth', 'clientHeight', 'scrollWidth', 'scrollHeight'].forEach(prop => {
-        Object.defineProperty(Element.prototype, '_' + prop, {
-            get: function() {
-                return domBatcher.getCachedLayout(this, prop);
-            }
-        });
+    scripts.forEach((src, index) => {
+        setTimeout(() => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            document.head.appendChild(script);
+        }, index * 50); // Stagger loading by 50ms
     });
-    
-    // Optimize getBoundingClientRect
-    Element.prototype._getBoundingClientRect = function() {
-        return domBatcher.getCachedLayout(this, 'boundingClientRect') || 
-               domBatcher.getCachedLayout(this, 'boundingClientRect', () => this.getBoundingClientRect());
-    };
-    
-    // Clear cache on resize and scroll
-    let resizeTimeout;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
-            domBatcher.clearCache();
-        }, 100);
-    }, { passive: true });
-    
-    // Intersection Observer for visibility-based optimizations
-    const visibilityObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            } else {
-                entry.target.classList.remove('visible');
-            }
-        });
-    }, {
-        rootMargin: '50px',
-        threshold: 0.1
-    });
-    
-    // Auto-observe elements that might cause reflows
-    function observeElements() {
-        document.querySelectorAll('.symbol, .maindata, .symbolTabel').forEach(el => {
-            visibilityObserver.observe(el);
-        });
-    }
-    
-    // Initialize optimizations
-    function init() {
-        observeElements();
-        
-        // Add CSS containment for better performance
-        const style = document.createElement('style');
-        style.textContent = `
-            .symbol { contain: layout style paint; will-change: transform; }
-            .symbolTabel { contain: layout; }
-            .maindata { contain: layout style; }
-            .visible { transform: translateZ(0); }
-        `;
-        document.head.appendChild(style);
-    }
-    
-    // Public API
-    window.DOMOptimizer = {
-        batchRead: (fn) => domBatcher.read(fn),
-        batchWrite: (fn) => domBatcher.write(fn),
-        clearCache: () => domBatcher.clearCache(),
-        observeElement: (el) => visibilityObserver.observe(el)
-    };
-    
-    // Initialize when DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-    } else {
-        init();
-    }
-    
-})();
-
-	</script>
-	<script src="script.min.js" async></script>
-	<script src="lazy-load.js" async></script>
-	<script src="ad-blocker.js" async></script>
-	<script src="performance-audit.js" async></script>
-	<script src="treemap-analyzer.js" async></script>
-	<script src="layout-shift-prevention.js" defer></script>
+});
+</script>
 </body>
 </html>

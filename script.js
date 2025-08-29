@@ -143,20 +143,66 @@
 		return Array.prototype.slice.call(document.querySelectorAll(sel));
 	}
 
-	// Clipboard helpers
+	// Clipboard helpers - Modern Clipboard API implementation
 	async function writeToClipboard(text) {
+		// Try modern Clipboard API first
 		if (navigator.clipboard && navigator.clipboard.writeText) {
-			try { await navigator.clipboard.writeText(text); return true; } catch (e) {}
+			try { 
+				await navigator.clipboard.writeText(text); 
+				return true; 
+			} catch (e) {
+				console.warn('Clipboard API failed:', e);
+			}
 		}
-		const ta = document.createElement('textarea');
-		ta.value = text;
-		ta.setAttribute('readonly', '');
-		ta.style.position = 'absolute';
-		ta.style.left = '-9999px';
-		document.body.appendChild(ta);
-		ta.select();
-		try { document.execCommand('copy'); } finally { document.body.removeChild(ta); }
-		return true;
+		
+		// For browsers without Clipboard API, show user instruction
+		try {
+			// Create a temporary input for user to manually copy
+			const ta = document.createElement('textarea');
+			ta.value = text;
+			ta.setAttribute('readonly', '');
+			ta.style.position = 'fixed';
+			ta.style.left = '50%';
+			ta.style.top = '50%';
+			ta.style.transform = 'translate(-50%, -50%)';
+			ta.style.zIndex = '10000';
+			ta.style.background = 'white';
+			ta.style.border = '2px solid #230AC7';
+			ta.style.padding = '10px';
+			ta.style.borderRadius = '5px';
+			document.body.appendChild(ta);
+			
+			// Focus and select the text
+			ta.focus();
+			ta.select();
+			ta.setSelectionRange(0, text.length);
+			
+			// Show instruction to user
+			const instruction = document.createElement('div');
+			instruction.innerHTML = 'Press Ctrl+C (or Cmd+C on Mac) to copy';
+			instruction.style.position = 'fixed';
+			instruction.style.left = '50%';
+			instruction.style.top = 'calc(50% + 60px)';
+			instruction.style.transform = 'translateX(-50%)';
+			instruction.style.background = '#230AC7';
+			instruction.style.color = 'white';
+			instruction.style.padding = '5px 10px';
+			instruction.style.borderRadius = '3px';
+			instruction.style.zIndex = '10001';
+			instruction.style.fontSize = '14px';
+			document.body.appendChild(instruction);
+			
+			// Auto-remove after 3 seconds
+			setTimeout(() => {
+				if (ta.parentNode) ta.parentNode.removeChild(ta);
+				if (instruction.parentNode) instruction.parentNode.removeChild(instruction);
+			}, 3000);
+			
+			return true;
+		} catch (e) {
+			console.error('Clipboard fallback failed:', e);
+			return false;
+		}
 	}
 
 	// DOM ids/classes used in HTML
