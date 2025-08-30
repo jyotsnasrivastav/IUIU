@@ -12,10 +12,6 @@ Allow: /img/
 Allow: /font/
 Allow: /Image/
 
-# Disallow access to CSS and JS files for proper rendering
-Disallow: /*.css
-Disallow: /*.js
-
 # Disallow access to sensitive files
 Disallow: /.htaccess
 Disallow: /.FullName
@@ -28,9 +24,10 @@ Disallow: /*fix*.js
 Disallow: /*apply*.js
 Disallow: /dom-optimizer.js
 Disallow: /convert-png-to-webp.js
-
+Disallow: /*.css
+Disallow: /*.js
 # Crawl delay to be respectful to server resources
 Crawl-delay: 1
 
-# Sitemap location
-# Sitemap: https://symbolsemoji.com//sitemap.xml
+# Sitemap location 
+# Sitemap: https://symbolsemoji.com/sitemap.xml
