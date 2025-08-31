@@ -1,40 +1,33 @@
+# Robots.txt for Symbols Website
+# Allow all web crawlers to access the site
+
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://www.symbolsemoji.com/sitemap.xml
+# Allow access to all symbol pages
+Allow: /*.html
 
-# Block access to JavaScript and CSS optimization files
-Disallow: /bulk-*.js
-Disallow: /apply-*.js
-Disallow: /fix-*.js
+# Allow access to images and fonts
+Allow: /img/
+Allow: /font/
+Allow: /Image/
+
+# Disallow access to sensitive files
+Disallow: /.htaccess
+Disallow: /.FullName
+Disallow: /CNAME
+
+# Disallow access to optimization and maintenance scripts
+Disallow: /*optimization*.js
+Disallow: /*bulk*.js
+Disallow: /*fix*.js
+Disallow: /*apply*.js
 Disallow: /dom-optimizer.js
 Disallow: /convert-png-to-webp.js
-Disallow: /footer-bulk-fix.js
-Disallow: /layout-shift-prevention.js
-Disallow: /lazy-load.js
-Disallow: /optimize-image-compression.js
-Disallow: /performance-audit.js
-Disallow: /reduce-blocking-time.js
-Disallow: /reflow-optimizer.js
-Disallow: /remove-*.js
-Disallow: /script-phphp*.js
-Disallow: /treemap-analyzer.js
-Disallow: /update_ga*.js
+Disallow: /*.css
+Disallow: /*.js
+# Crawl delay to be respectful to server resources
+Crawl-delay: 1
 
-# Block access to configuration and optimization files
-Disallow: /.htaccess
-Disallow: /web.config
-Disallow: /*.md
-Disallow: /critical.css
-Disallow: /footer-fix.css
-Disallow: /logo-optimization.css
-Disallow: /main.min.css
-Disallow: /script.min.js
-
-# Allow important pages
-Allow: /index.html
-Allow: /contact.html
-Allow: /privacy.html
-Allow: /terms.html
-Allow: /font-generator.html
+# Sitemap location 
+# Sitemap: https://symbolsemoji.com/sitemap.xml
