@@ -1,675 +1,837 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://symbolsemoji.com/</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.symbolsemoji.com/</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/aesthetic-symbols.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.symbolsemoji.com/index.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/font-generator.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/all-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/aesthetic-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/all-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.symbolsemoji.com/animal-emoji.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/angry-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/animal-emoji.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/contact.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/arrow-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/privacy.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/bear-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/terms.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/beg-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/arrow-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/blush-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/bracket-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/bracket-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/bullet-points-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/bubble-text.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/card-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/bullet-points-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/check-mark-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/card-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/chess-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cat-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/chinese-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/check-mark-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/circle-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/chess-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/comparison-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/chinese-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/copyright-trademark-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/christmas-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/corner-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/circle-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/cross-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/comparison-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/crown-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/confused-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/cryptocurrency-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/contact.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.symbolsemoji.com/currency-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/daimond-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/dice-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/down-arrow-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/flag-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/flower-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/fraction-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/gender-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/greek-alphabet-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/hand-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/heart-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/house-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/infinity-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/japanese-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/keyboard-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/korean-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/line-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/loading-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/medical-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/moon-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/music-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/number-symbols.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/office-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/pi-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/punctuation-mark-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/quotation-mark-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/rectangle-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/religion-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/roman-numerals-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/smiley-face-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/square-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/star-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/sun-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/text-animal-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/transport-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/triangle-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/trophy-medal-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/unit-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/up-arrow-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/warning-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/weapon-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/weather-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/writing-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/zodiac-symbol.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-arrow.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-borders.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-brackets.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-circle.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-dividers.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-dot.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-flower.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-heart.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-music.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-sparkles.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-square.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-star.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-triangle.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/cool-waves.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.symbolsemoji.com/angry-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-arrow.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/bear-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-borders.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/beg-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-brackets.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/blush-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-circle.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/cat-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-dividers.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/christmas-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-dot.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/confused-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-flower.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/crying-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-heart.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/cute-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-music.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/dance-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-sparkles.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/depressed-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-square.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/devil-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-star.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/disapproval-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-triangle.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/dog-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cool-waves.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/dongers-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/copyright-trademark-symbols.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/eating-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/corner-symbols.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/evil-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cross-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/excited-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/crown-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/flip-table-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/crying-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/flirty-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cryptocurrency-symbols.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/good-morning-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/currency-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/good-night-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cursive-letters.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/gun-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/cute-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/happy-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/daimond-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/heart-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/dance-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/hello-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/depressed-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/helpless-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/devil-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/hiding-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/dice-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/hug-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/disapproval-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/kiss-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/dog-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/laughing-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/dongers-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/down-arrow-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/middle-finger-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/eating-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/nervous-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/evil-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/run-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/excited-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/sad-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/flag-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/scared-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/flip-table-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/shrug-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/flirty-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/shy-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/flower-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/spider-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/font-generator.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.symbolsemoji.com/strong-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/fraction-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/sunglasses-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/gender-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/surprised-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/good-morning-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/sword-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/good-night-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/thank-you-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/greek-alphabet-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/thinking-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/gun-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/thumbs-up-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/hand-symbols.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/tired-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/hanging-stars.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/vomit-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/happy-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/weird-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/heart-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/wink-lenny-face.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/heart-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/bubble-text.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/hello-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/cursive-letters.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/helpless-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/hanging-stars.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/hiding-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/lock-and-key.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/house-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/old-english-text.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://symbolsemoji.com/hug-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/index.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/infinity-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/japanese-emoticons.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/keyboard-symbols.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/laughing-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/left-arrow-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/line-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/love-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/magic-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/math-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/middle-finger-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/music-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/number-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/peace-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/people-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/phone-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/playing-cards-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/pointing-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/right-arrow-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/roman-numerals.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/sad-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/shrug-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/sleeping-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/square-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/star-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/straight-lines.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/surprised-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/text-art.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/triangle-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/up-arrow-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/weather-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/winking-lenny-face.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://symbolsemoji.com/zodiac-symbol.html</loc>
-    <lastmod>2025-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.symbolsemoji.com/upside-down-text.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
