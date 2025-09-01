@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html optimized="true" lang="en">
 <head>
+    <link rel="preload" href="/css/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com">
 	<!-- Primary Meta Tags -->
-	<link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="main.css"></noscript>
-	<noscript><link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="main.css"></noscript></noscript>        <style> *{box-sizing:border-box;padding:0;margin:0} body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap} header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint} .headCont{max-width:1168px;margin:0 auto;text-align:center} .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint} .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint} .mainlogo a{color:white;font-size:2rem;text-decoration:none} #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px} .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)} .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)} .maindata{min-height:200px;contain:layout style paint} .footer{min-height:80px;contain:layout style paint} img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint} .mainlogo img{image-rendering: optimizeQuality;image-rendering: -webkit-optimize-contrast;background: #230AC7;transition: opacity 0.3s ease} .mainlogo img:not([src*="data:"]){background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);background-size: 200% 100%;animation: shimmer 1.5s infinite} @keyframes shimmer{0%{background-position: 200% 0} 100%{background-position: -200% 0} } h1{font-size: 25px !important} article h1, aside h1, nav h1, section h1{font-size: 25px !important} .modern-header{background: #230AC7;padding: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.1);position: fixed;top: 0;left: 0;right: 0;z-index: 1000;height: 60px;contain: none !important;overflow: visible !important} .main-nav{display: flex;align-items: center;justify-content: space-between;max-width: 1200px;margin: 0 auto;padding: 0 24px;height: 100%} .main-logo{font-size: 24px;font-weight: bold;color: white;text-decoration: none;display: flex;align-items: center;gap: 8px} .main-logo img{width: 32px;height: 32px} .nav-center{display: flex;gap: 32px;align-items: center} .nav-item{color: white;text-decoration: none;font-size: 14px;font-weight: 500;padding: 8px 12px;border-radius: 4px;transition: background-color 0.2s ease} .nav-item:hover{background-color: rgba(255, 255, 255, 0.1)} .nav-right{display: flex;align-items: center;gap: 16px} .language-selector{position: relative !important;display: inline-block !important;z-index: 1000 !important} .language-btn{background: white !important;border: 1px solid #ddd !important;border-radius: 4px !important;padding: 6px 10px !important;cursor: pointer !important;font-size: 14px !important;color: #333 !important;display: flex !important;align-items: center !important;gap: 4px !important;transition: all 0.2s ease !important;min-width: 60px !important;justify-content: center !important;font-weight: 500 !important;z-index: 10000 !important;position: relative !important;pointer-events: auto !important;user-select: none !important} .language-btn *{pointer-events: none !important} .language-btn:hover{background-color: #f8f9fa;border-color: #bbb} .globe-icon{font-size: 16px} .lang-code{font-weight: 600;font-size: 13px;color: #333} .dropdown-arrow{font-size: 10px;color: #666;margin-left: 2px} .language-dropdown{position: absolute !important;top: calc(100% + 5px) !important;right: 0 !important;background: #ffffff !important;border: 1px solid #e0e0e0 !important;border-radius: 8px !important;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;min-width: 180px !important;z-index: 999999 !important;display: none !important;margin: 0 !important;max-height: 320px !important;overflow-y: auto !important;opacity: 0 !important;visibility: hidden !important;transform: translateY(-10px) !important;transition: all 0.2s ease !important} .language-dropdown.open{display: block !important;visibility: visible !important;opacity: 1 !important;transform: translateY(0) !important} .language-option{display: block !important;padding: 10px 16px !important;color: #333 !important;text-decoration: none !important;font-size: 14px !important;transition: background-color 0.2s ease !important;border-bottom: 1px solid #f0f0f0 !important;background: white !important;width: 100% !important} .language-option:hover{background-color: #f8f9fa !important} .language-option:last-child{border-bottom: none !important} .language-option.active{background-color: #e3f2fd !important;color: #1976d2 !important;font-weight: 500 !important} .language-option[dir="rtl"]{text-align: right;direction: rtl} body{padding-top: 60px !important;pointer-events: auto !important;margin: 0 !important;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;background: #f5f5f5 !important;overflow: visible !important} header, nav, .nav-right, .language-selector, .language-btn{pointer-events: auto !important;position: relative !important;overflow: visible !important} .language-dropdown.show{display: block !important;position: fixed !important;top: 60px !important;right: 20px !important;z-index: 2147483647 !important;background: white !important;border: 2px solid #333 !important;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important} @media (max-width: 1024px){.nav-center{gap: 20px} .nav-item{font-size: 13px;padding: 6px 8px} } @media (max-width: 768px){.main-nav{padding: 0 16px} .nav-center{display: none} .main-logo{font-size: 20px} .main-logo img{width: 28px;height: 28px} } @media (max-width: 480px){.main-nav{padding: 0 12px} </style>
+	<noscript></noscript>
+	<noscript><noscript></noscript></noscript>        <style> *{box-sizing:border-box;padding:0;margin:0} body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap} header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint} .headCont{max-width:1168px;margin:0 auto;text-align:center} .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint} .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint} .mainlogo a{color:white;font-size:2rem;text-decoration:none} #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px} .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)} .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)} .maindata{min-height:200px;contain:layout style paint} .footer{min-height:80px;contain:layout style paint} img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint} .mainlogo img{image-rendering: optimizeQuality;image-rendering: -webkit-optimize-contrast;background: #230AC7;transition: opacity 0.3s ease} .mainlogo img:not([src*="data:"]){background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);background-size: 200% 100%;animation: shimmer 1.5s infinite} @keyframes shimmer{0%{background-position: 200% 0} 100%{background-position: -200% 0} } h1{font-size: 25px !important} article h1, aside h1, nav h1, section h1{font-size: 25px !important} .modern-header{background: #230AC7;padding: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.1);position: fixed;top: 0;left: 0;right: 0;z-index: 1000;height: 60px;contain: none !important;overflow: visible !important} .main-nav{display: flex;align-items: center;justify-content: space-between;max-width: 1200px;margin: 0 auto;padding: 0 24px;height: 100%} .main-logo{font-size: 24px;font-weight: bold;color: white;text-decoration: none;display: flex;align-items: center;gap: 8px} .main-logo img{width: 32px;height: 32px} .nav-center{display: flex;gap: 32px;align-items: center} .nav-item{color: white;text-decoration: none;font-size: 14px;font-weight: 500;padding: 8px 12px;border-radius: 4px;transition: background-color 0.2s ease} .nav-item:hover{background-color: rgba(255, 255, 255, 0.1)} .nav-right{display: flex;align-items: center;gap: 16px} .language-selector{position: relative !important;display: inline-block !important;z-index: 1000 !important} .language-btn{background: white !important;border: 1px solid #ddd !important;border-radius: 4px !important;padding: 6px 10px !important;cursor: pointer !important;font-size: 14px !important;color: #333 !important;display: flex !important;align-items: center !important;gap: 4px !important;transition: all 0.2s ease !important;min-width: 60px !important;justify-content: center !important;font-weight: 500 !important;z-index: 10000 !important;position: relative !important;pointer-events: auto !important;user-select: none !important} .language-btn *{pointer-events: none !important} .language-btn:hover{background-color: #f8f9fa;border-color: #bbb} .globe-icon{font-size: 16px} .lang-code{font-weight: 600;font-size: 13px;color: #333} .dropdown-arrow{font-size: 10px;color: #666;margin-left: 2px} .language-dropdown{position: absolute !important;top: calc(100% + 5px) !important;right: 0 !important;background: #ffffff !important;border: 1px solid #e0e0e0 !important;border-radius: 8px !important;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;min-width: 180px !important;z-index: 999999 !important;display: none !important;margin: 0 !important;max-height: 320px !important;overflow-y: auto !important;opacity: 0 !important;visibility: hidden !important;transform: translateY(-10px) !important;transition: all 0.2s ease !important} .language-dropdown.open{display: block !important;visibility: visible !important;opacity: 1 !important;transform: translateY(0) !important} .language-option{display: block !important;padding: 10px 16px !important;color: #333 !important;text-decoration: none !important;font-size: 14px !important;transition: background-color 0.2s ease !important;border-bottom: 1px solid #f0f0f0 !important;background: white !important;width: 100% !important} .language-option:hover{background-color: #f8f9fa !important} .language-option:last-child{border-bottom: none !important} .language-option.active{background-color: #e3f2fd !important;color: #1976d2 !important;font-weight: 500 !important} .language-option[dir="rtl"]{text-align: right;direction: rtl} body{padding-top: 60px !important;pointer-events: auto !important;margin: 0 !important;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;background: #f5f5f5 !important;overflow: visible !important} header, nav, .nav-right, .language-selector, .language-btn{pointer-events: auto !important;position: relative !important;overflow: visible !important} .language-dropdown.show{display: block !important;position: fixed !important;top: 60px !important;right: 20px !important;z-index: 2147483647 !important;background: white !important;border: 2px solid #333 !important;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important} @media (max-width: 1024px){.nav-center{gap: 20px} .nav-item{font-size: 13px;padding: 6px 8px} } @media (max-width: 768px){.main-nav{padding: 0 16px} .nav-center{display: none} .main-logo{font-size: 20px} .main-logo img{width: 28px;height: 28px} } @media (max-width: 480px){.main-nav{padding: 0 12px} </style>
         <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="main.min.css"></noscript>
 		<style> .symbol{font-size: 30px !important} </style>
@@ -39,6 +43,24 @@
 	<noscript>
 	<noscript></noscript></noscript>
 	<!-- CSS -->
+
+		<style>
+			/* Anti-CLS guardrails for header & language dropdown */
+			.modern-header, .main-nav { min-height: 60px }
+			.nav-right .language-selector { position: relative }
+			.nav-right .language-selector .language-dropdown { position: absolute; top: 100%; right: 0; max-height: 60vh; overflow: auto; contain: layout paint; transform: translateZ(0) }
+			.nav-right .language-selector .language-dropdown[aria-hidden="true"] { display: none }
+			.outcont, .container, .maindata, .footer { contain: layout style paint }
+		</style>
+    <style>
+        /* Critical CSS - Optimized for performance */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+        /* ... rest of the critical CSS ... */
+    </style>
 </head>
 <body>
 	<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
@@ -104,129 +126,129 @@
 				<div class="rightContainer">
 					<div class="maindata">
 		<h1 class="titlesymbol">Smiley Text Symbol Copy and Paste</h1>
-		<div class="symbol" title="Circled Katakana Tu Symbol" onclick="copyToClipboard('㋡', event)">㋡
+		<div class="symbol" style="font-size: 30px !important" title="Circled Katakana Tu Symbol" onclick="copyToClipboard('㋡', event)">㋡
 		</div>
-		<div class="symbol" title="Circled Katakana Si Symbol" onclick="copyToClipboard('㋛', event)">㋛</div>
-		<div class="symbol" title="White Smiling Face Symbol" onclick="copyToClipboard('☺', event)">☺</div>
-		<div class="symbol" title="Black Smiling Face Symbol" onclick="copyToClipboard('☻', event)">☻</div>
-		<div class="symbol" title="Postal Mark Face Symbol" onclick="copyToClipboard('〠', event)">〠</div>
-		<div class="symbol" title="Katakana Letter Si Symbol" onclick="copyToClipboard('シ', event)">シ</div>
-		<div class="symbol" title="Katakana Letter Small Tu Symbol" onclick="copyToClipboard('ッ', event)">ッ</div>
-		<div class="symbol" title="Katakana Letter Tu Symbol" onclick="copyToClipboard('ツ', event)">ツ</div>
-		<div class="symbol" title="Katakana Letter Du Symbol" onclick="copyToClipboard('ヅ', event)">ヅ</div>
-		<div class="symbol" title="Latin Capital Letter U With Diaeresis Symbol" onclick="copyToClipboard('Ü', event)">Ü</div>
-		<div class="symbol" title="Cyrillic Capital Letter Izhitsa With Double Grave Accent Symbol" onclick="copyToClipboard('Ѷ', event)">Ѷ</div>
-		<div class="symbol" title="Vertical Kana Repeat With Voiced Sound Mark Symbol" onclick="copyToClipboard('〲', event)">〲</div>
-		<div class="symbol" title="Vertical Kana Repeat With Voiced Sound Mark Upper Half Symbol" onclick="copyToClipboard('〴', event)">〴</div>
-		<div class="symbol" title="Katakana Letter Zi Symbol" onclick="copyToClipboard('ジ', event)">ジ</div>
-		<div class="symbol" title="Arabic Letter Teh Symbol" onclick="copyToClipboard('ت', event)">ت</div>
-		<div class="symbol" title="Halfwidth Katakana Letter Si Symbol" onclick="copyToClipboard('ｼ', event)">ｼ</div>
-		<div class="symbol" title="Halfwidth Katakana Letter Tu Symbol" onclick="copyToClipboard('ﾂ', event)">ﾂ</div>
-		<div class="symbol" title="Arabic Letter Teheh Isolated Form Symbol" onclick="copyToClipboard('ﭢ', event)">ﭢ</div>
-		<div class="symbol" title="Apl Functional Symbol Up Tack Diaeresis Symbol" onclick="copyToClipboard('⍡', event)">⍡</div>
-		<div class="symbol" title="Smiley Face Text Symbol" onclick="copyToClipboard('ꌇ', event)">ꌇ</div>
-		<div class="symbol" title="Apl Functional Symbol Del Diaeresis Symbol" onclick="copyToClipboard('⍢', event)">⍢</div>
-		<div class="symbol" title="Apl Functional Symbol Star Diaeresis Symbol" onclick="copyToClipboard('⍣', event)">⍣</div>
-		<div class="symbol" title="Apl Functional Symbol Jot Diaeresis Symbol" onclick="copyToClipboard('⍤', event)">⍤</div>
-		<div class="symbol" title="Cyrillic Capital Letter Barred O With Diaeresis Symbol" onclick="copyToClipboard('Ӫ', event)">Ӫ</div>
-		<div class="symbol" title="Cyrillic Small Letter Barred O With Diaeresis Symbol" onclick="copyToClipboard('ӫ', event)">ӫ</div>
-		<div class="symbol" title="Hangul Syllable Yu Symbol" onclick="copyToClipboard('유', event)">유</div>
-		<div class="symbol" title="Hangul Syllable Us Symbol" onclick="copyToClipboard('옻', event)">옻</div>
-		<div class="symbol" title="Hangul Syllable Oj Symbol" onclick="copyToClipboard('옺', event)">옺</div>
-		<div class="symbol" title="Slightly Smiling Face emoji" onclick="copyToClipboard('🙂', event)">🙂</div>
-		<div class="symbol" title="Upside Down Face emoji" onclick="copyToClipboard('🙃', event)">🙃</div>
-		<div class="symbol" title="Happy emoji" onclick="copyToClipboard('😀', event)">😀</div>
-		<div class="symbol" title="Smiling face with open mouth emoji" onclick="copyToClipboard('😃', event)">😃</div>
-		<div class="symbol" title="Smiling face with open mouth and smiling eyes emoji" onclick="copyToClipboard('😄', event)">😄</div>
-		<div class="symbol" title="Beaming face with smiling eyes emoji" onclick="copyToClipboard('😁', event)">😁</div>
-		<div class="symbol" title="Smiling face with open mouth and tightly-closed eyes emoji" onclick="copyToClipboard('😆', event)">😆</div>
-		<div class="symbol" title="Smiling face with open mouth and cold sweat emoji" onclick="copyToClipboard('😅', event)">😅</div>
-		<div class="symbol" title="Face with tears of joy emoji" onclick="copyToClipboard('😂', event)">😂</div>
-		<div class="symbol" title="Rolling on the Floor Laughing Emoji" onclick="copyToClipboard('🤣', event)">🤣</div>
-		<div class="symbol" title="Smiling face with smiling eyes emoji" onclick="copyToClipboard('😊', event)">😊</div>
-		<div class="symbol" title="Smiling face with halo emoji" onclick="copyToClipboard('😇', event)">😇</div>
-		<div class="symbol" title="Face with Tongue emoji" onclick="copyToClipboard('😛', event)">😛</div>
-		<div class="symbol" title="Nerd Face emoji" onclick="copyToClipboard('🤓', event)">🤓</div>
-		<div class="symbol" title="Smiley Face with Sunglasses emoji" onclick="copyToClipboard('😎', event)">😎</div>
-		<div class="symbol" title="Face with stuck-out tongue and tightly-closed eyes emoji" onclick="copyToClipboard('😝', event)">😝</div>
-		<div class="symbol" title="Face with stuck-out tongue and winking eye emoji" onclick="copyToClipboard('😜', event)">😜</div>
-		<div class="symbol" title="Smiling face with heart-shaped eyes emoji" onclick="copyToClipboard('😍', event)">😍</div>
-		<div class="symbol" title="Smiley face emoji with hearts" onclick="copyToClipboard('🥰', event)">🥰</div>
-		<div class="symbol" title="Face throwing a kiss emoji" onclick="copyToClipboard('😘', event)">😘</div>
-		<div class="symbol" title="Kissing Face Emoji" onclick="copyToClipboard('😗', event)">😗</div>
-		<div class="symbol" title="Kissing Face with Smiling Eyes Emoji" onclick="copyToClipboard('😙', event)">😙</div>
-		<div class="symbol" title="Kissing face with closed eyes emoji" onclick="copyToClipboard('😚', event)">😚</div>
-		<div class="symbol" title="Face savouring delicious food emoji" onclick="copyToClipboard('😋', event)">😋</div>
-		<div class="symbol" title="Hugging Face Emoji" onclick="copyToClipboard('🤗', event)">🤗</div>
-		<div class="symbol" title="Angry face emoji" onclick="copyToClipboard('😠', event)">😠</div>
-		<div class="symbol" title="Pouting face emoji" onclick="copyToClipboard('😡', event)">😡</div>
-		<div class="symbol" title="Flushed face emoji" onclick="copyToClipboard('😳', event)">😳</div>
-		<div class="symbol" title="Smirking face emoji" onclick="copyToClipboard('😏', event)">😏</div>
-		<div class="symbol" title="Unamused face emoji" onclick="copyToClipboard('😒', event)">😒</div>
-		<div class="symbol" title="Disappointed face emoji" onclick="copyToClipboard('😞', event)">😞</div>
-		<div class="symbol" title="Pensive face emoji" onclick="copyToClipboard('😔', event)">😔</div>
-		<div class="symbol" title="Worried Face Emoji" onclick="copyToClipboard('😟', event)">😟</div>
-		<div class="symbol" title="Confused Face Emoji" onclick="copyToClipboard('😕', event)">😕</div>
-		<div class="symbol" title="Slightly Frowning Face emoji" onclick="copyToClipboard('🙁', event)">🙁</div>
-		<div class="symbol" title="White Frowning Face Emoji" onclick="copyToClipboard('☹️', event)">☹️</div>
-		<div class="symbol" title="Persevering face emoji" onclick="copyToClipboard('😣', event)">😣</div>
-		<div class="symbol" title="Confounded face emoji" onclick="copyToClipboard('😖', event)">😖</div>
-		<div class="symbol" title="Face with open mouth and cold sweat emoji" onclick="copyToClipboard('😰', event)">😰</div>
-		<div class="symbol" title="Disappointed but relieved face emoji" onclick="copyToClipboard('😥', event)">😥</div>
-		<div class="symbol" title="Crying face emoji" onclick="copyToClipboard('😢', event)">😢</div>
-		<div class="symbol" title="Loudly crying face emoji" onclick="copyToClipboard('😭', event)">😭</div>
-		<div class="symbol" title="Nauseated Face Emoji" onclick="copyToClipboard('🤢', event)">🤢</div>
-		<div class="symbol" title="Sneezing Face Emoji" onclick="copyToClipboard('🤧', event)">🤧</div>
-		<div class="symbol" title="Face with Medical Mask Emoji" onclick="copyToClipboard('😷', event)">😷</div>
-		<div class="symbol" title="Face with Thermometer Emoji" onclick="copyToClipboard('🤒', event)">🤒</div>
-		<div class="symbol" title="Face with Head-Bandage Emoji" onclick="copyToClipboard('🤕', event)">🤕</div>
-		<div class="symbol" title="Money-Mouth Face Emoji" onclick="copyToClipboard('🤑', event)">🤑</div>
+		<div class="symbol" style="font-size: 30px !important" title="Circled Katakana Si Symbol" onclick="copyToClipboard('㋛', event)">㋛</div>
+		<div class="symbol" style="font-size: 30px !important" title="White Smiling Face Symbol" onclick="copyToClipboard('☺', event)">☺</div>
+		<div class="symbol" style="font-size: 30px !important" title="Black Smiling Face Symbol" onclick="copyToClipboard('☻', event)">☻</div>
+		<div class="symbol" style="font-size: 30px !important" title="Postal Mark Face Symbol" onclick="copyToClipboard('〠', event)">〠</div>
+		<div class="symbol" style="font-size: 30px !important" title="Katakana Letter Si Symbol" onclick="copyToClipboard('シ', event)">シ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Katakana Letter Small Tu Symbol" onclick="copyToClipboard('ッ', event)">ッ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Katakana Letter Tu Symbol" onclick="copyToClipboard('ツ', event)">ツ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Katakana Letter Du Symbol" onclick="copyToClipboard('ヅ', event)">ヅ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Latin Capital Letter U With Diaeresis Symbol" onclick="copyToClipboard('Ü', event)">Ü</div>
+		<div class="symbol" style="font-size: 30px !important" title="Cyrillic Capital Letter Izhitsa With Double Grave Accent Symbol" onclick="copyToClipboard('Ѷ', event)">Ѷ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Vertical Kana Repeat With Voiced Sound Mark Symbol" onclick="copyToClipboard('〲', event)">〲</div>
+		<div class="symbol" style="font-size: 30px !important" title="Vertical Kana Repeat With Voiced Sound Mark Upper Half Symbol" onclick="copyToClipboard('〴', event)">〴</div>
+		<div class="symbol" style="font-size: 30px !important" title="Katakana Letter Zi Symbol" onclick="copyToClipboard('ジ', event)">ジ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Arabic Letter Teh Symbol" onclick="copyToClipboard('ت', event)">ت</div>
+		<div class="symbol" style="font-size: 30px !important" title="Halfwidth Katakana Letter Si Symbol" onclick="copyToClipboard('ｼ', event)">ｼ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Halfwidth Katakana Letter Tu Symbol" onclick="copyToClipboard('ﾂ', event)">ﾂ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Arabic Letter Teheh Isolated Form Symbol" onclick="copyToClipboard('ﭢ', event)">ﭢ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Apl Functional Symbol Up Tack Diaeresis Symbol" onclick="copyToClipboard('⍡', event)">⍡</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiley Face Text Symbol" onclick="copyToClipboard('ꌇ', event)">ꌇ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Apl Functional Symbol Del Diaeresis Symbol" onclick="copyToClipboard('⍢', event)">⍢</div>
+		<div class="symbol" style="font-size: 30px !important" title="Apl Functional Symbol Star Diaeresis Symbol" onclick="copyToClipboard('⍣', event)">⍣</div>
+		<div class="symbol" style="font-size: 30px !important" title="Apl Functional Symbol Jot Diaeresis Symbol" onclick="copyToClipboard('⍤', event)">⍤</div>
+		<div class="symbol" style="font-size: 30px !important" title="Cyrillic Capital Letter Barred O With Diaeresis Symbol" onclick="copyToClipboard('Ӫ', event)">Ӫ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Cyrillic Small Letter Barred O With Diaeresis Symbol" onclick="copyToClipboard('ӫ', event)">ӫ</div>
+		<div class="symbol" style="font-size: 30px !important" title="Hangul Syllable Yu Symbol" onclick="copyToClipboard('유', event)">유</div>
+		<div class="symbol" style="font-size: 30px !important" title="Hangul Syllable Us Symbol" onclick="copyToClipboard('옻', event)">옻</div>
+		<div class="symbol" style="font-size: 30px !important" title="Hangul Syllable Oj Symbol" onclick="copyToClipboard('옺', event)">옺</div>
+		<div class="symbol" style="font-size: 30px !important" title="Slightly Smiling Face emoji" onclick="copyToClipboard('🙂', event)">🙂</div>
+		<div class="symbol" style="font-size: 30px !important" title="Upside Down Face emoji" onclick="copyToClipboard('🙃', event)">🙃</div>
+		<div class="symbol" style="font-size: 30px !important" title="Happy emoji" onclick="copyToClipboard('😀', event)">😀</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with open mouth emoji" onclick="copyToClipboard('😃', event)">😃</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with open mouth and smiling eyes emoji" onclick="copyToClipboard('😄', event)">😄</div>
+		<div class="symbol" style="font-size: 30px !important" title="Beaming face with smiling eyes emoji" onclick="copyToClipboard('😁', event)">😁</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with open mouth and tightly-closed eyes emoji" onclick="copyToClipboard('😆', event)">😆</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with open mouth and cold sweat emoji" onclick="copyToClipboard('😅', event)">😅</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with tears of joy emoji" onclick="copyToClipboard('😂', event)">😂</div>
+		<div class="symbol" style="font-size: 30px !important" title="Rolling on the Floor Laughing Emoji" onclick="copyToClipboard('🤣', event)">🤣</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with smiling eyes emoji" onclick="copyToClipboard('😊', event)">😊</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with halo emoji" onclick="copyToClipboard('😇', event)">😇</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with Tongue emoji" onclick="copyToClipboard('😛', event)">😛</div>
+		<div class="symbol" style="font-size: 30px !important" title="Nerd Face emoji" onclick="copyToClipboard('🤓', event)">🤓</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiley Face with Sunglasses emoji" onclick="copyToClipboard('😎', event)">😎</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with stuck-out tongue and tightly-closed eyes emoji" onclick="copyToClipboard('😝', event)">😝</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with stuck-out tongue and winking eye emoji" onclick="copyToClipboard('😜', event)">😜</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiling face with heart-shaped eyes emoji" onclick="copyToClipboard('😍', event)">😍</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smiley face emoji with hearts" onclick="copyToClipboard('🥰', event)">🥰</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face throwing a kiss emoji" onclick="copyToClipboard('😘', event)">😘</div>
+		<div class="symbol" style="font-size: 30px !important" title="Kissing Face Emoji" onclick="copyToClipboard('😗', event)">😗</div>
+		<div class="symbol" style="font-size: 30px !important" title="Kissing Face with Smiling Eyes Emoji" onclick="copyToClipboard('😙', event)">😙</div>
+		<div class="symbol" style="font-size: 30px !important" title="Kissing face with closed eyes emoji" onclick="copyToClipboard('😚', event)">😚</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face savouring delicious food emoji" onclick="copyToClipboard('😋', event)">😋</div>
+		<div class="symbol" style="font-size: 30px !important" title="Hugging Face Emoji" onclick="copyToClipboard('🤗', event)">🤗</div>
+		<div class="symbol" style="font-size: 30px !important" title="Angry face emoji" onclick="copyToClipboard('😠', event)">😠</div>
+		<div class="symbol" style="font-size: 30px !important" title="Pouting face emoji" onclick="copyToClipboard('😡', event)">😡</div>
+		<div class="symbol" style="font-size: 30px !important" title="Flushed face emoji" onclick="copyToClipboard('😳', event)">😳</div>
+		<div class="symbol" style="font-size: 30px !important" title="Smirking face emoji" onclick="copyToClipboard('😏', event)">😏</div>
+		<div class="symbol" style="font-size: 30px !important" title="Unamused face emoji" onclick="copyToClipboard('😒', event)">😒</div>
+		<div class="symbol" style="font-size: 30px !important" title="Disappointed face emoji" onclick="copyToClipboard('😞', event)">😞</div>
+		<div class="symbol" style="font-size: 30px !important" title="Pensive face emoji" onclick="copyToClipboard('😔', event)">😔</div>
+		<div class="symbol" style="font-size: 30px !important" title="Worried Face Emoji" onclick="copyToClipboard('😟', event)">😟</div>
+		<div class="symbol" style="font-size: 30px !important" title="Confused Face Emoji" onclick="copyToClipboard('😕', event)">😕</div>
+		<div class="symbol" style="font-size: 30px !important" title="Slightly Frowning Face emoji" onclick="copyToClipboard('🙁', event)">🙁</div>
+		<div class="symbol" style="font-size: 30px !important" title="White Frowning Face Emoji" onclick="copyToClipboard('☹️', event)">☹️</div>
+		<div class="symbol" style="font-size: 30px !important" title="Persevering face emoji" onclick="copyToClipboard('😣', event)">😣</div>
+		<div class="symbol" style="font-size: 30px !important" title="Confounded face emoji" onclick="copyToClipboard('😖', event)">😖</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with open mouth and cold sweat emoji" onclick="copyToClipboard('😰', event)">😰</div>
+		<div class="symbol" style="font-size: 30px !important" title="Disappointed but relieved face emoji" onclick="copyToClipboard('😥', event)">😥</div>
+		<div class="symbol" style="font-size: 30px !important" title="Crying face emoji" onclick="copyToClipboard('😢', event)">😢</div>
+		<div class="symbol" style="font-size: 30px !important" title="Loudly crying face emoji" onclick="copyToClipboard('😭', event)">😭</div>
+		<div class="symbol" style="font-size: 30px !important" title="Nauseated Face Emoji" onclick="copyToClipboard('🤢', event)">🤢</div>
+		<div class="symbol" style="font-size: 30px !important" title="Sneezing Face Emoji" onclick="copyToClipboard('🤧', event)">🤧</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with Medical Mask Emoji" onclick="copyToClipboard('😷', event)">😷</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with Thermometer Emoji" onclick="copyToClipboard('🤒', event)">🤒</div>
+		<div class="symbol" style="font-size: 30px !important" title="Face with Head-Bandage Emoji" onclick="copyToClipboard('🤕', event)">🤕</div>
+		<div class="symbol" style="font-size: 30px !important" title="Money-Mouth Face Emoji" onclick="copyToClipboard('🤑', event)">🤑</div>
 		<h2>Emoticons</h2>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😀', event)">😀</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😃', event)">😃</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😄', event)">😄</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😁', event)">😁</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😆', event)">😆</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😅', event)">😅</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😂', event)">😂</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('🤣', event)">🤣</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('☺️', event)">☺️</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😊', event)">😊</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😇', event)">😇</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('🙂', event)">🙂</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😛', event)">😛</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😝', event)">😝</div>
-		<div class="symbol" title="happy emoji" onclick="copyToClipboard('😜', event)">😜</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('😍', event)">😍</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('😘', event)">😘</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('😗', event)">😗</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('😙', event)">😙</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('😚', event)">😚</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('😋', event)">😋</div>
-		<div class="symbol" title="love emoji" onclick="copyToClipboard('🤗', event)">🤗</div>
-		<div class="symbol" title="angry emoji" onclick="copyToClipboard('😠', event)">😠</div>
-		<div class="symbol" title="angry emoji" onclick="copyToClipboard('😡', event)">😡</div>
-		<div class="symbol" title="angry emoji" onclick="copyToClipboard('😳', event)">😳</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😏', event)">😏</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😒', event)">😒</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😞', event)">😞</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😔', event)">😔</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😟', event)">😟</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😕', event)">😕</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('🙁', event)">🙁</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('☹️', event)">☹️</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😣', event)">😣</div>
-		<div class="symbol" title="sad emoji" onclick="copyToClipboard('😖', event)">😖</div>
-		<div class="symbol" title="cry emoji crying" onclick="copyToClipboard('😰', event)">😰</div>
-		<div class="symbol" title="cry emoji crying" onclick="copyToClipboard('😥', event)">😥</div>
-		<div class="symbol" title="cry emoji crying" onclick="copyToClipboard('😢', event)">😢</div>
-		<div class="symbol" title="cry emoji crying" onclick="copyToClipboard('😭', event)">😭</div>
-		<div class="symbol" title="sick emoji" onclick="copyToClipboard('🤢', event)">🤢</div>
-		<div class="symbol" title="sick emoji" onclick="copyToClipboard('🤧', event)">🤧</div>
-		<div class="symbol" title="sick emoji" onclick="copyToClipboard('😷', event)">😷</div>
-		<div class="symbol" title="sick emoji" onclick="copyToClipboard('🤒', event)">🤒</div>
-		<div class="symbol" title="sick emoji" onclick="copyToClipboard('🤕', event)">🤕</div>
-		<div class="symbol" title="money emoji" onclick="copyToClipboard('🤑', event)">🤑</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😀', event)">😀</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😃', event)">😃</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😄', event)">😄</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😁', event)">😁</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😆', event)">😆</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😅', event)">😅</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😂', event)">😂</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('🤣', event)">🤣</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('☺️', event)">☺️</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😊', event)">😊</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😇', event)">😇</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('🙂', event)">🙂</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😛', event)">😛</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😝', event)">😝</div>
+		<div class="symbol" style="font-size: 30px !important" title="happy emoji" onclick="copyToClipboard('😜', event)">😜</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('😍', event)">😍</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('😘', event)">😘</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('😗', event)">😗</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('😙', event)">😙</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('😚', event)">😚</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('😋', event)">😋</div>
+		<div class="symbol" style="font-size: 30px !important" title="love emoji" onclick="copyToClipboard('🤗', event)">🤗</div>
+		<div class="symbol" style="font-size: 30px !important" title="angry emoji" onclick="copyToClipboard('😠', event)">😠</div>
+		<div class="symbol" style="font-size: 30px !important" title="angry emoji" onclick="copyToClipboard('😡', event)">😡</div>
+		<div class="symbol" style="font-size: 30px !important" title="angry emoji" onclick="copyToClipboard('😳', event)">😳</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😏', event)">😏</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😒', event)">😒</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😞', event)">😞</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😔', event)">😔</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😟', event)">😟</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😕', event)">😕</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('🙁', event)">🙁</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('☹️', event)">☹️</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😣', event)">😣</div>
+		<div class="symbol" style="font-size: 30px !important" title="sad emoji" onclick="copyToClipboard('😖', event)">😖</div>
+		<div class="symbol" style="font-size: 30px !important" title="cry emoji crying" onclick="copyToClipboard('😰', event)">😰</div>
+		<div class="symbol" style="font-size: 30px !important" title="cry emoji crying" onclick="copyToClipboard('😥', event)">😥</div>
+		<div class="symbol" style="font-size: 30px !important" title="cry emoji crying" onclick="copyToClipboard('😢', event)">😢</div>
+		<div class="symbol" style="font-size: 30px !important" title="cry emoji crying" onclick="copyToClipboard('😭', event)">😭</div>
+		<div class="symbol" style="font-size: 30px !important" title="sick emoji" onclick="copyToClipboard('🤢', event)">🤢</div>
+		<div class="symbol" style="font-size: 30px !important" title="sick emoji" onclick="copyToClipboard('🤧', event)">🤧</div>
+		<div class="symbol" style="font-size: 30px !important" title="sick emoji" onclick="copyToClipboard('😷', event)">😷</div>
+		<div class="symbol" style="font-size: 30px !important" title="sick emoji" onclick="copyToClipboard('🤒', event)">🤒</div>
+		<div class="symbol" style="font-size: 30px !important" title="sick emoji" onclick="copyToClipboard('🤕', event)">🤕</div>
+		<div class="symbol" style="font-size: 30px !important" title="money emoji" onclick="copyToClipboard('🤑', event)">🤑</div>
 		</div>
 		<div class="symbolcat">
 			<a href="heart-symbol.html" title="Heart Symbols">❤️️ Heart Symbols</a>

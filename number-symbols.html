@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html optimized="true" lang="en">
 <head>
+    <link rel="preload" href="/css/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com">
     <!-- Preconnect for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="main.css"></noscript>
-	<noscript><link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="main.css"></noscript></noscript>        <style> *{box-sizing:border-box;padding:0;margin:0} body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap} header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint} .headCont{max-width:1168px;margin:0 auto;text-align:center} .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint} .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint} .mainlogo a{color:white;font-size:2rem;text-decoration:none} #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px} .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)} .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)} .maindata{min-height:200px;contain:layout style paint} .footer{min-height:80px;contain:layout style paint} img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint} .mainlogo img{image-rendering: optimizeQuality;image-rendering: -webkit-optimize-contrast;background: #230AC7;transition: opacity 0.3s ease} .mainlogo img:not([src*="data:"]){background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);background-size: 200% 100%;animation: shimmer 1.5s infinite} @keyframes shimmer{0%{background-position: 200% 0} 100%{background-position: -200% 0} } h1{font-size: 25px !important} article h1, aside h1, nav h1, section h1{font-size: 25px !important} .modern-header{background: #230AC7;padding: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.1);position: fixed;top: 0;left: 0;right: 0;z-index: 1000;height: 60px;contain: none !important;overflow: visible !important} .main-nav{display: flex;align-items: center;justify-content: space-between;max-width: 1200px;margin: 0 auto;padding: 0 24px;height: 100%} .main-logo{font-size: 24px;font-weight: bold;color: white;text-decoration: none;display: flex;align-items: center;gap: 8px} .main-logo img{width: 32px;height: 32px} .nav-center{display: flex;gap: 32px;align-items: center} .nav-item{color: white;text-decoration: none;font-size: 14px;font-weight: 500;padding: 8px 12px;border-radius: 4px;transition: background-color 0.2s ease} .nav-item:hover{background-color: rgba(255, 255, 255, 0.1)} .nav-right{display: flex;align-items: center;gap: 16px} .language-selector{position: relative !important;display: inline-block !important;z-index: 1000 !important} .language-btn{background: white !important;border: 1px solid #ddd !important;border-radius: 4px !important;padding: 6px 10px !important;cursor: pointer !important;font-size: 14px !important;color: #333 !important;display: flex !important;align-items: center !important;gap: 4px !important;transition: all 0.2s ease !important;min-width: 60px !important;justify-content: center !important;font-weight: 500 !important;z-index: 10000 !important;position: relative !important;pointer-events: auto !important;user-select: none !important} .language-btn *{pointer-events: none !important} .language-btn:hover{background-color: #f8f9fa;border-color: #bbb} .globe-icon{font-size: 16px} .lang-code{font-weight: 600;font-size: 13px;color: #333} .dropdown-arrow{font-size: 10px;color: #666;margin-left: 2px} .language-dropdown{position: absolute !important;top: calc(100% + 5px) !important;right: 0 !important;background: #ffffff !important;border: 1px solid #e0e0e0 !important;border-radius: 8px !important;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;min-width: 180px !important;z-index: 999999 !important;display: none !important;margin: 0 !important;max-height: 320px !important;overflow-y: auto !important;opacity: 0 !important;visibility: hidden !important;transform: translateY(-10px) !important;transition: all 0.2s ease !important} .language-dropdown.open{display: block !important;visibility: visible !important;opacity: 1 !important;transform: translateY(0) !important} .language-option{display: block !important;padding: 10px 16px !important;color: #333 !important;text-decoration: none !important;font-size: 14px !important;transition: background-color 0.2s ease !important;border-bottom: 1px solid #f0f0f0 !important;background: white !important;width: 100% !important} .language-option:hover{background-color: #f8f9fa !important} .language-option:last-child{border-bottom: none !important} .language-option.active{background-color: #e3f2fd !important;color: #1976d2 !important;font-weight: 500 !important} .language-option[dir="rtl"]{text-align: right;direction: rtl} body{padding-top: 60px !important;pointer-events: auto !important;margin: 0 !important;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;background: #f5f5f5 !important;overflow: visible !important} header, nav, .nav-right, .language-selector, .language-btn{pointer-events: auto !important;position: relative !important;overflow: visible !important} .language-dropdown.show{display: block !important;position: fixed !important;top: 60px !important;right: 20px !important;z-index: 2147483647 !important;background: white !important;border: 2px solid #333 !important;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important} @media (max-width: 1024px){.nav-center{gap: 20px} .nav-item{font-size: 13px;padding: 6px 8px} } @media (max-width: 768px){.main-nav{padding: 0 16px} .nav-center{display: none} .main-logo{font-size: 20px} .main-logo img{width: 28px;height: 28px} } @media (max-width: 480px){.main-nav{padding: 0 12px} </style>
+	<noscript></noscript>
+	<noscript><noscript></noscript></noscript>        <style> *{box-sizing:border-box;padding:0;margin:0} body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap} header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint} .headCont{max-width:1168px;margin:0 auto;text-align:center} .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint} .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint} .mainlogo a{color:white;font-size:2rem;text-decoration:none} #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px} .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)} .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)} .maindata{min-height:200px;contain:layout style paint} .footer{min-height:80px;contain:layout style paint} img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint} .mainlogo img{image-rendering: optimizeQuality;image-rendering: -webkit-optimize-contrast;background: #230AC7;transition: opacity 0.3s ease} .mainlogo img:not([src*="data:"]){background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);background-size: 200% 100%;animation: shimmer 1.5s infinite} @keyframes shimmer{0%{background-position: 200% 0} 100%{background-position: -200% 0} } h1{font-size: 25px !important} article h1, aside h1, nav h1, section h1{font-size: 25px !important} .modern-header{background: #230AC7;padding: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.1);position: fixed;top: 0;left: 0;right: 0;z-index: 1000;height: 60px;contain: none !important;overflow: visible !important} .main-nav{display: flex;align-items: center;justify-content: space-between;max-width: 1200px;margin: 0 auto;padding: 0 24px;height: 100%} .main-logo{font-size: 24px;font-weight: bold;color: white;text-decoration: none;display: flex;align-items: center;gap: 8px} .main-logo img{width: 32px;height: 32px} .nav-center{display: flex;gap: 32px;align-items: center} .nav-item{color: white;text-decoration: none;font-size: 14px;font-weight: 500;padding: 8px 12px;border-radius: 4px;transition: background-color 0.2s ease} .nav-item:hover{background-color: rgba(255, 255, 255, 0.1)} .nav-right{display: flex;align-items: center;gap: 16px} .language-selector{position: relative !important;display: inline-block !important;z-index: 1000 !important} .language-btn{background: white !important;border: 1px solid #ddd !important;border-radius: 4px !important;padding: 6px 10px !important;cursor: pointer !important;font-size: 14px !important;color: #333 !important;display: flex !important;align-items: center !important;gap: 4px !important;transition: all 0.2s ease !important;min-width: 60px !important;justify-content: center !important;font-weight: 500 !important;z-index: 10000 !important;position: relative !important;pointer-events: auto !important;user-select: none !important} .language-btn *{pointer-events: none !important} .language-btn:hover{background-color: #f8f9fa;border-color: #bbb} .globe-icon{font-size: 16px} .lang-code{font-weight: 600;font-size: 13px;color: #333} .dropdown-arrow{font-size: 10px;color: #666;margin-left: 2px} .language-dropdown{position: absolute !important;top: calc(100% + 5px) !important;right: 0 !important;background: #ffffff !important;border: 1px solid #e0e0e0 !important;border-radius: 8px !important;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;min-width: 180px !important;z-index: 999999 !important;display: none !important;margin: 0 !important;max-height: 320px !important;overflow-y: auto !important;opacity: 0 !important;visibility: hidden !important;transform: translateY(-10px) !important;transition: all 0.2s ease !important} .language-dropdown.open{display: block !important;visibility: visible !important;opacity: 1 !important;transform: translateY(0) !important} .language-option{display: block !important;padding: 10px 16px !important;color: #333 !important;text-decoration: none !important;font-size: 14px !important;transition: background-color 0.2s ease !important;border-bottom: 1px solid #f0f0f0 !important;background: white !important;width: 100% !important} .language-option:hover{background-color: #f8f9fa !important} .language-option:last-child{border-bottom: none !important} .language-option.active{background-color: #e3f2fd !important;color: #1976d2 !important;font-weight: 500 !important} .language-option[dir="rtl"]{text-align: right;direction: rtl} body{padding-top: 60px !important;pointer-events: auto !important;margin: 0 !important;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;background: #f5f5f5 !important;overflow: visible !important} header, nav, .nav-right, .language-selector, .language-btn{pointer-events: auto !important;position: relative !important;overflow: visible !important} .language-dropdown.show{display: block !important;position: fixed !important;top: 60px !important;right: 20px !important;z-index: 2147483647 !important;background: white !important;border: 2px solid #333 !important;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important} @media (max-width: 1024px){.nav-center{gap: 20px} .nav-item{font-size: 13px;padding: 6px 8px} } @media (max-width: 768px){.main-nav{padding: 0 16px} .nav-center{display: none} .main-logo{font-size: 20px} .main-logo img{width: 28px;height: 28px} } @media (max-width: 480px){.main-nav{padding: 0 12px} </style>
         <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="main.min.css"></noscript>
 		<style> .symbol{font-size: 30px !important} </style>
@@ -33,6 +37,24 @@
 	<link rel="icon" type="png" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="apple-touch-icon" type="png" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+		<style>
+			/* Anti-CLS guardrails for header & language dropdown */
+			.modern-header, .main-nav { min-height: 60px }
+			.nav-right .language-selector { position: relative }
+			.nav-right .language-selector .language-dropdown { position: absolute; top: 100%; right: 0; max-height: 60vh; overflow: auto; contain: layout paint; transform: translateZ(0) }
+			.nav-right .language-selector .language-dropdown[aria-hidden="true"] { display: none }
+			.outcont, .container, .maindata, .footer { contain: layout style paint }
+		</style>
+    <style>
+        /* Critical CSS - Optimized for performance */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+        /* ... rest of the critical CSS ... */
+    </style>
 </head>
 <body>
 	<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
@@ -98,194 +120,194 @@
 				<div class="rightContainer">
 					<div class="maindata">
 		<h1 class="titlesymbol">Number symbol Copy and Paste</h1>
-			<div class="symbol" title="1 Roman numerals" onclick="copyToClipboard('Ⅰ', event)">Ⅰ
+			<div class="symbol" style="font-size: 30px !important" title="1 Roman numerals" onclick="copyToClipboard('Ⅰ', event)">Ⅰ
 		</div>
-			<div class="symbol" title="2 Roman numerals" onclick="copyToClipboard('Ⅱ', event)">Ⅱ</div>
-			<div class="symbol" title="3 Roman numerals" onclick="copyToClipboard('Ⅲ', event)">Ⅲ</div>
-			<div class="symbol" title="4 Roman numerals" onclick="copyToClipboard('Ⅳ', event)">Ⅳ</div>
-			<div class="symbol" title="5 Roman numerals" onclick="copyToClipboard('Ⅴ', event)">Ⅴ</div>
-			<div class="symbol" title="6 Roman numerals" onclick="copyToClipboard('Ⅵ', event)">Ⅵ</div>
-			<div class="symbol" title="7 Roman numerals" onclick="copyToClipboard('Ⅶ', event)">Ⅶ</div>
-			<div class="symbol" title="8 Roman numerals" onclick="copyToClipboard('Ⅷ', event)">Ⅷ</div>
-			<div class="symbol" title="9 Roman numerals" onclick="copyToClipboard('Ⅸ', event)">Ⅸ</div>
-			<div class="symbol" title="10 Roman numerals" onclick="copyToClipboard('Ⅹ', event)">Ⅹ</div>
-			<div class="symbol" title="11 Roman numerals" onclick="copyToClipboard('Ⅺ', event)">Ⅺ</div>
-			<div class="symbol" title="12 Roman numerals" onclick="copyToClipboard('Ⅻ', event)">Ⅻ</div>
+			<div class="symbol" style="font-size: 30px !important" title="2 Roman numerals" onclick="copyToClipboard('Ⅱ', event)">Ⅱ</div>
+			<div class="symbol" style="font-size: 30px !important" title="3 Roman numerals" onclick="copyToClipboard('Ⅲ', event)">Ⅲ</div>
+			<div class="symbol" style="font-size: 30px !important" title="4 Roman numerals" onclick="copyToClipboard('Ⅳ', event)">Ⅳ</div>
+			<div class="symbol" style="font-size: 30px !important" title="5 Roman numerals" onclick="copyToClipboard('Ⅴ', event)">Ⅴ</div>
+			<div class="symbol" style="font-size: 30px !important" title="6 Roman numerals" onclick="copyToClipboard('Ⅵ', event)">Ⅵ</div>
+			<div class="symbol" style="font-size: 30px !important" title="7 Roman numerals" onclick="copyToClipboard('Ⅶ', event)">Ⅶ</div>
+			<div class="symbol" style="font-size: 30px !important" title="8 Roman numerals" onclick="copyToClipboard('Ⅷ', event)">Ⅷ</div>
+			<div class="symbol" style="font-size: 30px !important" title="9 Roman numerals" onclick="copyToClipboard('Ⅸ', event)">Ⅸ</div>
+			<div class="symbol" style="font-size: 30px !important" title="10 Roman numerals" onclick="copyToClipboard('Ⅹ', event)">Ⅹ</div>
+			<div class="symbol" style="font-size: 30px !important" title="11 Roman numerals" onclick="copyToClipboard('Ⅺ', event)">Ⅺ</div>
+			<div class="symbol" style="font-size: 30px !important" title="12 Roman numerals" onclick="copyToClipboard('Ⅻ', event)">Ⅻ</div>
 			<br>
-			<div class="symbol" title="1 Roman numerals" onclick="copyToClipboard('ⅰ', event)">ⅰ</div>
-			<div class="symbol" title="2 Roman numerals" onclick="copyToClipboard('ⅱ', event)">ⅱ</div>
-			<div class="symbol" title="3 Roman numerals" onclick="copyToClipboard('ⅲ', event)">ⅲ</div>
-			<div class="symbol" title="4 Roman numerals" onclick="copyToClipboard('ⅳ', event)">ⅳ</div>
-			<div class="symbol" title="5 Roman numerals" onclick="copyToClipboard('ⅴ', event)">ⅴ</div>
-			<div class="symbol" title="6 Roman numerals" onclick="copyToClipboard('ⅵ', event)">ⅵ</div>
-			<div class="symbol" title="7 Roman numerals" onclick="copyToClipboard('ⅶ', event)">ⅶ</div>
-			<div class="symbol" title="8 Roman numerals" onclick="copyToClipboard('ⅷ', event)">ⅷ</div>
-			<div class="symbol" title="9 Roman numerals" onclick="copyToClipboard('ⅸ', event)">ⅸ</div>
-			<div class="symbol" title="10 Roman numerals" onclick="copyToClipboard('ⅹ', event)">ⅹ</div>
-			<div class="symbol" title="11 Roman numerals" onclick="copyToClipboard('ⅺ', event)">ⅺ</div>
-			<div class="symbol" title="12 Roman numerals" onclick="copyToClipboard('ⅻ', event)">ⅻ</div>
+			<div class="symbol" style="font-size: 30px !important" title="1 Roman numerals" onclick="copyToClipboard('ⅰ', event)">ⅰ</div>
+			<div class="symbol" style="font-size: 30px !important" title="2 Roman numerals" onclick="copyToClipboard('ⅱ', event)">ⅱ</div>
+			<div class="symbol" style="font-size: 30px !important" title="3 Roman numerals" onclick="copyToClipboard('ⅲ', event)">ⅲ</div>
+			<div class="symbol" style="font-size: 30px !important" title="4 Roman numerals" onclick="copyToClipboard('ⅳ', event)">ⅳ</div>
+			<div class="symbol" style="font-size: 30px !important" title="5 Roman numerals" onclick="copyToClipboard('ⅴ', event)">ⅴ</div>
+			<div class="symbol" style="font-size: 30px !important" title="6 Roman numerals" onclick="copyToClipboard('ⅵ', event)">ⅵ</div>
+			<div class="symbol" style="font-size: 30px !important" title="7 Roman numerals" onclick="copyToClipboard('ⅶ', event)">ⅶ</div>
+			<div class="symbol" style="font-size: 30px !important" title="8 Roman numerals" onclick="copyToClipboard('ⅷ', event)">ⅷ</div>
+			<div class="symbol" style="font-size: 30px !important" title="9 Roman numerals" onclick="copyToClipboard('ⅸ', event)">ⅸ</div>
+			<div class="symbol" style="font-size: 30px !important" title="10 Roman numerals" onclick="copyToClipboard('ⅹ', event)">ⅹ</div>
+			<div class="symbol" style="font-size: 30px !important" title="11 Roman numerals" onclick="copyToClipboard('ⅺ', event)">ⅺ</div>
+			<div class="symbol" style="font-size: 30px !important" title="12 Roman numerals" onclick="copyToClipboard('ⅻ', event)">ⅻ</div>
 			<br>
-			<div class="symbol" title="Circle digit 0 symbol" onclick="copyToClipboard('⓪', event)">⓪</div>
-			<div class="symbol" title="Circle digit 1 symbol" onclick="copyToClipboard('①', event)">①</div>
-			<div class="symbol" title="Circle digit 2 symbol" onclick="copyToClipboard('②', event)">②</div>
-			<div class="symbol" title="Circle digit 3 symbol" onclick="copyToClipboard('③', event)">③</div>
-			<div class="symbol" title="Circle digit 4 symbol" onclick="copyToClipboard('④', event)">④</div>
-			<div class="symbol" title="Circle digit 5 symbol" onclick="copyToClipboard('⑤', event)">⑤</div>
-			<div class="symbol" title="Circle digit 6 symbol" onclick="copyToClipboard('⑥', event)">⑥</div>
-			<div class="symbol" title="Circle digit 7 symbol" onclick="copyToClipboard('⑦', event)">⑦</div>
-			<div class="symbol" title="Circle digit 8 symbol" onclick="copyToClipboard('⑧', event)">⑧</div>
-			<div class="symbol" title="Circle digit 9 symbol" onclick="copyToClipboard('⑨', event)">⑨</div>
-			<div class="symbol" title="Circle digit 10 symbol" onclick="copyToClipboard('⑩', event)">⑩</div>
-			<div class="symbol" title="Circle digit 11 symbol" onclick="copyToClipboard('⑪', event)">⑪</div>
-			<div class="symbol" title="Circle digit 12 symbol" onclick="copyToClipboard('⑫', event)">⑫</div>
-			<div class="symbol" title="Circle digit 13 symbol" onclick="copyToClipboard('⑬', event)">⑬</div>
-			<div class="symbol" title="Circle digit 14 symbol" onclick="copyToClipboard('⑭', event)">⑭</div>
-			<div class="symbol" title="Circle digit 15 symbol" onclick="copyToClipboard('⑮', event)">⑮</div>
-			<div class="symbol" title="Circle digit 16 symbol" onclick="copyToClipboard('⑯', event)">⑯</div>
-			<div class="symbol" title="Circle digit 17 symbol" onclick="copyToClipboard('⑰', event)">⑰</div>
-			<div class="symbol" title="Circle digit 18 symbol" onclick="copyToClipboard('⑱', event)">⑱</div>
-			<div class="symbol" title="Circle digit 19 symbol" onclick="copyToClipboard('⑲', event)">⑲</div>
-			<div class="symbol" title="Circle digit 20 symbol" onclick="copyToClipboard('⑳', event)">⑳</div>
-			<div class="symbol" title="Circle digit 21 symbol" onclick="copyToClipboard('㉑', event)">㉑</div>
-			<div class="symbol" title="Circle digit 22 symbol" onclick="copyToClipboard('㉒', event)">㉒</div>
-			<div class="symbol" title="Circle digit 23 symbol" onclick="copyToClipboard('㉓', event)">㉓</div>
-			<div class="symbol" title="Circle digit 24 symbol" onclick="copyToClipboard('㉔', event)">㉔</div>
-			<div class="symbol" title="Circle digit 25 symbol" onclick="copyToClipboard('㉕', event)">㉕</div>
-			<div class="symbol" title="Circle digit 26 symbol" onclick="copyToClipboard('㉖', event)">㉖</div>
-			<div class="symbol" title="Circle digit 27 symbol" onclick="copyToClipboard('㉗', event)">㉗</div>
-			<div class="symbol" title="Circle digit 28 symbol" onclick="copyToClipboard('㉘', event)">㉘</div>
-			<div class="symbol" title="Circle digit 29 symbol" onclick="copyToClipboard('㉙', event)">㉙</div>
-			<div class="symbol" title="Circle digit 30 symbol" onclick="copyToClipboard('㉚', event)">㉚</div>
-			<div class="symbol" title="Circle digit 31 symbol" onclick="copyToClipboard('㉛', event)">㉛</div>
-			<div class="symbol" title="Circle digit 32 symbol" onclick="copyToClipboard('㉜', event)">㉜</div>
-			<div class="symbol" title="Circle digit 33 symbol" onclick="copyToClipboard('㉝', event)">㉝</div>
-			<div class="symbol" title="Circle digit 34 symbol" onclick="copyToClipboard('㉞', event)">㉞</div>
-			<div class="symbol" title="Circle digit 35 symbol" onclick="copyToClipboard('㉟', event)">㉟</div>
-			<div class="symbol" title="Circle digit 36 symbol" onclick="copyToClipboard('㊱', event)">㊱</div>
-			<div class="symbol" title="Circle digit 37 symbol" onclick="copyToClipboard('㊲', event)">㊲</div>
-			<div class="symbol" title="Circle digit 38 symbol" onclick="copyToClipboard('㊳', event)">㊳</div>
-			<div class="symbol" title="Circle digit 39 symbol" onclick="copyToClipboard('㊴', event)">㊴</div>
-			<div class="symbol" title="Circle digit 40 symbol" onclick="copyToClipboard('㊵', event)">㊵</div>
-			<div class="symbol" title="Circle digit 41 symbol" onclick="copyToClipboard('㊶', event)">㊶</div>
-			<div class="symbol" title="Circle digit 42 symbol" onclick="copyToClipboard('㊷', event)">㊷</div>
-			<div class="symbol" title="Circle digit 43 symbol" onclick="copyToClipboard('㊸', event)">㊸</div>
-			<div class="symbol" title="Circle digit 44 symbol" onclick="copyToClipboard('㊹', event)">㊹</div>
-			<div class="symbol" title="Circle digit 45 symbol" onclick="copyToClipboard('㊺', event)">㊺</div>
-			<div class="symbol" title="Circle digit 46 symbol" onclick="copyToClipboard('㊻', event)">㊻</div>
-			<div class="symbol" title="Circle digit 47 symbol" onclick="copyToClipboard('㊼', event)">㊼</div>
-			<div class="symbol" title="Circle digit 48 symbol" onclick="copyToClipboard('㊽', event)">㊽</div>
-			<div class="symbol" title="Circle digit 49 symbol" onclick="copyToClipboard('㊾', event)">㊾</div>
-			<div class="symbol" title="Circle digit 50 symbol" onclick="copyToClipboard('㊿', event)">㊿</div>
-			<br>
-			<br>
-			<div class="symbol" title="Black circle 0 symbol" onclick="copyToClipboard('⓿', event)">⓿</div>
-			<div class="symbol" title="Black circle 1 symbol" onclick="copyToClipboard('➊', event)">➊</div>
-			<div class="symbol" title="Black circle 2 symbol" onclick="copyToClipboard('➋', event)">➋</div>
-			<div class="symbol" title="Black circle 3 symbol" onclick="copyToClipboard('➌', event)">➌</div>
-			<div class="symbol" title="Black circle 4 symbol" onclick="copyToClipboard('➍', event)">➍</div>
-			<div class="symbol" title="Black circle 5 symbol" onclick="copyToClipboard('➎', event)">➎</div>
-			<div class="symbol" title="Black circle 6 symbol" onclick="copyToClipboard('➏', event)">➏</div>
-			<div class="symbol" title="Black circle 7 symbol" onclick="copyToClipboard('➐', event)">➐</div>
-			<div class="symbol" title="Black circle 8 symbol" onclick="copyToClipboard('➑', event)">➑</div>
-			<div class="symbol" title="Black circle 9 symbol" onclick="copyToClipboard('➒', event)">➒</div>
-			<div class="symbol" title="Black circle 0 symbol" onclick="copyToClipboard('➓', event)">➓</div>
-			<div class="symbol" title="Black circle 11 symbol" onclick="copyToClipboard('⓫', event)">⓫</div>
-			<div class="symbol" title="Black circle 12 symbol" onclick="copyToClipboard('⓬', event)">⓬</div>
-			<div class="symbol" title="Black circle 13 symbol" onclick="copyToClipboard('⓭', event)">⓭</div>
-			<div class="symbol" title="Black circle 14 symbol" onclick="copyToClipboard('⓮', event)">⓮</div>
-			<div class="symbol" title="Black circle 15 symbol" onclick="copyToClipboard('⓯', event)">⓯</div>
-			<div class="symbol" title="Black circle 16 symbol" onclick="copyToClipboard('⓰', event)">⓰</div>
-			<div class="symbol" title="Black circle 17 symbol" onclick="copyToClipboard('⓱', event)">⓱</div>
-			<div class="symbol" title="Black circle 18 symbol" onclick="copyToClipboard('⓲', event)">⓲</div>
-			<div class="symbol" title="Black circle 19 symbol" onclick="copyToClipboard('⓳', event)">⓳</div>
-			<div class="symbol" title="Black circle 20 symbol" onclick="copyToClipboard('⓴', event)">⓴</div>
-			<br>
-			<div class="symbol" title="Double Circle 1 symbol" onclick="copyToClipboard('⓵', event)">⓵</div>
-			<div class="symbol" title="Double Circle 2 symbol" onclick="copyToClipboard('⓶', event)">⓶</div>
-			<div class="symbol" title="Double Circle 3 symbol" onclick="copyToClipboard('⓷', event)">⓷</div>
-			<div class="symbol" title="Double Circle 4 symbol" onclick="copyToClipboard('⓸', event)">⓸</div>
-			<div class="symbol" title="Double Circle 5 symbol" onclick="copyToClipboard('⓹', event)">⓹</div>
-			<div class="symbol" title="Double Circle 6 symbol" onclick="copyToClipboard('⓺', event)">⓺</div>
-			<div class="symbol" title="Double Circle 7 symbol" onclick="copyToClipboard('⓻', event)">⓻</div>
-			<div class="symbol" title="Double Circle 8 symbol" onclick="copyToClipboard('⓼', event)">⓼</div>
-			<div class="symbol" title="Double Circle 9 symbol" onclick="copyToClipboard('⓽', event)">⓽</div>
-			<div class="symbol" title="Double Circle 10 symbol" onclick="copyToClipboard('⓾', event)">⓾</div>
-			<br>
-			<div class="symbol" title="Superscript 0 symbol" onclick="copyToClipboard('⁰', event)">⁰</div>
-			<div class="symbol" title="Superscript 1 symbol" onclick="copyToClipboard('¹', event)">¹</div>
-			<div class="symbol" title="Superscript 2 symbol" onclick="copyToClipboard('²', event)">²</div>
-			<div class="symbol" title="Superscript 3 symbol" onclick="copyToClipboard('³', event)">³</div>
-			<div class="symbol" title="Superscript 4 symbol" onclick="copyToClipboard('⁴', event)">⁴</div>
-			<div class="symbol" title="Superscript 5 symbol" onclick="copyToClipboard('⁵', event)">⁵</div>
-			<div class="symbol" title="Superscript 6 symbol" onclick="copyToClipboard('⁶', event)">⁶</div>
-			<div class="symbol" title="Superscript 7 symbol" onclick="copyToClipboard('⁷', event)">⁷</div>
-			<div class="symbol" title="Superscript 8 symbol" onclick="copyToClipboard('⁸', event)">⁸</div>
-			<div class="symbol" title="Superscript 9 symbol" onclick="copyToClipboard('⁹', event)">⁹</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 0 symbol" onclick="copyToClipboard('⓪', event)">⓪</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 1 symbol" onclick="copyToClipboard('①', event)">①</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 2 symbol" onclick="copyToClipboard('②', event)">②</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 3 symbol" onclick="copyToClipboard('③', event)">③</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 4 symbol" onclick="copyToClipboard('④', event)">④</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 5 symbol" onclick="copyToClipboard('⑤', event)">⑤</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 6 symbol" onclick="copyToClipboard('⑥', event)">⑥</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 7 symbol" onclick="copyToClipboard('⑦', event)">⑦</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 8 symbol" onclick="copyToClipboard('⑧', event)">⑧</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 9 symbol" onclick="copyToClipboard('⑨', event)">⑨</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 10 symbol" onclick="copyToClipboard('⑩', event)">⑩</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 11 symbol" onclick="copyToClipboard('⑪', event)">⑪</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 12 symbol" onclick="copyToClipboard('⑫', event)">⑫</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 13 symbol" onclick="copyToClipboard('⑬', event)">⑬</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 14 symbol" onclick="copyToClipboard('⑭', event)">⑭</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 15 symbol" onclick="copyToClipboard('⑮', event)">⑮</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 16 symbol" onclick="copyToClipboard('⑯', event)">⑯</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 17 symbol" onclick="copyToClipboard('⑰', event)">⑰</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 18 symbol" onclick="copyToClipboard('⑱', event)">⑱</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 19 symbol" onclick="copyToClipboard('⑲', event)">⑲</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 20 symbol" onclick="copyToClipboard('⑳', event)">⑳</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 21 symbol" onclick="copyToClipboard('㉑', event)">㉑</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 22 symbol" onclick="copyToClipboard('㉒', event)">㉒</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 23 symbol" onclick="copyToClipboard('㉓', event)">㉓</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 24 symbol" onclick="copyToClipboard('㉔', event)">㉔</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 25 symbol" onclick="copyToClipboard('㉕', event)">㉕</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 26 symbol" onclick="copyToClipboard('㉖', event)">㉖</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 27 symbol" onclick="copyToClipboard('㉗', event)">㉗</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 28 symbol" onclick="copyToClipboard('㉘', event)">㉘</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 29 symbol" onclick="copyToClipboard('㉙', event)">㉙</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 30 symbol" onclick="copyToClipboard('㉚', event)">㉚</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 31 symbol" onclick="copyToClipboard('㉛', event)">㉛</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 32 symbol" onclick="copyToClipboard('㉜', event)">㉜</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 33 symbol" onclick="copyToClipboard('㉝', event)">㉝</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 34 symbol" onclick="copyToClipboard('㉞', event)">㉞</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 35 symbol" onclick="copyToClipboard('㉟', event)">㉟</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 36 symbol" onclick="copyToClipboard('㊱', event)">㊱</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 37 symbol" onclick="copyToClipboard('㊲', event)">㊲</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 38 symbol" onclick="copyToClipboard('㊳', event)">㊳</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 39 symbol" onclick="copyToClipboard('㊴', event)">㊴</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 40 symbol" onclick="copyToClipboard('㊵', event)">㊵</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 41 symbol" onclick="copyToClipboard('㊶', event)">㊶</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 42 symbol" onclick="copyToClipboard('㊷', event)">㊷</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 43 symbol" onclick="copyToClipboard('㊸', event)">㊸</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 44 symbol" onclick="copyToClipboard('㊹', event)">㊹</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 45 symbol" onclick="copyToClipboard('㊺', event)">㊺</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 46 symbol" onclick="copyToClipboard('㊻', event)">㊻</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 47 symbol" onclick="copyToClipboard('㊼', event)">㊼</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 48 symbol" onclick="copyToClipboard('㊽', event)">㊽</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 49 symbol" onclick="copyToClipboard('㊾', event)">㊾</div>
+			<div class="symbol" style="font-size: 30px !important" title="Circle digit 50 symbol" onclick="copyToClipboard('㊿', event)">㊿</div>
 			<br>
 			<br>
-			<div class="symbol" title="Subscript 0 symbol" onclick="copyToClipboard('₀', event)">₀</div>
-			<div class="symbol" title="Subscript 1 symbol" onclick="copyToClipboard('₁', event)">₁</div>
-			<div class="symbol" title="Subscript 2 symbol" onclick="copyToClipboard('₂', event)">₂</div>
-			<div class="symbol" title="Subscript 3 symbol" onclick="copyToClipboard('₃', event)">₃</div>
-			<div class="symbol" title="Subscript 4 symbol" onclick="copyToClipboard('₄', event)">₄</div>
-			<div class="symbol" title="Subscript 5 symbol" onclick="copyToClipboard('₅', event)">₅</div>
-			<div class="symbol" title="Subscript 6 symbol" onclick="copyToClipboard('₆', event)">₆</div>
-			<div class="symbol" title="Subscript 7 symbol" onclick="copyToClipboard('₇', event)">₇</div>
-			<div class="symbol" title="Subscript 8 symbol" onclick="copyToClipboard('₈', event)">₈</div>
-			<div class="symbol" title="Subscript 9 symbol" onclick="copyToClipboard('₉', event)">₉</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 0 symbol" onclick="copyToClipboard('⓿', event)">⓿</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 1 symbol" onclick="copyToClipboard('➊', event)">➊</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 2 symbol" onclick="copyToClipboard('➋', event)">➋</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 3 symbol" onclick="copyToClipboard('➌', event)">➌</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 4 symbol" onclick="copyToClipboard('➍', event)">➍</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 5 symbol" onclick="copyToClipboard('➎', event)">➎</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 6 symbol" onclick="copyToClipboard('➏', event)">➏</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 7 symbol" onclick="copyToClipboard('➐', event)">➐</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 8 symbol" onclick="copyToClipboard('➑', event)">➑</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 9 symbol" onclick="copyToClipboard('➒', event)">➒</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 0 symbol" onclick="copyToClipboard('➓', event)">➓</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 11 symbol" onclick="copyToClipboard('⓫', event)">⓫</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 12 symbol" onclick="copyToClipboard('⓬', event)">⓬</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 13 symbol" onclick="copyToClipboard('⓭', event)">⓭</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 14 symbol" onclick="copyToClipboard('⓮', event)">⓮</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 15 symbol" onclick="copyToClipboard('⓯', event)">⓯</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 16 symbol" onclick="copyToClipboard('⓰', event)">⓰</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 17 symbol" onclick="copyToClipboard('⓱', event)">⓱</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 18 symbol" onclick="copyToClipboard('⓲', event)">⓲</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 19 symbol" onclick="copyToClipboard('⓳', event)">⓳</div>
+			<div class="symbol" style="font-size: 30px !important" title="Black circle 20 symbol" onclick="copyToClipboard('⓴', event)">⓴</div>
 			<br>
-			<div class="symbol" title="Parenthesized numbers 1 symbol" onclick="copyToClipboard('⑴', event)">⑴</div>
-			<div class="symbol" title="Parenthesized numbers 2 symbol" onclick="copyToClipboard('⑵', event)">⑵</div>
-			<div class="symbol" title="Parenthesized numbers 3 symbol" onclick="copyToClipboard('⑶', event)">⑶</div>
-			<div class="symbol" title="Parenthesized numbers 4 symbol" onclick="copyToClipboard('⑷', event)">⑷</div>
-			<div class="symbol" title="Parenthesized numbers 5 symbol" onclick="copyToClipboard('⑸', event)">⑸</div>
-			<div class="symbol" title="Parenthesized numbers 6 symbol" onclick="copyToClipboard('⑹', event)">⑹</div>
-			<div class="symbol" title="Parenthesized numbers 7 symbol" onclick="copyToClipboard('⑺', event)">⑺</div>
-			<div class="symbol" title="Parenthesized numbers 8 symbol" onclick="copyToClipboard('⑻', event)">⑻</div>
-			<div class="symbol" title="Parenthesized numbers 9 symbol" onclick="copyToClipboard('⑼', event)">⑼</div>
-			<div class="symbol" title="Parenthesized numbers 10 symbol" onclick="copyToClipboard('⑽', event)">⑽</div>
-			<div class="symbol" title="Parenthesized numbers 11 symbol" onclick="copyToClipboard('⑾', event)">⑾</div>
-			<div class="symbol" title="Parenthesized numbers 12 symbol" onclick="copyToClipboard('⑿', event)">⑿</div>
-			<div class="symbol" title="Parenthesized numbers 13 symbol" onclick="copyToClipboard('⒀', event)">⒀</div>
-			<div class="symbol" title="Parenthesized numbers 14 symbol" onclick="copyToClipboard('⒁', event)">⒁</div>
-			<div class="symbol" title="Parenthesized numbers 15 symbol" onclick="copyToClipboard('⒂', event)">⒂</div>
-			<div class="symbol" title="Parenthesized numbers 16 symbol" onclick="copyToClipboard('⒃', event)">⒃</div>
-			<div class="symbol" title="Parenthesized numbers 17 symbol" onclick="copyToClipboard('⒄', event)">⒄</div>
-			<div class="symbol" title="Parenthesized numbers 18 symbol" onclick="copyToClipboard('⒅', event)">⒅</div>
-			<div class="symbol" title="Parenthesized numbers 19 symbol" onclick="copyToClipboard('⒆', event)">⒆</div>
-			<div class="symbol" title="Parenthesized numbers 20 symbol" onclick="copyToClipboard('⒇', event)">⒇</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 1 symbol" onclick="copyToClipboard('⓵', event)">⓵</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 2 symbol" onclick="copyToClipboard('⓶', event)">⓶</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 3 symbol" onclick="copyToClipboard('⓷', event)">⓷</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 4 symbol" onclick="copyToClipboard('⓸', event)">⓸</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 5 symbol" onclick="copyToClipboard('⓹', event)">⓹</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 6 symbol" onclick="copyToClipboard('⓺', event)">⓺</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 7 symbol" onclick="copyToClipboard('⓻', event)">⓻</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 8 symbol" onclick="copyToClipboard('⓼', event)">⓼</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 9 symbol" onclick="copyToClipboard('⓽', event)">⓽</div>
+			<div class="symbol" style="font-size: 30px !important" title="Double Circle 10 symbol" onclick="copyToClipboard('⓾', event)">⓾</div>
+			<br>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 0 symbol" onclick="copyToClipboard('⁰', event)">⁰</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 1 symbol" onclick="copyToClipboard('¹', event)">¹</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 2 symbol" onclick="copyToClipboard('²', event)">²</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 3 symbol" onclick="copyToClipboard('³', event)">³</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 4 symbol" onclick="copyToClipboard('⁴', event)">⁴</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 5 symbol" onclick="copyToClipboard('⁵', event)">⁵</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 6 symbol" onclick="copyToClipboard('⁶', event)">⁶</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 7 symbol" onclick="copyToClipboard('⁷', event)">⁷</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 8 symbol" onclick="copyToClipboard('⁸', event)">⁸</div>
+			<div class="symbol" style="font-size: 30px !important" title="Superscript 9 symbol" onclick="copyToClipboard('⁹', event)">⁹</div>
 			<br>
 			<br>
-			<div class="symbol" title="Digit 1 full stop symbol" onclick="copyToClipboard('⒈', event)">⒈</div>
-			<div class="symbol" title="Digit 2 full stop symbol" onclick="copyToClipboard('⒉', event)">⒉</div>
-			<div class="symbol" title="Digit 3 full stop symbol" onclick="copyToClipboard('⒊', event)">⒊</div>
-			<div class="symbol" title="Digit 4 full stop symbol" onclick="copyToClipboard('⒋', event)">⒋</div>
-			<div class="symbol" title="Digit 5 full stop symbol" onclick="copyToClipboard('⒌', event)">⒌</div>
-			<div class="symbol" title="Digit 6 full stop symbol" onclick="copyToClipboard('⒍', event)">⒍</div>
-			<div class="symbol" title="Digit 7 full stop symbol" onclick="copyToClipboard('⒎', event)">⒎</div>
-			<div class="symbol" title="Digit 8 full stop symbol" onclick="copyToClipboard('⒏', event)">⒏</div>
-			<div class="symbol" title="Digit 9 full stop symbol" onclick="copyToClipboard('⒐', event)">⒐</div>
-			<div class="symbol" title="Digit 10 full stop symbol" onclick="copyToClipboard('⒑', event)">⒑</div>
-			<div class="symbol" title="Digit 11 full stop symbol" onclick="copyToClipboard('⒒', event)">⒒</div>
-			<div class="symbol" title="Digit 12 full stop symbol" onclick="copyToClipboard('⒓', event)">⒓</div>
-			<div class="symbol" title="Digit 13 full stop symbol" onclick="copyToClipboard('⒔', event)">⒔</div>
-			<div class="symbol" title="Digit 14 full stop symbol" onclick="copyToClipboard('⒕', event)">⒕</div>
-			<div class="symbol" title="Digit 15 full stop symbol" onclick="copyToClipboard('⒖', event)">⒖</div>
-			<div class="symbol" title="Digit 16 full stop symbol" onclick="copyToClipboard('⒗', event)">⒗</div>
-			<div class="symbol" title="Digit 17 full stop symbol" onclick="copyToClipboard('⒘', event)">⒘</div>
-			<div class="symbol" title="Digit 18 full stop symbol" onclick="copyToClipboard('⒙', event)">⒙</div>
-			<div class="symbol" title="Digit 19 full stop symbol" onclick="copyToClipboard('⒚', event)">⒚</div>
-			<div class="symbol" title="Digit 20 full stop symbol" onclick="copyToClipboard('⒛', event)">⒛</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 0 symbol" onclick="copyToClipboard('₀', event)">₀</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 1 symbol" onclick="copyToClipboard('₁', event)">₁</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 2 symbol" onclick="copyToClipboard('₂', event)">₂</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 3 symbol" onclick="copyToClipboard('₃', event)">₃</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 4 symbol" onclick="copyToClipboard('₄', event)">₄</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 5 symbol" onclick="copyToClipboard('₅', event)">₅</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 6 symbol" onclick="copyToClipboard('₆', event)">₆</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 7 symbol" onclick="copyToClipboard('₇', event)">₇</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 8 symbol" onclick="copyToClipboard('₈', event)">₈</div>
+			<div class="symbol" style="font-size: 30px !important" title="Subscript 9 symbol" onclick="copyToClipboard('₉', event)">₉</div>
 			<br>
-			<div class="symbol" title="fifty Roman numerals" onclick="copyToClipboard('ⅼ', event)">ⅼ</div>
-			<div class="symbol" title="hundred 100 Roman numerals" onclick="copyToClipboard('ⅽ', event)">ⅽ</div>
-			<div class="symbol" title="five hundred fivehundred 500 Roman numerals" onclick="copyToClipboard('ⅾ', event)">ⅾ</div>
-			<div class="symbol" title="one Thousand 1000 Roman numerals" onclick="copyToClipboard('ⅿ', event)">ⅿ</div>
-			<div class="symbol" title="one Thousand 1000 Roman numerals" onclick="copyToClipboard('ↀ', event)">ↀ</div>
-			<div class="symbol" title="five thousand 5000 Roman numerals" onclick="copyToClipboard('ↁ', event)">ↁ</div>
-			<div class="symbol" title="ten thousand 10000 Roman numerals" onclick="copyToClipboard('ↂ', event)">ↂ</div>
-			<div class="symbol" title="fifty thousand 50000 Roman numerals" onclick="copyToClipboard('ↇ', event)">ↇ</div>
-			<div class="symbol" title="one hundred thousand 100000 one lakh Roman numerals" onclick="copyToClipboard('ↈ', event)">ↈ</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 1 symbol" onclick="copyToClipboard('⑴', event)">⑴</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 2 symbol" onclick="copyToClipboard('⑵', event)">⑵</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 3 symbol" onclick="copyToClipboard('⑶', event)">⑶</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 4 symbol" onclick="copyToClipboard('⑷', event)">⑷</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 5 symbol" onclick="copyToClipboard('⑸', event)">⑸</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 6 symbol" onclick="copyToClipboard('⑹', event)">⑹</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 7 symbol" onclick="copyToClipboard('⑺', event)">⑺</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 8 symbol" onclick="copyToClipboard('⑻', event)">⑻</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 9 symbol" onclick="copyToClipboard('⑼', event)">⑼</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 10 symbol" onclick="copyToClipboard('⑽', event)">⑽</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 11 symbol" onclick="copyToClipboard('⑾', event)">⑾</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 12 symbol" onclick="copyToClipboard('⑿', event)">⑿</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 13 symbol" onclick="copyToClipboard('⒀', event)">⒀</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 14 symbol" onclick="copyToClipboard('⒁', event)">⒁</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 15 symbol" onclick="copyToClipboard('⒂', event)">⒂</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 16 symbol" onclick="copyToClipboard('⒃', event)">⒃</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 17 symbol" onclick="copyToClipboard('⒄', event)">⒄</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 18 symbol" onclick="copyToClipboard('⒅', event)">⒅</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 19 symbol" onclick="copyToClipboard('⒆', event)">⒆</div>
+			<div class="symbol" style="font-size: 30px !important" title="Parenthesized numbers 20 symbol" onclick="copyToClipboard('⒇', event)">⒇</div>
+			<br>
+			<br>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 1 full stop symbol" onclick="copyToClipboard('⒈', event)">⒈</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 2 full stop symbol" onclick="copyToClipboard('⒉', event)">⒉</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 3 full stop symbol" onclick="copyToClipboard('⒊', event)">⒊</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 4 full stop symbol" onclick="copyToClipboard('⒋', event)">⒋</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 5 full stop symbol" onclick="copyToClipboard('⒌', event)">⒌</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 6 full stop symbol" onclick="copyToClipboard('⒍', event)">⒍</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 7 full stop symbol" onclick="copyToClipboard('⒎', event)">⒎</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 8 full stop symbol" onclick="copyToClipboard('⒏', event)">⒏</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 9 full stop symbol" onclick="copyToClipboard('⒐', event)">⒐</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 10 full stop symbol" onclick="copyToClipboard('⒑', event)">⒑</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 11 full stop symbol" onclick="copyToClipboard('⒒', event)">⒒</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 12 full stop symbol" onclick="copyToClipboard('⒓', event)">⒓</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 13 full stop symbol" onclick="copyToClipboard('⒔', event)">⒔</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 14 full stop symbol" onclick="copyToClipboard('⒕', event)">⒕</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 15 full stop symbol" onclick="copyToClipboard('⒖', event)">⒖</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 16 full stop symbol" onclick="copyToClipboard('⒗', event)">⒗</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 17 full stop symbol" onclick="copyToClipboard('⒘', event)">⒘</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 18 full stop symbol" onclick="copyToClipboard('⒙', event)">⒙</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 19 full stop symbol" onclick="copyToClipboard('⒚', event)">⒚</div>
+			<div class="symbol" style="font-size: 30px !important" title="Digit 20 full stop symbol" onclick="copyToClipboard('⒛', event)">⒛</div>
+			<br>
+			<div class="symbol" style="font-size: 30px !important" title="fifty Roman numerals" onclick="copyToClipboard('ⅼ', event)">ⅼ</div>
+			<div class="symbol" style="font-size: 30px !important" title="hundred 100 Roman numerals" onclick="copyToClipboard('ⅽ', event)">ⅽ</div>
+			<div class="symbol" style="font-size: 30px !important" title="five hundred fivehundred 500 Roman numerals" onclick="copyToClipboard('ⅾ', event)">ⅾ</div>
+			<div class="symbol" style="font-size: 30px !important" title="one Thousand 1000 Roman numerals" onclick="copyToClipboard('ⅿ', event)">ⅿ</div>
+			<div class="symbol" style="font-size: 30px !important" title="one Thousand 1000 Roman numerals" onclick="copyToClipboard('ↀ', event)">ↀ</div>
+			<div class="symbol" style="font-size: 30px !important" title="five thousand 5000 Roman numerals" onclick="copyToClipboard('ↁ', event)">ↁ</div>
+			<div class="symbol" style="font-size: 30px !important" title="ten thousand 10000 Roman numerals" onclick="copyToClipboard('ↂ', event)">ↂ</div>
+			<div class="symbol" style="font-size: 30px !important" title="fifty thousand 50000 Roman numerals" onclick="copyToClipboard('ↇ', event)">ↇ</div>
+			<div class="symbol" style="font-size: 30px !important" title="one hundred thousand 100000 one lakh Roman numerals" onclick="copyToClipboard('ↈ', event)">ↈ</div>
 		</div>
 		<div class="symbolcat">
 			<a href="heart-symbol.html">❤️️ Heart</a>

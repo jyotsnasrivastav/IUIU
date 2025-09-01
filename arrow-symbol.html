@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html optimized="true" lang="en">
 <head>
+    <link rel="preload" href="/css/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com">
 	<!-- Primary Meta Tags -->
-	<link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="main.css"></noscript>
-	<noscript><link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="main.css"></noscript></noscript>        <style> *{box-sizing:border-box;padding:0;margin:0} body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap} header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint} .headCont{max-width:1168px;margin:0 auto;text-align:center} .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint} .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint} .mainlogo a{color:white;font-size:2rem;text-decoration:none} #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px} .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)} .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)} .maindata{min-height:200px;contain:layout style paint} .footer{min-height:80px;contain:layout style paint} img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint} .mainlogo img{image-rendering: optimizeQuality;image-rendering: -webkit-optimize-contrast;background: #230AC7;transition: opacity 0.3s ease} .mainlogo img:not([src*="data:"]){background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);background-size: 200% 100%;animation: shimmer 1.5s infinite} @keyframes shimmer{0%{background-position: 200% 0} 100%{background-position: -200% 0} } h1{font-size: 25px !important} article h1, aside h1, nav h1, section h1{font-size: 25px !important} .modern-header{background: #230AC7;padding: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.1);position: fixed;top: 0;left: 0;right: 0;z-index: 1000;height: 60px;contain: none !important;overflow: visible !important} .main-nav{display: flex;align-items: center;justify-content: space-between;max-width: 1200px;margin: 0 auto;padding: 0 24px;height: 100%} .main-logo{font-size: 24px;font-weight: bold;color: white;text-decoration: none;display: flex;align-items: center;gap: 8px} .main-logo img{width: 32px;height: 32px} .nav-center{display: flex;gap: 32px;align-items: center} .nav-item{color: white;text-decoration: none;font-size: 14px;font-weight: 500;padding: 8px 12px;border-radius: 4px;transition: background-color 0.2s ease} .nav-item:hover{background-color: rgba(255, 255, 255, 0.1)} .nav-right{display: flex;align-items: center;gap: 16px} .language-selector{position: relative !important;display: inline-block !important;z-index: 1000 !important} .language-btn{background: white !important;border: 1px solid #ddd !important;border-radius: 4px !important;padding: 6px 10px !important;cursor: pointer !important;font-size: 14px !important;color: #333 !important;display: flex !important;align-items: center !important;gap: 4px !important;transition: all 0.2s ease !important;min-width: 60px !important;justify-content: center !important;font-weight: 500 !important;z-index: 10000 !important;position: relative !important;pointer-events: auto !important;user-select: none !important} .language-btn *{pointer-events: none !important} .language-btn:hover{background-color: #f8f9fa;border-color: #bbb} .globe-icon{font-size: 16px} .lang-code{font-weight: 600;font-size: 13px;color: #333} .dropdown-arrow{font-size: 10px;color: #666;margin-left: 2px} .language-dropdown{position: absolute !important;top: calc(100% + 5px) !important;right: 0 !important;background: #ffffff !important;border: 1px solid #e0e0e0 !important;border-radius: 8px !important;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;min-width: 180px !important;z-index: 999999 !important;display: none !important;margin: 0 !important;max-height: 320px !important;overflow-y: auto !important;opacity: 0 !important;visibility: hidden !important;transform: translateY(-10px) !important;transition: all 0.2s ease !important} .language-dropdown.open{display: block !important;visibility: visible !important;opacity: 1 !important;transform: translateY(0) !important} .language-option{display: block !important;padding: 10px 16px !important;color: #333 !important;text-decoration: none !important;font-size: 14px !important;transition: background-color 0.2s ease !important;border-bottom: 1px solid #f0f0f0 !important;background: white !important;width: 100% !important} .language-option:hover{background-color: #f8f9fa !important} .language-option:last-child{border-bottom: none !important} .language-option.active{background-color: #e3f2fd !important;color: #1976d2 !important;font-weight: 500 !important} .language-option[dir="rtl"]{text-align: right;direction: rtl} body{padding-top: 60px !important;pointer-events: auto !important;margin: 0 !important;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;background: #f5f5f5 !important;overflow: visible !important} header, nav, .nav-right, .language-selector, .language-btn{pointer-events: auto !important;position: relative !important;overflow: visible !important} .language-dropdown.show{display: block !important;position: fixed !important;top: 60px !important;right: 20px !important;z-index: 2147483647 !important;background: white !important;border: 2px solid #333 !important;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important} @media (max-width: 1024px){.nav-center{gap: 20px} .nav-item{font-size: 13px;padding: 6px 8px} } @media (max-width: 768px){.main-nav{padding: 0 16px} .nav-center{display: none} .main-logo{font-size: 20px} .main-logo img{width: 28px;height: 28px} } @media (max-width: 480px){.main-nav{padding: 0 12px} </style>
+	<noscript></noscript>
+	<noscript><noscript></noscript></noscript>        <style> *{box-sizing:border-box;padding:0;margin:0} body{font-family:arial,serif;background-color:#ebecef;margin:0;font-display:swap} header{width:100%;background-color:#230AC7;min-height:60px;contain:layout style paint} .headCont{max-width:1168px;margin:0 auto;text-align:center} .mainlogo{width:100%;font-size:15px;text-align:center;background-color:#230AC7;color:#fff;font-family:arial;padding:5px 0;min-height:50px;contain:layout style paint} .mainlogo img{width:270px;padding-top:2px;height:auto;min-height:50px;contain:layout style paint} .mainlogo a{color:white;font-size:2rem;text-decoration:none} #target{position:fixed;bottom:0;width:100%;background:#fff;z-index:9;box-shadow:0 0 5px rgba(0,0,0,0.15);padding:5px} .symbol{text-align:center;margin:0 0 0.5rem 0.1rem;border-radius:5px;color:#424949;border:1px solid #d3d3d3;display:inline-block;min-width:50px;min-height:50px;font-size:20px;line-height:50px;transition:transform .2s;cursor:pointer;contain:layout style paint;will-change:transform;backface-visibility:hidden;transform:translateZ(0)} .symbol:hover{background-color:#ececec;transform:translateY(-5px);box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)} .maindata{min-height:200px;contain:layout style paint} .footer{min-height:80px;contain:layout style paint} img:not([width]):not([height]){min-height:50px;background:#f0f0f0;contain:layout style paint} .mainlogo img{image-rendering: optimizeQuality;image-rendering: -webkit-optimize-contrast;background: #230AC7;transition: opacity 0.3s ease} .mainlogo img:not([src*="data:"]){background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);background-size: 200% 100%;animation: shimmer 1.5s infinite} @keyframes shimmer{0%{background-position: 200% 0} 100%{background-position: -200% 0} } h1{font-size: 25px !important} article h1, aside h1, nav h1, section h1{font-size: 25px !important} .modern-header{background: #230AC7;padding: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.1);position: fixed;top: 0;left: 0;right: 0;z-index: 1000;height: 60px;contain: none !important;overflow: visible !important} .main-nav{display: flex;align-items: center;justify-content: space-between;max-width: 1200px;margin: 0 auto;padding: 0 24px;height: 100%} .main-logo{font-size: 24px;font-weight: bold;color: white;text-decoration: none;display: flex;align-items: center;gap: 8px} .main-logo img{width: 32px;height: 32px} .nav-center{display: flex;gap: 32px;align-items: center} .nav-item{color: white;text-decoration: none;font-size: 14px;font-weight: 500;padding: 8px 12px;border-radius: 4px;transition: background-color 0.2s ease} .nav-item:hover{background-color: rgba(255, 255, 255, 0.1)} .nav-right{display: flex;align-items: center;gap: 16px} .language-selector{position: relative !important;display: inline-block !important;z-index: 1000 !important} .language-btn{background: white !important;border: 1px solid #ddd !important;border-radius: 4px !important;padding: 6px 10px !important;cursor: pointer !important;font-size: 14px !important;color: #333 !important;display: flex !important;align-items: center !important;gap: 4px !important;transition: all 0.2s ease !important;min-width: 60px !important;justify-content: center !important;font-weight: 500 !important;z-index: 10000 !important;position: relative !important;pointer-events: auto !important;user-select: none !important} .language-btn *{pointer-events: none !important} .language-btn:hover{background-color: #f8f9fa;border-color: #bbb} .globe-icon{font-size: 16px} .lang-code{font-weight: 600;font-size: 13px;color: #333} .dropdown-arrow{font-size: 10px;color: #666;margin-left: 2px} .language-dropdown{position: absolute !important;top: calc(100% + 5px) !important;right: 0 !important;background: #ffffff !important;border: 1px solid #e0e0e0 !important;border-radius: 8px !important;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;min-width: 180px !important;z-index: 999999 !important;display: none !important;margin: 0 !important;max-height: 320px !important;overflow-y: auto !important;opacity: 0 !important;visibility: hidden !important;transform: translateY(-10px) !important;transition: all 0.2s ease !important} .language-dropdown.open{display: block !important;visibility: visible !important;opacity: 1 !important;transform: translateY(0) !important} .language-option{display: block !important;padding: 10px 16px !important;color: #333 !important;text-decoration: none !important;font-size: 14px !important;transition: background-color 0.2s ease !important;border-bottom: 1px solid #f0f0f0 !important;background: white !important;width: 100% !important} .language-option:hover{background-color: #f8f9fa !important} .language-option:last-child{border-bottom: none !important} .language-option.active{background-color: #e3f2fd !important;color: #1976d2 !important;font-weight: 500 !important} .language-option[dir="rtl"]{text-align: right;direction: rtl} body{padding-top: 60px !important;pointer-events: auto !important;margin: 0 !important;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;background: #f5f5f5 !important;overflow: visible !important} header, nav, .nav-right, .language-selector, .language-btn{pointer-events: auto !important;position: relative !important;overflow: visible !important} .language-dropdown.show{display: block !important;position: fixed !important;top: 60px !important;right: 20px !important;z-index: 2147483647 !important;background: white !important;border: 2px solid #333 !important;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important} @media (max-width: 1024px){.nav-center{gap: 20px} .nav-item{font-size: 13px;padding: 6px 8px} } @media (max-width: 768px){.main-nav{padding: 0 16px} .nav-center{display: none} .main-logo{font-size: 20px} .main-logo img{width: 28px;height: 28px} } @media (max-width: 480px){.main-nav{padding: 0 12px} </style>
         <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="main.min.css"></noscript>
 		<style> .symbol{font-size: 30px !important} </style>
@@ -45,6 +49,24 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="apple-touch-icon" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+		<style>
+			/* Anti-CLS guardrails for header & language dropdown */
+			.modern-header, .main-nav { min-height: 60px }
+			.nav-right .language-selector { position: relative }
+			.nav-right .language-selector .language-dropdown { position: absolute; top: 100%; right: 0; max-height: 60vh; overflow: auto; contain: layout paint; transform: translateZ(0) }
+			.nav-right .language-selector .language-dropdown[aria-hidden="true"] { display: none }
+			.outcont, .container, .maindata, .footer { contain: layout style paint }
+		</style>
+    <style>
+        /* Critical CSS - Optimized for performance */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+        /* ... rest of the critical CSS ... */
+    </style>
 </head>
 <body>
 	<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
@@ -110,295 +132,295 @@
 				<div class="rightContainer">
 					<div class="maindata">
 					<h1 class="titlesymbol">Arrow Copy and Paste</h1>
-						<div class="symbol" title="Left Arrow" onclick="copyToClipboard('←', event)">←
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow" onclick="copyToClipboard('←', event)">←
 		</div>
-						<div class="symbol" title="Up Arrow" onclick="copyToClipboard('↑', event)">↑</div>
-						<div class="symbol" title="Right Arrow" onclick="copyToClipboard('→', event)">→</div>
-						<div class="symbol" title="Down Arrow" onclick="copyToClipboard('↓', event)">↓</div>
-						<div class="symbol" title="Left Arrow With Stroke" onclick="copyToClipboard('↚', event)">↚</div>
-						<div class="symbol" title="Right Arrow With Stroke" onclick="copyToClipboard('↛', event)">↛</div>
-						<div class="symbol" title="Left Wave Arrow" onclick="copyToClipboard('↜', event)">↜</div>
-						<div class="symbol" title="Right Wave Arrow" onclick="copyToClipboard('↝', event)">↝</div>
-						<div class="symbol" title="Left Two Headed Arrow" onclick="copyToClipboard('↞', event)">↞</div>
-						<div class="symbol" title="Up Two Headed Arrow" onclick="copyToClipboard('↟', event)">↟</div>
-						<div class="symbol" title="Right Two Headed Arrow" onclick="copyToClipboard('↠', event)">↠</div>
-						<div class="symbol" title="Down Two Headed Arrow" onclick="copyToClipboard('↡', event)">↡</div>
-						<div class="symbol" title="Left Arrow With Tail" onclick="copyToClipboard('↢', event)">↢</div>
-						<div class="symbol" title="Right Arrow With Tail" onclick="copyToClipboard('↣', event)">↣</div>
-						<div class="symbol" title="Left Arrow From Bar" onclick="copyToClipboard('↤', event)">↤</div>
-						<div class="symbol" title="Up Arrow From Bar" onclick="copyToClipboard('↥', event)">↥</div>
-						<div class="symbol" title="Right Arrow From Bar" onclick="copyToClipboard('↦', event)">↦</div>
-						<div class="symbol" title="Down Arrow From Bar" onclick="copyToClipboard('↧', event)">↧</div>
-						<div class="symbol" title="Up Down Arrow With Base" onclick="copyToClipboard('↨', event)">↨</div>
-						<div class="symbol" title="Left Arrow With Loop" onclick="copyToClipboard('↫', event)">↫</div>
-						<div class="symbol" title="Right Arrow With Loop" onclick="copyToClipboard('↬', event)">↬</div>
-						<div class="symbol" title="Left Right Wave Arrow" onclick="copyToClipboard('↭', event)">↭</div>
-						<div class="symbol" title="Left Right Arrow With Stroke" onclick="copyToClipboard('↮', event)">↮</div>
-						<div class="symbol" title="Down Zigzag Arrow" onclick="copyToClipboard('↯', event)">↯</div>
-						<div class="symbol" title="Up Arrow With Tip Left" onclick="copyToClipboard('↰', event)">↰</div>
-						<div class="symbol" title="Up Arrow With Tip Right" onclick="copyToClipboard('↱', event)">↱</div>
-						<div class="symbol" title="Down Arrow With Tip Left" onclick="copyToClipboard('↲', event)">↲</div>
-						<div class="symbol" title="Down Arrow With Tip Right" onclick="copyToClipboard('↳', event)">↳</div>
-						<div class="symbol" title="Right Arrow With Corner Down" onclick="copyToClipboard('↴', event)">↴</div>
-						<div class="symbol" title="Down Arrow With Corner Left" onclick="copyToClipboard('↵', event)">↵</div>
-						<div class="symbol" title="Anticlockwise Top Semicircle Arrow" onclick="copyToClipboard('↶', event)">↶</div>
-						<div class="symbol" title="Clockwise Top Semicircle Arrow" onclick="copyToClipboard('↷', event)">↷</div>
-						<div class="symbol" title="North West Arrow To Long Bar" onclick="copyToClipboard('↸', event)">↸</div>
-						<div class="symbol" title="Left Arrow To Bar Over Right Arrow To Bar" onclick="copyToClipboard('↹', event)">↹</div>
-						<div class="symbol" title="Anticlockwise Open Circle Arrow" onclick="copyToClipboard('↺', event)">↺</div>
-						<div class="symbol" title="Clockwise Open Circle Arrow" onclick="copyToClipboard('↻', event)">↻</div>
-						<div class="symbol" title="Right Arrow Over Left Arrow" onclick="copyToClipboard('⇄', event)">⇄</div>
-						<div class="symbol" title="Up Arrow Left Of Down Arrow" onclick="copyToClipboard('⇅', event)">⇅</div>
-						<div class="symbol" title="Left Arrow Over Right Arrow" onclick="copyToClipboard('⇆', event)">⇆</div>
-						<div class="symbol" title="Left Paired Arrows" onclick="copyToClipboard('⇇', event)">⇇</div>
-						<div class="symbol" title="Up Paired Arrows" onclick="copyToClipboard('⇈', event)">⇈</div>
-						<div class="symbol" title="Right Paired Arrows" onclick="copyToClipboard('⇉', event)">⇉</div>
-						<div class="symbol" title="Bow And Arrow" onclick="copyToClipboard('🏹', event)">🏹</div>
-						<div class="symbol" title="Heart With Arrow" onclick="copyToClipboard('💘', event)">💘</div>
-						<div class="symbol" title="Envelope With Down Arrow Above" onclick="copyToClipboard('📩', event)">📩</div>
-						<div class="symbol" title="Mobile Phone With Right Arrow At Left" onclick="copyToClipboard('📲', event)">📲</div>
-						<div class="symbol" title="Outbox Tray" onclick="copyToClipboard('📤', event)">📤</div>
-						<div class="symbol" title="İnbox Tray" onclick="copyToClipboard('📥', event)">📥</div>
-						<div class="symbol" title="Back With Left Arrow Above" onclick="copyToClipboard('🔙', event)">🔙</div>
-						<div class="symbol" title="End With Left Arrow" onclick="copyToClipboard('🔚', event)">🔚</div>
-						<div class="symbol" title="On With Left Right Arrow" onclick="copyToClipboard('🔛', event)">🔛</div>
-						<div class="symbol" title="Soon With Right Arrow" onclick="copyToClipboard('🔜', event)">🔜</div>
-						<div class="symbol" title="Top With Up Arrow" onclick="copyToClipboard('🔝', event)">🔝</div>
-						<div class="symbol" title="Up Arrow" onclick="copyToClipboard('⬆', event)">⬆</div>
-						<div class="symbol" title="Up-Right Arrow" onclick="copyToClipboard('↗', event)">↗</div>
-						<div class="symbol" title="Right Arrow" onclick="copyToClipboard('➡', event)">➡</div>
-						<div class="symbol" title="Down Right Arrow" onclick="copyToClipboard('↘', event)">↘</div>
-						<div class="symbol" title="Down Arrow" onclick="copyToClipboard('⬇', event)">⬇</div>
-						<div class="symbol" title="Down Left Arrow" onclick="copyToClipboard('↙', event)">↙</div>
-						<div class="symbol" title="Left Arrow" onclick="copyToClipboard('⬅', event)">⬅</div>
-						<div class="symbol" title="Up Left Arrow" onclick="copyToClipboard('↖', event)">↖</div>
-						<div class="symbol" title="Up Down Arrow" onclick="copyToClipboard('↕', event)">↕</div>
-						<div class="symbol" title="Left Right Arrow" onclick="copyToClipboard('↔', event)">↔</div>
-						<div class="symbol" title="Right Arrow Curving Left" onclick="copyToClipboard('↩', event)">↩</div>
-						<div class="symbol" title="Left Arrow Curving Right" onclick="copyToClipboard('↪', event)">↪</div>
-						<div class="symbol" title="Right Arrow Curving Up" onclick="copyToClipboard('⤴', event)">⤴</div>
-						<div class="symbol" title="Right Arrow Curving Down" onclick="copyToClipboard('⤵', event)">⤵</div>
-						<div class="symbol" title="Twisted Right Arrows" onclick="copyToClipboard('🔀', event)">🔀</div>
-						<div class="symbol" title="Clockwise Right And Left Open Circle Arrows" onclick="copyToClipboard('🔁', event)">🔁</div>
-						<div class="symbol" title="Clockwise Right And Left Open Circle Arrows With Circled One Overlay" onclick="copyToClipboard('🔂', event)">🔂</div>
-						<div class="symbol" title="Clockwise Down And Up Open Circle Arrows" onclick="copyToClipboard('🔃', event)">🔃</div>
-						<div class="symbol" title="Anticlockwise Down And Up Open Circle Arrows" onclick="copyToClipboard('🔄', event)">🔄</div>
-						<div class="symbol" title="Down Paired Arrows" onclick="copyToClipboard('⇊', event)">⇊</div>
-						<div class="symbol" title="Left Double Arrow With Stroke" onclick="copyToClipboard('⇍', event)">⇍</div>
-						<div class="symbol" title="Left Right Double Arrow With Stroke" onclick="copyToClipboard('⇎', event)">⇎</div>
-						<div class="symbol" title="Right Double Arrow With Stroke" onclick="copyToClipboard('⇏', event)">⇏</div>
-						<div class="symbol" title="Left Double Arrow" onclick="copyToClipboard('⇐', event)">⇐</div>
-						<div class="symbol" title="Up Double Arrow" onclick="copyToClipboard('⇑', event)">⇑</div>
-						<div class="symbol" title="Right Double Arrow" onclick="copyToClipboard('⇒', event)">⇒</div>
-						<div class="symbol" title="Down Double Arrow" onclick="copyToClipboard('⇓', event)">⇓</div>
-						<div class="symbol" title="Left Right Double Arrow" onclick="copyToClipboard('⇔', event)">⇔</div>
-						<div class="symbol" title="Up Down Double Arrow" onclick="copyToClipboard('⇕', event)">⇕</div>
-						<div class="symbol" title="North West Double Arrow" onclick="copyToClipboard('⇖', event)">⇖</div>
-						<div class="symbol" title="North East Double Arrow" onclick="copyToClipboard('⇗', event)">⇗</div>
-						<div class="symbol" title="South East Double Arrow" onclick="copyToClipboard('⇘', event)">⇘</div>
-						<div class="symbol" title="South West Double Arrow" onclick="copyToClipboard('⇙', event)">⇙</div>
-						<div class="symbol" title="Left Triple Arrow" onclick="copyToClipboard('⇚', event)">⇚</div>
-						<div class="symbol" title="Right Triple Arrow" onclick="copyToClipboard('⇛', event)">⇛</div>
-						<div class="symbol" title="Left Squiggle Arrow" onclick="copyToClipboard('⇜', event)">⇜</div>
-						<div class="symbol" title="Right Squiggle Arrow" onclick="copyToClipboard('⇝', event)">⇝</div>
-						<div class="symbol" title="Up Arrow With Double Stroke" onclick="copyToClipboard('⇞', event)">⇞</div>
-						<div class="symbol" title="Down Arrow With Double Stroke" onclick="copyToClipboard('⇟', event)">⇟</div>
-						<div class="symbol" title="Left Dashed Arrow" onclick="copyToClipboard('⇠', event)">⇠</div>
-						<div class="symbol" title="Up Dashed Arrow" onclick="copyToClipboard('⇡', event)">⇡</div>
-						<div class="symbol" title="Right Dashed Arrow" onclick="copyToClipboard('⇢', event)">⇢</div>
-						<div class="symbol" title="Down Dashed Arrow" onclick="copyToClipboard('⇣', event)">⇣</div>
-						<div class="symbol" title="Left Arrow To Bar" onclick="copyToClipboard('⇤', event)">⇤</div>
-						<div class="symbol" title="Right Arrow To Bar" onclick="copyToClipboard('⇥', event)">⇥</div>
-						<div class="symbol" title="Left White Arrow" onclick="copyToClipboard('⇦', event)">⇦</div>
-						<div class="symbol" title="Up White Arrow" onclick="copyToClipboard('⇧', event)">⇧</div>
-						<div class="symbol" title="Right White Arrow" onclick="copyToClipboard('⇨', event)">⇨</div>
-						<div class="symbol" title="Down White Arrow" onclick="copyToClipboard('⇩', event)">⇩</div>
-						<div class="symbol" title="North West Arrow To Corner" onclick="copyToClipboard('⇱', event)">⇱</div>
-						<div class="symbol" title="South East Arrow To Corner" onclick="copyToClipboard('⇲', event)">⇲</div>
-						<div class="symbol" title="Up Down White Arrow" onclick="copyToClipboard('⇳', event)">⇳</div>
-						<div class="symbol" title="Right Arrow With Small Circle" onclick="copyToClipboard('⇴', event)">⇴</div>
-						<div class="symbol" title="Down Arrow Left Of Up Arrow" onclick="copyToClipboard('⇵', event)">⇵</div>
-						<div class="symbol" title="Three Right Arrows" onclick="copyToClipboard('⇶', event)">⇶</div>
-						<div class="symbol" title="Left Arrow With Vertical Stroke" onclick="copyToClipboard('⇷', event)">⇷</div>
-						<div class="symbol" title="Right Arrow With Vertical Stroke" onclick="copyToClipboard('⇸', event)">⇸</div>
-						<div class="symbol" title="Left Right Arrow With Vertical Stroke" onclick="copyToClipboard('⇹', event)">⇹</div>
-						<div class="symbol" title="Left Arrow With Double Vertical Stroke" onclick="copyToClipboard('⇺', event)">⇺</div>
-						<div class="symbol" title="Right Arrow With Double Vertical Stroke" onclick="copyToClipboard('⇻', event)">⇻</div>
-						<div class="symbol" title="Left Right Arrow With Double Vertical Stroke" onclick="copyToClipboard('⇼', event)">⇼</div>
-						<div class="symbol" title="Left Open headed Arrow" onclick="copyToClipboard('⇽', event)">⇽</div>
-						<div class="symbol" title="Right Open-headed Arrow" onclick="copyToClipboard('⇾', event)">⇾</div>
-						<div class="symbol" title="Left Right Open headed Arrow" onclick="copyToClipboard('⇿', event)">⇿</div>
-						<div class="symbol" title="Electric Arrow" onclick="copyToClipboard('⌁', event)">⌁</div>
-						<div class="symbol" title="Right Angle With Down Zigzag Arrow" onclick="copyToClipboard('⍼', event)">⍼</div>
-						<div class="symbol" title="Broken Circle With Northwest Arrow" onclick="copyToClipboard('⎋', event)">⎋</div>
-						<div class="symbol" title="Heavy Wide headed Right Arrow" onclick="copyToClipboard('➔', event)">➔</div>
-						<div class="symbol" title="Heavy South East Arrow" onclick="copyToClipboard('➘', event)">➘</div>
-						<div class="symbol" title="Heavy Right Arrow" onclick="copyToClipboard('➙', event)">➙</div>
-						<div class="symbol" title="Heavy North East Arrow" onclick="copyToClipboard('➚', event)">➚</div>
-						<div class="symbol" title="Drafting Point Right Arrow" onclick="copyToClipboard('➛', event)">➛</div>
-						<div class="symbol" title="Heavy Round tipped Right Arrow" onclick="copyToClipboard('➜', event)">➜</div>
-						<div class="symbol" title="Triangle headed Right Arrow" onclick="copyToClipboard('➝', event)">➝</div>
-						<div class="symbol" title="Heavy Triangle headed Right Arrow" onclick="copyToClipboard('➞', event)">➞</div>
-						<div class="symbol" title="Dashed Triangle-headed Right Arrow" onclick="copyToClipboard('➟', event)">➟</div>
-						<div class="symbol" title="Heavy Dashed Triangle-headed Right Arrow" onclick="copyToClipboard('➠', event)">➠</div>
-						<div class="symbol" title="Three-d Top-lighted Right Arrowhead" onclick="copyToClipboard('➢', event)">➢</div>
-						<div class="symbol" title="Three-d Bottom-lighted Right Arrowhead" onclick="copyToClipboard('➣', event)">➣</div>
-						<div class="symbol" title="Black Right Arrowhead" onclick="copyToClipboard('➤', event)">➤</div>
-						<div class="symbol" title="Heavy Black Curved Down And Right Arrow" onclick="copyToClipboard('➥', event)">➥</div>
-						<div class="symbol" title="Heavy Black Curved Up And Right Arrow" onclick="copyToClipboard('➦', event)">➦</div>
-						<div class="symbol" title="Squat Black Right Arrow" onclick="copyToClipboard('➧', event)">➧</div>
-						<div class="symbol" title="Heavy Concave-pointed Black Right Arrow" onclick="copyToClipboard('➨', event)">➨</div>
-						<div class="symbol" title="Right shaded White Right Arrow" onclick="copyToClipboard('➩', event)">➩</div>
-						<div class="symbol" title="Left shaded White Right Arrow" onclick="copyToClipboard('➪', event)">➪</div>
-						<div class="symbol" title="Back tilted Shadowed White Right Arrow" onclick="copyToClipboard('➫', event)">➫</div>
-						<div class="symbol" title="Front tilted Shadowed White Right Arrow" onclick="copyToClipboard('➬', event)">➬</div>
-						<div class="symbol" title="Heavy Lower Right shadowed White Right Arrow" onclick="copyToClipboard('➭', event)">➭</div>
-						<div class="symbol" title="Heavy Upper Right shadowed White Right Arrow" onclick="copyToClipboard('➮', event)">➮</div>
-						<div class="symbol" title="Notched Lower Right shadowed White Right Arrow" onclick="copyToClipboard('➯', event)">➯</div>
-						<div class="symbol" title="Notched Upper Right shadowed White Right Arrow" onclick="copyToClipboard('➱', event)">➱</div>
-						<div class="symbol" title="Circled Heavy White Right Arrow" onclick="copyToClipboard('➲', event)">➲</div>
-						<div class="symbol" title="White feathered Right Arrow" onclick="copyToClipboard('➳', event)">➳</div>
-						<div class="symbol" title="Black feathered South East Arrow" onclick="copyToClipboard('➴', event)">➴</div>
-						<div class="symbol" title="Black feathered Right Arrow" onclick="copyToClipboard('➵', event)">➵</div>
-						<div class="symbol" title="Black feathered North East Arrow" onclick="copyToClipboard('➶', event)">➶</div>
-						<div class="symbol" title="Heavy Black feathered South East Arrow" onclick="copyToClipboard('➷', event)">➷</div>
-						<div class="symbol" title="Heavy Black feathered Right Arrow" onclick="copyToClipboard('➸', event)">➸</div>
-						<div class="symbol" title="Heavy Black feathered North East Arrow" onclick="copyToClipboard('➹', event)">➹</div>
-						<div class="symbol" title="Teardrop barbed Right Arrow" onclick="copyToClipboard('➺', event)">➺</div>
-						<div class="symbol" title="Heavy Teardrop shanked Right Arrow" onclick="copyToClipboard('➻', event)">➻</div>
-						<div class="symbol" title="Wedge tailed Right Arrow" onclick="copyToClipboard('➼', event)">➼</div>
-						<div class="symbol" title="Heavy Wedge tailed Right Arrow" onclick="copyToClipboard('➽', event)">➽</div>
-						<div class="symbol" title="Open outlined Right Arrow" onclick="copyToClipboard('➾', event)">➾</div>
-						<div class="symbol" title="Up Quadruple Arrow" onclick="copyToClipboard('⟰', event)">⟰</div>
-						<div class="symbol" title="Down Quadruple Arrow" onclick="copyToClipboard('⟱', event)">⟱</div>
-						<div class="symbol" title="Anticlockwise Gapped 76" onclick="copyToClipboard('⟲', event)">⟲</div>
-						<div class="symbol" title="Clockwise Gapped Circle Arrow" onclick="copyToClipboard('⟳', event)">⟳</div>
-						<div class="symbol" title="Right Arrow With Circled Plus" onclick="copyToClipboard('⟴', event)">⟴</div>
-						<div class="symbol" title="Long Left Arrow" onclick="copyToClipboard('⟵', event)">⟵</div>
-						<div class="symbol" title="Long Right Arrow" onclick="copyToClipboard('⟶', event)">⟶</div>
-						<div class="symbol" title="Long Left Right Arrow" onclick="copyToClipboard('⟷', event)">⟷</div>
-						<div class="symbol" title="Long Left Double Arrow" onclick="copyToClipboard('⟸', event)">⟸</div>
-						<div class="symbol" title="Long Right Double Arrow" onclick="copyToClipboard('⟹', event)">⟹</div>
-						<div class="symbol" title="Long Left Right Double Arrow" onclick="copyToClipboard('⟺', event)">⟺</div>
-						<div class="symbol" title="Long Left Arrow From Bar" onclick="copyToClipboard('⟻', event)">⟻</div>
-						<div class="symbol" title="Long Right Arrow From Bar" onclick="copyToClipboard('⟼', event)">⟼</div>
-						<div class="symbol" title="Long Left Double Arrow From Bar" onclick="copyToClipboard('⟽', event)">⟽</div>
-						<div class="symbol" title="Long Right Double Arrow From Bar" onclick="copyToClipboard('⟾', event)">⟾</div>
-						<div class="symbol" title="Long Right Squiggle Arrow" onclick="copyToClipboard('⟿', event)">⟿</div>
-						<div class="symbol" title="Right Two headed Arrow" onclick="copyToClipboard('⤀', event)">⤀</div>
-						<div class="symbol" title="Right Two headed Arrow" onclick="copyToClipboard('⤁', event)">⤁</div>
-						<div class="symbol" title="Left Double Arrow" onclick="copyToClipboard('⤂', event)">⤂</div>
-						<div class="symbol" title="Right Double Arrow" onclick="copyToClipboard('⤃', event)">⤃</div>
-						<div class="symbol" title="Left Right Double Arrow" onclick="copyToClipboard('⤄', event)">⤄</div>
-						<div class="symbol" title="Right Two headed Arrow From Bar" onclick="copyToClipboard('⤅', event)">⤅</div>
-						<div class="symbol" title="Left Double Arrow From Bar" onclick="copyToClipboard('⤆', event)">⤆</div>
-						<div class="symbol" title="Right Double Arrow From Bar" onclick="copyToClipboard('⤇', event)">⤇</div>
-						<div class="symbol" title="Down Arrow With Horizontal Stroke" onclick="copyToClipboard('⤈', event)">⤈</div>
-						<div class="symbol" title="Up Arrow With Horizontal Stroke" onclick="copyToClipboard('⤉', event)">⤉</div>
-						<div class="symbol" title="Up Triple Arrow" onclick="copyToClipboard('⤊', event)">⤊</div>
-						<div class="symbol" title="Down Triple Arrow" onclick="copyToClipboard('⤋', event)">⤋</div>
-						<div class="symbol" title="Left Double Dash Arrow" onclick="copyToClipboard('⤌', event)">⤌</div>
-						<div class="symbol" title="Right Double Dash Arrow" onclick="copyToClipboard('⤍', event)">⤍</div>
-						<div class="symbol" title="Left Triple Dash Arrow" onclick="copyToClipboard('⤎', event)">⤎</div>
-						<div class="symbol" title="Right Triple Dash Arrow" onclick="copyToClipboard('⤏', event)">⤏</div>
-						<div class="symbol" title="Right Two-headed Triple Dash Arrow" onclick="copyToClipboard('⤐', event)">⤐</div>
-						<div class="symbol" title="Right Arrow With Dotted Stem" onclick="copyToClipboard('⤑', event)">⤑</div>
-						<div class="symbol" title="Up Arrow To Bar" onclick="copyToClipboard('⤒', event)">⤒</div>
-						<div class="symbol" title="Down Arrow To Bar" onclick="copyToClipboard('⤓', event)">⤓</div>
-						<div class="symbol" title="Right Arrow With Tail" onclick="copyToClipboard('⤔', event)">⤔</div>
-						<div class="symbol" title="Right Arrow With Tail" onclick="copyToClipboard('⤕', event)">⤕</div>
-						<div class="symbol" title="Right Two headed Arrow" onclick="copyToClipboard('⤖', event)">⤖</div>
-						<div class="symbol" title="Right Two headed Arrow" onclick="copyToClipboard('⤗', event)">⤗</div>
-						<div class="symbol" title="Right Two headed Arrow" onclick="copyToClipboard('⤘', event)">⤘</div>
-						<div class="symbol" title="Left Arrow tail" onclick="copyToClipboard('⤙', event)">⤙</div>
-						<div class="symbol" title="Right Arrow tail" onclick="copyToClipboard('⤚', event)">⤚</div>
-						<div class="symbol" title="Left Double Arrow tail" onclick="copyToClipboard('⤛', event)">⤛</div>
-						<div class="symbol" title="Right Double Arrow tail" onclick="copyToClipboard('⤜', event)">⤜</div>
-						<div class="symbol" title="Left Arrow To Black Diamond" onclick="copyToClipboard('⤝', event)">⤝</div>
-						<div class="symbol" title="Right Arrow To Black Diamond" onclick="copyToClipboard('⤞', event)">⤞</div>
-						<div class="symbol" title="Left Arrow From Bar To Black Diamond" onclick="copyToClipboard('⤟', event)">⤟</div>
-						<div class="symbol" title="Right Arrow From Bar To Black Diamond" onclick="copyToClipboard('⤠', event)">⤠</div>
-						<div class="symbol" title="North West And South East Arrow" onclick="copyToClipboard('⤡', event)">⤡</div>
-						<div class="symbol" title="North East And South West Arrow" onclick="copyToClipboard('⤢', event)">⤢</div>
-						<div class="symbol" title="North West Arrow With Hook" onclick="copyToClipboard('⤣', event)">⤣</div>
-						<div class="symbol" title="North East Arrow With Hook" onclick="copyToClipboard('⤤', event)">⤤</div>
-						<div class="symbol" title="South East Arrow With Hook" onclick="copyToClipboard('⤥', event)">⤥</div>
-						<div class="symbol" title="South West Arrow With Hook" onclick="copyToClipboard('⤦', event)">⤦</div>
-						<div class="symbol" title="Wave Arrow Pointing Directly Right" onclick="copyToClipboard('⤳', event)">⤳</div>
-						<div class="symbol" title="Arrow Pointing Down Then Curving Left" onclick="copyToClipboard('⤶', event)">⤶</div>
-						<div class="symbol" title="Arrow Pointing Down Then Curving Right" onclick="copyToClipboard('⤷', event)">⤷</div>
-						<div class="symbol" title="Right side Arc Clockwise Arrow" onclick="copyToClipboard('⤸', event)">⤸</div>
-						<div class="symbol" title="Left side Arc Anticlockwise Arrow" onclick="copyToClipboard('⤹', event)">⤹</div>
-						<div class="symbol" title="Top Arc Anticlockwise Arrow" onclick="copyToClipboard('⤺', event)">⤺</div>
-						<div class="symbol" title="Bottom Arc Anticlockwise Arrow" onclick="copyToClipboard('⤻', event)">⤻</div>
-						<div class="symbol" title="Top Arc Clockwise Arrow With Minus" onclick="copyToClipboard('⤼', event)">⤼</div>
-						<div class="symbol" title="Top Arc Anticlockwise Arrow With Plus" onclick="copyToClipboard('⤽', event)">⤽</div>
-						<div class="symbol" title="Lower Right Semicircular Clockwise Arrow" onclick="copyToClipboard('⤾', event)">⤾</div>
-						<div class="symbol" title="Lower Left Semicircular Anticlockwise Arrow" onclick="copyToClipboard('⤿', event)">⤿</div>
-						<div class="symbol" title="Anticlockwise Closed Circle Arrow" onclick="copyToClipboard('⥀', event)">⥀</div>
-						<div class="symbol" title="Clockwise Closed Circle Arrow" onclick="copyToClipboard('⥁', event)">⥁</div>
-						<div class="symbol" title="Right Arrow Above Short Left Arrow" onclick="copyToClipboard('⥂', event)">⥂</div>
-						<div class="symbol" title="Left Arrow Above Short Right Arrow" onclick="copyToClipboard('⥃', event)">⥃</div>
-						<div class="symbol" title="Short Right Arrow Above Left Arrow" onclick="copyToClipboard('⥄', event)">⥄</div>
-						<div class="symbol" title="Right Arrow With Plus Below" onclick="copyToClipboard('⥅', event)">⥅</div>
-						<div class="symbol" title="Left Arrow With Plus Below" onclick="copyToClipboard('⥆', event)">⥆</div>
-						<div class="symbol" title="Right Arrow Through X" onclick="copyToClipboard('⥇', event)">⥇</div>
-						<div class="symbol" title="Left Right Arrow Through Small Circle" onclick="copyToClipboard('⥈', event)">⥈</div>
-						<div class="symbol" title="Up Two-headed Arrow From Small Circle" onclick="copyToClipboard('⥉', event)">⥉</div>
-						<div class="symbol" title="Up Arrow Through Circle" onclick="copyToClipboard('⦽', event)">⦽</div>
-						<div class="symbol" title="Black Diamond With Down Arrow" onclick="copyToClipboard('⧪', event)">⧪</div>
-						<div class="symbol" title="White Circle With Down Arrow" onclick="copyToClipboard('⧬', event)">⧬</div>
-						<div class="symbol" title="Black Circle With Down Arrow" onclick="copyToClipboard('⧭', event)">⧭</div>
-						<div class="symbol" title="Integral With Left Arrow With Hook" onclick="copyToClipboard('⨗', event)">⨗</div>
-						<div class="symbol" title="North East White Arrow" onclick="copyToClipboard('⬀', event)">⬀</div>
-						<div class="symbol" title="North West White Arrow" onclick="copyToClipboard('⬁', event)">⬁</div>
-						<div class="symbol" title="South East White Arrow" onclick="copyToClipboard('⬂', event)">⬂</div>
-						<div class="symbol" title="South West White Arrow" onclick="copyToClipboard('⬃', event)">⬃</div>
-						<div class="symbol" title="Left Right White Arrow" onclick="copyToClipboard('⬄', event)">⬄</div>
-						<div class="symbol" title="North East Black Arrow" onclick="copyToClipboard('⬈', event)">⬈</div>
-						<div class="symbol" title="North West Black Arrow" onclick="copyToClipboard('⬉', event)">⬉</div>
-						<div class="symbol" title="South East Black Arrow" onclick="copyToClipboard('⬊', event)">⬊</div>
-						<div class="symbol" title="South West Black Arrow" onclick="copyToClipboard('⬋', event)">⬋</div>
-						<div class="symbol" title="Left Right Black Arrow" onclick="copyToClipboard('⬌', event)">⬌</div>
-						<div class="symbol" title="Up Down Black Arrow" onclick="copyToClipboard('⬍', event)">⬍</div>
-						<div class="symbol" title="Right Arrow With Tip Down" onclick="copyToClipboard('⬎', event)">⬎</div>
-						<div class="symbol" title="Right Arrow With Tip Up" onclick="copyToClipboard('⬏', event)">⬏</div>
-						<div class="symbol" title="Left Arrow With Tip Down" onclick="copyToClipboard('⬐', event)">⬐</div>
-						<div class="symbol" title="Left Arrow With Tip Up" onclick="copyToClipboard('⬑', event)">⬑</div>
-						<div class="symbol" title="Left Arrow With Small Circle" onclick="copyToClipboard('⬰', event)">⬰</div>
-						<div class="symbol" title="Three Left Arrows" onclick="copyToClipboard('⬱', event)">⬱</div>
-						<div class="symbol" title="Left Arrow With Circled Plus" onclick="copyToClipboard('⬲', event)">⬲</div>
-						<div class="symbol" title="Long Left Squiggle Arrow" onclick="copyToClipboard('⬳', event)">⬳</div>
-						<div class="symbol" title="Left Two-headed Arrow With Vertical Stroke" onclick="copyToClipboard('⬴', event)">⬴</div>
-						<div class="symbol" title="Left Two-headed Arrow With Double Vertical Stroke" onclick="copyToClipboard('⬵', event)">⬵</div>
-						<div class="symbol" title="Left Two-headed Arrow From Bar" onclick="copyToClipboard('⬶', event)">⬶</div>
-						<div class="symbol" title="Left Two-headed Triple Dash Arrow" onclick="copyToClipboard('⬷', event)">⬷</div>
-						<div class="symbol" title="Left Arrow With Dotted Stem" onclick="copyToClipboard('⬸', event)">⬸</div>
-						<div class="symbol" title="Left Arrow With Tail With Vertical Stroke" onclick="copyToClipboard('⬹', event)">⬹</div>
-						<div class="symbol" title="Left Arrow With Tail With Double Vertical Stroke" onclick="copyToClipboard('⬺', event)">⬺</div>
-						<div class="symbol" title="Left Two-headed Arrow With Tail" onclick="copyToClipboard('⬻', event)">⬻</div>
-						<div class="symbol" title="Left Two-headed Arrow With Tail With Vertical Stroke" onclick="copyToClipboard('⬼', event)">⬼</div>
-						<div class="symbol" title="Left Two-headed Arrow With Tail With Double Vertical Stroke" onclick="copyToClipboard('⬽', event)">⬽</div>
-						<div class="symbol" title="Left Arrow Through X" onclick="copyToClipboard('⬾', event)">⬾</div>
-						<div class="symbol" title="Wave Arrow Pointing Directly Left" onclick="copyToClipboard('⬿', event)">⬿</div>
-						<div class="symbol" title="Equals Sign Above Left Arrow" onclick="copyToClipboard('⭀', event)">⭀</div>
-						<div class="symbol" title="Reverse Tilde Operator Above Left Arrow" onclick="copyToClipboard('⭁', event)">⭁</div>
-						<div class="symbol" title="Left Arrow Above Reverse Almost Equal To" onclick="copyToClipboard('⭂', event)">⭂</div>
-						<div class="symbol" title="Right Arrow Through Greater than" onclick="copyToClipboard('⭃', event)">⭃</div>
-						<div class="symbol" title="Right Arrow Through Superset" onclick="copyToClipboard('⭄', event)">⭄</div>
-						<div class="symbol" title="Left Quadruple Arrow" onclick="copyToClipboard('⭅', event)">⭅</div>
-						<div class="symbol" title="Right Quadruple Arrow" onclick="copyToClipboard('⭆', event)">⭆</div>
-						<div class="symbol" title="Reverse Tilde Operator Above Right Arrow" onclick="copyToClipboard('⭇', event)">⭇</div>
-						<div class="symbol" title="Right Arrow Above Reverse Almost Equal To" onclick="copyToClipboard('⭈', event)">⭈</div>
-						<div class="symbol" title="Tilde Operator Above Left Arrow" onclick="copyToClipboard('⭉', event)">⭉</div>
-						<div class="symbol" title="Left Arrow Above Almost Equal To" onclick="copyToClipboard('⭊', event)">⭊</div>
-						<div class="symbol" title="Left Arrow Above Reverse Tilde Operator" onclick="copyToClipboard('⭋', event)">⭋</div>
-						<div class="symbol" title="Right Arrow Above Reverse Tilde Operator" onclick="copyToClipboard('⭌', event)">⭌</div>
-						<div class="symbol" title="Kangxi Radical Arrow" onclick="copyToClipboard('⽮', event)">⽮</div>
-						<div class="symbol" title="Halfwidth Left Arrow" onclick="copyToClipboard('￩', event)">￩</div>
-						<div class="symbol" title="Halfwidth Up Arrow" onclick="copyToClipboard('￪', event)">￪</div>
-						<div class="symbol" title="Halfwidth Right Arrow" onclick="copyToClipboard('￫', event)">￫</div>
-						<div class="symbol" title="Halfwidth Down Arrow" onclick="copyToClipboard('￬', event)">￬</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow" onclick="copyToClipboard('↑', event)">↑</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow" onclick="copyToClipboard('→', event)">→</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow" onclick="copyToClipboard('↓', event)">↓</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Stroke" onclick="copyToClipboard('↚', event)">↚</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Stroke" onclick="copyToClipboard('↛', event)">↛</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Wave Arrow" onclick="copyToClipboard('↜', event)">↜</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Wave Arrow" onclick="copyToClipboard('↝', event)">↝</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two Headed Arrow" onclick="copyToClipboard('↞', event)">↞</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Two Headed Arrow" onclick="copyToClipboard('↟', event)">↟</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two Headed Arrow" onclick="copyToClipboard('↠', event)">↠</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Two Headed Arrow" onclick="copyToClipboard('↡', event)">↡</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Tail" onclick="copyToClipboard('↢', event)">↢</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Tail" onclick="copyToClipboard('↣', event)">↣</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow From Bar" onclick="copyToClipboard('↤', event)">↤</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow From Bar" onclick="copyToClipboard('↥', event)">↥</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow From Bar" onclick="copyToClipboard('↦', event)">↦</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow From Bar" onclick="copyToClipboard('↧', event)">↧</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Down Arrow With Base" onclick="copyToClipboard('↨', event)">↨</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Loop" onclick="copyToClipboard('↫', event)">↫</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Loop" onclick="copyToClipboard('↬', event)">↬</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Wave Arrow" onclick="copyToClipboard('↭', event)">↭</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Arrow With Stroke" onclick="copyToClipboard('↮', event)">↮</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Zigzag Arrow" onclick="copyToClipboard('↯', event)">↯</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow With Tip Left" onclick="copyToClipboard('↰', event)">↰</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow With Tip Right" onclick="copyToClipboard('↱', event)">↱</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow With Tip Left" onclick="copyToClipboard('↲', event)">↲</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow With Tip Right" onclick="copyToClipboard('↳', event)">↳</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Corner Down" onclick="copyToClipboard('↴', event)">↴</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow With Corner Left" onclick="copyToClipboard('↵', event)">↵</div>
+						<div class="symbol" style="font-size: 30px !important" title="Anticlockwise Top Semicircle Arrow" onclick="copyToClipboard('↶', event)">↶</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Top Semicircle Arrow" onclick="copyToClipboard('↷', event)">↷</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West Arrow To Long Bar" onclick="copyToClipboard('↸', event)">↸</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow To Bar Over Right Arrow To Bar" onclick="copyToClipboard('↹', event)">↹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Anticlockwise Open Circle Arrow" onclick="copyToClipboard('↺', event)">↺</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Open Circle Arrow" onclick="copyToClipboard('↻', event)">↻</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Over Left Arrow" onclick="copyToClipboard('⇄', event)">⇄</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow Left Of Down Arrow" onclick="copyToClipboard('⇅', event)">⇅</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Over Right Arrow" onclick="copyToClipboard('⇆', event)">⇆</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Paired Arrows" onclick="copyToClipboard('⇇', event)">⇇</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Paired Arrows" onclick="copyToClipboard('⇈', event)">⇈</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Paired Arrows" onclick="copyToClipboard('⇉', event)">⇉</div>
+						<div class="symbol" style="font-size: 30px !important" title="Bow And Arrow" onclick="copyToClipboard('🏹', event)">🏹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heart With Arrow" onclick="copyToClipboard('💘', event)">💘</div>
+						<div class="symbol" style="font-size: 30px !important" title="Envelope With Down Arrow Above" onclick="copyToClipboard('📩', event)">📩</div>
+						<div class="symbol" style="font-size: 30px !important" title="Mobile Phone With Right Arrow At Left" onclick="copyToClipboard('📲', event)">📲</div>
+						<div class="symbol" style="font-size: 30px !important" title="Outbox Tray" onclick="copyToClipboard('📤', event)">📤</div>
+						<div class="symbol" style="font-size: 30px !important" title="İnbox Tray" onclick="copyToClipboard('📥', event)">📥</div>
+						<div class="symbol" style="font-size: 30px !important" title="Back With Left Arrow Above" onclick="copyToClipboard('🔙', event)">🔙</div>
+						<div class="symbol" style="font-size: 30px !important" title="End With Left Arrow" onclick="copyToClipboard('🔚', event)">🔚</div>
+						<div class="symbol" style="font-size: 30px !important" title="On With Left Right Arrow" onclick="copyToClipboard('🔛', event)">🔛</div>
+						<div class="symbol" style="font-size: 30px !important" title="Soon With Right Arrow" onclick="copyToClipboard('🔜', event)">🔜</div>
+						<div class="symbol" style="font-size: 30px !important" title="Top With Up Arrow" onclick="copyToClipboard('🔝', event)">🔝</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow" onclick="copyToClipboard('⬆', event)">⬆</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up-Right Arrow" onclick="copyToClipboard('↗', event)">↗</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow" onclick="copyToClipboard('➡', event)">➡</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Right Arrow" onclick="copyToClipboard('↘', event)">↘</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow" onclick="copyToClipboard('⬇', event)">⬇</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Left Arrow" onclick="copyToClipboard('↙', event)">↙</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow" onclick="copyToClipboard('⬅', event)">⬅</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Left Arrow" onclick="copyToClipboard('↖', event)">↖</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Down Arrow" onclick="copyToClipboard('↕', event)">↕</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Arrow" onclick="copyToClipboard('↔', event)">↔</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Curving Left" onclick="copyToClipboard('↩', event)">↩</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Curving Right" onclick="copyToClipboard('↪', event)">↪</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Curving Up" onclick="copyToClipboard('⤴', event)">⤴</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Curving Down" onclick="copyToClipboard('⤵', event)">⤵</div>
+						<div class="symbol" style="font-size: 30px !important" title="Twisted Right Arrows" onclick="copyToClipboard('🔀', event)">🔀</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Right And Left Open Circle Arrows" onclick="copyToClipboard('🔁', event)">🔁</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Right And Left Open Circle Arrows With Circled One Overlay" onclick="copyToClipboard('🔂', event)">🔂</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Down And Up Open Circle Arrows" onclick="copyToClipboard('🔃', event)">🔃</div>
+						<div class="symbol" style="font-size: 30px !important" title="Anticlockwise Down And Up Open Circle Arrows" onclick="copyToClipboard('🔄', event)">🔄</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Paired Arrows" onclick="copyToClipboard('⇊', event)">⇊</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Double Arrow With Stroke" onclick="copyToClipboard('⇍', event)">⇍</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Double Arrow With Stroke" onclick="copyToClipboard('⇎', event)">⇎</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Double Arrow With Stroke" onclick="copyToClipboard('⇏', event)">⇏</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Double Arrow" onclick="copyToClipboard('⇐', event)">⇐</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Double Arrow" onclick="copyToClipboard('⇑', event)">⇑</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Double Arrow" onclick="copyToClipboard('⇒', event)">⇒</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Double Arrow" onclick="copyToClipboard('⇓', event)">⇓</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Double Arrow" onclick="copyToClipboard('⇔', event)">⇔</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Down Double Arrow" onclick="copyToClipboard('⇕', event)">⇕</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West Double Arrow" onclick="copyToClipboard('⇖', event)">⇖</div>
+						<div class="symbol" style="font-size: 30px !important" title="North East Double Arrow" onclick="copyToClipboard('⇗', event)">⇗</div>
+						<div class="symbol" style="font-size: 30px !important" title="South East Double Arrow" onclick="copyToClipboard('⇘', event)">⇘</div>
+						<div class="symbol" style="font-size: 30px !important" title="South West Double Arrow" onclick="copyToClipboard('⇙', event)">⇙</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Triple Arrow" onclick="copyToClipboard('⇚', event)">⇚</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Triple Arrow" onclick="copyToClipboard('⇛', event)">⇛</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Squiggle Arrow" onclick="copyToClipboard('⇜', event)">⇜</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Squiggle Arrow" onclick="copyToClipboard('⇝', event)">⇝</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow With Double Stroke" onclick="copyToClipboard('⇞', event)">⇞</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow With Double Stroke" onclick="copyToClipboard('⇟', event)">⇟</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Dashed Arrow" onclick="copyToClipboard('⇠', event)">⇠</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Dashed Arrow" onclick="copyToClipboard('⇡', event)">⇡</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Dashed Arrow" onclick="copyToClipboard('⇢', event)">⇢</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Dashed Arrow" onclick="copyToClipboard('⇣', event)">⇣</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow To Bar" onclick="copyToClipboard('⇤', event)">⇤</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow To Bar" onclick="copyToClipboard('⇥', event)">⇥</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left White Arrow" onclick="copyToClipboard('⇦', event)">⇦</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up White Arrow" onclick="copyToClipboard('⇧', event)">⇧</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right White Arrow" onclick="copyToClipboard('⇨', event)">⇨</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down White Arrow" onclick="copyToClipboard('⇩', event)">⇩</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West Arrow To Corner" onclick="copyToClipboard('⇱', event)">⇱</div>
+						<div class="symbol" style="font-size: 30px !important" title="South East Arrow To Corner" onclick="copyToClipboard('⇲', event)">⇲</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Down White Arrow" onclick="copyToClipboard('⇳', event)">⇳</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Small Circle" onclick="copyToClipboard('⇴', event)">⇴</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow Left Of Up Arrow" onclick="copyToClipboard('⇵', event)">⇵</div>
+						<div class="symbol" style="font-size: 30px !important" title="Three Right Arrows" onclick="copyToClipboard('⇶', event)">⇶</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Vertical Stroke" onclick="copyToClipboard('⇷', event)">⇷</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Vertical Stroke" onclick="copyToClipboard('⇸', event)">⇸</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Arrow With Vertical Stroke" onclick="copyToClipboard('⇹', event)">⇹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Double Vertical Stroke" onclick="copyToClipboard('⇺', event)">⇺</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Double Vertical Stroke" onclick="copyToClipboard('⇻', event)">⇻</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Arrow With Double Vertical Stroke" onclick="copyToClipboard('⇼', event)">⇼</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Open headed Arrow" onclick="copyToClipboard('⇽', event)">⇽</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Open-headed Arrow" onclick="copyToClipboard('⇾', event)">⇾</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Open headed Arrow" onclick="copyToClipboard('⇿', event)">⇿</div>
+						<div class="symbol" style="font-size: 30px !important" title="Electric Arrow" onclick="copyToClipboard('⌁', event)">⌁</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Angle With Down Zigzag Arrow" onclick="copyToClipboard('⍼', event)">⍼</div>
+						<div class="symbol" style="font-size: 30px !important" title="Broken Circle With Northwest Arrow" onclick="copyToClipboard('⎋', event)">⎋</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Wide headed Right Arrow" onclick="copyToClipboard('➔', event)">➔</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy South East Arrow" onclick="copyToClipboard('➘', event)">➘</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Right Arrow" onclick="copyToClipboard('➙', event)">➙</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy North East Arrow" onclick="copyToClipboard('➚', event)">➚</div>
+						<div class="symbol" style="font-size: 30px !important" title="Drafting Point Right Arrow" onclick="copyToClipboard('➛', event)">➛</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Round tipped Right Arrow" onclick="copyToClipboard('➜', event)">➜</div>
+						<div class="symbol" style="font-size: 30px !important" title="Triangle headed Right Arrow" onclick="copyToClipboard('➝', event)">➝</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Triangle headed Right Arrow" onclick="copyToClipboard('➞', event)">➞</div>
+						<div class="symbol" style="font-size: 30px !important" title="Dashed Triangle-headed Right Arrow" onclick="copyToClipboard('➟', event)">➟</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Dashed Triangle-headed Right Arrow" onclick="copyToClipboard('➠', event)">➠</div>
+						<div class="symbol" style="font-size: 30px !important" title="Three-d Top-lighted Right Arrowhead" onclick="copyToClipboard('➢', event)">➢</div>
+						<div class="symbol" style="font-size: 30px !important" title="Three-d Bottom-lighted Right Arrowhead" onclick="copyToClipboard('➣', event)">➣</div>
+						<div class="symbol" style="font-size: 30px !important" title="Black Right Arrowhead" onclick="copyToClipboard('➤', event)">➤</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Black Curved Down And Right Arrow" onclick="copyToClipboard('➥', event)">➥</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Black Curved Up And Right Arrow" onclick="copyToClipboard('➦', event)">➦</div>
+						<div class="symbol" style="font-size: 30px !important" title="Squat Black Right Arrow" onclick="copyToClipboard('➧', event)">➧</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Concave-pointed Black Right Arrow" onclick="copyToClipboard('➨', event)">➨</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right shaded White Right Arrow" onclick="copyToClipboard('➩', event)">➩</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left shaded White Right Arrow" onclick="copyToClipboard('➪', event)">➪</div>
+						<div class="symbol" style="font-size: 30px !important" title="Back tilted Shadowed White Right Arrow" onclick="copyToClipboard('➫', event)">➫</div>
+						<div class="symbol" style="font-size: 30px !important" title="Front tilted Shadowed White Right Arrow" onclick="copyToClipboard('➬', event)">➬</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Lower Right shadowed White Right Arrow" onclick="copyToClipboard('➭', event)">➭</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Upper Right shadowed White Right Arrow" onclick="copyToClipboard('➮', event)">➮</div>
+						<div class="symbol" style="font-size: 30px !important" title="Notched Lower Right shadowed White Right Arrow" onclick="copyToClipboard('➯', event)">➯</div>
+						<div class="symbol" style="font-size: 30px !important" title="Notched Upper Right shadowed White Right Arrow" onclick="copyToClipboard('➱', event)">➱</div>
+						<div class="symbol" style="font-size: 30px !important" title="Circled Heavy White Right Arrow" onclick="copyToClipboard('➲', event)">➲</div>
+						<div class="symbol" style="font-size: 30px !important" title="White feathered Right Arrow" onclick="copyToClipboard('➳', event)">➳</div>
+						<div class="symbol" style="font-size: 30px !important" title="Black feathered South East Arrow" onclick="copyToClipboard('➴', event)">➴</div>
+						<div class="symbol" style="font-size: 30px !important" title="Black feathered Right Arrow" onclick="copyToClipboard('➵', event)">➵</div>
+						<div class="symbol" style="font-size: 30px !important" title="Black feathered North East Arrow" onclick="copyToClipboard('➶', event)">➶</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Black feathered South East Arrow" onclick="copyToClipboard('➷', event)">➷</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Black feathered Right Arrow" onclick="copyToClipboard('➸', event)">➸</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Black feathered North East Arrow" onclick="copyToClipboard('➹', event)">➹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Teardrop barbed Right Arrow" onclick="copyToClipboard('➺', event)">➺</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Teardrop shanked Right Arrow" onclick="copyToClipboard('➻', event)">➻</div>
+						<div class="symbol" style="font-size: 30px !important" title="Wedge tailed Right Arrow" onclick="copyToClipboard('➼', event)">➼</div>
+						<div class="symbol" style="font-size: 30px !important" title="Heavy Wedge tailed Right Arrow" onclick="copyToClipboard('➽', event)">➽</div>
+						<div class="symbol" style="font-size: 30px !important" title="Open outlined Right Arrow" onclick="copyToClipboard('➾', event)">➾</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Quadruple Arrow" onclick="copyToClipboard('⟰', event)">⟰</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Quadruple Arrow" onclick="copyToClipboard('⟱', event)">⟱</div>
+						<div class="symbol" style="font-size: 30px !important" title="Anticlockwise Gapped 76" onclick="copyToClipboard('⟲', event)">⟲</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Gapped Circle Arrow" onclick="copyToClipboard('⟳', event)">⟳</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Circled Plus" onclick="copyToClipboard('⟴', event)">⟴</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Arrow" onclick="copyToClipboard('⟵', event)">⟵</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Right Arrow" onclick="copyToClipboard('⟶', event)">⟶</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Right Arrow" onclick="copyToClipboard('⟷', event)">⟷</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Double Arrow" onclick="copyToClipboard('⟸', event)">⟸</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Right Double Arrow" onclick="copyToClipboard('⟹', event)">⟹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Right Double Arrow" onclick="copyToClipboard('⟺', event)">⟺</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Arrow From Bar" onclick="copyToClipboard('⟻', event)">⟻</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Right Arrow From Bar" onclick="copyToClipboard('⟼', event)">⟼</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Double Arrow From Bar" onclick="copyToClipboard('⟽', event)">⟽</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Right Double Arrow From Bar" onclick="copyToClipboard('⟾', event)">⟾</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Right Squiggle Arrow" onclick="copyToClipboard('⟿', event)">⟿</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two headed Arrow" onclick="copyToClipboard('⤀', event)">⤀</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two headed Arrow" onclick="copyToClipboard('⤁', event)">⤁</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Double Arrow" onclick="copyToClipboard('⤂', event)">⤂</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Double Arrow" onclick="copyToClipboard('⤃', event)">⤃</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Double Arrow" onclick="copyToClipboard('⤄', event)">⤄</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two headed Arrow From Bar" onclick="copyToClipboard('⤅', event)">⤅</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Double Arrow From Bar" onclick="copyToClipboard('⤆', event)">⤆</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Double Arrow From Bar" onclick="copyToClipboard('⤇', event)">⤇</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow With Horizontal Stroke" onclick="copyToClipboard('⤈', event)">⤈</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow With Horizontal Stroke" onclick="copyToClipboard('⤉', event)">⤉</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Triple Arrow" onclick="copyToClipboard('⤊', event)">⤊</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Triple Arrow" onclick="copyToClipboard('⤋', event)">⤋</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Double Dash Arrow" onclick="copyToClipboard('⤌', event)">⤌</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Double Dash Arrow" onclick="copyToClipboard('⤍', event)">⤍</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Triple Dash Arrow" onclick="copyToClipboard('⤎', event)">⤎</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Triple Dash Arrow" onclick="copyToClipboard('⤏', event)">⤏</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two-headed Triple Dash Arrow" onclick="copyToClipboard('⤐', event)">⤐</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Dotted Stem" onclick="copyToClipboard('⤑', event)">⤑</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow To Bar" onclick="copyToClipboard('⤒', event)">⤒</div>
+						<div class="symbol" style="font-size: 30px !important" title="Down Arrow To Bar" onclick="copyToClipboard('⤓', event)">⤓</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Tail" onclick="copyToClipboard('⤔', event)">⤔</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Tail" onclick="copyToClipboard('⤕', event)">⤕</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two headed Arrow" onclick="copyToClipboard('⤖', event)">⤖</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two headed Arrow" onclick="copyToClipboard('⤗', event)">⤗</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Two headed Arrow" onclick="copyToClipboard('⤘', event)">⤘</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow tail" onclick="copyToClipboard('⤙', event)">⤙</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow tail" onclick="copyToClipboard('⤚', event)">⤚</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Double Arrow tail" onclick="copyToClipboard('⤛', event)">⤛</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Double Arrow tail" onclick="copyToClipboard('⤜', event)">⤜</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow To Black Diamond" onclick="copyToClipboard('⤝', event)">⤝</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow To Black Diamond" onclick="copyToClipboard('⤞', event)">⤞</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow From Bar To Black Diamond" onclick="copyToClipboard('⤟', event)">⤟</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow From Bar To Black Diamond" onclick="copyToClipboard('⤠', event)">⤠</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West And South East Arrow" onclick="copyToClipboard('⤡', event)">⤡</div>
+						<div class="symbol" style="font-size: 30px !important" title="North East And South West Arrow" onclick="copyToClipboard('⤢', event)">⤢</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West Arrow With Hook" onclick="copyToClipboard('⤣', event)">⤣</div>
+						<div class="symbol" style="font-size: 30px !important" title="North East Arrow With Hook" onclick="copyToClipboard('⤤', event)">⤤</div>
+						<div class="symbol" style="font-size: 30px !important" title="South East Arrow With Hook" onclick="copyToClipboard('⤥', event)">⤥</div>
+						<div class="symbol" style="font-size: 30px !important" title="South West Arrow With Hook" onclick="copyToClipboard('⤦', event)">⤦</div>
+						<div class="symbol" style="font-size: 30px !important" title="Wave Arrow Pointing Directly Right" onclick="copyToClipboard('⤳', event)">⤳</div>
+						<div class="symbol" style="font-size: 30px !important" title="Arrow Pointing Down Then Curving Left" onclick="copyToClipboard('⤶', event)">⤶</div>
+						<div class="symbol" style="font-size: 30px !important" title="Arrow Pointing Down Then Curving Right" onclick="copyToClipboard('⤷', event)">⤷</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right side Arc Clockwise Arrow" onclick="copyToClipboard('⤸', event)">⤸</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left side Arc Anticlockwise Arrow" onclick="copyToClipboard('⤹', event)">⤹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Top Arc Anticlockwise Arrow" onclick="copyToClipboard('⤺', event)">⤺</div>
+						<div class="symbol" style="font-size: 30px !important" title="Bottom Arc Anticlockwise Arrow" onclick="copyToClipboard('⤻', event)">⤻</div>
+						<div class="symbol" style="font-size: 30px !important" title="Top Arc Clockwise Arrow With Minus" onclick="copyToClipboard('⤼', event)">⤼</div>
+						<div class="symbol" style="font-size: 30px !important" title="Top Arc Anticlockwise Arrow With Plus" onclick="copyToClipboard('⤽', event)">⤽</div>
+						<div class="symbol" style="font-size: 30px !important" title="Lower Right Semicircular Clockwise Arrow" onclick="copyToClipboard('⤾', event)">⤾</div>
+						<div class="symbol" style="font-size: 30px !important" title="Lower Left Semicircular Anticlockwise Arrow" onclick="copyToClipboard('⤿', event)">⤿</div>
+						<div class="symbol" style="font-size: 30px !important" title="Anticlockwise Closed Circle Arrow" onclick="copyToClipboard('⥀', event)">⥀</div>
+						<div class="symbol" style="font-size: 30px !important" title="Clockwise Closed Circle Arrow" onclick="copyToClipboard('⥁', event)">⥁</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Above Short Left Arrow" onclick="copyToClipboard('⥂', event)">⥂</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Above Short Right Arrow" onclick="copyToClipboard('⥃', event)">⥃</div>
+						<div class="symbol" style="font-size: 30px !important" title="Short Right Arrow Above Left Arrow" onclick="copyToClipboard('⥄', event)">⥄</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Plus Below" onclick="copyToClipboard('⥅', event)">⥅</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Plus Below" onclick="copyToClipboard('⥆', event)">⥆</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Through X" onclick="copyToClipboard('⥇', event)">⥇</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Arrow Through Small Circle" onclick="copyToClipboard('⥈', event)">⥈</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Two-headed Arrow From Small Circle" onclick="copyToClipboard('⥉', event)">⥉</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Arrow Through Circle" onclick="copyToClipboard('⦽', event)">⦽</div>
+						<div class="symbol" style="font-size: 30px !important" title="Black Diamond With Down Arrow" onclick="copyToClipboard('⧪', event)">⧪</div>
+						<div class="symbol" style="font-size: 30px !important" title="White Circle With Down Arrow" onclick="copyToClipboard('⧬', event)">⧬</div>
+						<div class="symbol" style="font-size: 30px !important" title="Black Circle With Down Arrow" onclick="copyToClipboard('⧭', event)">⧭</div>
+						<div class="symbol" style="font-size: 30px !important" title="Integral With Left Arrow With Hook" onclick="copyToClipboard('⨗', event)">⨗</div>
+						<div class="symbol" style="font-size: 30px !important" title="North East White Arrow" onclick="copyToClipboard('⬀', event)">⬀</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West White Arrow" onclick="copyToClipboard('⬁', event)">⬁</div>
+						<div class="symbol" style="font-size: 30px !important" title="South East White Arrow" onclick="copyToClipboard('⬂', event)">⬂</div>
+						<div class="symbol" style="font-size: 30px !important" title="South West White Arrow" onclick="copyToClipboard('⬃', event)">⬃</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right White Arrow" onclick="copyToClipboard('⬄', event)">⬄</div>
+						<div class="symbol" style="font-size: 30px !important" title="North East Black Arrow" onclick="copyToClipboard('⬈', event)">⬈</div>
+						<div class="symbol" style="font-size: 30px !important" title="North West Black Arrow" onclick="copyToClipboard('⬉', event)">⬉</div>
+						<div class="symbol" style="font-size: 30px !important" title="South East Black Arrow" onclick="copyToClipboard('⬊', event)">⬊</div>
+						<div class="symbol" style="font-size: 30px !important" title="South West Black Arrow" onclick="copyToClipboard('⬋', event)">⬋</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Right Black Arrow" onclick="copyToClipboard('⬌', event)">⬌</div>
+						<div class="symbol" style="font-size: 30px !important" title="Up Down Black Arrow" onclick="copyToClipboard('⬍', event)">⬍</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Tip Down" onclick="copyToClipboard('⬎', event)">⬎</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow With Tip Up" onclick="copyToClipboard('⬏', event)">⬏</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Tip Down" onclick="copyToClipboard('⬐', event)">⬐</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Tip Up" onclick="copyToClipboard('⬑', event)">⬑</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Small Circle" onclick="copyToClipboard('⬰', event)">⬰</div>
+						<div class="symbol" style="font-size: 30px !important" title="Three Left Arrows" onclick="copyToClipboard('⬱', event)">⬱</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Circled Plus" onclick="copyToClipboard('⬲', event)">⬲</div>
+						<div class="symbol" style="font-size: 30px !important" title="Long Left Squiggle Arrow" onclick="copyToClipboard('⬳', event)">⬳</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Arrow With Vertical Stroke" onclick="copyToClipboard('⬴', event)">⬴</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Arrow With Double Vertical Stroke" onclick="copyToClipboard('⬵', event)">⬵</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Arrow From Bar" onclick="copyToClipboard('⬶', event)">⬶</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Triple Dash Arrow" onclick="copyToClipboard('⬷', event)">⬷</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Dotted Stem" onclick="copyToClipboard('⬸', event)">⬸</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Tail With Vertical Stroke" onclick="copyToClipboard('⬹', event)">⬹</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow With Tail With Double Vertical Stroke" onclick="copyToClipboard('⬺', event)">⬺</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Arrow With Tail" onclick="copyToClipboard('⬻', event)">⬻</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Arrow With Tail With Vertical Stroke" onclick="copyToClipboard('⬼', event)">⬼</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Two-headed Arrow With Tail With Double Vertical Stroke" onclick="copyToClipboard('⬽', event)">⬽</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Through X" onclick="copyToClipboard('⬾', event)">⬾</div>
+						<div class="symbol" style="font-size: 30px !important" title="Wave Arrow Pointing Directly Left" onclick="copyToClipboard('⬿', event)">⬿</div>
+						<div class="symbol" style="font-size: 30px !important" title="Equals Sign Above Left Arrow" onclick="copyToClipboard('⭀', event)">⭀</div>
+						<div class="symbol" style="font-size: 30px !important" title="Reverse Tilde Operator Above Left Arrow" onclick="copyToClipboard('⭁', event)">⭁</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Above Reverse Almost Equal To" onclick="copyToClipboard('⭂', event)">⭂</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Through Greater than" onclick="copyToClipboard('⭃', event)">⭃</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Through Superset" onclick="copyToClipboard('⭄', event)">⭄</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Quadruple Arrow" onclick="copyToClipboard('⭅', event)">⭅</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Quadruple Arrow" onclick="copyToClipboard('⭆', event)">⭆</div>
+						<div class="symbol" style="font-size: 30px !important" title="Reverse Tilde Operator Above Right Arrow" onclick="copyToClipboard('⭇', event)">⭇</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Above Reverse Almost Equal To" onclick="copyToClipboard('⭈', event)">⭈</div>
+						<div class="symbol" style="font-size: 30px !important" title="Tilde Operator Above Left Arrow" onclick="copyToClipboard('⭉', event)">⭉</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Above Almost Equal To" onclick="copyToClipboard('⭊', event)">⭊</div>
+						<div class="symbol" style="font-size: 30px !important" title="Left Arrow Above Reverse Tilde Operator" onclick="copyToClipboard('⭋', event)">⭋</div>
+						<div class="symbol" style="font-size: 30px !important" title="Right Arrow Above Reverse Tilde Operator" onclick="copyToClipboard('⭌', event)">⭌</div>
+						<div class="symbol" style="font-size: 30px !important" title="Kangxi Radical Arrow" onclick="copyToClipboard('⽮', event)">⽮</div>
+						<div class="symbol" style="font-size: 30px !important" title="Halfwidth Left Arrow" onclick="copyToClipboard('￩', event)">￩</div>
+						<div class="symbol" style="font-size: 30px !important" title="Halfwidth Up Arrow" onclick="copyToClipboard('￪', event)">￪</div>
+						<div class="symbol" style="font-size: 30px !important" title="Halfwidth Right Arrow" onclick="copyToClipboard('￫', event)">￫</div>
+						<div class="symbol" style="font-size: 30px !important" title="Halfwidth Down Arrow" onclick="copyToClipboard('￬', event)">￬</div>
 				</div>
 				<div class="symbolcat">
 					<a href="heart-symbol.html" title="Heart Symbols">❤️️ Heart Symbols</a>
