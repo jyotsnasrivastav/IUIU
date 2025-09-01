@@ -1,61 +1,20 @@
 User-agent: *
 Allow: /
+Disallow: /img/
+Disallow: /font/
+Disallow: /Image/
+Disallow: /*.css
+Disallow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
 
-# Sitemap
-Sitemap: https://www.symbolsemoji.com/sitemap.xml
-
-# Block access to optimization and automation files
-Disallow: /bulk-*.js
-Disallow: /apply-*.js
-Disallow: /fix-*.js
-Disallow: /update-*.js
-Disallow: /remove-*.js
-Disallow: /add-*.js
-Disallow: /generate-*.js
-Disallow: /create-*.js
-Disallow: /dom-optimizer.js
-Disallow: /convert-png-to-webp.js
-Disallow: /footer-bulk-fix.js
-Disallow: /layout-shift-prevention.js
-Disallow: /lazy-load.js
-Disallow: /optimize-image-compression.js
-Disallow: /performance-audit.js
-Disallow: /reduce-blocking-time.js
-Disallow: /reflow-optimizer.js
-Disallow: /script-phphp*.js
-Disallow: /treemap-analyzer.js
-Disallow: /update_ga*.js
-Disallow: /keyword-based-semantic-seo.js
-
-# Block access to configuration and optimization files
-Disallow: /.htaccess
-Disallow: /web.config
-Disallow: /*.md
-Disallow: /critical.css
-Disallow: /footer-fix.css
-Disallow: /logo-optimization.css
-Disallow: /main.min.css
-Disallow: /script.min.js
-Disallow: /*.min.css
-Disallow: /*.min.js
-
-# Block temporary and backup files
-Disallow: /*~
-Disallow: /*.bak
-Disallow: /*.tmp
-Disallow: /.git/
-Disallow: /.gitignore
-Disallow: /node_modules/
-
-# Allow important pages and directories
-Allow: /index.html
-Allow: /contact.html
-Allow: /privacy.html
-Allow: /terms.html
-Allow: /font-generator.html
-Allow: /img/
-Allow: /font/
-Allow: /Image/
-
-# Crawl-delay for respectful crawling
+# Crawl delay for better server performance
 Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.coolsymbol.com/sitemap.xml
