@@ -828,40 +828,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://www.coolsymbol.com/font/fontello8323-2.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.coolsymbol.com/font/fontello8323.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.coolsymbol.com/Image/favicon-16x16.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.coolsymbol.com/Image/favicon-32x32.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.coolsymbol.com/img/aestheticsymbols.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.coolsymbol.com/img/coolsymbols.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
