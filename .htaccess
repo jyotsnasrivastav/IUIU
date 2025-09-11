@@ -3,6 +3,13 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
+    # Fix double slash URLs - redirect to single slash
+    RewriteCond %{THE_REQUEST} \s[^?]*//+([^?\s]*) [NC]
+    RewriteRule ^ /%1 [R=301,L]
+    
+    # Additional rule to handle double slashes in specific paths
+    RewriteRule ^//(.*)$ /$1 [R=301,L]
+    
     # Force HTTPS (if applicable)
     # RewriteCond %{HTTPS} off
     # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -16,15 +23,15 @@
     RewriteCond %{REQUEST_URI} !/$
     RewriteRule ^(.*)$ $1/ [R=301,L]
     
-    # Handle missing .html extension
+    # Redirect .html extension to clean URLs (must come first)
+    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+    RewriteRule ^ /%1 [NC,L,R=301]
+    
+    # Handle missing .html extension - serve .html files for clean URLs
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule ^(.*)$ $1.html [L]
-    
-    # Redirect .html extension to clean URLs
-    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-    RewriteRule ^ /%1 [NC,L,R=301]
 </IfModule>
 
 # Allow all crawlers access
@@ -108,6 +115,13 @@
     
     # Force cache validation for all resources
     Header always set Vary "Accept-Encoding"
+    
+    # Security Headers
+    Header always set X-Frame-Options "DENY"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com https://pagead2.googlesyndication.com https://partner.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none';"
 </IfModule>
 
 # Enable Keep-Alive
