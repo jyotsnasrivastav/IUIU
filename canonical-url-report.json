@@ -1,0 +1,1785 @@
+{
+  "totalFiles": 136,
+  "totalUniqueUrls": 130,
+  "redirectIssues": [],
+  "okUrls": [
+    {
+      "filePath": "aesthetic-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/aesthetic-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/aesthetic-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/aesthetic-symbols.html"
+    },
+    {
+      "filePath": "all-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/all-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/all-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/all-symbol.html"
+    },
+    {
+      "filePath": "angry-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/angry-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/angry-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/angry-lenny-face.html"
+    },
+    {
+      "filePath": "animal-emoji.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/animal-emoji.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/animal-emoji.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/animal-emoji.html"
+    },
+    {
+      "filePath": "arrow-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/arrow-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/arrow-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/arrow-symbol.html"
+    },
+    {
+      "filePath": "bear-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/bear-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/bear-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/bear-lenny-face.html"
+    },
+    {
+      "filePath": "check-mark-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/check-mark-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/check-mark-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/check-mark-symbol.html"
+    },
+    {
+      "filePath": "chess-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/chess-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/chess-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/chess-symbol.html"
+    },
+    {
+      "filePath": "chinese-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/chinese-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/chinese-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/chinese-symbol.html"
+    },
+    {
+      "filePath": "christmas-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/christmas-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/christmas-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/christmas-lenny-face.html"
+    },
+    {
+      "filePath": "circle-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/circle-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/circle-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/circle-symbol.html"
+    },
+    {
+      "filePath": "comparison-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/comparison-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/comparison-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/comparison-symbol.html"
+    },
+    {
+      "filePath": "confused-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/confused-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/confused-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/confused-lenny-face.html"
+    },
+    {
+      "filePath": "contact.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/contact.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/contact.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/contact.html"
+    },
+    {
+      "filePath": "cool-arrow.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-arrow.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-arrow.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-arrow.html"
+    },
+    {
+      "filePath": "cool-borders.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-borders.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-borders.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-borders.html"
+    },
+    {
+      "filePath": "cool-brackets.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-brackets.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-brackets.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-brackets.html"
+    },
+    {
+      "filePath": "cool-circle.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-circle.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-circle.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-circle.html"
+    },
+    {
+      "filePath": "cool-dividers.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-dividers.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-dividers.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-dividers.html"
+    },
+    {
+      "filePath": "cool-dot.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-dot.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-dot.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-dot.html"
+    },
+    {
+      "filePath": "cool-flower.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-flower.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-flower.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-flower.html"
+    },
+    {
+      "filePath": "cool-heart.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-heart.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-heart.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-heart.html"
+    },
+    {
+      "filePath": "cool-music.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-music.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-music.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-music.html"
+    },
+    {
+      "filePath": "cool-sparkles.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-sparkles.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-sparkles.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-sparkles.html"
+    },
+    {
+      "filePath": "cool-square.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-square.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-square.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-square.html"
+    },
+    {
+      "filePath": "cool-star.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-star.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-star.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-star.html"
+    },
+    {
+      "filePath": "cool-triangle.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-triangle.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-triangle.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-triangle.html"
+    },
+    {
+      "filePath": "cool-waves.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cool-waves.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cool-waves.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cool-waves.html"
+    },
+    {
+      "filePath": "copyright-trademark-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/copyright-trademark-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/copyright-trademark-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/copyright-trademark-symbols.html"
+    },
+    {
+      "filePath": "corner-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/corner-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/corner-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/corner-symbols.html"
+    },
+    {
+      "filePath": "cross-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cross-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cross-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cross-symbol.html"
+    },
+    {
+      "filePath": "crown-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/crown-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/crown-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/crown-symbol.html"
+    },
+    {
+      "filePath": "crying-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/crying-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/crying-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/crying-lenny-face.html"
+    },
+    {
+      "filePath": "cryptocurrency-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cryptocurrency-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cryptocurrency-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cryptocurrency-symbols.html"
+    },
+    {
+      "filePath": "currency-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/currency-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/currency-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/currency-symbol.html"
+    },
+    {
+      "filePath": "cursive-letters.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cursive-letters.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cursive-letters.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cursive-letters.html"
+    },
+    {
+      "filePath": "cute-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/cute-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/cute-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/cute-lenny-face.html"
+    },
+    {
+      "filePath": "daimond-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/daimond-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/daimond-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/daimond-symbol.html"
+    },
+    {
+      "filePath": "dance-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/dance-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/dance-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/dance-lenny-face.html"
+    },
+    {
+      "filePath": "depressed-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/depressed-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/depressed-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/depressed-lenny-face.html"
+    },
+    {
+      "filePath": "devil-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/devil-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/devil-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/devil-lenny-face.html"
+    },
+    {
+      "filePath": "dice-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/dice-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/dice-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/dice-symbol.html"
+    },
+    {
+      "filePath": "disapproval-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/disapproval-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/disapproval-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/disapproval-lenny-face.html"
+    },
+    {
+      "filePath": "dog-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/dog-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/dog-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/dog-lenny-face.html"
+    },
+    {
+      "filePath": "dongers-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/dongers-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/dongers-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/dongers-lenny-face.html"
+    },
+    {
+      "filePath": "down-arrow-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/down-arrow-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/down-arrow-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/down-arrow-symbol.html"
+    },
+    {
+      "filePath": "eating-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/eating-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/eating-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/eating-lenny-face.html"
+    },
+    {
+      "filePath": "evil-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/evil-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/evil-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/evil-lenny-face.html"
+    },
+    {
+      "filePath": "excited-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/excited-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/excited-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/excited-lenny-face.html"
+    },
+    {
+      "filePath": "flag-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/flag-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/flag-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/flag-symbol.html"
+    },
+    {
+      "filePath": "flip-table-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/flip-table-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/flip-table-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/flip-table-lenny-face.html"
+    },
+    {
+      "filePath": "flirty-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/flirty-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/flirty-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/flirty-lenny-face.html"
+    },
+    {
+      "filePath": "flower-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/flower-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/flower-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/flower-symbol.html"
+    },
+    {
+      "filePath": "font\\fontello8323-2.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "font\\fontello8323.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "font-generator.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/font-generator.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/font-generator.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/font-generator.html"
+    },
+    {
+      "filePath": "fraction-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/fraction-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/fraction-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/fraction-symbol.html"
+    },
+    {
+      "filePath": "gender-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/gender-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/gender-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/gender-symbol.html"
+    },
+    {
+      "filePath": "good-morning-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/good-morning-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/good-morning-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/good-morning-lenny-face.html"
+    },
+    {
+      "filePath": "good-night-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/good-night-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/good-night-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/good-night-lenny-face.html"
+    },
+    {
+      "filePath": "greek-alphabet-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/greek-alphabet-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/greek-alphabet-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/greek-alphabet-symbol.html"
+    },
+    {
+      "filePath": "gun-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/gun-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/gun-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/gun-lenny-face.html"
+    },
+    {
+      "filePath": "hand-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/hand-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/hand-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/hand-symbols.html"
+    },
+    {
+      "filePath": "hanging-stars.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/hanging-stars.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/hanging-stars.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/hanging-stars.html"
+    },
+    {
+      "filePath": "happy-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/happy-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/happy-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/happy-lenny-face.html"
+    },
+    {
+      "filePath": "heart-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/heart-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/heart-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/heart-lenny-face.html"
+    },
+    {
+      "filePath": "heart-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/heart-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/heart-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/heart-symbol.html"
+    },
+    {
+      "filePath": "hello-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/hello-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/hello-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/hello-lenny-face.html"
+    },
+    {
+      "filePath": "helpless-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/helpless-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/helpless-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/helpless-lenny-face.html"
+    },
+    {
+      "filePath": "hiding-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/hiding-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/hiding-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/hiding-lenny-face.html"
+    },
+    {
+      "filePath": "house-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/house-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/house-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/house-symbol.html"
+    },
+    {
+      "filePath": "hug-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/hug-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/hug-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/hug-lenny-face.html"
+    },
+    {
+      "filePath": "Image\\favicon-16x16.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "Image\\favicon-32x32.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "img\\aestheticsymbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "img\\coolsymbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "index.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/"
+    },
+    {
+      "filePath": "infinity-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/infinity-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/infinity-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/infinity-symbol.html"
+    },
+    {
+      "filePath": "japanese-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/japanese-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/japanese-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/japanese-symbols.html"
+    },
+    {
+      "filePath": "keyboard-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/keyboard-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/keyboard-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/keyboard-symbols.html"
+    },
+    {
+      "filePath": "kiss-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/kiss-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/kiss-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/kiss-lenny-face.html"
+    },
+    {
+      "filePath": "korean-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/korean-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/korean-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/korean-symbols.html"
+    },
+    {
+      "filePath": "laughing-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/laughing-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/laughing-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/laughing-lenny-face.html"
+    },
+    {
+      "filePath": "lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/lenny-face.html"
+    },
+    {
+      "filePath": "line-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/line-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/line-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/line-symbol.html"
+    },
+    {
+      "filePath": "loading-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/loading-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/loading-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/loading-symbol.html"
+    },
+    {
+      "filePath": "lock-and-key.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/lock-and-key.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/lock-and-key.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/lock-and-key.html"
+    },
+    {
+      "filePath": "medical-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/medical-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/medical-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/medical-symbol.html"
+    },
+    {
+      "filePath": "middle-finger-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/middle-finger-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/middle-finger-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/middle-finger-lenny-face.html"
+    },
+    {
+      "filePath": "moon-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/moon-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/moon-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/moon-symbol.html"
+    },
+    {
+      "filePath": "music-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/music-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/music-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/music-symbol.html"
+    },
+    {
+      "filePath": "nervous-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/nervous-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/nervous-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/nervous-lenny-face.html"
+    },
+    {
+      "filePath": "number-symbols.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/number-symbols.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/number-symbols.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/number-symbols.html"
+    },
+    {
+      "filePath": "office-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/office-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/office-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/office-symbol.html"
+    },
+    {
+      "filePath": "old-english-text.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/old-english-text.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/old-english-text.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/old-english-text.html"
+    },
+    {
+      "filePath": "pi-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/pi-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/pi-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/pi-symbol.html"
+    },
+    {
+      "filePath": "privacy.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/privacy.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/privacy.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/privacy.html"
+    },
+    {
+      "filePath": "punctuation-mark-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/punctuation-mark-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/punctuation-mark-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/punctuation-mark-symbol.html"
+    },
+    {
+      "filePath": "quotation-mark-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/quotation-mark-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/quotation-mark-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/quotation-mark-symbol.html"
+    },
+    {
+      "filePath": "rectangle-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/rectangle-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/rectangle-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/rectangle-symbol.html"
+    },
+    {
+      "filePath": "religion-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/religion-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/religion-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/religion-symbol.html"
+    },
+    {
+      "filePath": "roman-numerals-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/roman-numerals-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/roman-numerals-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/roman-numerals-symbol.html"
+    },
+    {
+      "filePath": "run-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/run-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/run-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/run-lenny-face.html"
+    },
+    {
+      "filePath": "sad-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/sad-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/sad-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/sad-lenny-face.html"
+    },
+    {
+      "filePath": "scared-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/scared-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/scared-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/scared-lenny-face.html"
+    },
+    {
+      "filePath": "shrug-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/shrug-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/shrug-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/shrug-lenny-face.html"
+    },
+    {
+      "filePath": "shy-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/shy-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/shy-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/shy-lenny-face.html"
+    },
+    {
+      "filePath": "smiley-face-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/smiley-face-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/smiley-face-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/smiley-face-symbol.html"
+    },
+    {
+      "filePath": "spider-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/spider-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/spider-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/spider-lenny-face.html"
+    },
+    {
+      "filePath": "square-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/square-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/square-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/square-symbol.html"
+    },
+    {
+      "filePath": "star-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/star-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/star-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/star-symbol.html"
+    },
+    {
+      "filePath": "strong-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/strong-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/strong-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/strong-lenny-face.html"
+    },
+    {
+      "filePath": "sun-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/sun-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/sun-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/sun-symbol.html"
+    },
+    {
+      "filePath": "sunglasses-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/sunglasses-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/sunglasses-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/sunglasses-lenny-face.html"
+    },
+    {
+      "filePath": "surprised-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/surprised-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/surprised-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/surprised-lenny-face.html"
+    },
+    {
+      "filePath": "sword-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/sword-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/sword-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/sword-lenny-face.html"
+    },
+    {
+      "filePath": "terms.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/terms.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/terms.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/terms.html"
+    },
+    {
+      "filePath": "text-animal-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/text-animal-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/text-animal-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/text-animal-symbol.html"
+    },
+    {
+      "filePath": "thank-you-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/thank-you-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/thank-you-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/thank-you-lenny-face.html"
+    },
+    {
+      "filePath": "thinking-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/thinking-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/thinking-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/thinking-lenny-face.html"
+    },
+    {
+      "filePath": "thumbs-up-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/thumbs-up-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/thumbs-up-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/thumbs-up-lenny-face.html"
+    },
+    {
+      "filePath": "tired-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/tired-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/tired-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/tired-lenny-face.html"
+    },
+    {
+      "filePath": "transport-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/transport-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/transport-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/transport-symbol.html"
+    },
+    {
+      "filePath": "triangle-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/triangle-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/triangle-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/triangle-symbol.html"
+    },
+    {
+      "filePath": "trophy-medal-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/trophy-medal-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/trophy-medal-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/trophy-medal-symbol.html"
+    },
+    {
+      "filePath": "unit-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/unit-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/unit-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/unit-symbol.html"
+    },
+    {
+      "filePath": "up-arrow-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/up-arrow-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/up-arrow-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/up-arrow-symbol.html"
+    },
+    {
+      "filePath": "upside-down-text.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/upside-down-text.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/upside-down-text.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/upside-down-text.html"
+    },
+    {
+      "filePath": "vomit-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/vomit-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/vomit-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/vomit-lenny-face.html"
+    },
+    {
+      "filePath": "warning-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/warning-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/warning-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/warning-symbol.html"
+    },
+    {
+      "filePath": "weapon-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/weapon-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/weapon-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/weapon-symbol.html"
+    },
+    {
+      "filePath": "weather-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/weather-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/weather-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/weather-symbol.html"
+    },
+    {
+      "filePath": "weird-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/weird-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/weird-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/weird-lenny-face.html"
+    },
+    {
+      "filePath": "wink-lenny-face.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/wink-lenny-face.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/wink-lenny-face.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/wink-lenny-face.html"
+    },
+    {
+      "filePath": "writing-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/writing-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/writing-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/writing-symbol.html"
+    },
+    {
+      "filePath": "zodiac-symbol.html",
+      "canonicalUrl": "https://www.symbolsemoji.com/zodiac-symbol.html",
+      "finalStatusCode": 200,
+      "redirectChain": [
+        {
+          "url": "https://www.symbolsemoji.com/zodiac-symbol.html",
+          "statusCode": 200
+        }
+      ],
+      "isRedirect": false,
+      "finalUrl": "https://www.symbolsemoji.com/zodiac-symbol.html"
+    }
+  ],
+  "errorUrls": [],
+  "summary": {
+    "totalChecked": 136,
+    "redirectIssues": 0,
+    "okUrls": 136,
+    "errorUrls": 0,
+    "redirectPercentage": "0.0"
+  },
+  "recommendations": [],
+  "generatedAt": "2025-09-12T16:38:33.508Z"
+}

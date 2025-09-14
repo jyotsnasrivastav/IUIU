@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canonical URL Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .header { background: #f4f4f4; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .stat-card { background: white; border: 1px solid #ddd; padding: 15px; border-radius: 5px; text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #333; }
+        .stat-label { color: #666; font-size: 0.9em; }
+        .redirect-issues { background: #fff3cd; border: 1px solid #ffeaa7; }
+        .ok-urls { background: #d4edda; border: 1px solid #c3e6cb; }
+        .error-urls { background: #f8d7da; border: 1px solid #f5c6cb; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f8f9fa; font-weight: bold; }
+        .redirect-chain { font-family: monospace; font-size: 0.9em; }
+        .fix-action { background: #e7f3ff; padding: 10px; border-radius: 3px; margin: 5px 0; }
+        .issue-high { border-left: 4px solid #dc3545; }
+        .issue-medium { border-left: 4px solid #ffc107; }
+        .issue-low { border-left: 4px solid #28a745; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔍 Canonical URL Analysis Report</h1>
+        <p>Generated on: 9/12/2025, 10:08:33 PM</p>
+        <p>This report identifies canonical URLs that return 3XX redirect responses and provides fix recommendations.</p>
+    </div>
+
+    <div class="summary">
+        <div class="stat-card">
+            <div class="stat-number">136</div>
+            <div class="stat-label">Total Files Checked</div>
+        </div>
+        <div class="stat-card redirect-issues">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Redirect Issues Found</div>
+        </div>
+        <div class="stat-card ok-urls">
+            <div class="stat-number">136</div>
+            <div class="stat-label">URLs Returning 200 OK</div>
+        </div>
+        <div class="stat-card error-urls">
+            <div class="stat-number">0</div>
+            <div class="stat-label">URLs with Errors</div>
+        </div>
+    </div>
+
+    <h2>✅ No Redirect Issues Found</h2><p>All canonical URLs return appropriate 200 OK responses.</p>
+
+    
+
+    <h2>📋 Best Practices for Canonical URLs</h2>
+    <ul>
+        <li><strong>Always use absolute URLs:</strong> Canonical URLs should be complete URLs with protocol and domain</li>
+        <li><strong>Point to 200 OK pages:</strong> Canonical URLs should never redirect (3XX) or return errors (4XX/5XX)</li>
+        <li><strong>Use HTTPS when available:</strong> Prefer HTTPS versions of URLs for better SEO</li>
+        <li><strong>Avoid redirect chains:</strong> Point directly to the final destination URL</li>
+        <li><strong>Be consistent:</strong> Use the same canonical URL format across similar pages</li>
+        <li><strong>Self-reference when appropriate:</strong> Pages can canonicalize to themselves if they're the preferred version</li>
+    </ul>
+
+    <h2>🛠️ How to Fix Redirect Issues</h2>
+    <ol>
+        <li>Identify the final destination URL by following the redirect chain</li>
+        <li>Update the canonical URL in the HTML file to point directly to the final URL</li>
+        <li>Ensure the final URL returns a 200 OK status code</li>
+        <li>Test the updated canonical URL to confirm it doesn't redirect</li>
+        <li>Update any internal links to use the canonical URL format</li>
+    </ol>
+</body>
+</html>
