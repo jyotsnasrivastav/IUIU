@@ -47,21 +47,22 @@
     
     // Check if AdSense should be loaded (not blocked by ad blocker)
     function shouldLoadAdsense() {
-        // Check if user has ad blocker or if ads are disabled
+        // We will always attempt to load AdSense, but log if an ad blocker is likely
         try {
-            // Simple ad blocker detection
             const testAd = document.createElement('div');
             testAd.innerHTML = '&nbsp;';
             testAd.className = 'adsbox';
             testAd.style.position = 'absolute';
             testAd.style.left = '-10000px';
             document.body.appendChild(testAd);
-            
             const isBlocked = testAd.offsetHeight === 0;
             document.body.removeChild(testAd);
-            
-            return !isBlocked;
+            if (isBlocked) {
+                console.warn('[AdSense] Possible ad blocker detected. Proceeding to load ads anyway.');
+            }
+            return true; // Always attempt to load to maximize chances
         } catch (e) {
+            console.warn('[AdSense] Ad blocker detection failed, proceeding:', e);
             return true; // Default to loading ads if detection fails
         }
     }
@@ -153,8 +154,8 @@
                     
                     // Configuration: How many content ads to show
                     const contentAdConfig = {
-                        minSymbolsRequired: 40, // Minimum symbols needed to show ad
-                        adsPerPage: 2,          // Number of content ads per page - NOW SET TO 2!
+                        minSymbolsRequired: 10, // Lower threshold so ads place more often
+                        adsPerPage: 2,          // Number of content ads per page
                         spacingBetweenAds: 50   // Symbols between each ad
                     };
                     
@@ -219,6 +220,12 @@
                     ...ADSENSE_CONFIG.autoAds.settings
                 });
             }
+
+            // Retry once after a short delay in case the script wasn't ready
+            setTimeout(() => {
+                const pending = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+                pending.forEach(() => (window.adsbygoogle = window.adsbygoogle || []).push({}));
+            }, 1500);
         } catch (e) {
             console.warn('AdSense initialization failed:', e);
         }
@@ -280,6 +287,7 @@
             addAdStyles();
             
             // Load AdSense script
+            console.log('[AdSense] Loading AdSense library...');
             await loadAdsenseScript();
             
             // Wait for DOM to be ready
@@ -290,12 +298,16 @@
             }
             
             // Place ads
+            console.log('[AdSense] Placing ad containers...');
             placeAds();
             
             // Initialize ads
-            setTimeout(initializeAds, 1000); // Small delay to ensure proper loading
+            setTimeout(() => {
+                console.log('[AdSense] Initializing ad slots...');
+                initializeAds();
+            }, 1000); // Small delay to ensure proper loading
             
-            console.log('AdSense initialized successfully');
+            console.log('[AdSense] Initialization flow complete');
             
         } catch (error) {
             console.warn('AdSense initialization failed:', error);
