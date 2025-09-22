@@ -5,6 +5,8 @@ Disallow: /font/
 Disallow: /Image/
 Disallow: /*.css
 Disallow: /*.js
+# Discourage crawling of search URLs (but rely on noindex meta tag in HTML)
+Disallow: /?q=
 Allow: /*.png
 Allow: /*.jpg
 Allow: /*.jpeg
@@ -17,4 +19,4 @@ Allow: /*.ico
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://www.coolsymbol.com/sitemap.xml
+Sitemap: https://www.symbolsemoji.com/sitemap.xml

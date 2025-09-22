@@ -72,36 +72,42 @@
 (function () {
 	'use strict';
 
-	// Runtime ad blocker: neutralize globals and strip ad nodes/scripts
-	(function blockAds() {
+	// Runtime ad blocker: neutralize unwanted ads but allow AdSense
+	(function blockUnwantedAds() {
 		try {
-			// Neutralize common ad globals
-			Object.defineProperty(window, 'adsbygoogle', { value: [], writable: false, configurable: true });
+			// Only neutralize non-AdSense ad globals
 			Object.defineProperty(window, 'freestar', { value: { queue: [], config: {}, initCallback: function(){} }, writable: false, configurable: true });
+			// Note: Removed adsbygoogle blocking to allow AdSense
 		} catch (e) {}
 
-		// Remove existing ad elements
-		function removeAdElements(root) {
+		// Remove unwanted ad elements but preserve AdSense
+		function removeUnwantedAdElements(root) {
 			var selectors = [
-				'ins.adsbygoogle',
-				'.ads',
+				// Remove specific unwanted ads but not AdSense
+				'.ads:not(.adsense-container)',
 				'.ads-sec',
-				'.ad',
+				'.ad:not(.adsense-container)',
 				'[data-freestar-ad]',
 				'#coolsymbol-top_leaderboard_btf',
 				'#coolsymbol-incontent_reusable'
+				// Note: Removed 'ins.adsbygoogle' to allow AdSense
 			];
 			try {
 				selectors.forEach(function(sel){
-					(root || document).querySelectorAll(sel).forEach(function(n){ n.remove(); });
+					(root || document).querySelectorAll(sel).forEach(function(n){ 
+						// Double check it's not an AdSense container
+						if (!n.closest('.adsense-container')) {
+							n.remove(); 
+						}
+					});
 				});
 			} catch (e) {}
 		}
-		removeAdElements(document);
+		removeUnwantedAdElements(document);
 
-		// Block ad scripts by URL pattern
+		// Block unwanted ad scripts but allow AdSense
 		var blockedPatterns = [
-			/googlesyndication\.com/i,
+			// Removed googlesyndication.com to allow AdSense
 			/a\.pub\.network|b\.pub\.network|c\.pub\.network|d\.pub\.network/i,
 			/amazon-adsystem\.com/i,
 			/btloader\.com|api\.btloader\.com/i,
@@ -113,8 +119,8 @@
 				Array.prototype.forEach.call(m.addedNodes || [], function(node){
 					try {
 						if (node && node.nodeType === 1) {
-							// remove ad elements that appear later
-							removeAdElements(node);
+							// remove unwanted ad elements that appear later
+							removeUnwantedAdElements(node);
 							if (node.tagName === 'SCRIPT') {
 								var src = node.getAttribute('src') || '';
 								if (blockedPatterns.some(function(re){ return re.test(src); })) {
