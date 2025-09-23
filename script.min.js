@@ -72,68 +72,7 @@
 (function () {
 	'use strict';
 
-	// Runtime ad blocker: neutralize globals and strip ad nodes/scripts
-	(function blockAds() {
-		try {
-			// Neutralize common ad globals
-			Object.defineProperty(window, 'adsbygoogle', { value: [], writable: false, configurable: true });
-			Object.defineProperty(window, 'freestar', { value: { queue: [], config: {}, initCallback: function(){} }, writable: false, configurable: true });
-		} catch (e) {}
-
-		// Remove existing ad elements
-		function removeAdElements(root) {
-			var selectors = [
-				'ins.adsbygoogle',
-				'.ads',
-				'.ads-sec',
-				'.ad',
-				'[data-freestar-ad]',
-				'#coolsymbol-top_leaderboard_btf',
-				'#coolsymbol-incontent_reusable'
-			];
-			try {
-				selectors.forEach(function(sel){
-					(root || document).querySelectorAll(sel).forEach(function(n){ n.remove(); });
-				});
-			} catch (e) {}
-		}
-		removeAdElements(document);
-
-		// Block ad scripts by URL pattern
-		var blockedPatterns = [
-			/googlesyndication\.com/i,
-			/a\.pub\.network|b\.pub\.network|c\.pub\.network|d\.pub\.network/i,
-			/amazon-adsystem\.com/i,
-			/btloader\.com|api\.btloader\.com/i,
-			/confiant-integrations\.net/i,
-			/pubfig\.min\.js|\/coolsymbol-top\/pubfig\.min\.js/i
-		];
-		var observer = new MutationObserver(function(mutations){
-			mutations.forEach(function(m){
-				Array.prototype.forEach.call(m.addedNodes || [], function(node){
-					try {
-						if (node && node.nodeType === 1) {
-							// remove ad elements that appear later
-							removeAdElements(node);
-							if (node.tagName === 'SCRIPT') {
-								var src = node.getAttribute('src') || '';
-								if (blockedPatterns.some(function(re){ return re.test(src); })) {
-									node.remove();
-								}
-							}
-							if (node.tagName === 'LINK') {
-								var href = node.getAttribute('href') || '';
-								if (blockedPatterns.some(function(re){ return re.test(href); })) {
-									node.remove();
-								}
-							}
-						}
-					} catch (e) {}
-				});
-			});
-		});
-		try { observer.observe(document.documentElement || document, { childList: true, subtree: true }); } catch (e) {}
-	})();
+	// Ad blocker removed to allow Google AdSense and other legitimate ads
 
 	// Utilities
 	function $(sel) {
