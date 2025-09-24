@@ -42,13 +42,6 @@ function createShareModalHTML() {
                 <button class="share-popup-close" onclick="hideSharePopup()">&times;</button>
             </div>
             <div class="share-popup-content">
-                <!-- Google AdSense Ad -->
-                <div class="ad-container" style="text-align: center; margin-bottom: 15px;">
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:320px;height:50px"
-                         data-ad-client="ca-pub-7064720037053690"
-                         data-ad-slot="6072175326"></ins>
-                </div>
                 <div class="share-symbol-display" id="shareSymbolDisplay" contenteditable="true" role="textbox" aria-label="Edit your text with the symbol"></div>
                 <div class="share-options">
                     <button class="share-option whatsapp" onclick="shareToWhatsApp()">
@@ -330,16 +323,6 @@ function showSharePopup() {
         popup.classList.add('show');
         document.body.style.overflow = 'hidden';
 
-        // Initialize AdSense ads
-        setTimeout(function() {
-            try {
-                if (window.adsbygoogle && window.adsbygoogle.loaded) {
-                    (window.adsbygoogle = window.adsbygoogle || []).push({});
-                }
-            } catch (e) {
-                console.log('AdSense initialization delayed');
-            }
-        }, 100);
 
         // Focus the editable symbol area to open mobile keyboard and let user type between emojis
         setTimeout(function(){
@@ -351,7 +334,7 @@ function showSharePopup() {
             range.collapse(false);
             sel.removeAllRanges();
             sel.addRange(range);
-        }, 150);
+        }, 50);
     }
 }
 
