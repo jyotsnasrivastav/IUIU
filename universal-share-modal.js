@@ -425,13 +425,33 @@ function shareToWhatsApp() {
     hideSharePopup();
 }
 
-function shareToFacebook() {
+async function shareToFacebook() {
     if (!currentSymbol) return;
     const message = getComposedShareText();
-    const facebookUrl = 'https://www.facebook.com/sharer/sharer.php?quote=' + encodeURIComponent(message);
     
-    window.open(facebookUrl, '_blank', 'width=600,height=400');
-    showToast('📘 Opening Facebook...');
+    // Copy symbol to clipboard first
+    try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(message);
+        } else {
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = message;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        }
+        
+        // Open Facebook in new tab
+        window.open('https://www.facebook.com/', '_blank');
+        showToast('📘 Symbol copied! Paste it on Facebook');
+    } catch (error) {
+        // Fallback: just open Facebook
+        window.open('https://www.facebook.com/', '_blank');
+        showToast('📘 Opening Facebook...');
+    }
+    
     hideSharePopup();
 }
 
