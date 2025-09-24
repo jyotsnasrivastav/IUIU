@@ -1,12 +1,4 @@
-User-agent:
+User-agent: *
 Allow: /
 
-# Allow important assets (do not block CSS/JS)
-Allow: /.css
-Allow: /.js
-
-# Crawl delay for better server performance
-Crawl-delay: 1
-
-# Sitemap location
-Sitemap: https://www.symbolsemoji.com/sitemap.xml
+Sitemap: https://www.example.com/sitemap.xml
