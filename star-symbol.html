@@ -1452,7 +1452,7 @@ async function copyToDevice() {
 
 function shareToWhatsApp() {
 	if (!currentSymbol) return;
-	const message = `${currentSymbol} - Check out this cool symbol from SymbolsEmoji.com! 🎉`;
+	const message = `${currentSymbol}`;
 	const encodedMessage = encodeURIComponent(message);
 	const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 	
