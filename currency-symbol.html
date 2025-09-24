@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
@@ -342,7 +342,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
     <meta name="description" content="Currency symbols copy paste \$ £ ¥ HK$ € د.إ ؋ ƒ - money symbols for financial content and international communication." />
-    <meta name="keywords" content="aesthetic heart symbols copy and paste, aesthetic heart symbols for bios copy and paste, cute heart symbols aesthetic copy and paste, aesthetic symbols copy and paste we heart it, big heart symbol aesthetic copy and paste, different heart text symbols, aesthetic heart symbol, simple aesthetic symbols copy and paste, cute symbols to copy paste, aesthetic emojis, best aesthetic symbols, aesthetic font symbols for instagram, aesthetic keyboard symbols for instagram, aesthetic symbols for instagram bio, aesthetic emojis for instagram bio, cute text symbols for instagram bio, aesthetic instagram symbols copy and paste, aesthetic text instagram, aesthetic text for reels, aesthetic symbols for instagram" />
+    <meta name="keywords" content="symbol copy paste, special characters, unicode symbols, text symbols, typography characters bio, aesthetic emojis for instagram bio, cute text symbols for instagram bio, aesthetic instagram symbols copy and paste, aesthetic text instagram, aesthetic text for reels, aesthetic symbols for instagram" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#230AC7" />
     <meta name="author" content="CoolSymbol" />
@@ -1320,6 +1320,39 @@ window.addEventListener('load', function() {
     }
 });
 </script>
+
+<!-- Social Sharing Popup -->
+<div class="share-overlay" id="shareOverlay" onclick="hideSharePopup()"></div>
+<div class="share-popup" id="sharePopup">
+	<div class="share-popup-header">
+		<h3 class="share-popup-title">Share Symbol</h3>
+		<button class="share-popup-close" onclick="hideSharePopup()">&times;</button>
+	</div>
+	<div class="share-symbol" id="shareSymbolDisplay"></div>
+	<div class="share-options">
+		<button class="share-btn whatsapp" onclick="shareToWhatsApp()">
+			<div class="share-btn-icon">ðŸ“±</div>
+			<div class="share-btn-text">Send to WhatsApp</div>
+		</button>
+		<button class="share-btn facebook" onclick="shareToFacebook()">
+			<div class="share-btn-icon">ðŸ“˜</div>
+			<div class="share-btn-text">Send to Facebook</div>
+		</button>
+		<button class="share-btn device" onclick="copyToDevice()">
+			<div class="share-btn-icon">ðŸ“‹</div>
+			<div class="share-btn-text">Send to Device</div>
+		</button>
+	</div>
+</div>
+<script>
+let currentSymbol='';function setupSocialSharing(){window.copyToClipboard=function(symbol,event){currentSymbol=symbol;const symbolDisplay=document.getElementById('shareSymbolDisplay');if(symbolDisplay){symbolDisplay.textContent=symbol;}showSharePopup();if(event){event.preventDefault();event.stopPropagation();}};}setupSocialSharing();document.addEventListener('DOMContentLoaded',function(){setTimeout(setupSocialSharing,100);});window.addEventListener('load',function(){setTimeout(setupSocialSharing,200);});function showSharePopup(){const overlay=document.getElementById('shareOverlay');const popup=document.getElementById('sharePopup');if(overlay&&popup){overlay.classList.add('show');popup.classList.add('show');document.body.style.overflow='hidden';}}function hideSharePopup(){const overlay=document.getElementById('shareOverlay');const popup=document.getElementById('sharePopup');if(overlay&&popup){overlay.classList.remove('show');popup.classList.remove('show');document.body.style.overflow='';}}async function copyToDevice(){if(!currentSymbol)return;try{if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(currentSymbol);showToast('âœ… Symbol copied to clipboard!');}else{const textArea=document.createElement('textarea');textArea.value=currentSymbol;document.body.appendChild(textArea);textArea.select();document.execCommand('copy');document.body.removeChild(textArea);showToast('âœ… Symbol copied to clipboard!');}}catch(err){showToast('âŒ Failed to copy symbol');}hideSharePopup();}function shareToWhatsApp(){if(!currentSymbol)return;const message=`${currentSymbol} - Check out this cool symbol from SymbolsEmoji.com! ðŸŽ‰`;const encodedMessage=encodeURIComponent(message);const isMobile=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);let whatsappUrl;if(isMobile){whatsappUrl=`whatsapp://send?text=${encodedMessage}`;setTimeout(()=>{window.open(`https://wa.me/?text=${encodedMessage}`,'_blank');},1000);}else{whatsappUrl=`https://wa.me/?text=${encodedMessage}`;}window.open(whatsappUrl,'_blank');hideSharePopup();showToast('ðŸ“± Opening WhatsApp...');}function shareToFacebook(){if(!currentSymbol)return;const shareUrl=encodeURIComponent(window.location.href);const shareText=encodeURIComponent(`${currentSymbol} - Cool symbol from SymbolsEmoji.com`);const facebookUrl=`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}&quote=${shareText}`;window.open(facebookUrl,'_blank','width=600,height=400');hideSharePopup();showToast('ðŸ“˜ Opening Facebook...');}function showToast(message){const existingToast=document.querySelector('.toast-notification');if(existingToast){existingToast.remove();}const toast=document.createElement('div');toast.className='toast-notification';toast.textContent=message;toast.style.cssText=`position:fixed;top:20px;right:20px;background:#333;color:white;padding:12px 20px;border-radius:8px;z-index:10000;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,0.3);`;document.body.appendChild(toast);setTimeout(()=>{toast.remove();},3000);}document.addEventListener('keydown',function(e){if(e.key==='Escape'){hideSharePopup();}});
+</script>
+<style>
+.share-popup{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:white;border-radius:15px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,0.3);z-index:10001;min-width:320px;max-width:90vw;display:none;animation:slideUp 0.3s ease-out;}.share-popup.show{display:block;}@keyframes slideUp{from{transform:translateX(-50%) translateY(100%);opacity:0;}to{transform:translateX(-50%) translateY(0);opacity:1;}}.share-popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;}.share-popup-title{font-size:18px;font-weight:bold;color:#333;margin:0;}.share-popup-close{background:none;border:none;font-size:24px;color:#666;cursor:pointer;padding:5px;border-radius:50%;width:35px;height:35px;display:flex;align-items:center;justify-content:center;transition:background-color 0.2s;}.share-popup-close:hover{background-color:#f0f0f0;}.share-symbol{text-align:center;font-size:48px;margin:15px 0;padding:20px;background:#f8f9fa;border-radius:10px;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1;display:flex;align-items:center;justify-content:center;min-height:80px;}.share-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px;}.share-btn{display:flex;flex-direction:column;align-items:center;padding:15px 10px;border:2px solid #e0e0e0;border-radius:10px;background:white;cursor:pointer;transition:all 0.2s ease;}.share-btn:hover{border-color:#230AC7;background:#f8f9ff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(35,10,199,0.15);}.share-btn-icon{font-size:24px;margin-bottom:8px;}.share-btn-text{font-size:12px;font-weight:500;text-align:center;line-height:1.2;}.share-btn.whatsapp:hover{border-color:#25D366;background:#f0fff4;}.share-btn.facebook:hover{border-color:#1877F2;background:#f0f8ff;}.share-btn.device:hover{border-color:#6c757d;background:#f8f9fa;}.share-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;display:none;}.share-overlay.show{display:block;}@media (max-width:480px){.share-popup{min-width:280px;max-width:85vw;padding:15px;bottom:15px;}.share-options{grid-template-columns:1fr;gap:8px;}.share-btn{flex-direction:row;justify-content:flex-start;padding:10px 12px;}.share-btn-icon{margin-bottom:0;margin-right:10px;}.share-btn-text{font-size:13px;text-align:left;}}
+</style>    
+    <!-- Universal Share Modal with Social Logos -->
+    <script src="universal-share-modal.js"></script>
 </body>
 </html>
+
 

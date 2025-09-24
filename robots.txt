@@ -1,20 +1,12 @@
-User-agent: *
+User-agent:
 Allow: /
-Disallow: /img/
-Disallow: /font/
-Disallow: /Image/
-Disallow: /*.css
-Disallow: /*.js
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.gif
-Allow: /*.webp
-Allow: /*.svg
-Allow: /*.ico
+
+# Allow important assets (do not block CSS/JS)
+Allow: /.css
+Allow: /.js
 
 # Crawl delay for better server performance
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://www.coolsymbol.com/sitemap.xml
+Sitemap: https://www.symbolsemoji.com/sitemap.xml
