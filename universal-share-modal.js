@@ -369,7 +369,7 @@ async function copyToDevice() {
 
 function shareToWhatsApp() {
     if (!currentSymbol) return;
-    const message = getComposedShareText() + '\n\nGet more symbols at: ' + window.location.origin;
+    const message = getComposedShareText();
     const encodedMessage = encodeURIComponent(message);
     
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
