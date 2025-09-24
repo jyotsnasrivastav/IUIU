@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeShareModal() {
     if (!document.getElementById('shareOverlay')) {
         createShareModalHTML();
+        loadAdSenseScript();
     }
     addSymbolClickListeners();
     
@@ -19,6 +20,17 @@ function initializeShareModal() {
             hideSharePopup();
         }
     });
+}
+
+function loadAdSenseScript() {
+    // Load AdSense script if not already loaded
+    if (!document.querySelector('script[src*="adsbygoogle.js"]')) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690';
+        script.crossOrigin = 'anonymous';
+        document.head.appendChild(script);
+    }
 }
 
 function createShareModalHTML() {
@@ -30,6 +42,13 @@ function createShareModalHTML() {
                 <button class="share-popup-close" onclick="hideSharePopup()">&times;</button>
             </div>
             <div class="share-popup-content">
+                <!-- Google AdSense Ad -->
+                <div class="ad-container" style="text-align: center; margin-bottom: 15px;">
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:320px;height:50px"
+                         data-ad-client="ca-pub-7064720037053690"
+                         data-ad-slot="6072175326"></ins>
+                </div>
                 <div class="share-symbol-display" id="shareSymbolDisplay" contenteditable="true" role="textbox" aria-label="Edit your text with the symbol"></div>
                 <div class="share-options">
                     <button class="share-option whatsapp" onclick="shareToWhatsApp()">
@@ -311,6 +330,17 @@ function showSharePopup() {
         popup.classList.add('show');
         document.body.style.overflow = 'hidden';
 
+        // Initialize AdSense ads
+        setTimeout(function() {
+            try {
+                if (window.adsbygoogle && window.adsbygoogle.loaded) {
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                }
+            } catch (e) {
+                console.log('AdSense initialization delayed');
+            }
+        }, 100);
+
         // Focus the editable symbol area to open mobile keyboard and let user type between emojis
         setTimeout(function(){
             try { symbolDisplay.focus({ preventScroll: true }); } catch(e){ symbolDisplay.focus(); }
@@ -321,7 +351,7 @@ function showSharePopup() {
             range.collapse(false);
             sel.removeAllRanges();
             sel.addRange(range);
-        }, 50);
+        }, 150);
     }
 }
 
@@ -378,10 +408,31 @@ function shareToWhatsApp() {
         const whatsappAppUrl = 'whatsapp://send?text=' + encodedMessage;
         const whatsappWebUrl = 'https://wa.me/?text=' + encodedMessage;
         
+        // Track if user left the page (app opened successfully)
+        let appOpened = false;
+        let timeoutId;
+        
+        // Listen for visibility change to detect if app opened
+        const handleVisibilityChange = function() {
+            if (document.hidden) {
+                appOpened = true;
+                clearTimeout(timeoutId);
+                document.removeEventListener('visibilitychange', handleVisibilityChange);
+            }
+        };
+        
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+        
+        // Try to open WhatsApp app
         window.location.href = whatsappAppUrl;
-        setTimeout(function() {
-            window.open(whatsappWebUrl, '_blank');
-        }, 1000);
+        
+        // Only open web version if app didn't open within 2.5 seconds
+        timeoutId = setTimeout(function() {
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+            if (!appOpened) {
+                window.open(whatsappWebUrl, '_blank');
+            }
+        }, 2500);
     } else {
         const whatsappWebUrl = 'https://web.whatsapp.com/send?text=' + encodedMessage;
         window.open(whatsappWebUrl, '_blank');
@@ -394,8 +445,7 @@ function shareToWhatsApp() {
 function shareToFacebook() {
     if (!currentSymbol) return;
     const message = getComposedShareText();
-    const url = window.location.href;
-    const facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(message);
+    const facebookUrl = 'https://www.facebook.com/sharer/sharer.php?quote=' + encodeURIComponent(message);
     
     window.open(facebookUrl, '_blank', 'width=600,height=400');
     showToast('📘 Opening Facebook...');
