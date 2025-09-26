@@ -298,20 +298,107 @@
 	}
 
 	async function ensureDependencies() {
-		await ensureScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js', () => window.jQuery);
-		await ensureScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.6/infinite-scroll.pkgd.min.js', () => window.jQuery && (jQuery.fn.infiniteScroll || window.InfiniteScroll));
+		console.log('📦 Loading dependencies...');
+		await ensureScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', () => window.jQuery);
+		console.log('✅ jQuery loaded:', !!window.jQuery);
+		
+		// Try the newer version first
+		const infiniteScrollLoaded = await ensureScript('https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js', () => window.InfiniteScroll);
+		
+		if (!infiniteScrollLoaded) {
+			console.log('⚠️ Modern InfiniteScroll failed, trying jQuery plugin...');
+			await ensureScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.6/infinite-scroll.pkgd.min.js', () => window.jQuery && jQuery.fn.infiniteScroll);
+		}
+		
+		console.log('📦 Dependencies loaded. jQuery:', !!window.jQuery, 'InfiniteScroll:', !!window.InfiniteScroll, 'jQuery plugin:', !!(window.jQuery && jQuery.fn.infiniteScroll));
 	}
 
 	function initInfiniteScroll() {
-		if (!window.jQuery || !(jQuery.fn && jQuery.fn.infiniteScroll)) return;
+		console.log('🚀 Initializing infinite scroll...');
+		
+		const container = document.querySelector('.maindata');
+		const nextLink = document.querySelector('.page-next');
+		
+		if (!container) {
+			console.error('❌ Container .maindata not found');
+			return;
+		}
+		
+		console.log('📋 Next page link:', nextLink ? nextLink.href : 'Not found');
+		
+		// Try modern InfiniteScroll first
+		if (window.InfiniteScroll) {
+			console.log('✅ Using modern InfiniteScroll');
+			
+			const infScroll = new InfiniteScroll(container, {
+				path: '.page-next',
+				append: '.symbol',
+				history: 'push',
+				status: '.page-load-status',
+				hideNav: '.page',
+				debug: true,
+				// Add scroll threshold
+				scrollThreshold: 400
+			});
+			
+			infScroll.on('request', function() {
+				console.log('📡 Modern infinite scroll request started');
+				snapshotPage();
+			});
+			
+			infScroll.on('load', function(response, path) {
+				console.log('✅ Modern loaded page:', path);
+			});
+			
+			infScroll.on('error', function(error, path) {
+				console.error('❌ Modern error loading page:', path, error);
+			});
+			
+			infScroll.on('last', function() {
+				console.log('🏁 Modern last page reached');
+			});
+			
+			console.log('🎉 Modern infinite scroll initialized');
+			return;
+		}
+		
+		// Fallback to jQuery plugin
+		if (!window.jQuery || !(jQuery.fn && jQuery.fn.infiniteScroll)) {
+			console.error('❌ Neither modern InfiniteScroll nor jQuery plugin available');
+			return;
+		}
+		
+		console.log('✅ Using jQuery infinite scroll plugin');
 		const $container = jQuery('.maindata');
-		if (!$container.length) return;
+		if (!$container.length) {
+			console.error('❌ jQuery container .maindata not found');
+			return;
+		}
+		
 		$container.infiniteScroll({
 			path: '.page-next',
 			append: '.symbol',
 			history: 'push',
-			status: '.page-load-status'
-		}).on('request.infiniteScroll', snapshotPage);
+			status: '.page-load-status',
+			debug: true,
+			// Add scroll threshold
+			scrollThreshold: 400
+		})
+		.on('request.infiniteScroll', function() {
+			console.log('📡 jQuery infinite scroll request started');
+			snapshotPage();
+		})
+		.on('load.infiniteScroll', function(event, response, path) {
+			console.log('✅ jQuery loaded page:', path);
+		})
+		.on('error.infiniteScroll', function(event, error, path) {
+			console.error('❌ jQuery error loading page:', path, error);
+		})
+		.on('last.infiniteScroll', function() {
+			console.log('🏁 jQuery last page reached');
+		});
+		
+		console.log('🎉 jQuery infinite scroll initialized');
 	}
 
 	// DOMContentLoaded

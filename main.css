@@ -1058,6 +1058,25 @@ span.sharetext {
     color: #000000;
     background-color: #ffffff;
     text-align: center;
+    display: none; /* Hide by default, show only when truly last */
+}
+
+.page-load-status {
+    display: none; /* Hide by default */
+}
+
+.infinite-scroll-request {
+    display: block; /* Show loading animation */
+}
+
+.infinite-scroll-error {
+    display: block;
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
 }
 
 a.page-next {
