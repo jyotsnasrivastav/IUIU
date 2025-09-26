@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-09-24T21:31:52.653Z",
+  "summary": {
+    "total_pages": 8,
+    "created_count": 8,
+    "error_count": 0
+  },
+  "results": [
+    {
+      "file": "math-symbol.html",
+      "status": "created",
+      "symbols_count": 42
+    },
+    {
+      "file": "peace-symbol.html",
+      "status": "created",
+      "symbols_count": 30
+    },
+    {
+      "file": "phone-symbol.html",
+      "status": "created",
+      "symbols_count": 30
+    },
+    {
+      "file": "playing-cards-symbol.html",
+      "status": "created",
+      "symbols_count": 30
+    },
+    {
+      "file": "left-arrow-symbol.html",
+      "status": "created",
+      "symbols_count": 30
+    },
+    {
+      "file": "right-arrow-symbol.html",
+      "status": "created",
+      "symbols_count": 30
+    },
+    {
+      "file": "straight-lines.html",
+      "status": "created",
+      "symbols_count": 41
+    },
+    {
+      "file": "text-art.html",
+      "status": "created",
+      "symbols_count": 54
+    }
+  ]
+}
