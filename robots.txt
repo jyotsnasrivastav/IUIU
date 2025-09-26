@@ -1,9 +1,25 @@
-User-agent:
+User-agent: *
+Disallow: 
+
+# Allow all content by default
 Allow: /
 
-# Allow important assets (do not block CSS/JS)
-Allow: /.css
-Allow: /.js
+# Disallow search results to prevent duplicate content
+Disallow: /?q=*
+Disallow: /search*
+
+# Disallow any report files if they exist
+Disallow: /*-report.html
+
+# Allow important static assets
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
 
 # Crawl delay for better server performance
 Crawl-delay: 1
