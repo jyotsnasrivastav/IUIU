@@ -42,6 +42,19 @@ function createShareModalHTML() {
                 <button class="share-popup-close" onclick="hideSharePopup()">&times;</button>
             </div>
             <div class="share-popup-content">
+                <!-- Popup Ad in Share Modal -->
+                <div class="popup-ad-container" style="margin-bottom: 15px; text-align: center;">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
+                         crossorigin="anonymous"></script>
+                    <!-- pop -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:320px;height:50px"
+                         data-ad-client="ca-pub-7064720037053690"
+                         data-ad-slot="6072175326"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
                 <div class="share-symbol-display" id="shareSymbolDisplay" contenteditable="true" role="textbox" aria-label="Edit your text with the symbol"></div>
                 <div class="share-options">
                     <button class="share-option whatsapp" onclick="shareToWhatsApp()">
@@ -110,8 +123,29 @@ function addShareModalCSS() {
             z-index: 10001;
             min-width: 320px;
             max-width: 90vw;
+            max-height: 80vh;
+            overflow-y: auto;
             display: none;
             animation: slideUp 0.3s ease-out;
+        }
+        
+        .popup-ad-container {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid #e9ecef;
+            position: relative;
+        }
+        
+        .popup-ad-container::before {
+            content: 'Advertisement';
+            position: absolute;
+            top: 2px;
+            left: 8px;
+            font-size: 9px;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .share-popup.show {
@@ -322,7 +356,9 @@ function showSharePopup() {
         overlay.classList.add('show');
         popup.classList.add('show');
         document.body.style.overflow = 'hidden';
-
+        
+        // Load and display popup ad
+        loadPopupAd();
 
         // Focus the editable symbol area to open mobile keyboard and let user type between emojis
         setTimeout(function(){
@@ -335,6 +371,18 @@ function showSharePopup() {
             sel.removeAllRanges();
             sel.addRange(range);
         }, 50);
+    }
+}
+
+function loadPopupAd() {
+    // Initialize AdSense ad in popup
+    try {
+        const popupAdContainer = document.querySelector('.popup-ad-container .adsbygoogle');
+        if (popupAdContainer && window.adsbygoogle) {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+    } catch (error) {
+        console.log('AdSense popup ad load error:', error);
     }
 }
 

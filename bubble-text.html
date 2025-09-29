@@ -392,6 +392,67 @@
             padding: 10px 0; 
         }
     </style>
+	<style>
+
+    /* Sidebar Ad Styles */
+    .sidebar-ad-container {
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 300px;
+        max-height: 600px;
+        overflow: hidden;
+    }
+    
+    .sidebar-ad {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+    }
+    
+    /* Ad Container Styles */
+    .ad-container {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        border: 1px solid #e9ecef;
+        position: relative;
+    }
+    
+    .ad-container::before {
+        content: 'Advertisement';
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 10px;
+        color: #6c757d;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Responsive Sidebar */
+    @media (max-width: 1400px) {
+        .sidebar-ad-container {
+            display: none;
+        }
+    }
+    
+    /* Mobile Ad Adjustments */
+    @media (max-width: 768px) {
+        .ad-container {
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+        .sidebar-ad-container {
+            display: none;
+        }
+    }
+	</style>
 </head>
 <body class="page-bubble-text">
 	<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
@@ -447,6 +508,21 @@
 
 		</nav>
 	</header>
+
+
+    <!-- top-banner -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7064720037053690"
+         data-ad-slot="5788145465"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
 				</a>
 			</div>
 		</div>
@@ -457,6 +533,23 @@
 				<div class="rightContainer">
 					<div class="maindata">
 				<h1 class="titlesymbol">Bubble Text Symbol Copy and Paste</h1>
+
+
+    <!-- content-banner -->
+    <div class="ad-container" style="margin:20px 0; text-align:center;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
+             crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7064720037053690"
+             data-ad-slot="4594822602"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
 				<div class="symbol" title="Bubble text A letter" onclick="copyToClipboard('🅐', event)">🅐
 		</div>
 				<div class="symbol" title="Bubble text B letter" onclick="copyToClipboard('🅑', event)">🅑</div>
