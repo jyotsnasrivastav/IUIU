@@ -415,15 +415,21 @@
     }
     
     .ad-container::before {
-        content: 'Advertisement';
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        font-size: 10px;
-        color: #6c757d;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
+			content: 'Advertisement';
+			position: absolute;
+			top: 5px;
+			left: 10px;
+			font-size: 10px;
+			color: #6c757d;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			z-index: 1;
+		}
+		
+		/* Hide Advertisement label when ad is loaded */
+		.ad-container:has(.adsbygoogle[data-adsbygoogle-status="done"])::before {
+			display: none;
+		}
     
     /* Responsive Sidebar */
     @media (max-width: 1400px) {
@@ -502,17 +508,14 @@
 
 
     <!-- top-banner -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
-         crossorigin="anonymous"></script>
+    
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-7064720037053690"
          data-ad-slot="5788145465"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    
 
 				</a>
 			</div>
@@ -528,17 +531,14 @@
 
     <!-- content-banner -->
     <div class="ad-container" style="margin:20px 0; text-align:center;">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
-             crossorigin="anonymous"></script>
+        
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-7064720037053690"
              data-ad-slot="4594822602"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        
     </div>
 
 			<div class="symbol lennyface" onclick="copyToClipboard('𓀐𓂸📹', event)">𓀐𓂸📹
@@ -1395,11 +1395,339 @@ window.addEventListener('load', function() {
 
   <!-- Universal Share Modal with Social Logos -->
     <script defer src="universal-share-modal.js"></script>
+
+    
+
+    <!-- OPTIMIZED_ADSENSE_INIT -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // Prevent multiple initializations
+        if (window.adsenseInitialized) {
+            console.log('AdSense already initialized, skipping...');
+            return;
+        }
+        window.adsenseInitialized = true;
+        
+        // Configuration
+        const CONFIG = {
+            initialDelay: 1000,        // Wait 1s after page load
+            staggerDelay: 150,         // 150ms between each ad
+            retryDelay: 3000,          // Retry after 3s
+            maxRetries: 2,             // Maximum retry attempts
+            checkInterval: 500         // Check ad status every 500ms
+        };
+        
+        let retryCount = 0;
+        
+        function initializeAds() {
+            try {
+                const ads = document.querySelectorAll('.adsbygoogle');
+                console.log('[AdSense] Found', ads.length, 'ad units');
+                
+                if (ads.length === 0) {
+                    console.warn('[AdSense] No ad units found on page');
+                    return;
+                }
+                
+                // Check if adsbygoogle is loaded
+                if (typeof window.adsbygoogle === 'undefined') {
+                    console.error('[AdSense] adsbygoogle.js not loaded yet');
+                    if (retryCount < CONFIG.maxRetries) {
+                        retryCount++;
+                        console.log('[AdSense] Retrying in', CONFIG.retryDelay / 1000, 'seconds... (attempt', retryCount, ')');
+                        setTimeout(initializeAds, CONFIG.retryDelay);
+                    }
+                    return;
+                }
+                
+                let initializedCount = 0;
+                let alreadyLoadedCount = 0;
+                
+                ads.forEach(function(ad, index) {
+                    const status = ad.getAttribute('data-adsbygoogle-status');
+                    
+                    if (status === 'done') {
+                        alreadyLoadedCount++;
+                        return;
+                    }
+                    
+                    // Stagger ad initialization to prevent conflicts
+                    setTimeout(function() {
+                        try {
+                            // Double-check status before pushing
+                            if (!ad.hasAttribute('data-adsbygoogle-status')) {
+                                (window.adsbygoogle = window.adsbygoogle || []).push({});
+                                initializedCount++;
+                                console.log('[AdSense] Initialized ad unit', index + 1);
+                            }
+                        } catch (e) {
+                            console.error('[AdSense] Error initializing ad unit', index + 1, ':', e);
+                        }
+                    }, index * CONFIG.staggerDelay);
+                });
+                
+                // Log summary after all ads are processed
+                setTimeout(function() {
+                    console.log('[AdSense] Summary:', {
+                        total: ads.length,
+                        initialized: initializedCount,
+                        alreadyLoaded: alreadyLoadedCount
+                    });
+                    
+                    // Schedule verification check
+                    setTimeout(verifyAds, CONFIG.retryDelay);
+                }, ads.length * CONFIG.staggerDelay + 500);
+                
+            } catch (error) {
+                console.error('[AdSense] Initialization error:', error);
+            }
+        }
+        
+        function verifyAds() {
+            try {
+                const unloadedAds = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+                
+                if (unloadedAds.length > 0) {
+                    console.warn('[AdSense]', unloadedAds.length, 'ads failed to load');
+                    
+                    if (retryCount < CONFIG.maxRetries) {
+                        retryCount++;
+                        console.log('[AdSense] Retrying failed ads... (attempt', retryCount, ')');
+                        
+                        unloadedAds.forEach(function(ad, index) {
+                            setTimeout(function() {
+                                try {
+                                    if (!ad.hasAttribute('data-adsbygoogle-status')) {
+                                        (window.adsbygoogle = window.adsbygoogle || []).push({});
+                                        console.log('[AdSense] Retried ad unit', index + 1);
+                                    }
+                                } catch (e) {
+                                    console.error('[AdSense] Retry failed for ad unit', index + 1, ':', e);
+                                }
+                            }, index * CONFIG.staggerDelay);
+                        });
+                    } else {
+                        console.error('[AdSense] Max retries reached. Some ads failed to load.');
+                        console.log('[AdSense] Troubleshooting tips:');
+                        console.log('  1. Check if ad blocker is enabled');
+                        console.log('  2. Verify AdSense account is approved');
+                        console.log('  3. Check browser console for errors');
+                        console.log('  4. Ensure ads.txt file is properly configured');
+                    }
+                } else {
+                    console.log('[AdSense] ✓ All ads loaded successfully!');
+                }
+            } catch (error) {
+                console.error('[AdSense] Verification error:', error);
+            }
+        }
+        
+        // Start initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(initializeAds, CONFIG.initialDelay);
+            });
+        } else {
+            // DOM already loaded
+            setTimeout(initializeAds, CONFIG.initialDelay);
+        }
+        
+        // Expose verification function for manual testing
+        window.verifyAdSense = function() {
+            const ads = document.querySelectorAll('.adsbygoogle');
+            const loaded = document.querySelectorAll('.adsbygoogle[data-adsbygoogle-status="done"]');
+            const failed = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+            
+            console.log('=== AdSense Status ===');
+            console.log('Total ad units:', ads.length);
+            console.log('Successfully loaded:', loaded.length);
+            console.log('Failed to load:', failed.length);
+            
+            if (failed.length > 0) {
+                console.log('Failed ad units:', failed);
+            }
+            
+            return {
+                total: ads.length,
+                loaded: loaded.length,
+                failed: failed.length
+            };
+        };
+        
+        console.log('[AdSense] Initialization script loaded. Run verifyAdSense() to check status.');
+        
+    })();
+    </script>
 </body>
 </html>
 
     <!-- Universal Share Modal with Social Logos -->
     <script defer src="universal-share-modal.js"></script>
+
+    <!-- OPTIMIZED_ADSENSE_INIT -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // Prevent multiple initializations
+        if (window.adsenseInitialized) {
+            console.log('AdSense already initialized, skipping...');
+            return;
+        }
+        window.adsenseInitialized = true;
+        
+        // Configuration
+        const CONFIG = {
+            initialDelay: 1000,        // Wait 1s after page load
+            staggerDelay: 150,         // 150ms between each ad
+            retryDelay: 3000,          // Retry after 3s
+            maxRetries: 2,             // Maximum retry attempts
+            checkInterval: 500         // Check ad status every 500ms
+        };
+        
+        let retryCount = 0;
+        
+        function initializeAds() {
+            try {
+                const ads = document.querySelectorAll('.adsbygoogle');
+                console.log('[AdSense] Found', ads.length, 'ad units');
+                
+                if (ads.length === 0) {
+                    console.warn('[AdSense] No ad units found on page');
+                    return;
+                }
+                
+                // Check if adsbygoogle is loaded
+                if (typeof window.adsbygoogle === 'undefined') {
+                    console.error('[AdSense] adsbygoogle.js not loaded yet');
+                    if (retryCount < CONFIG.maxRetries) {
+                        retryCount++;
+                        console.log('[AdSense] Retrying in', CONFIG.retryDelay / 1000, 'seconds... (attempt', retryCount, ')');
+                        setTimeout(initializeAds, CONFIG.retryDelay);
+                    }
+                    return;
+                }
+                
+                let initializedCount = 0;
+                let alreadyLoadedCount = 0;
+                
+                ads.forEach(function(ad, index) {
+                    const status = ad.getAttribute('data-adsbygoogle-status');
+                    
+                    if (status === 'done') {
+                        alreadyLoadedCount++;
+                        return;
+                    }
+                    
+                    // Stagger ad initialization to prevent conflicts
+                    setTimeout(function() {
+                        try {
+                            // Double-check status before pushing
+                            if (!ad.hasAttribute('data-adsbygoogle-status')) {
+                                (window.adsbygoogle = window.adsbygoogle || []).push({});
+                                initializedCount++;
+                                console.log('[AdSense] Initialized ad unit', index + 1);
+                            }
+                        } catch (e) {
+                            console.error('[AdSense] Error initializing ad unit', index + 1, ':', e);
+                        }
+                    }, index * CONFIG.staggerDelay);
+                });
+                
+                // Log summary after all ads are processed
+                setTimeout(function() {
+                    console.log('[AdSense] Summary:', {
+                        total: ads.length,
+                        initialized: initializedCount,
+                        alreadyLoaded: alreadyLoadedCount
+                    });
+                    
+                    // Schedule verification check
+                    setTimeout(verifyAds, CONFIG.retryDelay);
+                }, ads.length * CONFIG.staggerDelay + 500);
+                
+            } catch (error) {
+                console.error('[AdSense] Initialization error:', error);
+            }
+        }
+        
+        function verifyAds() {
+            try {
+                const unloadedAds = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+                
+                if (unloadedAds.length > 0) {
+                    console.warn('[AdSense]', unloadedAds.length, 'ads failed to load');
+                    
+                    if (retryCount < CONFIG.maxRetries) {
+                        retryCount++;
+                        console.log('[AdSense] Retrying failed ads... (attempt', retryCount, ')');
+                        
+                        unloadedAds.forEach(function(ad, index) {
+                            setTimeout(function() {
+                                try {
+                                    if (!ad.hasAttribute('data-adsbygoogle-status')) {
+                                        (window.adsbygoogle = window.adsbygoogle || []).push({});
+                                        console.log('[AdSense] Retried ad unit', index + 1);
+                                    }
+                                } catch (e) {
+                                    console.error('[AdSense] Retry failed for ad unit', index + 1, ':', e);
+                                }
+                            }, index * CONFIG.staggerDelay);
+                        });
+                    } else {
+                        console.error('[AdSense] Max retries reached. Some ads failed to load.');
+                        console.log('[AdSense] Troubleshooting tips:');
+                        console.log('  1. Check if ad blocker is enabled');
+                        console.log('  2. Verify AdSense account is approved');
+                        console.log('  3. Check browser console for errors');
+                        console.log('  4. Ensure ads.txt file is properly configured');
+                    }
+                } else {
+                    console.log('[AdSense] ✓ All ads loaded successfully!');
+                }
+            } catch (error) {
+                console.error('[AdSense] Verification error:', error);
+            }
+        }
+        
+        // Start initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(initializeAds, CONFIG.initialDelay);
+            });
+        } else {
+            // DOM already loaded
+            setTimeout(initializeAds, CONFIG.initialDelay);
+        }
+        
+        // Expose verification function for manual testing
+        window.verifyAdSense = function() {
+            const ads = document.querySelectorAll('.adsbygoogle');
+            const loaded = document.querySelectorAll('.adsbygoogle[data-adsbygoogle-status="done"]');
+            const failed = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+            
+            console.log('=== AdSense Status ===');
+            console.log('Total ad units:', ads.length);
+            console.log('Successfully loaded:', loaded.length);
+            console.log('Failed to load:', failed.length);
+            
+            if (failed.length > 0) {
+                console.log('Failed ad units:', failed);
+            }
+            
+            return {
+                total: ads.length,
+                loaded: loaded.length,
+                failed: failed.length
+            };
+        };
+        
+        console.log('[AdSense] Initialization script loaded. Run verifyAdSense() to check status.');
+        
+    })();
+    </script>
 </body>
 </html>
 

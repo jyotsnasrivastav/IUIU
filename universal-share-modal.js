@@ -44,16 +44,11 @@ function createShareModalHTML() {
             <div class="share-popup-content">
                 <!-- Popup Ad in Share Modal -->
                 <div class="popup-ad-container" style="margin-bottom: 15px; text-align: center;">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
-                         crossorigin="anonymous"></script>
                     <!-- pop -->
                     <ins class="adsbygoogle"
                          style="display:inline-block;width:320px;height:50px"
                          data-ad-client="ca-pub-7064720037053690"
                          data-ad-slot="6072175326"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                 </div>
                 <div class="share-symbol-display" id="shareSymbolDisplay" contenteditable="true" role="textbox" aria-label="Edit your text with the symbol"></div>
                 <div class="share-options">
@@ -375,15 +370,22 @@ function showSharePopup() {
 }
 
 function loadPopupAd() {
-    // Initialize AdSense ad in popup
-    try {
-        const popupAdContainer = document.querySelector('.popup-ad-container .adsbygoogle');
-        if (popupAdContainer && window.adsbygoogle) {
-            (adsbygoogle = window.adsbygoogle || []).push({});
+    // Initialize AdSense ad in popup with delay
+    setTimeout(function() {
+        try {
+            const popupAdContainer = document.querySelector('.popup-ad-container .adsbygoogle');
+            if (popupAdContainer && !popupAdContainer.hasAttribute('data-adsbygoogle-status')) {
+                // Ensure adsbygoogle is available
+                if (typeof adsbygoogle !== 'undefined') {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                } else {
+                    console.log('AdSense script not loaded yet');
+                }
+            }
+        } catch (error) {
+            console.log('AdSense popup ad load error:', error);
         }
-    } catch (error) {
-        console.log('AdSense popup ad load error:', error);
-    }
+    }, 1000);
 }
 
 function hideSharePopup() {
