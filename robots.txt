@@ -1,9 +1,25 @@
-User-agent:
+User-agent: *
+Allow: /
+
+# Allow AdSense and other Google bots
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
 Allow: /
 
 # Allow important assets (do not block CSS/JS)
-Allow: /.css
-Allow: /.js
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
 
 # Crawl delay for better server performance
 Crawl-delay: 1
