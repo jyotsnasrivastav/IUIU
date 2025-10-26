@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://localnewshub.in/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://localnewshub.in/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://localnewshub.in/collections/salwar-suit.atom"/>
+  <title>Localnewshub</title>
+  <updated>2023-12-05T11:57:29+05:30</updated>
+  <author>
+    <name>Localnewshub</name>
+  </author>
+  <entry>
+    <id>https://localnewshub.in/products/7322671186129</id>
+    <published>2023-12-05T11:57:29+05:30</published>
+    <updated>2023-12-05T11:57:29+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/new-arrival-gown-on-sale"/>
+    <title>New Arrival Gown On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_3a34e9cd3b8142e09b82750e96e865d1_mv2.jpg?v=1701757650"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>Green</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322671186129</id>
+      <title>Default Title</title>
+      <s:price currency="INR">199.00</s:price>
+      <s:sku>LN139</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322670104785</id>
+    <published>2023-12-05T11:56:29+05:30</published>
+    <updated>2023-12-05T11:56:29+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/premium-pink-and-purple-dress-on-sale"/>
+    <title>Premium Pink And Purple Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_deb8a49bc5db4fa7af5e947fa5d16f94_mv2.jpg?v=1701757590"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            99.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span data-mce-fragment="1">Care Instructions: First Few Wash Separately | Dark Colors to be Wash separately | Cold Machine Wash | Do not use Strong Detergent | Do not Bleach | Do not soak for long time | Dry in Shade.</span><br data-mce-fragment="1"><br data-mce-fragment="1"><span data-mce-fragment="1">Type : Full stitched ||</span><br data-mce-fragment="1"><br data-mce-fragment="1"><span data-mce-fragment="1">Colour : shown in picture</span><br data-mce-fragment="1"><span data-mce-fragment="1">For confident Buy : Check Real Image Given In Last</span><br data-mce-fragment="1"><br data-mce-fragment="1"><span data-mce-fragment="1">Size Indicates Is Bust size of kurti</span><br data-mce-fragment="1"><br data-mce-fragment="1"><span data-mce-fragment="1">S-36, M-38, L-40, XL-42, XXL-44, XXXL-46, 4XL-48 , 5XL-50, 6XL-52, 7XL-54</span><br data-mce-fragment="1"><span data-mce-fragment="1">BUY 3 AND GET FREE SHIPPING AVAILABLE</span><br></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>XS</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN109</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>S</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN110</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>M</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN111</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>L</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN112</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>XL</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN113</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>XXL</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN114</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670104785</id>
+      <title>XXXL</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN115</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322670072017</id>
+    <published>2023-12-05T11:56:27+05:30</published>
+    <updated>2023-12-05T11:56:27+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/new-arrival-pink-dress-on-sale"/>
+    <title>New Arrival Pink Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_03b214460f4f4bc6a2af477eef5a67b1_mv2.jpg?v=1701757588"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>Pink</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670072017</id>
+      <title>Default Title</title>
+      <s:price currency="INR">199.00</s:price>
+      <s:sku>LN108</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322670039249</id>
+    <published>2023-12-05T11:56:24+05:30</published>
+    <updated>2023-12-05T11:56:24+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/new-arrival-off-white-dress-on-sale"/>
+    <title>New Arrival Off-White Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_dbfc2e354fc74c588e3c9a4a6368bf73_mv2.jpg?v=1701757586"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            99.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>Off-White</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670039249</id>
+      <title>Default Title</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN107</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322670006481</id>
+    <published>2023-12-05T11:56:23+05:30</published>
+    <updated>2023-12-05T11:56:23+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/new-arrival-orange-dress-on-sale"/>
+    <title>New Arrival Orange Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_65590a8f3ffd472e8e172550f20d1e71_mv2.jpg?v=1701757584"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            149.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>Orange</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322670006481</id>
+      <title>Default Title</title>
+      <s:price currency="INR">149.00</s:price>
+      <s:sku>LN106</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669973713</id>
+    <published>2023-12-05T11:56:21+05:30</published>
+    <updated>2023-12-05T11:56:21+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/latest-green-color-designer-dress-on-sale"/>
+    <title>Latest Green Color Designer Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_819e4b8a1e2b4105a51051521261ef38_mv2.jpg?v=1701757582"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            129.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>Green</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669973713</id>
+      <title>Default Title</title>
+      <s:price currency="INR">129.00</s:price>
+      <s:sku>LN105</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669940945</id>
+    <published>2023-12-05T11:56:19+05:30</published>
+    <updated>2023-12-05T11:56:19+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/fabulous-sky-blue-designer-dress-on-sale"/>
+    <title>Fabulous Sky Blue Designer Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_9fb147dab2fe43579e6ecb7a604e92ac_mv2.jpg?v=1701757580"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            99.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>Sky Blue</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669940945</id>
+      <title>Default Title</title>
+      <s:price currency="INR">99.00</s:price>
+      <s:sku>LN104</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669908177</id>
+    <published>2023-12-05T11:56:16+05:30</published>
+    <updated>2023-12-05T11:56:16+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/white-dress-on-sale"/>
+    <title>White Dress On Sale</title>
+    <s:type></s:type>
+    <s:vendor>LocalNewsHub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/cec01f_342ce3fd6b27448d888e54d6bc689a1d_mv2_2aaec6a1-c96e-42ee-851d-fa8dc5e1d510.jpg?v=1710927359"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>LocalNewsHub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            169.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><table>	<tbody>		<tr>			<th>Color</th>			<td>White</td>		</tr>		<tr>			<th>Fabric</th>			<td>Premium</td>		</tr>		<tr>			<th>Wash Care</th>			<td>Dry Clean Only</td>		</tr>	</tbody>
+</table></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669908177</id>
+      <title>Default Title</title>
+      <s:price currency="INR">169.00</s:price>
+      <s:sku>SS38</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669875409</id>
+    <published>2023-12-05T11:56:14+05:30</published>
+    <updated>2023-12-05T11:56:14+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/alia-bhatt-black-georgette-indian-semi-stitched-salwar-suit"/>
+    <title>Alia Bhatt Black Georgette Indian Semi Stitched Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_ce9ad82f07d346898cdea43a88481c43_mv2.jpg?v=1701757576"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>55 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>42</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Silk</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Georgette With Embroidery Work With Lace Border</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidered</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669875409</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN102</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669842641</id>
+    <published>2023-12-05T11:56:12+05:30</published>
+    <updated>2023-12-05T11:56:12+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/american-crepe-digital-printed-cherry-color-sharara-suit"/>
+    <title>American Crepe Digital Printed Cherry Color Sharara Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_1d6122b20fbd418790f25931bd1bcce2_mv2.jpg?v=1701757574"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1599.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Blush Red</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Heavy American Crepe</td>
+</tr>
+<tr>
+<td>Top Lenght</td>
+<td>Fully Stitched Max Chest Set Up To 44 (XXL) Inches</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Heavy American Crepe</td>
+</tr>
+<tr>
+<td>Has Dupptta</td>
+<td>Yes - Digital Printed</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Full-Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Printed Work</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669842641</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1599.00</s:price>
+      <s:sku>LN101</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669809873</id>
+    <published>2023-12-05T11:56:11+05:30</published>
+    <updated>2023-12-05T11:56:11+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/anjum-fakih-bollywood-style-pastel-green-color-sharara-suit"/>
+    <title>Anjum Fakih Bollywood Style Pastel Green Color Sharara Suit</title>
+    <s:type></s:type>
+    <s:vendor>LocalNewsHub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_371556e96d584b3b9134b978f7f6ae6b_mv2_1570f316-e440-4317-8c62-4f682b733a72.jpg?v=1710927357"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>LocalNewsHub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Bottle Green</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette With Embroidery Work</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>38 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Up to 44 Sizes</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Georgette With Embroidery Work</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Heavy Soft Net With Embroidery Work</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidered</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669809873</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2099.00</s:price>
+      <s:sku>SS41</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669777105</id>
+    <published>2023-12-05T11:56:08+05:30</published>
+    <updated>2023-12-05T11:56:08+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-bollywood-style-top-plazo"/>
+    <title>Black Color Bollywood Style Top Plazo</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_fb8070231fd64e9994073956331f88b3_mv2.jpg?v=1701757570"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1499.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette With Embroidery Work With Real Mirror Work With Full Stitch</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>35 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>42(Fully Stitched)</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Georgette With Embroidery Work With Riyal Mirror Work With Fully Stitched</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Fancy Jacquard Net With Embroidery Less Border With Real Mirror Work</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery Work With Riyal Mirror Work</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669777105</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1499.00</s:price>
+      <s:sku>LN99</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669744337</id>
+    <published>2023-12-05T11:56:06+05:30</published>
+    <updated>2023-12-05T11:56:06+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-designer-semi-stitched-salwar-suit"/>
+    <title>Black Color Designer Semi Stitched Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_506974f1783c46bcaa6dc90e309eec44_mv2.jpg?v=1701757568"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1999.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>Max Up To 48</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Max Chest Set Up To 46 Inches</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Satoon</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669744337</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1999.00</s:price>
+      <s:sku>LN98</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669711569</id>
+    <published>2023-12-05T11:56:04+05:30</published>
+    <updated>2023-12-05T11:56:04+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-embroidery-work-party-wear-gown"/>
+    <title>Black Color Embroidery Work Party Wear Gown</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_7e194f3bb7bd4d25b440c703ad5cda6c_mv2.jpg?v=1701757565"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2399.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Navy Blue</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Net</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>56 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Up to 40</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Silk</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Net With With Diamond Work</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669711569</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2399.00</s:price>
+      <s:sku>LN97</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669678801</id>
+    <published>2023-12-05T11:56:02+05:30</published>
+    <updated>2023-12-05T11:56:02+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-georgette-designer-salwar-suit"/>
+    <title>Black Color Georgette Designer Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_e1ae8905a84a4cbb801642d38de310c1_mv2.jpg?v=1701757563"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1999.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>56 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Up to 40</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Crepe</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Cotton satin with kashidakari</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Kashidakari Embroidery</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669678801</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1999.00</s:price>
+      <s:sku>LN96</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669646033</id>
+    <published>2023-12-05T11:56:00+05:30</published>
+    <updated>2023-12-05T11:56:00+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-sequance-work-designer-salwar-suit"/>
+    <title>Black Color Sequance Work Designer Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_a093fc022edd493db925fa3dc0bbbb7f_mv2.jpg?v=1701757561"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Foux Georgette</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>2.40 Mtr With Sleeve</td>
+</tr>
+<tr>
+<td>Top Lenght</td>
+<td>Max up to 47 +</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Foux Georgette with Santoon Attached</td>
+</tr>
+<tr>
+<td>Has Dupptta</td>
+<td>Yes - Net Wiht Lace</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Top- Unstitched And Bottom- Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Sequance</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669646033</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN95</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669613265</id>
+    <published>2023-12-05T11:55:58+05:30</published>
+    <updated>2023-12-05T11:55:58+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-seunce-work-designer-plazo-suit"/>
+    <title>Black Color Seunce Work Designer Plazo Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_0eba557b6c6842ea9760a14100c9c41f_mv2.jpg?v=1701757559"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1549.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Work</td>
+<td>Fancy Thread Zari With Sequance Work</td>
+</tr>
+<tr>
+<td>Top Stitch</td>
+<td>Full Stitched (Free Size)</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>40""Inch</td>
+</tr>
+<tr>
+<td>Duppatta Fabric</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Duppatta Work</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Nylone Soft Net</td>
+</tr>
+<tr>
+<td>Bottom Work</td>
+<td>Fancy Sequance Work</td>
+</tr>
+<tr>
+<td>Bottom Stitch</td>
+<td>Stitched</td>
+</tr>
+<tr>
+<td>Bottom Size</td>
+<td>42""inch</td>
+</tr>
+<tr>
+<td>Bottom Lenght</td>
+<td>40""inch</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669613265</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1549.00</s:price>
+      <s:sku>LN94</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669580497</id>
+    <published>2023-12-05T11:55:55+05:30</published>
+    <updated>2023-12-05T11:55:55+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/bollywood-style-hina-khan-western-salwar-suit"/>
+    <title>Bollywood Style Hina Khan Western Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_06b0aa2ea5a442ae9b697b092414db4f_mv2.jpg?v=1701757557"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1649.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Multicolor Maroon Base</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Soft Tafeta Silk</td>
+</tr>
+<tr>
+<td>Top Work</td>
+<td>Ready Made Lace And Digital Printed</td>
+</tr>
+<tr>
+<td>Top Stitch</td>
+<td>Full-Stitched</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>42"" Up to</td>
+</tr>
+<tr>
+<td>Koti Fabric</td>
+<td>Creap SIlk</td>
+</tr>
+<tr>
+<td>Koti Stitached</td>
+<td>Full-Stitched</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Soft Tafeta Silk</td>
+</tr>
+<tr>
+<td>Bottom Work</td>
+<td>Digital Printed</td>
+</tr>
+<tr>
+<td>Bottom Stitch</td>
+<td>Full-Stitched</td>
+</tr>
+<tr>
+<td>Bottom Size</td>
+<td>Up To 42""inch</td>
+</tr>
+<tr>
+<td>Bottom Lenght</td>
+<td>40""inch</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669580497</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1649.00</s:price>
+      <s:sku>LN93</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669547729</id>
+    <published>2023-12-05T11:55:53+05:30</published>
+    <updated>2023-12-05T11:55:53+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/dazzling-kajal-in-peacock-blue-color-printed-sharara-suit"/>
+    <title>Dazzling Kajal In Peacock Blue Color Printed Sharara Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_7f0f92be3d554b26b4b13ade111a116b_mv2.jpg?v=1701757555"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Rama</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette With Digital Print With Embroidery Work</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>38 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Max Chest Set Up To 42 Inches</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Georgette With DIgital Print</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Heavy Crepe Silk With Digital Print With Four Side Embroidery Work Less Border</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery &amp; Lace Work &amp; Digital Print</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669547729</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN92</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669514961</id>
+    <published>2023-12-05T11:55:51+05:30</published>
+    <updated>2023-12-05T11:55:51+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/embroidery-thread-work-off-white-color-chain-stitched-salwar-suit"/>
+    <title>Embroidery Thread Work Off White Color Chain Stitched Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_59001410610f4853bdd51d4ee0f7b5ec_mv2.jpg?v=1701757552"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2299.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>White</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette With Thread Embroidery</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>45 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Max Chest Set Up To 44 Inches</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Georgette with Thread Embroidery</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Lakhnavi Thread Embroidery And Sequin Work</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669514961</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2299.00</s:price>
+      <s:sku>LN91</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669482193</id>
+    <published>2023-12-05T11:55:49+05:30</published>
+    <updated>2023-12-05T11:55:49+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/fancy-embroidered-green-color-party-look-gown-with-jacket"/>
+    <title>Fancy Embroidered Green Color Party Look Gown With Jacket</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_4717a66984224193b7757db9f7ea61d9_mv2.jpg?v=1701757550"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Green</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>Free Semi Stitched With Pattern Style</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>57'' Length</td>
+</tr>
+<tr>
+<td>Jacket Fabric</td>
+<td>Butter Crape<br>
+</td>
+</tr>
+<tr>
+<td>Gown Flair<br>
+</td>
+<td>4.5 Meter<br>
+</td>
+</tr>
+<tr>
+<td>Jacket Flair<br>
+</td>
+<td>3.5 Meter<br>
+</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery with Original Mirror</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669482193</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN90</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669449425</id>
+    <published>2023-12-05T11:55:46+05:30</published>
+    <updated>2023-12-05T11:55:46+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/fancy-embroidered-pista-color-party-look-gown-with-jacket"/>
+    <title>Fancy Embroidered Pista Color Party Look Gown With Jacket</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_56a4f9c78e1b4e58919d899964d80467_mv2.jpg?v=1701757548"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Pista</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>Free Semi Stitched With Pattern Style</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>57'' Length</td>
+</tr>
+<tr>
+<td>Jacket Fabric</td>
+<td>Butter Crape<br>
+</td>
+</tr>
+<tr>
+<td>Gown Flair<br>
+</td>
+<td>4.5 Meter<br>
+</td>
+</tr>
+<tr>
+<td>Jacket Flair<br>
+</td>
+<td>3.5 Meter<br>
+</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery with Original Mirror</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669449425</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN89</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669416657</id>
+    <published>2023-12-05T11:55:44+05:30</published>
+    <updated>2023-12-05T11:55:44+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/fancy-multi-thread-work-yellow-color-bollywood-style-suit"/>
+    <title>Fancy Multi Thread Work Yellow Color Bollywood Style Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_6e6cdead91e049598ab3dfa23635d4f6_mv2.jpg?v=1701757546"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Yellow</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Rayon (14Kg)</td>
+</tr>
+<tr>
+<td>Top Work</td>
+<td>Fancy Thread And Multy Work</td>
+</tr>
+<tr>
+<td>Top Stitch</td>
+<td>Full Stitched</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Free Size Up To 42" Inch (xxl)</td>
+</tr>
+<tr>
+<td>Duppatta Fabric</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Duppatta Work</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Rayon (14Kg)</td>
+</tr>
+<tr>
+<td>Bottom Work</td>
+<td>Fancy Thread Multy Work</td>
+</tr>
+<tr>
+<td>Bottom Stitch</td>
+<td>Full Stitched Up To 42 Inch</td>
+</tr>
+<tr>
+<td>Bottom Size</td>
+<td>42"inch</td>
+</tr>
+<tr>
+<td>Bottom Lenght</td>
+<td>40"inch</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669416657</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1199.00</s:price>
+      <s:sku>LN88</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669383889</id>
+    <published>2023-12-05T11:55:42+05:30</published>
+    <updated>2023-12-05T11:55:42+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/floor-length-pastel-green-color-designer-party-wear-gown"/>
+    <title>Floor Length Pastel Green Color Designer Party Wear Gown</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_3b32168316dd4c93a4adad9e7bc9d0b5_mv2.jpg?v=1701757544"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Green</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Net</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>54 Inches</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Up to 40</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Santoon</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Net</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Thread Embroidery</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669383889</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN87</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669351121</id>
+    <published>2023-12-05T11:55:40+05:30</published>
+    <updated>2023-12-05T11:55:40+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/georgette-black-color-embroidered-work-salwar-suit"/>
+    <title>Georgette Black Color Embroidered Work Salwar Suit</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_0fb9ec56bad84899a91dd19ed8ec1037_mv2.jpg?v=1701757542"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Top Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Top Length</td>
+<td>Max Up To 44+</td>
+</tr>
+<tr>
+<td>Top Size</td>
+<td>Max Chest Set Up To 44 Inches</td>
+</tr>
+<tr>
+<td>Bottom Fabric</td>
+<td>Santoon</td>
+</tr>
+<tr>
+<td>Dupptta Fabric</td>
+<td>Net</td>
+</tr>
+<tr>
+<td>Stitching Type</td>
+<td>Semi - Stitched</td>
+</tr>
+<tr>
+<td>Occasion</td>
+<td>Casual, Festival, Party Wear</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidered</td>
+</tr>
+<tr>
+<td>Wash Care</td>
+<td>Dry Clean</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669351121</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2199.00</s:price>
+      <s:sku>LN86</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,1792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://localnewshub.in/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://localnewshub.in/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://localnewshub.in/collections/saree.atom"/>
+  <title>Localnewshub</title>
+  <updated>2023-12-05T11:55:26+05:30</updated>
+  <author>
+    <name>Localnewshub</name>
+  </author>
+  <entry>
+    <id>https://localnewshub.in/products/7322669121745</id>
+    <published>2023-12-05T11:55:26+05:30</published>
+    <updated>2023-12-05T11:55:26+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/adorable-cream-solid-pattern-ready-to-wear-saree-stitched-blouse-for-woman"/>
+    <title>Adorable Cream Solid Pattern Ready To Wear Saree Stitched Blouse For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_3d52aa89e72b43dcbeccf34a908740ab_mv2.jpg?v=1701757528"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1599.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Cream</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual, Bridal, Party</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Plain</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Taffeta Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669121745</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1599.00</s:price>
+      <s:sku>LN79</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669088977</id>
+    <published>2023-12-05T11:55:24+05:30</published>
+    <updated>2023-12-05T11:55:24+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/ajrakh-print-cotton-silk-party-wear-magenta-saree-for-woman"/>
+    <title>Ajrakh Print Cotton Silk Party Wear Magenta Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_fe3e5a21cc644787a1a853fcf9c72d34_mv2.jpg?v=1701757526"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Magenta</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Soft Cotton Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Organic Ajrakh Print Saree</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5  Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669088977</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1199.00</s:price>
+      <s:sku>LN78</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322669056209</id>
+    <published>2023-12-05T11:55:22+05:30</published>
+    <updated>2023-12-05T11:55:22+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/alia-bhatt-red-color-heavy-satin-creap-silk-saree"/>
+    <title>Alia Bhatt Red Color Heavy Satin Creap Silk Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_4abfd88944564ee3b82f553c597097c0_mv2.jpg?v=1701757524"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Red<br>
+</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Heavy Satin Creap Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual, Bridal, Party</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Print</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td><span>Heavy Satin Zari Silk</span></td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322669056209</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1099.00</s:price>
+      <s:sku>LN77</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668990673</id>
+    <published>2023-12-05T11:55:20+05:30</published>
+    <updated>2023-12-05T11:55:20+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/all-over-flower-digital-print-organza-festive-wear-saree"/>
+    <title>All Over Flower Digital Print Organza Festive Wear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_89bd1e4cead443b09de759e4ad77a508_mv2.jpg?v=1701757521"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Peach</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Oragnza</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Print</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668990673</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1199.00</s:price>
+      <s:sku>LN76</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668957905</id>
+    <published>2023-12-05T11:55:17+05:30</published>
+    <updated>2023-12-05T11:55:17+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/all-over-print-heavy-dola-silk-black-color-saree-for-woman"/>
+    <title>All Over Print Heavy Dola Silk Black Color Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_7352627826f64933b9c0c932c0ce2728_mv2.jpg?v=1701757519"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Heavy Dola Silk Digital Print</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual, Bridal, Party</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Print</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668957905</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1099.00</s:price>
+      <s:sku>LN75</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668925137</id>
+    <published>2023-12-05T11:55:15+05:30</published>
+    <updated>2023-12-05T11:55:15+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/aqua-blue-all-over-ajrakh-print-cotton-silk-party-wear-saree-for-woman"/>
+    <title>Aqua Blue All Over Ajrakh Print Cotton Silk Party Wear Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_59fa4c2527424b4db0aa2e10e7493424_mv2.jpg?v=1701757516"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1199.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Aqua Blue<br>
+</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Soft Cotton Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Organic Ajrakh Print Saree</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668925137</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1199.00</s:price>
+      <s:sku>LN74</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668892369</id>
+    <published>2023-12-05T11:55:12+05:30</published>
+    <updated>2023-12-05T11:55:12+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/attractive-blue-color-embroidered-party-wear-saree-for-woman"/>
+    <title>Attractive Blue Color Embroidered Party Wear Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_45cd07f79b68471b8bfe55f13f583fda_mv2.jpg?v=1701757514"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1499.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Sky Blue</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668892369</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1499.00</s:price>
+      <s:sku>LN73</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668859601</id>
+    <published>2023-12-05T11:55:09+05:30</published>
+    <updated>2023-12-05T11:55:09+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/awesome-flower-digital-print-organza-festive-look-purple-color-saree"/>
+    <title>Awesome Flower Digital Print Organza Festive Look Purple Color Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_ab89e584b5d7458382d7725c7d4946f2_mv2.jpg?v=1701757511"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Purple</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Oragnza</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Print</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668859601</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1099.00</s:price>
+      <s:sku>LN72</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668826833</id>
+    <published>2023-12-05T11:55:07+05:30</published>
+    <updated>2023-12-05T11:55:07+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/awesome-green-color-nylon-net-full-embroidered-saree"/>
+    <title>Awesome Green Color Nylon Net Full Embroidered Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_d24af2533b67461082a578c11c7aedc6_mv2.jpg?v=1701757509"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Green</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Nylon Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668826833</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2099.00</s:price>
+      <s:sku>LN71</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668794065</id>
+    <published>2023-12-05T11:55:04+05:30</published>
+    <updated>2023-12-05T11:55:04+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/baby-pink-color-rich-pallu-fancy-sequence-work-partywear-saree"/>
+    <title>Baby Pink Color Rich Pallu Fancy Sequence Work Partywear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_56ec7c73789f48f2aa658867143dacb5_mv2.jpg?v=1701757506"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1699.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Baby Pink</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Traditional</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Sequence Thread Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Satin Banglory</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668794065</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1699.00</s:price>
+      <s:sku>LN70</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668761297</id>
+    <published>2023-12-05T11:55:02+05:30</published>
+    <updated>2023-12-05T11:55:02+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/banarasi-silk-festival-wear-bright-magenta-color-saree-for-woman"/>
+    <title>Banarasi Silk Festival Wear Bright Magenta Color Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_86fc0d7179064aebafcb21cbaaf0ea23_mv2.jpg?v=1701757503"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1799.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Bright Magenta<br>
+</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Soft Banarasi Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Handloom Weaving Silk Saree</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5  Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668761297</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1799.00</s:price>
+      <s:sku>LN69</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668728529</id>
+    <published>2023-12-05T11:55:00+05:30</published>
+    <updated>2023-12-05T11:55:00+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/banarasi-silk-festival-wear-dark-purple-color-saree-for-woman"/>
+    <title>Banarasi Silk Festival Wear Dark Purple Color Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_4d82d97629244fa4ad90d1c08601cefb_mv2.jpg?v=1701757501"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1399.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Dark Purple</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Soft Banarasi Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Handloom Weaving Silk Saree</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5  Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668728529</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>LN68</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668695761</id>
+    <published>2023-12-05T11:54:57+05:30</published>
+    <updated>2023-12-05T11:54:57+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/bandhni-delight-black-color-digital-print-party-wear-saree"/>
+    <title>Bandhni Delight Black Color Digital Print Party Wear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_4a6627601eb94bd3bc932c25e39113d1_mv2.jpg?v=1701757499"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black<br>
+</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Heavy Dola Silk Digital Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual, Bridal, Party</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Print</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory </td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668695761</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1099.00</s:price>
+      <s:sku>LN67</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668662993</id>
+    <published>2023-12-05T11:54:55+05:30</published>
+    <updated>2023-12-05T11:54:55+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/bandhni-delight-red-color-digital-print-party-wear-saree"/>
+    <title>Bandhni Delight Red Color Digital Print Party Wear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_143e442f906742d49308d0f4c07e82d8_mv2.jpg?v=1701757496"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Red<br>
+</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Heavy Dola Silk Digital Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual, Bridal, Party</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Digital Print</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory </td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668662993</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1099.00</s:price>
+      <s:sku>LN66</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668630225</id>
+    <published>2023-12-05T11:54:53+05:30</published>
+    <updated>2023-12-05T11:54:53+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/beautiful-embroidery-blue-color-georgette-saree-for-woman"/>
+    <title>Beautiful Embroidery Blue Color Georgette Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_913e26b665f04245aa5b1a1c09387d67_mv2.jpg?v=1701757494"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1499.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Wedding, Festival, Casual</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Embroidery Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668630225</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1499.00</s:price>
+      <s:sku>LN65</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668597457</id>
+    <published>2023-12-05T11:54:51+05:30</published>
+    <updated>2023-12-05T11:54:51+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/beauty-embroidery-work-glossy-red-color-georgette-saree"/>
+    <title>Beauty Embroidery Work Glossy Red Color Georgette Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_053fd5ec3c1c44e692db6941768631af_mv2.jpg?v=1701757492"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1699.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Red</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Festival, Casual, Party</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Full Embroidery</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Raw Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Mtr</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668597457</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1699.00</s:price>
+      <s:sku>LN64</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668564689</id>
+    <published>2023-12-05T11:54:49+05:30</published>
+    <updated>2023-12-05T11:54:49+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/bhumi-pednekar-off-white-color-bollywood-saree"/>
+    <title>Bhumi Pednekar Off White Color Bollywood Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_f357b1b576b54c7f8ed4bd9cd56304ef_mv2.jpg?v=1701757490"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1499.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Off White</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Bamberg Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Traditional</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Sequance Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Satin Banglori silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668564689</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1499.00</s:price>
+      <s:sku>LN63</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668531921</id>
+    <published>2023-12-05T11:54:47+05:30</published>
+    <updated>2023-12-05T11:54:47+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-fancy-dori-work-heavy-kasturi-silk-georgette-saree"/>
+    <title>Black Color Fancy Dori Work Heavy Kasturi Silk Georgette Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_f6dd7933d7c94fe0876387f4b447f749_mv2.jpg?v=1701757488"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Japan Satin Silk Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Heavy Sequence Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668531921</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2099.00</s:price>
+      <s:sku>LN62</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668499153</id>
+    <published>2023-12-05T11:54:45+05:30</published>
+    <updated>2023-12-05T11:54:45+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-heavy-digital-printed-kasturi-silk-saree"/>
+    <title>Black Color Heavy Digital Printed Kasturi Silk Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_e377f3169f2145fdb205953fad47ada7_mv2.jpg?v=1701757486"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1749.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Heavy Kasturi Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Thread and Zari and Paper Mirror With Sequence Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Heavy Thai Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668499153</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1749.00</s:price>
+      <s:sku>LN61</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668466385</id>
+    <published>2023-12-05T11:54:43+05:30</published>
+    <updated>2023-12-05T11:54:43+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-rangoli-silk-designer-party-wear-saree"/>
+    <title>Black Color Rangoli Silk Designer Party Wear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_cb68e0ec08e54bc4bca04244955d2bc9_mv2.jpg?v=1701757484"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1849.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Heavy Rangoli Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Traditional</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Sequence with Coding Multi Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668466385</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1849.00</s:price>
+      <s:sku>LN60</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668433617</id>
+    <published>2023-12-05T11:54:40+05:30</published>
+    <updated>2023-12-05T11:54:40+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-rich-pallu-fancy-sequence-work-partywear-saree"/>
+    <title>Black Color Rich Pallu Fancy Sequence Work Partywear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_82534b379f474cb7b7652a4b6797ef73_mv2.jpg?v=1701757482"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1699.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Traditional</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Sequence Thread Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Satin Banglory</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668433617</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1699.00</s:price>
+      <s:sku>LN59</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668400849</id>
+    <published>2023-12-05T11:54:38+05:30</published>
+    <updated>2023-12-05T11:54:38+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-color-sequence-work-partywear-saree"/>
+    <title>Black Color Sequence Work Partywear Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_d34786fd7ece45f29fab8ce60e357a6e_mv2.jpg?v=1701757480"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1699.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Seque</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668400849</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1699.00</s:price>
+      <s:sku>LN58</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668368081</id>
+    <published>2023-12-05T11:54:36+05:30</published>
+    <updated>2023-12-05T11:54:36+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-designer-fancy-thread-paper-mirror-work-saree"/>
+    <title>Black Designer Fancy Thread Paper Mirror Work Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_b177fd0b46464912b4ac4195d46d1d80_mv2.jpg?v=1701757477"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1099.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Thread and Mirror Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Soft Tapetta Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668368081</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1099.00</s:price>
+      <s:sku>LN57</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668335313</id>
+    <published>2023-12-05T11:54:34+05:30</published>
+    <updated>2023-12-05T11:54:34+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/black-weaving-banarasi-silk-party-wear-saree-for-woman"/>
+    <title>Black Weaving Banarasi Silk Party Wear Saree For Woman</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_eadc032706d444e78787e3759cf1abc3_mv2.jpg?v=1701757475"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            1299.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Black<br>
+</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>Soft Banarasi Silk</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Handloom Weaving Silk Saree</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Banglory Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668335313</id>
+      <title>Default Title</title>
+      <s:price currency="INR">1299.00</s:price>
+      <s:sku>LN56</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://localnewshub.in/products/7322668302545</id>
+    <published>2023-12-05T11:54:31+05:30</published>
+    <updated>2023-12-05T11:54:31+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://localnewshub.in/products/blue-color-diamond-silk-georgette-sequence-saree"/>
+    <title>Blue Color Diamond Silk Georgette Sequence Saree</title>
+    <s:type></s:type>
+    <s:vendor>Localnewshub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0631/4157/6913/products/db74ba_4121beffc86441ff9eb3623aecea145a_mv2.jpg?v=1701757473"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Localnewshub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            2049.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="table-wrapper"><table>
+<tbody>
+<tr>
+<td>Country of Origin</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>diamond Silk Georgette</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Partywear, Festive Look</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Fancy Sequence Work</td>
+</tr>
+<tr>
+<td>Saree Length</td>
+<td>5.5 Meter</td>
+</tr>
+<tr>
+<td>Blouse Piece Fabric</td>
+<td>Diamond Silk</td>
+</tr>
+<tr>
+<td>Blouse Piece Size</td>
+<td>0.80 Meter</td>
+</tr>
+</tbody>
+</table></div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://localnewshub.in/products/7322668302545</id>
+      <title>Default Title</title>
+      <s:price currency="INR">2049.00</s:price>
+      <s:sku>LN55</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+</feed>
