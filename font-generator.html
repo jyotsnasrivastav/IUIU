@@ -1,1371 +1,390 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-
+﻿<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebApplication">
 <head>
-	<title>Fancy Font Generator - Fancy Text (𝓬𝓸𝓹𝔂 ⒶⓃⒹ 𝓹𝓪𝓼𝓽𝓮)</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="symbolsemoji.com is a fancy font generator that quickly converts any text into eye-catching, stylish fonts. Create beautiful symbols and fancy characters for social networks and any other platforms with just a few clicks." />
-	<meta name="robots" content="index, follow">
-	<meta name="theme-color" content="#c71585">
-	<link rel="dns-prefetch" href="http://cdnjs.cloudflare.com/">
-	<link rel="dns-prefetch" href="http://www.googletagmanager.com/">
-	<link rel="dns-prefetch" href="http://pagead2.googlesyndication.com/">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#c71585">
-	<meta name="apple-mobile-web-app-title" content="Symbols Emojis">
-	<link rel="icon" type="img/ico" sizes="16x16" href="img/favicon.ico">
-	<link rel="stylesheet" href="main.css">
-	<link rel="canonical" href="font-generator.html">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="font-generator.html">
-	<meta property="og:title" content="Fancy Font Generator - Fancy Text (𝓬𝓸𝓹𝔂 ⒶⓃⒹ 𝓹𝓪𝓼𝓽𝓮)">
-	<meta property="og:description" content="symbolsemoji.com is a fancy font generator that quickly converts any text into eye-catching, stylish fonts. Create beautiful symbols and fancy characters for social networks and any other platforms with just a few clicks.">
-	<meta property="og:image" content="img/symbolsemoji.com.png" />
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="font-generator.html">
-	<meta property="twitter:title" content="Fancy Font Generator - Fancy Text (𝓬𝓸𝓹𝔂 ⒶⓃⒹ 𝓹𝓪𝓼𝓽𝓮)">
-	<meta property="twitter:description" content="symbolsemoji.com is a fancy font generator that quickly converts any text into eye-catching, stylish fonts. Create beautiful symbols and fancy characters for social networks and any other platforms with just a few clicks.">
-	<meta name="twitter:image" content="img/symbolsemoji.com.png" />
-	<link rel="icon" type="png" sizes="16x16" href="img/favicon-16x16.png">
-	<link rel="apple-touch-icon" type="png" sizes="16x16" href="img/favicon-16x16.png">
-	<link rel="icon" type="png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="apple-touch-icon" type="png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-	<script async src="../pagead2.googlesyndication.com/pagead/js/f09a9.txt?client=ca-pub-4493747699129738"
-     crossorigin="anonymous"></script>
-	<script data-cfasync="false">
-		
+<!-- Preconnect for faster loading --><link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+	<noscript><link rel="stylesheet" href="main.css" /></noscript>
+	<style>
+		* {
+			box-sizing:border-box;
+			padding:0;
+			margin:0
 		}
-
+		body {
+			font-family:arial,serif;
+			background-color:#ebecef;
+			margin:0;
+			font-display:swap
+		}
+		header {
+			width:100%;
+			background-color:#230AC7;
+			min-height:60px;
+			contain:layout style paint
+		}
 		.headCont {
-			max-width: 970px;
+			max-width:1168px;
+			margin:0 auto;
+			text-align:center
+		}
+		.mainlogo {
+			width:100%;
+			font-size:15px;
+			text-align:center;
+			background-color:#230AC7;
+			color:#fff;
+			font-family:arial;
+			padding:5px 0;
+			min-height:50px;
+			contain:layout style paint
+		}
+		.mainlogo img {
+			width:270px;
+			padding-top:2px;
+			height:auto;
+			min-height:50px;
+			contain:layout style paint
+		}
+		.mainlogo a {
+			color:white;
+			font-size:2rem;
+			text-decoration:none
+		}
+		#target {
+			position:fixed;
+			bottom:0;
+			width:100%;
+			background:#fff;
+			z-index:9;
+			box-shadow:0 0 5px rgba(0,0,0,0.15);
+			padding:5px
+		}
+		.symbol {
+			text-align:center;
+			margin:0 0 0.5rem 0.1rem;
+			border-radius:5px;
+			color:#424949;
+			border:1px solid #d3d3d3;
+			display:inline-block;
+			min-width:50px;
+			min-height:50px;
+			font-size:20px;
+			line-height:50px;
+			transition:transform .2s;
+			cursor:pointer;
+			contain:layout style paint;
+			will-change:transform;
+			backface-visibility:hidden;
+			transform:translateZ(0)
+		}
+		.symbol:hover {
+			background-color:#ececec;
+			transform:translateY(-5px);
+			box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)
+		}
+		.maindata {
+			min-height:200px;
+			contain:layout style paint
 		}
-
-		.container {
-			padding: 0;
-		}
-
-		@media screen and (max-width: 970px) {
-			.thenitesharya-text {
-				margin-bottom: 0;
-				padding: 5px 5px 0;
-				position: fixed;
-				width: 100%;
-				z-index: 999;
-				bottom: 0px !important;
-				background: #fff;
-				left: 0;
-				box-shadow: 0 -10px 20px 0 rgb(0 0 0 / 45%);
-			}
-		}
-
-		.infoBox{
-			max-width: 970px;
-			margin: 0 auto;
-		}
-
-		.info ul, ol {
-			padding-left: 15px;
-		}
-
-		.info h3 {
-			background-color: #555354;
-			color: #fff;
-			padding: 7px;
-			text-align: center;
-		}
-
-		@font-face {
-			font-family: fontello;
-			src: url("font/fontello8323.html?7075314");
-			src: url("font/fontello8323.html?7075314#iefix") format("embedded-opentype"),
-				url("font/fontello8323-2.html?7075314#fontello") format("svg");
-			font-weight: 400;
-			font-style: normal;
-		}
-
-		@font-face {
-			font-family: fontello;
-			src: url("data:application/octet-stream;base64,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") format("woff"),
-				url("data:application/octet-stream;base64,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") format("truetype");
-		}
-
-		[class*=" icon-"]:before,
-		[class^="icon-"]:before {
-			font-family: fontello;
-			font-style: normal;
-			font-weight: 400;
-			display: inline-block;
-			text-decoration: inherit;
-			width: 1em;
-			margin-right: 0.2em;
-			text-align: center;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1em;
-			margin-left: 0.2em;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		.icon-heart:before {
-			content: "\e800";
-		}
-
-		.icon-shuffle:before {
-			content: "\e801";
-		}
-
-		.icon-back-in-time:before {
-			content: "\e802";
-		}
-
-		.icon-up-open:before {
-			content: "\e803";
-		}
-
-		.icon-heart-dark:before {
-			content: "\e804";
-		}
-
-		.icon-attention:before {
-			content: "\e805";
-		}
-
-		.icon-cancel:before {
-			content: "\e806";
-		}
-
-		.icon-export:before {
-			content: "\f081";
-		}
-
-		.icon-docs:before {
-			content: "\f0c5";
-		}
-
-		body,
-		html {
-			background: #c71585 !important;
-		}
-
-		.menusection,
-		header {
-			float: left;
-			z-index: 9999;
-		}
-
-		.ssb_link,
-		a {
-			text-decoration: none;
-		}
-
-		#random-cloud,
-		.container,
-		.menusection h2 a,
-		.share-link,
-		header {
-			text-align: center;
-		}
-
-		.copiedalerts,
-		a.aryapage-next {
-			visibility: hidden;
-		}
-
-		::-webkit-scrollbar-thumb {
-			background: #405de6;
-		}
-
-		::-webkit-scrollbar-track {
-			background: #f9f9f9;
-		}
-
-		::-webkit-scrollbar {
-			width: 2px;
-			height: 2px;
-		}
-
-		*,
-
-
-		.info-title {
-			box-shadow: none !important;
-		}
-
-		body,
-		html {
-			line-height: 1.5;
-		}
-
-		.menusection,
-		.settings-share,
-		header {
-			background: #c71585;
-		}
-
-		input::placeholder {
-			color: #888;
-			opacity: 1;
-		}
-
-		.aryafonts:hover p {
-			color: #c71585;
-		}
-
-		.settings-share {
-			float: left;
-			width: 100%;
-		}
-
-		#random-cloud div,
-		.cats a,
-		.ssb_icon,
-		.ssb_link {
-			display: inline-block;
-		}
-
-		.menusection img {
-			width: 300px;
-		}
-
-		#random-cloud {
-			width: 100%;
-			float: left;
-		}
-
-
-		.thenitesharya-text p,
-		h4 {
-			color: #777;
-			text-transform: uppercase;
-		}
-
-		#random-cloud div:hover,
-		.menusection,
-		.toplink a:hover {
-			background: #fff;
-			color: #000;
-		}
-
-		.menusection {
-			color: #fff;
-			background: #000000;
-			margin: 5px 2px;
-			padding: 10px 14px;
-		}
-
-		.cats a {
-			float: left;
-			width: auto;
-			font-size: 13px;
-			border: 1px solid;
-			margin: 5px;
-		}
-
-		#random-cloud .size10 {
-			font-size: 35px;
-		}
-
-		.site-title img {
-			width: 350px;
-			padding-top: 2px;
-		}
-
-		.ssb_link {
-			color: #fff;
-			margin: 0.5em;
-		}
-
-		.r-s-b {
-			border-radius: 5px;
-			transition: 25ms ease-out;
-			padding: 0.5em 0.75em;
-			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-		}
-
-		.ssb_icon svg {
-			width: 1em;
-			height: 1em;
-			margin-right: 0.4em;
-			vertical-align: top;
-		}
-
-		.ssb-small svg {
-			margin: 0;
-			vertical-align: middle;
-		}
-
-		.ssb_icon {
-			stroke: #fff;
-			fill: none;
-		}
-
-		.ssb_icon--solid,
-		.ssb_icon--solidcircle {
-			fill: #fff;
-			stroke: none;
-		}
-
-		.ssb-pinterest {
-			background-color: #bd081c;
-		}
-
-		.ssb-pinterest:hover {
-			background-color: #8c0615;
-		}
-
-		.ssb-tumblr {
-			background-color: #35465c;
-		}
-
-		.ssb-tumblr:hover {
-			background-color: #222d3c;
-		}
-
-		.ssb-reddit {
-			background-color: #5f99cf;
-		}
-
-		.ssb-reddit:hover {
-			background-color: #3a80c1;
-		}
-
-		.ssb-google {
-			background-color: #dd4b39;
-		}
-
-		.ssb-google:hover {
-			background-color: #c23321;
-		}
-
-		.ssb-linkedin {
-			background-color: #0077b5;
-		}
-
-		.ssb-linkedin:hover {
-			background-color: #046293;
-		}
-
-		.ssb-xing {
-			background-color: #1a7576;
-		}
-
-		.ssb-xing:hover {
-			background-color: #114c4c;
-		}
-
-		.ssb-hackernews {
-			background-color: #f60;
-		}
-
-		.ssb-hackernews:focus,
-		.ssb-hackernews:hover {
-			background-color: #fb6200;
-		}
-
-		.ssb-vk {
-			background-color: #507299;
-		}
-
-		.ssb-vk:hover {
-			background-color: #43648c;
-		}
-
-		.ssb-facebook {
-			background-color: #3b5998;
-			border-color: #3b5998;
-		}
-
-		.ssb-facebook:active,
-		.ssb-facebook:hover {
-			background-color: #2d4373;
-			border-color: #2d4373;
-		}
-
-		.ssb-twitter {
-			background-color: #55acee;
-			border-color: #55acee;
-		}
-
-		.ssb-twitter:active,
-		.ssb-twitter:hover {
-			background-color: #2795e9;
-			border-color: #2795e9;
-		}
-
-		.ssb-email {
-			background-color: #777;
-			border-color: #777;
-		}
-
-		.ssb-email:active,
-		.ssb-email:hover {
-			background-color: #5e5e5e;
-			border-color: #5e5e5e;
-		}
-
-		.ssb-whatsapp {
-			background-color: #25d366;
-			border-color: #25d366;
-		}
-
-		.ssb-whatsapp:active,
-		.ssb-whatsapp:hover {
-			background-color: #1da851;
-			border-color: #1da851;
-		}
-
-		.ssb-telegram {
-			background-color: #54a9eb;
-		}
-
-		.ssb-telegram:hover {
-			background-color: #4b97d1;
-		}
-
-		main {
-			margin-top: 10px;
-		}
-
-		.container {
-			max-width: 970px;
-			margin: 0 auto;
-		}
-
-		.text-container {
-			max-width: 970px;
-			margin: 0 auto;
-		}
-
-		.share-container {
-			max-width: 1040px;
-			margin: 0 auto;
-		}
-
-		@media only screen and (max-width: 970px) {
-			.share-buttons {
-				width: 100%;
-				height: 40px;
-				padding-left: 20%;
-				position: fixed;
-				bottom: 0;
-				left: 0;
-				z-index: 99;
-				background: #fff;
-			}
-			.footer {
-				padding: 5px 5px 100px 5px !important;
-			}
-		}
-
-		#random-cloud {
-			font-family: Arial Unicode MS, lucida grande, tahoma, verdana, arial,
-				sans-serif;
-			height: 120px;
-			overflow: auto;
-			padding-top: 10px;
-		}
-
-		#thenitesharya-text,
-		h1 {
-			font-family: sans-serif;
-		}
-
-		#random-cloud div {
-			padding: 10px;
-			border-radius: 10px;
-			cursor: pointer;
-			border: 1px solid transparent;
-			color: #ffffff;
-			position: relative;
-		}
-
-		#random-cloud div:hover {
-			border: 1px solid #ececec;
-		}
-
-		#random-cloud button {
-			top: -5px !important;
-			right: -15px !important;
-			padding: 3px 8px !important;
-		}
-
-		#random-cloud .size9 {
-			font-size: 32px;
-		}
-
-		#random-cloud .size8 {
-			font-size: 29px;
-		}
-
-		#random-cloud .size7 {
-			font-size: 26px;
-		}
-
-		#random-cloud .size6 {
-			font-size: 25px;
-		}
-
-		#random-cloud .size5 {
-			font-size: 22px;
-		}
-
-		#random-cloud .size4 {
-			font-size: 19px;
-		}
-
-		#random-cloud .size3 {
-			font-size: 16px;
-		}
-
-		#random-cloud .size2 {
-			font-size: 14px;
-		}
-
-		#random-cloud .size1 {
-			font-size: 13px;
-		}
-
-		.ads {
-			display: table !important;
-			margin: 7px 0 !important;
-			float: left;
-			clear: both;
-			width: 100% !important;
-		}
-
-
-
-		.thenitesharya-text .icon-cancel,
-		button.close-top {
-			border: none;
-			position: absolute;
-			cursor: pointer;
-		}
-
-		.thenitesharya-text {
-			/* position: relative; */
-			float: left;
-			width: 100%;
-			background: #c71585;
-		}
-
-		.thenitesharya-text .icon-cancel {
-			right: 4px;
-			color: #de0707;
-			font-size: 20px;
-			padding: 5px;
-			line-height: 1.5;
-			background: 0 0;
-			top: 3px;
-			outline: 0;
-		}
-
-		.thenitesharya-text .clear:hover,
-		.top-link a:hover {
-			color: #000;
-		}
-
-		.thenitesharya-text p {
-			font-size: 12px;
-			padding: 0;
-			margin: 5px 0 0;
-		}
-
-		.thenitesharya-text.fixedtop {
-			position: fixed;
-			width: 100%;
-			z-index: 9;
-			padding: 4px;
-		}
-
-		.share-buttons {
-			float: right;
-			margin-top: 8px;
-		}
-
-		.share-buttons span {
-			padding: 8px 0;
-			font-size: 12px;
-			text-transform: uppercase;
-			float: left;
-			color: #ffffff80;
-		}
-
-		.font-size span,
-		.share-link {
-			color: #ffffff82;
-			font-size: 13px;
-		}
-
-		.settings {
-			float: left;
-			margin-top: 3px;
-		}
-
-		.settings input {
-			box-shadow: none;
-			cursor: pointer;
-			padding: 2px;
-			width: 200px;
-		}
-
-		.font-size {
-			float: right;
-			padding: 5px;
-		}
-
-		.font-size span {
-			text-transform: uppercase;
-		}
-
-		.share-link {
-			display: block;
-			float: left;
-			width: 100%;
-			padding: 10px 0;
-		}
-
-		h4 {
-			text-align: left;
-		}
-
-		.slider {
-			width: 220px;
-			height: 2px;
-			background: #ffffff82;
-			outline: 0;
-			border-radius: 3px;
-			margin-left: 10px;
-		}
-
-		.aryafonts,
-		.aryafontsmain,
-		.loadmore,
-		main,
-		p.aryapage {
-			width: 100%;
-			float: left;
-		}
-
-		.slider:hover {
-			opacity: 1;
-		}
-
-		.slider::-webkit-slider-thumb {
-			-webkit-appearance: none;
-			appearance: none;
-			width: 20px;
-			height: 20px;
-			background: #f1f1f1;
-			cursor: pointer;
-			border-radius: 50%;
-			box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 21%);
-		}
-
-		.slider::-moz-range-thumb {
-			width: 25px;
-			height: 25px;
-			background: #f1f1f1;
-			cursor: pointer;
-			border-radius: 50%;
-			box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 21%);
-		}
-
-		.aryafontslist,
-		.aryafontsrecentlist {
-			display: block;
-			float: left;
-			text-align: left;
-			width: 100%;
-			overflow: hidden;
-			position: relative;
-			background: #fff;
-			padding: 10px;
-			border-radius: 10px;
-			margin-bottom: 10px;
-		}
-
-		.ads-sec,
-		.alert-header,
-		.the_copied_text,
-		div#clock,
-		p.loadmore {
-			text-align: center;
-		}
-
-		.aryafonts {
-			cursor: pointer;
-			position: relative;
-			margin: 0.5%;
-			width: 49%;
-			border-radius: 10px;
-			border: 1px solid transparent;
-			background-color: #efefef;
-		}
-
-		.aryafonts span {
-			color: #959fb1;
-			float: left;
-			padding: 5px 10px;
-			letter-spacing: 1px;
-			font-size: 12px;
-			float: left;
-			font-variant-caps: all-small-caps;
-		}
-
-		.aryafonts:hover {
-			border-color: #c71585;
-		}
-
-		.aryafonts:hover span {
-			display: block;
-		}
-
-		.aryafonts p {
-			margin: 0;
-			font-size: 22px;
-			padding: 0 0 10px 10px;
-			color: #000;
-			width: 100%;
-			float: left;
-			text-align: left;
-			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		}
-
-		#random-cloud button,
-		.share-link button {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			background: #fff;
-			border: 1px solid #3e5b9b1f;
-			color: #444;
-			font-size: 13px;
-			padding: 2px 10px;
-			border-radius: 50px;
-			font-variant-caps: all-small-caps;
-			letter-spacing: 1px;
-			-webkit-transition: margin-right 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-			-o-transition: margin-right 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-			transition: margin-right 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-		}
-
-		button.close-top,
-		div#clock {
-			background: #d90000;
-			display: block;
-		}
-
-		p.loadmore {
-			clear: both;
-			margin-bottom: 0;
-		}
-
-		.copiedalerts {
-			display: block;
-			z-index: 2147483647 !important;
-			left: 0;
-			top: 10%;
-			width: 970px;
-			background: #fff;
-			overflow: hidden;
-			border-radius: 5px;
-			-webkit-box-shadow: 0 0 20px 5px rgb(0 0 0/25%);
-			-moz-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
-			box-shadow: 0 0 20px 5px rgb(0 0 0/25%);
-		}
-
-		div#clock {
-			color: #fff;
-			position: fixed;
-			right: 10px;
-			top: 10px;
-			font-size: 20px;
-			z-index: 9;
-			padding: 6px 0;
-			height: 40px;
-			width: 40px;
-			border-radius: 50%;
-			box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.21);
-		}
-
-		button.close-top {
-			right: 0;
-			color: #fff;
-			font-size: 22px;
-			padding: 8px 15px;
-			border-radius: 50%;
-		}
-
-		.alert-header {
-			padding: 7px;
-			background-color: #000;
-			color: #fff;
-			word-wrap: break-word;
-		}
-
-		.alert-header spam.name {
-			color: #ffffff80;
-			display: block;
-			font-size: 18px;
-			text-transform: uppercase;
-		}
-
-		.the_copied_text {
-			width: 100%;
-			padding: 10px;
-			border: none;
-			background: #fff;
-			color: #000;
-			font-size: 150%;
-			border-radius: 5px;
-		}
-
-		.the_copied_text:focus {
-			outline: 0 !important;
-			border: 1px solid #fff;
-			box-shadow: 0 0 10px #fff;
-		}
-
-		.the_copied_text_description .bold {
-			font-weight: 700;
-		}
-
-		.the_copied_text_description {
-			background: #fff;
-			color: #000;
-			padding: 3px 10px;
-			display: inline-block;
-			border-radius: 10px;
-			font-size: 90%;
-		}
-
-		.ads-sec {
-			width: 100%;
-			float: left;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			min-height: 300px;
-			max-height: 330px;
-		}
-
-		.close-alert {
-			width: 100%;
-			border: none;
-			background: #018e43;
-			color: #fff;
-			display: block;
-			padding: 13px 0;
-			font-size: 18px;
-			cursor: pointer;
-		}
-
-		#thenitesharya-text,
-		.links {
-			width: 100%;
-			background: #fff;
-			text-align: center;
-		}
-
-		.close-alert:hover {
-			background: #109519;
-		}
-
-		h4 {
-			backface-visibility: hidden;
-			margin: 0;
-			padding: 10px;
-			float: left;
-			width: 100%;
-		}
-
-		.share {
-			max-width: 970px;
-			text-align: right;
-			margin: 0 auto;
-			display: block;
-			text-transform: uppercase;
-			color: #ffffff70;
-			margin-right: 5px;
-			font-size: 15px;
-		}
-
-		#thenitesharya-text {
-			height: 80px;
-			padding: 0.6em 0;
-			outline: 0;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			border: 2px solid #000;
-			border-radius: 10px;
-			letter-spacing: 0.02em;
-			line-height: 1.4;
-			margin-bottom: 0;
-			display: block;
-			font-size: 22px;
-			font-weight: 400;
-			letter-spacing: 1px;
-			box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-		}
-
-		.links a,
-		.toplink a {
-			display: inline-block;
-			border-radius: 3px;
-		}
-
-		#thenitesharya-text::placeholder {
-			color: #999;
-			font-size: 18px;
-		}
-
-		.separator {
-			float: left;
-		}
-
-		.toplink {
-			float: left;
-			margin-left: 5px;
-		}
-
-		.toplink a {
-			padding: 7px 15px;
-			color: #0d67ce;
-			font-size: 14px;
-			background: #023c80;
-		}
-
-		.page-load-status {
-			text-align: center;
-			color: #777;
-			float: left;
-			width: 100%;
-		}
-
-		.infinite-scroll-last {
-			font-size: 20px;
-			margin: 2px 0;
-			padding: 2px 0;
-		}
-
 		.footer {
-			padding: 5px 5px;
-			margin: 0;
+			min-height:80px;
+			contain:layout style paint
+		}
+		img:not([width]):not([height]) {
+			min-height:50px;
+			background:#f0f0f0;
+			contain:layout style paint
+		}
+		.mainlogo img {
+			image-rendering: optimizeQuality;
+			image-rendering: -webkit-optimize-contrast;
+			background: #230AC7;
+			transition: opacity 0.3s ease
+		}
+		.mainlogo img:not([src*="data:"]) {
+			background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+			background-size: 200% 100%;
+			animation: shimmer 1.5s infinite
+		}
+		@keyframes shimmer {
+			0% {
+			background-position: 200% 0
+		}
+		100% {
+			background-position: -200% 0
 		}
 
+		}
 		h1 {
-			font-size: 2.3em;
-			color: #000;
+			font-size: 25px !important
 		}
-
-		h1,
-		p.other-platform {
-			text-align: center;
+		article h1, aside h1, nav h1, section h1 {
+			font-size: 25px !important
 		}
-
-		p.other-platform img {
-			width: auto;
-			height: 90px;
-		}
-
-		.links {
-			clear: both;
-			float: left;
-			padding-bottom: 10px;
-		}
-
-		.links a {
-			background: #405de6;
-			color: #fff;
-			margin-bottom: 5px;
-			font-size: 18px;
-			cursor: pointer;
-			justify-content: center;
-			padding: 10px 15px;
-			text-align: center;
-			white-space: nowrap;
-		}
-
-		.links a:hover {
-			background: #000;
-			color: #fff;
-		}
-
-		#load-more {
-			font-size: 17px;
-			padding: 10px 55px;
-			border: 1px solid #dcdcdc;
-			color: #444;
-			margin: 10px 0 5px;
-			cursor: pointer;
-			background: #fff;
-			text-align: center;
-			outline: 0;
-			border-radius: 10px;
-		}
-
-		#load-more:hover {
-			background: #f1f1f1;
-			color: #000;
-		}
-
-		#scroll,
-		#favorite,
-		.randomgen {
-			position: fixed;
-			bottom: 20%;
-			right: 0;
-			background: #fff;
-			z-index: 99;
-			color: #8e8e8e;
-			font-size: 20px;
-			border: none;
-			outline: 0;
-			cursor: pointer;
-			padding: 5px;
-			box-shadow: -3px 0px 15px 0 rgba(0, 0, 0, 0.21);
-			border-radius: 5px 0 0 5px;
-		}
-
-		.randomgen,
-		.site-link {
-			position: absolute;
-			right: 0;
-		}
-
-		.randomgen {
-			bottom: 77%;
-		}
-
-		#favorite {
-			bottom: 30%;
-			display: block;
-		}
-
-		#scroll:hover,
-		.randomgen:hover {
-			color: #fff;
-			background: #c71585;
-		}
-
-		.site-link {
-			left: 0;
-			bottom: 0;
-			padding-bottom: 20px;
-		}
-
-		.site-link a {
-			font-size: 20px;
-			display: block;
-			padding: 3px 20px;
-			text-align: left;
-		}
-
-		.site-link a:hover {
-			color: #fff9;
-		}
-
-		.top-link a {
-			display: inline-block;
-			border-radius: 3px;
-			color: #444;
-			padding: 5px 10px;
-			margin: 7px 2px;
-		}
-
-		#scroll img,
-		.randomgen img {
-			width: 23px;
-		}
-
-		span.sb {
-			right: 2px;
-			left: auto;
-			top: 2px;
+		.modern-header {
+			background: #230AC7;
 			padding: 0;
-			float: right;
-		}
-
-		.sb button {
-			border: none;
-			background: 0 0;
-			font-size: 20px;
-			padding: 8px;
-			cursor: pointer;
-			color: #999;
-			border-radius: 5px;
-			float: right;
-		}
-
-		.icon-heart:hover {
-			color: #af0000;
-		}
-
-		.icon-export {
-			display: none;
-		}
-
-		#overlay {
+			box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 			position: fixed;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			background-color: rgba(0, 0, 0, .5);
-			z-index: 99;
-			cursor: pointer;
-			display: none;
-		}
-
-		.infinite-scroll {
-			padding: 10px 0 0 0;
-			float: left;
-			width: 100%;
-		}
-
-		.infinite-scroll .text {
-			float: left;
-			color: white;
-			margin: 3px 5px;
-		}
-
-		.switch {
-			position: relative;
-			width: 60px;
-			height: 34px;
-			float: right;
-		}
-
-		.switch input {
-			opacity: 0;
-			width: 0;
-			height: 0;
-		}
-
-		input:checked+.sliders {
-			background-color: #222d3c;
-		}
-
-		.sliders,
-		.sliders:before {
-			position: absolute;
-			border-radius: 25px;
-		}
-
-		.sliders {
-			cursor: pointer;
 			top: 0;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			background-color: #ccc;
-			-webkit-transition: .4s;
-			transition: .4s;
-			height: 31px;
+			z-index: 1000;
+			height: 60px;
+			contain: none !important;
+			overflow: visible !important
+		}
+		.main-nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 24px;
+			height: 100%
+		}
+		.main-logo {
+			font-size: 24px;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			gap: 8px
+		}
+		.main-logo img {
+			width: 32px;
+			height: 32px
+		}
+		.nav-center {
+			display: flex;
+			gap: 32px;
+			align-items: center
+		}
+		.nav-item {
+			color: white;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 500;
+			padding: 8px 12px;
+			border-radius: 4px;
+			transition: background-color 0.2s ease
+		}
+		.nav-item:hover {
+			background-color: rgba(255, 255, 255, 0.1)
+		}
+		.nav-right {
+			display: flex;
+			align-items: center;
+			gap: 16px
+		}
+		.language-selector {
+			position: relative !important;
+			display: inline-block !important;
+			z-index: 1000 !important
+		}
+		.language-btn {
+			background: white !important;
+			border: 1px solid #ddd !important;
+			border-radius: 4px !important;
+			padding: 6px 10px !important;
+			cursor: pointer !important;
+			font-size: 14px !important;
+			color: #333 !important;
+			display: flex !important;
+			align-items: center !important;
+			gap: 4px !important;
+			transition: all 0.2s ease !important;
+			min-width: 60px !important;
+			justify-content: center !important;
+			font-weight: 500 !important;
+			z-index: 10000 !important;
+			position: relative !important;
+			pointer-events: auto !important;
+			user-select: none !important
+		}
+		.language-btn * {
+			pointer-events: none !important
+		}
+		.language-btn:hover {
+			background-color: #f8f9fa;
+			border-color: #bbb
+		}
+		.globe-icon {
+			font-size: 16px
+		}
+		.lang-code {
+			font-weight: 600;
+			font-size: 13px;
+			color: #333
+		}
+		.dropdown-arrow {
+			font-size: 10px;
+			color: #666;
+			margin-left: 2px
+		}
+		.language-dropdown {
+			position: absolute !important;
+			top: calc(100% + 5px) !important;
+			right: 0 !important;
+			background: #ffffff !important;
+			border: 1px solid #e0e0e0 !important;
+			border-radius: 8px !important;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+			min-width: 180px !important;
+			z-index: 999999 !important;
+			display: none !important;
+			margin: 0 !important;
+			max-height: 320px !important;
+			overflow-y: auto !important;
+			opacity: 0 !important;
+			visibility: hidden !important;
+			transform: translateY(-10px) !important;
+			transition: all 0.2s ease !important
+		}
+		.language-dropdown.open {
+			display: block !important;
+			visibility: visible !important;
+			opacity: 1 !important;
+			transform: translateY(0) !important
+		}
+		.language-option {
+			display: block !important;
+			padding: 10px 16px !important;
+			color: #333 !important;
+			text-decoration: none !important;
+			font-size: 14px !important;
+			transition: background-color 0.2s ease !important;
+			border-bottom: 1px solid #f0f0f0 !important;
+			background: white !important;
+			width: 100% !important
+		}
+		.language-option:hover {
+			background-color: #f8f9fa !important
+		}
+		.language-option:last-child {
+			border-bottom: none !important
+		}
+		.language-option.active {
+			background-color: #e3f2fd !important;
+			color: #1976d2 !important;
+			font-weight: 500 !important
+		}
+		.language-option[dir="rtl"] {
+			text-align: right;
+			direction: rtl
+		}
+		body {
+			padding-top: 60px !important;
+			pointer-events: auto !important;
+			margin: 0 !important;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+			background: #f5f5f5 !important;
+			overflow: visible !important
+		}
+		header, nav, .nav-right, .language-selector, .language-btn {
+			pointer-events: auto !important;
+			position: relative !important;
+			overflow: visible !important
+		}
+		.language-dropdown.show {
+			display: block !important;
+			position: fixed !important;
+			top: 60px !important;
+			right: 20px !important;
+			z-index: 2147483647 !important;
+			background: white !important;
+			border: 2px solid #333 !important;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important
+		}
+		@media (max-width: 1024px) {
+			.nav-center {
+			gap: 20px
+		}
+		.nav-item {
+			font-size: 13px;
+			padding: 6px 8px
 		}
 
-		input:checked+.sliders:before {
-			-webkit-transform: translateX(26px);
-			-ms-transform: translateX(26px);
-			transform: translateX(26px);
+		}
+		@media (max-width: 768px) {
+			.main-nav {
+			padding: 0 16px
+		}
+		.nav-center {
+			display: none
+		}
+		.main-logo {
+			font-size: 20px
+		}
+		.main-logo img {
+			width: 28px;
+			height: 28px
 		}
 
-		.sliders:before {
-			content: "";
-			height: 25px;
-			width: 25px;
-			left: 5px;
-			bottom: 3px;
-			background-color: #fff;
-			-webkit-transition: .4s;
-			transition: .4s;
 		}
-
-		@media only screen and (max-width: 970px) {
-
-			.copiedalerts {
-				width: 100%;
-				left: 0 !important;
-			}
-
-			.menusection {
-				width: 35%;
-			}
-
-			.separator,
-			.share input {
-				display: none;
-			}
-
-			.thenitesharya-text {
-				margin-bottom: 0;
-				width: 100%;
-				left: 0;
-				box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.55);
-			}
-
-			.thenitesharya-text .clear {
-				padding: 7px 15px;
-			}
-
-			.share_button {
-				width: 100%;
-				z-index: 99;
-			}
-
-			.container {
-				max-width: 100%;
-			}
-
-			.aryafontslist p,
-			.aryafontsrecentlist p {
-				font-size: 18px;
-			}
-
-			nav a {
-				font-size: 14px;
-			}
-
-			.insta-profile {
-				margin: 20px 16px 15px;
-			}
-
-			.rightside {
-				width: 100%;
-				margin-left: 0;
-			}
-		}
-
-		@media only screen and (max-width: 800px) {
-			.icon-export {
-				display: block;
-			}
-		}
-
-		@media only screen and (max-width: 600px) {
-			.menusection img {
-				width: 200px;
-			}
-
-			.site-title img {
-				width: 250px;
-			}
-
-			.ssb_link {
-				margin: 0.2em 0.1em;
-			}
-
-			.r-s-b {
-				padding: 0.30em 0.40em;
-			}
-
-			.menusection h2 a {
-				font-size: 14px;
-			}
-
-			.menusection {
-				width: 70%;
-			}
-
-			.aryafonts,
-			.container {
-				width: 100%;
-			}
-
-			.resp-sharing-button__link {
-				margin: 2px;
-				float: left;
-			}
-
-			.aryafontsmain,
-			main {
-				padding: 2px;
-			}
-
-			.aryafontslist,
-			.aryafontsrecentlist {
-				padding: 7px;
-			}
-
-			#random-cloud {
-				height: 200px;
-			}
-
-			.aryafonts {
-				margin: 0.5% 0;
-			}
-
-			.aryafonts div,
-			.aryafonts p,
-			.site-title a {
-				font-size: 17px;
-			}
-
-			.settings input {
-				width: 180px;
-			}
-
-			.share_button {
-				width: 100%;
-				margin-top: 5px;
-			}
-
-			.share_button span {
-				float: none;
-			}
-
-			.share-link {
-				font-size: 13px;
-				padding: 5px;
-			}
-
-			.site-info {
-				padding: 0 5px;
-			}
-
-			p.copied {
-				width: 50%;
-			}
-
-			#thenitesharya-text {
-				font-size: 18px;
-				border: none;
-			}
-
-			.randomgen {
-				padding: 10px 10px 8px;
-			}
-
-			h1 {
-				font-size: 1.9em;
-				color: #000;
-			}
-
-			.aryafontslist h2 {
-				font-size: 16px;
-				margin: 0;
-			}
-
-			.share {
-				margin-left: 10px;
-				padding-top: 7px;
-			}
+		@media (max-width: 480px) {
+			.main-nav {
+			padding: 0 12px
 		}
 	</style>
+        <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="main.min.css" /></noscript>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690" crossorigin="anonymous"></script>
+	<style> .symbol{font-size: 30px !important} article h1, aside h1, nav h1, section h1{font-size: 2em !important} </style>
+
+	<title>🔤 Font Generator Copy & Paste (𝓣𝓮𝔁𝓽, 𝕋𝕖𝕩𝕥, 𝒯𝑒𝓍𝓉) Stylish Fonts</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Resource hints for performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+	<meta name="description" content="Create stylish text with our free online font generator. cool fonts for Instagram, Facebook, Discord, and more." />
+	<meta name="keywords" content="symbol copy paste, special characters, unicode symbols, text symbols, typography characters bio, aesthetic emojis for instagram bio, cute text symbols for instagram bio, aesthetic instagram symbols copy and paste, aesthetic text instagram, aesthetic text for reels, aesthetic symbols for instagram" />
+	<meta name="robots" content="index, follow" />
+	<meta name="theme-color" content="#230AC7" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta name="apple-mobile-web-app-title" content="Cool Symbols" />
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="img/favicon.ico" />
+	<link rel="canonical" href="https://www.symbolsemoji.com/font-generator.html" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://coolsymbol.com/font-generator.html" />
+	<meta property="twitter:title" content="Free Fancy Font Generator - Stylish Text Fonts & Symbols - CoolSymbol" />
+	<meta property="twitter:description" content="Generate fancy fonts and stylish text instantly. Free font generator for social media, Discord, Instagram, and more. Copy and paste beautiful Unicode text styles." />
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+	<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+	<link rel="apple-touch-icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+
+    <style>
+        /* Critical CSS for faster LCP */
+        .symbol { 
+            font-size: 30px !important; 
+            cursor: pointer; 
+            transition: transform 0.2s ease;
+        }
+        .symbol:hover { 
+            transform: scale(1.1); 
+        }
+        .main-nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 0 20px; 
+        }
+        .modern-header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            padding: 10px 0; 
+        }
+    </style>
 </head>
 
-<body>
-
-		<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+<body itemscope itemtype="https://schema.org/WebPage">
+	<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 		<nav class="main-nav">
 			<!-- Left: Logo -->
 			<a href="index.html" class="main-logo">Symbols Emoji</a>
@@ -1379,12 +398,48 @@
 				<a href="arrow-symbol.html" class="nav-item">Arrow</a>
 			</div>
 
-			
+			<!-- Right: Language Selector -->
+			<div class="nav-right">
+				<div class="language-selector">
+					<div class="language-btn" id="languageBtn" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="languageDropdown" tabindex="0" onclick="toggleDropdown()" style="pointer-events: auto !important; z-index: 10000 !important; cursor: pointer !important; user-select: none !important;">
+						<span class="globe-icon" style="pointer-events: none;">🌐</span>
+						<span class="lang-code" style="pointer-events: none;">EN</span>
+						<span class="dropdown-arrow" style="pointer-events: none;">▼</span>
+					</div>
+					<div class="language-dropdown" id="languageDropdown" role="menu" aria-labelledby="languageBtn" aria-hidden="true">
+						<a href="javascript:void(0)" class="language-option active" role="menuitem" tabindex="-1" onclick="selectLanguage('en')">🇺🇸 English</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('hi')">🇮🇳 हिंदी</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('es')">🇪🇸 Español</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('fr')">🇫🇷 Français</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('de')">🇩🇪 Deutsch</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ja')">🇯🇵 日本語</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ko')">🇰🇷 한국어</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('zh')">🇨🇳 中文</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" dir="rtl" onclick="selectLanguage('ar')">🇸🇦 العربية</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('pt')">🇵🇹 Português</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ru')">🇷🇺 Русский</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('it')">🇮🇹 Italiano</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('nl')">🇳🇱 Nederlands</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('tr')">🇹🇷 Türkçe</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('pl')">🇵🇱 Polski</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('sv')">🇸🇪 Svenska</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('da')">🇩🇰 Dansk</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('no')">🇳🇴 Norsk</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('fi')">🇫🇮 Suomi</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('th')">🇹🇭 ไทย</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('vi')">🇻🇳 Tiếng Việt</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('id')">🇮🇩 Bahasa Indonesia</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ms')">🇲🇾 Bahasa Melayu</a>
+						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" dir="rtl" onclick="selectLanguage('he')">🇮🇱 עברית</a>
+					</div>
+				</div>
 			</div>
 
 		</nav>
 	</header>
-<!-- AdSense Banner -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
+     crossorigin="anonymous"></script>
+<!-- top-banner -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-7064720037053690"
@@ -1394,1155 +449,678 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<main role="main">
+		<article itemscope itemtype="https://schema.org/Article">
+			<h1>Fancy Text Generator</h1>
+			<p>Create stylish fonts for social media with our free online font generator.</p>
+		</article>
+	</main>
 
+	<main class="semantic-content">
+        <section class="symbol-info">
+            <h2>Font Generator Collection</h2>
+            <p>Discover the ultimate collection of symbols ✦ and special characters, featuring thousands of Unicode symbols ✧ carefully organized for easy access and instant copying. Our comprehensive database includes mathematical symbols, currency signs, punctuation marks, geometric shapes, technical symbols ✩, and decorative elements ✪ that enhance any type of digital content. Whether you're creating professional documents, designing social media posts, developing websites, or working on creative projects, our symbol collection ✫ provides the perfect characters to express your ideas clearly and attractively.</p>
+            
+            <h3>Comprehensive Unicode Symbols ✧ ✩ ✪ ✫ and Special Characters</h3>
+            <p>Special characters and symbols play a crucial role in modern digital communication, helping to convey information more effectively than words alone. They're essential for technical documentation, where precise notation ✬ can prevent misunderstandings and improve clarity. In creative fields, symbols ✭ add visual interest and can help establish brand identity or artistic style ✮. For international communication, many symbols ✯ transcend language barriers, making content more accessible to global audiences.</p>
+            
+            <h3>How to Copy and Use These Symbols</h3>
+            <p>We maintain our symbol collection with rigorous attention to quality and compatibility, regularly testing each character ✰ across different platforms and updating our database as new Unicode standards are released. This ensures that every symbol in our collection works reliably across various devices and applications. Our symbols are perfect for enhancing your digital content with visual appeal and professional presentation.</p>
 
-	<div class="thenitesharya-text">
-		<div class="text-container" style="position: relative;">
-			<textarea id="thenitesharya-text" placeholder="✎ Type Your Text Here . . ."></textarea><button
-				class="icon-cancel"></button>
+        </section>
+    </main>
+
+	<div class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+	<div class="footer-content">
+		<div class="footer-left">
+			<p class="site-name">Symbols Emoji.com</p>
+		</div>
+		<div class="footer-links">
+			<a href="privacy.html" class="footer-link">Privacy</a>
+			<a href="terms.html" class="footer-link">Terms</a>
+			<a href="contact.html" class="footer-link">Contact</a>
+		</div>
+		<div class="footer-copyright">
+			<p class="copyright">© 2025 SymbolsEmoji.com</p>
 		</div>
 	</div>
-
-	<div id="random-cloud">
-		<div class="item size3">⋆┊ ┊ . ┊ . ┊✩.ᴄᴏᴏʟ ꜱʏᴍʙᴏʟ ✫ ┊° ☪⋆ ✯. • ° ⋆ ┊</div>
-		<div class="item size4">░▒▓█►─═  𝘊𝘰𝘰𝘭 𝘚𝘺𝘮𝘣𝘰𝘭 ═─◄█▓▒░</div>
-		<div class="item size0">(ง ͠ ᵒ̌ Дᵒ̌ )¤=[]:::::&gt; Cσσʅ SყɱႦσʅ</div>
-		<div class="item size3">｡*ﾟ.*.｡(っ ᐛ )っ ƈơơƖ ʂყɱცơƖ</div>
-		<div class="item size4">↫↫↫↫↫ C̴o̴o̴l̴ ̴S̴y̴m̴b̴o̴l̴ ↬↬↬↬↬</div>
-		<div class="item size3">▀▄▀▄▀▄ ℭ𝔬𝔬𝔩 𝔖𝔶𝔪𝔟𝔬𝔩 ▄▀▄▀▄▀</div>
 	</div>
+	<link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="footer-fix.css" /></noscript>
 
-	<div class="mainbox">
+	<script src="script.min.js" defer></script>
 
-		<main>
-			<button class="randomgen icon-shuffle" onclick="randomgen()"></button>
+<script defer>
+// Global dropdown toggle function
+function toggleDropdown() {
+    console.log('🖱️ Dropdown toggle clicked');
+    const dropdown = document.getElementById('languageDropdown');
+    const btn = document.getElementById('languageBtn');
+    
+    if (!dropdown) {
+        console.error('❌ Dropdown not found');
+        return;
+    }
+    
+    const isVisible = dropdown.style.display === 'block';
+    
+    if (isVisible) {
+        dropdown.style.display = 'none';
+        dropdown.classList.remove('open');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        console.log('📤 Dropdown closed');
+    } else {
+        dropdown.style.display = 'block';
+        dropdown.classList.add('open');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
+        console.log('📥 Dropdown opened');
+    }
+}
 
-			<div class="container">
+// Language selection function
+function selectLanguage(langCode) {
+    console.log('🌐 Language selected:', langCode);
+    
+    // Update button text
+    const langBtn = document.querySelector('.lang-code');
+    if (langBtn) {
+        const langNames = {
+            'en': 'EN', 'hi': 'HI', 'es': 'ES', 'fr': 'FR', 'de': 'DE', 'ja': 'JP', 'ko': 'KR', 'zh': 'CN',
+            'ar': 'AR', 'pt': 'PT', 'ru': 'RU', 'it': 'IT', 'nl': 'NL', 'tr': 'TR', 'pl': 'PL', 'sv': 'SV',
+            'da': 'DK', 'no': 'NO', 'fi': 'FI', 'th': 'TH', 'vi': 'VN', 'id': 'ID', 'ms': 'MY', 'he': 'HE'
+        };
+        langBtn.textContent = langNames[langCode] || 'EN';
+    }
+    
+    // Set document language and direction
+    document.documentElement.lang = langCode;
+    document.documentElement.dir = (langCode === 'ar' || langCode === 'he') ? 'rtl' : 'ltr';
+    
+    // Update active state
+    document.querySelectorAll('.language-option').forEach(option => {
+        option.classList.remove('active');
+    });
+    const selectedOption = document.querySelector(`[onclick="selectLanguage('${langCode}')"]`);
+    if (selectedOption) {
+        selectedOption.classList.add('active');
+    }
+    
+    // Close dropdown
+    const dropdown = document.getElementById('languageDropdown');
+    const btn = document.getElementById('languageBtn');
+    if (dropdown) {
+        dropdown.style.display = 'none';
+        dropdown.classList.remove('open');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+    }
+    
+    // Save preference
+    localStorage.setItem('selectedLanguage', langCode);
+    
+    // Translate content if function exists
+    if (typeof translatePageContent === 'function') {
+        translatePageContent(langCode);
+    }
+}
 
-				<div class="aryafontsfavoritelist"></div>
+// Translations object (keeping existing translations)
+const translations = {
+    en: {
+        allSymbols: "All Symbols",
+        coolFlower: "cool flower", 
+        aesthetic: "Aesthetic",
+        heart: "Heart",
+        arrow: "Arrow",
+        mainTitle: "Cool Symbols Copy and Paste",
+        fontGenerator: "Font Generator",
+        lennyFace: "Lenny Face",
+        logoText: "Symbols Emoji"
+    },
+    hi: {
+        allSymbols: "सभी प्रतीक",
+        coolFlower: "कूल फूल",
+        aesthetic: "सौंदर्य",
+        heart: "दिल",
+        arrow: "तीर",
+        mainTitle: "कूल प्रतीक कॉपी और पेस्ट",
+        fontGenerator: "फॉन्ट जेनरेटर",
+        lennyFace: "लेनी फेस",
+        logoText: "Symbols Emoji"
+    },
+    es: {
+        allSymbols: "Todos los Símbolos",
+        coolFlower: "flor genial",
+        aesthetic: "Estético",
+        heart: "Corazón",
+        arrow: "Flecha",
+        mainTitle: "Símbolos Geniales Copiar y Pegar",
+        fontGenerator: "Generador de Fuentes",
+        lennyFace: "Cara Lenny",
+        logoText: "Symbols Emoji"
+    },
+    fr: {
+        allSymbols: "Tous les Symboles",
+        coolFlower: "fleur cool",
+        aesthetic: "Esthétique",
+        heart: "Cœur",
+        arrow: "Flèche",
+        mainTitle: "Symboles Cool Copier et Coller",
+        fontGenerator: "Générateur de Police",
+        lennyFace: "Visage Lenny",
+        logoText: "Symbols Emoji"
+    },
+    de: {
+        allSymbols: "Alle Symbole",
+        coolFlower: "coole Blume",
+        aesthetic: "Ästhetisch",
+        heart: "Herz",
+        arrow: "Pfeil",
+        mainTitle: "Coole Symbole Kopieren und Einfügen",
+        fontGenerator: "Schrift Generator",
+        lennyFace: "Lenny Gesicht",
+        logoText: "Symbols Emoji"
+    },
+    ja: {
+        allSymbols: "すべての記号",
+        coolFlower: "クールな花",
+        aesthetic: "美的",
+        heart: "ハート",
+        arrow: "矢印",
+        mainTitle: "クールシンボル コピー＆ペースト",
+        fontGenerator: "フォントジェネレーター",
+        lennyFace: "レニーフェイス",
+        logoText: "Symbols Emoji"
+    },
+    ko: {
+        allSymbols: "모든 기호",
+        coolFlower: "멋진 꽃",
+        aesthetic: "미적",
+        heart: "하트",
+        arrow: "화살표",
+        mainTitle: "멋진 기호 복사 및 붙여넣기",
+        fontGenerator: "폰트 생성기",
+        lennyFace: "레니 페이스",
+        logoText: "Symbols Emoji"
+    },
+    zh: {
+        allSymbols: "所有符号",
+        coolFlower: "酷花",
+        aesthetic: "美学",
+        heart: "心",
+        arrow: "箭头",
+        mainTitle: "酷符号复制粘贴",
+        fontGenerator: "字体生成器",
+        lennyFace: "伦尼脸",
+        logoText: "Symbols Emoji"
+    },
+    ar: {
+        allSymbols: "جميع الرموز",
+        coolFlower: "زهرة رائعة",
+        aesthetic: "جمالي",
+        heart: "قلب",
+        arrow: "سهم",
+        mainTitle: "رموز رائعة نسخ ولصق",
+        fontGenerator: "مولد الخط",
+        lennyFace: "وجه ليني",
+        logoText: "Symbols Emoji"
+    },
+    pt: {
+        allSymbols: "Todos os Símbolos",
+        coolFlower: "flor legal",
+        aesthetic: "Estético",
+        heart: "Coração",
+        arrow: "Seta",
+        mainTitle: "Símbolos Legais Copiar e Colar",
+        fontGenerator: "Gerador de Fonte",
+        lennyFace: "Cara Lenny",
+        logoText: "Symbols Emoji"
+    },
+    ru: {
+        allSymbols: "Все Символы",
+        coolFlower: "крутой цветок",
+        aesthetic: "Эстетический",
+        heart: "Сердце",
+        arrow: "Стрелка",
+        mainTitle: "Крутые Символы Копировать и Вставить",
+        fontGenerator: "Генератор Шрифтов",
+        lennyFace: "Лицо Ленни",
+        logoText: "Symbols Emoji"
+    },
+    it: {
+        allSymbols: "Tutti i Simboli",
+        coolFlower: "fiore figo",
+        aesthetic: "Estetico",
+        heart: "Cuore",
+        arrow: "Freccia",
+        mainTitle: "Simboli Fighi Copia e Incolla",
+        fontGenerator: "Generatore di Font",
+        lennyFace: "Faccia Lenny",
+        logoText: "Symbols Emoji"
+    },
+    nl: {
+        allSymbols: "Alle Symbolen",
+        coolFlower: "coole bloem",
+        aesthetic: "Esthetisch",
+        heart: "Hart",
+        arrow: "Pijl",
+        mainTitle: "Coole Symbolen Kopiëren en Plakken",
+        fontGenerator: "Lettertype Generator",
+        lennyFace: "Lenny Gezicht",
+        logoText: "Symbols Emoji"
+    },
+    tr: {
+        allSymbols: "Tüm Semboller",
+        coolFlower: "havalı çiçek",
+        aesthetic: "Estetik",
+        heart: "Kalp",
+        arrow: "Ok",
+        mainTitle: "Havalı Semboller Kopyala ve Yapıştır",
+        fontGenerator: "Font Üretici",
+        lennyFace: "Lenny Yüz",
+        logoText: "Symbols Emoji"
+    },
+    pl: {
+        allSymbols: "Wszystkie Symbole",
+        coolFlower: "fajny kwiat",
+        aesthetic: "Estetyczny",
+        heart: "Serce",
+        arrow: "Strzałka",
+        mainTitle: "Fajne Symbole Kopiuj i Wklej",
+        fontGenerator: "Generator Czcionek",
+        lennyFace: "Twarz Lenny",
+        logoText: "Symbols Emoji"
+    },
+    sv: {
+        allSymbols: "Alla Symboler",
+        coolFlower: "cool blomma",
+        aesthetic: "Estetisk",
+        heart: "Hjärta",
+        arrow: "Pil",
+        mainTitle: "Coola Symboler Kopiera och Klistra",
+        fontGenerator: "Typsnitt Generator",
+        lennyFace: "Lenny Ansikte",
+        logoText: "Symbols Emoji"
+    },
+    da: {
+        allSymbols: "Alle Symboler",
+        coolFlower: "cool blomst",
+        aesthetic: "Æstetisk",
+        heart: "Hjerte",
+        arrow: "Pil",
+        mainTitle: "Fede Symboler Kopier og Indsæt",
+        fontGenerator: "Skrifttype Generator",
+        lennyFace: "Lenny Ansigt",
+        logoText: "Symbols Emoji"
+    },
+    no: {
+        allSymbols: "Alle Symboler",
+        coolFlower: "kul blomst",
+        aesthetic: "Estetisk",
+        heart: "Hjerte",
+        arrow: "Pil",
+        mainTitle: "Kule Symboler Kopier og Lim Inn",
+        fontGenerator: "Font Generator",
+        lennyFace: "Lenny Ansikt",
+        logoText: "Symbols Emoji"
+    },
+    fi: {
+        allSymbols: "Kaikki Symbolit",
+        coolFlower: "siisti kukka",
+        aesthetic: "Esteettinen",
+        heart: "Sydän",
+        arrow: "Nuoli",
+        mainTitle: "Siistit Symbolit Kopioi ja Liitä",
+        fontGenerator: "Fontti Generaattori",
+        lennyFace: "Lenny Kasvot",
+        logoText: "Symbols Emoji"
+    },
+    th: {
+        allSymbols: "สัญลักษณ์ทั้งหมด",
+        coolFlower: "ดอกไม้เท่",
+        aesthetic: "สวยงาม",
+        heart: "หัวใจ",
+        arrow: "ลูกศร",
+        mainTitle: "สัญลักษณ์เท่ คัดลอกและวาง",
+        fontGenerator: "เครื่องมือสร้างฟอนต์",
+        lennyFace: "หน้าเลนนี่",
+        logoText: "Symbols Emoji"
+    },
+    vi: {
+        allSymbols: "Tất cả Ký hiệu",
+        coolFlower: "hoa tuyệt vời",
+        aesthetic: "Thẩm mỹ",
+        heart: "Trái tim",
+        arrow: "Mũi tên",
+        mainTitle: "Ký hiệu Tuyệt vời Sao chép và Dán",
+        fontGenerator: "Trình tạo Font",
+        lennyFace: "Mặt Lenny",
+        logoText: "Symbols Emoji"
+    },
+    id: {
+        allSymbols: "Semua Simbol",
+        coolFlower: "bunga keren",
+        aesthetic: "Estetis",
+        heart: "Hati",
+        arrow: "Panah",
+        mainTitle: "Simbol Keren Salin dan Tempel",
+        fontGenerator: "Generator Font",
+        lennyFace: "Wajah Lenny",
+        logoText: "Symbols Emoji"
+    },
+    ms: {
+        allSymbols: "Semua Simbol",
+        coolFlower: "bunga sejuk",
+        aesthetic: "Estetik",
+        heart: "Hati",
+        arrow: "Anak panah",
+        mainTitle: "Simbol Sejuk Salin dan Tampal",
+        fontGenerator: "Penjana Font",
+        lennyFace: "Muka Lenny",
+        logoText: "Symbols Emoji"
+    },
+    he: {
+        allSymbols: "כל הסמלים",
+        coolFlower: "פרח מגניב",
+        aesthetic: "אסתטי",
+        heart: "לב",
+        arrow: "חץ",
+        mainTitle: "סמלים מגניבים העתק והדבק",
+        fontGenerator: "מחולל גופנים",
+        lennyFace: "פרצוף לני",
+        logoText: "Symbols Emoji"
+    }
+};
 
-				<div class="aryafontsmain">
-					
-					
-					<div class="aryafontslist">
-						<h2>Crazy Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Crazy</span>
-							<p class="fullCrazy1">♝☆ ｉᶰş丅Ꮆ𝕣Δ爪 Ŧᗝή𝓽ş ♨💣</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Crazy</span>
-							<p class="fullCrazy2">✌⛵ เ𝓝ş𝐓ᵍ𝓡Δм 千Ỗ几Ｔ𝓈 ☯☝</p>
-						</div>
+// Page content translation function
+function translatePageContent(langCode) {
+    const translation = translations[langCode] || translations.en;
+    
+    // Get page-specific semantic translations
+    const pageCategory = 'default';
+    const semanticTranslations = {
+    "arrow": {
+        "en": {
+            "h2": "Arrow Symbol Collection - Copy & Paste → Special Characters",
+            "p1": "Discover the ultimate collection of arrow symbols → and directional characters, featuring thousands of Unicode arrow symbols ← carefully organized for easy access and instant copying.",
+            "h3": "Complete Arrow Symbols ← ↑ ↓ ↗ and Directional Unicode Characters",
+            "p2": "Arrow symbols and directional characters play a crucial role in modern digital communication, helping to convey navigational information more effectively than words alone."
+        },
+        "hi": {
+            "h2": "तीर प्रतीक संग्रह - कॉपी और पेस्ट → विशेष वर्ण",
+            "p1": "तीर प्रतीकों → और दिशात्मक वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड तीर प्रतीक ← हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "पूर्ण तीर प्रतीक ← ↑ ↓ ↗ और दिशात्मक यूनिकोड वर्ण",
+            "p2": "तीर प्रतीक और दिशात्मक वर्ण आधुनिक डिजिटल संचार में महत्वपूर्ण भूमिका निभाते हैं, शब्दों की तुलना में नेविगेशनल जानकारी को अधिक प्रभावी रूप से व्यक्त करने में मदद करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Símbolos de Flecha - Copiar y Pegar → Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de símbolos de flecha → y caracteres direccionales, con miles de símbolos de flecha Unicode ← cuidadosamente organizados para fácil acceso y copiado instantáneo.",
+            "h3": "Símbolos de Flecha Completos ← ↑ ↓ ↗ y Caracteres Unicode Direccionales",
+            "p2": "Los símbolos de flecha y caracteres direccionales juegan un papel crucial en la comunicación digital moderna, ayudando a transmitir información de navegación más efectivamente que las palabras solas."
+        }
+    },
+    "heart": {
+        "en": {
+            "h2": "Heart Symbol Collection - Copy & Paste ♡ Special Characters",
+            "p1": "Discover the ultimate collection of heart symbols ♡ and love characters, featuring thousands of Unicode heart symbols ❤ carefully organized for easy access and instant copying.",
+            "h3": "Complete Heart Symbols ♡ ♥ ❤ 💕 and Love Unicode Characters",
+            "p2": "Heart symbols and love characters play a crucial role in modern digital communication, helping to express emotions and feelings more effectively than words alone."
+        },
+        "hi": {
+            "h2": "दिल प्रतीक संग्रह - कॉपी और पेस्ट ♡ विशेष वर्ण",
+            "p1": "दिल प्रतीकों ♡ और प्रेम वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड दिल प्रतीक ❤ हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "पूर्ण दिल प्रतीक ♡ ♥ ❤ 💕 और प्रेम यूनिकोड वर्ण",
+            "p2": "दिल प्रतीक और प्रेम वर्ण आधुनिक डिजिटल संचार में महत्वपूर्ण भूमिका निभाते हैं, शब्दों की तुलना में भावनाओं और भावनाओं को अधिक प्रभावी रूप से व्यक्त करने में मदद करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Símbolos de Corazón - Copiar y Pegar ♡ Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de símbolos de corazón ♡ y caracteres de amor, con miles de símbolos de corazón Unicode ❤ cuidadosamente organizados para fácil acceso y copiado instantáneo.",
+            "h3": "Símbolos de Corazón Completos ♡ ♥ ❤ 💕 y Caracteres Unicode de Amor",
+            "p2": "Los símbolos de corazón y caracteres de amor juegan un papel crucial en la comunicación digital moderna, ayudando a expresar emociones y sentimientos más efectivamente que las palabras solas."
+        }
+    },
+    "flower": {
+        "en": {
+            "h2": "Flower Symbol Collection - Copy & Paste 🌸 Special Characters",
+            "p1": "Discover the ultimate collection of flower symbols 🌸 and botanical characters, featuring thousands of Unicode flower symbols 🌺 carefully organized for easy access and instant copying.",
+            "h3": "Complete Flower Symbols 🌸 🌺 🌻 🌷 and Botanical Unicode Characters",
+            "p2": "Flower symbols and botanical characters play a crucial role in modern digital communication, helping to express nature and beauty more effectively than words alone."
+        },
+        "hi": {
+            "h2": "फूल प्रतीक संग्रह - कॉपी और पेस्ट 🌸 विशेष वर्ण",
+            "p1": "फूल प्रतीकों 🌸 और वनस्पति वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड फूल प्रतीक 🌺 हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "पूर्ण फूल प्रतीक 🌸 🌺 🌻 🌷 और वनस्पति यूनिकोड वर्ण",
+            "p2": "फूल प्रतीक और वनस्पति वर्ण आधुनिक डिजिटल संचार में महत्वपूर्ण भूमिका निभाते हैं, शब्दों की तुलना में प्रकृति और सुंदरता को अधिक प्रभावी रूप से व्यक्त करने में मदद करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Símbolos de Flor - Copiar y Pegar 🌸 Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de símbolos de flor 🌸 y caracteres botánicos, con miles de símbolos de flor Unicode 🌺 cuidadosamente organizados para fácil acceso y copiado instantáneo.",
+            "h3": "Símbolos de Flor Completos 🌸 🌺 🌻 🌷 y Caracteres Unicode Botánicos",
+            "p2": "Los símbolos de flor y caracteres botánicos juegan un papel crucial en la comunicación digital moderna, ayudando a expresar naturaleza y belleza más efectivamente que las palabras solas."
+        }
+    },
+    "star": {
+        "en": {
+            "h2": "Star Symbol Collection - Copy & Paste ⭐ Special Characters",
+            "p1": "Discover the ultimate collection of star symbols ⭐ and celestial characters, featuring thousands of Unicode star symbols ★ carefully organized for easy access and instant copying.",
+            "h3": "Complete Star Symbols ⭐ ★ ✨ 🌟 and Celestial Unicode Characters",
+            "p2": "Star symbols and celestial characters play a crucial role in modern digital communication, helping to express excellence and achievement more effectively than words alone."
+        },
+        "hi": {
+            "h2": "तारा प्रतीक संग्रह - कॉपी और पेस्ट ⭐ विशेष वर्ण",
+            "p1": "तारा प्रतीकों ⭐ और खगोलीय वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड तारा प्रतीक ★ हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "पूर्ण तारा प्रतीक ⭐ ★ ✨ 🌟 और खगोलीय यूनिकोड वर्ण",
+            "p2": "तारा प्रतीक और खगोलीय वर्ण आधुनिक डिजिटल संचार में महत्वपूर्ण भूमिका निभाते हैं, शब्दों की तुलना में उत्कृष्टता और उपलब्धि को अधिक प्रभावी रूप से व्यक्त करने में मदद करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Símbolos de Estrella - Copiar y Pegar ⭐ Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de símbolos de estrella ⭐ y caracteres celestiales, con miles de símbolos de estrella Unicode ★ cuidadosamente organizados para fácil acceso y copiado instantáneo.",
+            "h3": "Símbolos de Estrella Completos ⭐ ★ ✨ 🌟 y Caracteres Unicode Celestiales",
+            "p2": "Los símbolos de estrella y caracteres celestiales juegan un papel crucial en la comunicación digital moderna, ayudando a expresar excelencia y logros más efectivamente que las palabras solas."
+        }
+    },
+    "lenny": {
+        "en": {
+            "h2": "Lenny Face Collection - Copy & Paste ( ͡° ͜ʖ ͡°) Special Characters",
+            "p1": "Discover the ultimate collection of Lenny faces ( ͡° ͜ʖ ͡°) and emoticon characters, featuring thousands of Unicode Lenny expressions ಠ_ಠ carefully organized for easy access and instant copying.",
+            "h3": "Complete Lenny Faces ( ͡° ͜ʖ ͡°) ಠ_ಠ (╯°□°）╯ and Emoticon Characters",
+            "p2": "Lenny faces and emoticon characters play a crucial role in modern digital communication, helping to express emotions and reactions more effectively than words alone."
+        },
+        "hi": {
+            "h2": "लेनी फेस संग्रह - कॉपी और पेस्ट ( ͡° ͜ʖ ͡°) विशेष वर्ण",
+            "p1": "लेनी फेसेस ( ͡° ͜ʖ ͡°) और इमोटिकॉन वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड लेनी एक्सप्रेशन ಠ_ಠ हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "पूर्ण लेनी फेसेस ( ͡° ͜ʖ ͡°) ಠ_ಠ (╯°□°）╯ और इमोटिकॉन वर्ण",
+            "p2": "लेनी फेसेस और इमोटिकॉन वर्ण आधुनिक डिजिटल संचार में महत्वपूर्ण भूमिका निभाते हैं, शब्दों की तुलना में भावनाओं और प्रतिक्रियाओं को अधिक प्रभावी रूप से व्यक्त करने में मदद करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Caras Lenny - Copiar y Pegar ( ͡° ͜ʖ ͡°) Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de caras Lenny ( ͡° ͜ʖ ͡°) y caracteres de emoticones, con miles de expresiones Lenny Unicode ಠ_ಠ cuidadosamente organizadas para fácil acceso y copiado instantáneo.",
+            "h3": "Caras Lenny Completas ( ͡° ͜ʖ ͡°) ಠ_ಠ (╯°□°）╯ y Caracteres de Emoticones",
+            "p2": "Las caras Lenny y caracteres de emoticones juegan un papel crucial en la comunicación digital moderna, ayudando a expresar emociones y reacciones más efectivamente que las palabras solas."
+        }
+    },
+    "animal": {
+        "en": {
+            "h2": "Animal Emoji Collection - Copy & Paste 🐼 Special Characters",
+            "p1": "Discover the ultimate collection of animal emojis 🐼 and wildlife characters, featuring thousands of Unicode animal symbols 🦒 carefully organized for easy access and instant copying.",
+            "h3": "Complete Animal Emojis 🐼 🦒 🐨 🦓 and Wildlife Unicode Characters",
+            "p2": "Animal emojis and wildlife characters play a crucial role in modern digital communication, helping to express nature and wildlife more effectively than words alone."
+        },
+        "hi": {
+            "h2": "पशु इमोजी संग्रह - कॉपी और पेस्ट 🐼 विशेष वर्ण",
+            "p1": "पशु इमोजी 🐼 और वन्यजीव वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड पशु प्रतीक 🦒 हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "पूर्ण पशु इमोजी 🐼 🦒 🐨 🦓 और वन्यजीव यूनिकोड वर्ण",
+            "p2": "पशु इमोजी और वन्यजीव वर्ण आधुनिक डिजिटल संचार में महत्वपूर्ण भूमिका निभाते हैं, शब्दों की तुलना में प्रकृति और वन्यजीवों को अधिक प्रभावी रूप से व्यक्त करने में मदद करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Emojis de Animales - Copiar y Pegar 🐼 Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de emojis de animales 🐼 y caracteres de vida silvestre, con miles de símbolos de animales Unicode 🦒 cuidadosamente organizados para fácil acceso y copiado instantáneo.",
+            "h3": "Emojis de Animales Completos 🐼 🦒 🐨 🦓 y Caracteres Unicode de Vida Silvestre",
+            "p2": "Los emojis de animales y caracteres de vida silvestre juegan un papel crucial en la comunicación digital moderna, ayudando a expresar naturaleza y vida silvestre más efectivamente que las palabras solas."
+        }
+    },
+    "default": {
+        "en": {
+            "h2": "Symbol Collection - Copy & Paste ✦ Special Characters",
+            "p1": "Discover the ultimate collection of symbols and special characters, featuring thousands of Unicode symbols carefully organized for easy access and instant copying.",
+            "h3": "How to Copy and Use These Symbols",
+            "p2": "We maintain our symbol collection with rigorous attention to quality and compatibility, regularly testing each character across different platforms."
+        },
+        "hi": {
+            "h2": "प्रतीक संग्रह - कॉपी और पेस्ट ✦ विशेष वर्ण",
+            "p1": "प्रतीकों और विशेष वर्णों का अंतिम संग्रह खोजें, जिसमें हजारों यूनिकोड प्रतीक हैं जो आसान पहुंच और तत्काल कॉपी करने के लिए सावधानीपूर्वक व्यवस्थित हैं।",
+            "h3": "इन प्रतीकों को कॉपी और उपयोग कैसे करें",
+            "p2": "हम अपने प्रतीक संग्रह को गुणवत्ता और संगतता पर कठोर ध्यान के साथ बनाए रखते हैं, नियमित रूप से विभिन्न प्लेटफॉर्म पर प्रत्येक वर्ण का परीक्षण करते हैं।"
+        },
+        "es": {
+            "h2": "Colección de Símbolos - Copiar y Pegar ✦ Caracteres Especiales",
+            "p1": "Descubre la colección definitiva de símbolos y caracteres especiales, con miles de símbolos Unicode cuidadosamente organizados para fácil acceso y copiado instantáneo.",
+            "h3": "Cómo Copiar y Usar Estos Símbolos",
+            "p2": "Mantenemos nuestra colección de símbolos con rigurosa atención a la calidad y compatibilidad, probando regularmente cada carácter en diferentes plataformas."
+        }
+    }
+};
+    
+    const pageTranslation = semanticTranslations[pageCategory] && semanticTranslations[pageCategory][langCode] 
+        ? semanticTranslations[pageCategory][langCode]
+        : semanticTranslations[pageCategory] && semanticTranslations[pageCategory].en
+        ? semanticTranslations[pageCategory].en
+        : semanticTranslations.default[langCode] || semanticTranslations.default.en;
+    
+    // Translate navigation items
+    const navItems = document.querySelectorAll('.nav-item');
+    if (navItems.length >= 5) {
+        navItems[0].textContent = translation.allSymbols;
+        navItems[1].textContent = translation.coolFlower;
+        navItems[2].textContent = translation.aesthetic;
+        navItems[3].textContent = translation.heart;
+        navItems[4].textContent = translation.arrow;
+    }
+    
+    // Translate main title
+    const mainTitle = document.querySelector('.titlesymbol');
+    if (mainTitle) {
+        mainTitle.textContent = translation.mainTitle;
+    }
+    
+    // Translate tool links
+    const toolLinks = document.querySelectorAll('.tools a');
+    toolLinks.forEach(link => {
+        if (link.textContent.includes('All Symbols') || link.textContent.includes('सभी प्रतीक') || link.textContent.includes('Todos los Símbolos')) {
+            link.textContent = translation.allSymbols;
+        } else if (link.textContent.includes('Font Generator') || link.textContent.includes('फॉन्ट जेनरेटर') || link.textContent.includes('Generador de Fuentes')) {
+            link.textContent = translation.fontGenerator;
+        } else if (link.textContent.includes('Lenny Face') || link.textContent.includes('लेनी फेस') || link.textContent.includes('Cara Lenny')) {
+            link.textContent = translation.lennyFace;
+        }
+    });
+    
+    // Update logo text
+    const logoText = document.querySelector('.main-logo');
+    if (logoText && logoText.childNodes.length > 1) {
+        logoText.childNodes[logoText.childNodes.length - 1].textContent = translation.logoText;
+    }
+    
+    // *** TRANSLATE SEMANTIC CONTENT (H1, H2, H3, PARAGRAPHS) ***
+    const semanticSection = document.querySelector('.semantic-content .symbol-info');
+    if (semanticSection && pageTranslation) {
+        console.log('🔤 Translating semantic content for category:', pageCategory);
+        
+        // Translate H2 heading
+        const h2Element = semanticSection.querySelector('h2');
+        if (h2Element && pageTranslation.h2) {
+            h2Element.textContent = pageTranslation.h2;
+            console.log('✅ H2 translated:', pageTranslation.h2);
+        }
+        
+        // Translate first paragraph
+        const paragraphs = semanticSection.querySelectorAll('p');
+        if (paragraphs.length > 0 && pageTranslation.p1) {
+            paragraphs[0].textContent = pageTranslation.p1;
+            console.log('✅ First paragraph translated');
+        }
+        
+        // Translate H3 heading (usually the second or last h3)
+        const h3Elements = semanticSection.querySelectorAll('h3');
+        if (h3Elements.length > 0 && pageTranslation.h3) {
+            // Translate the last h3 (usually "How to Copy and Use These Symbols")
+            h3Elements[h3Elements.length - 1].textContent = pageTranslation.h3;
+            console.log('✅ H3 translated:', pageTranslation.h3);
+        }
+        
+        // Translate last paragraph
+        if (paragraphs.length > 1 && pageTranslation.p2) {
+            paragraphs[paragraphs.length - 1].textContent = pageTranslation.p2;
+            console.log('✅ Last paragraph translated');
+        }
+    } else {
+        console.log('⚠️ Semantic section not found or no translations available');
+    }
+}
 
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Crazy
-								with Florish Symbols</span>
-							<p class="crazyWithFlourishOrSymbols3">☮☆ ι𝓷ѕＴ𝓰𝕣ⓐＭ 𝔣𝐎ᶰ𝔱𝕤 🐟👍</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Crazy
-								with Florish Symbols</span>
-							<p class="crazyWithFlourishOrSymbols4">🍔🐝 𝓲ηşţᵍŘά𝓶 𝒻σⓃⓉＳ 👻🐧</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist">
-						<h2>Common Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Old
-								English</span>
-							<p class="oldEnglishCharMap">ℑ𝔫𝔰𝔱𝔤𝔯𝔞𝔪 𝔉𝔬𝔫𝔱𝔰</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Medieval</span>
-							<p class="medievalCharMap">𝕴𝖓𝖘𝖙𝖌𝖗𝖆𝖒 𝕱𝖔𝖓𝖙𝖘</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Cursive</span>
-							<p class="cursiveCharMap">𝓘𝓷𝓼𝓽𝓰𝓻𝓪𝓶 𝓕𝓸𝓷𝓽𝓼</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Scriptify</span>
-							<p class="scriptify">𝐼𝓃𝓈𝓉𝑔𝓇𝒶𝓂 𝐹𝑜𝓃𝓉𝓈</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Double
-								Struck</span>
-							<p class="doubleStruckCharMap">𝕀𝕟𝕤𝕥𝕘𝕣𝕒𝕞 𝔽𝕠𝕟𝕥𝕤</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Italic</span>
-							<p class="italicCharMap">𝘐𝘯𝘴𝘵𝘨𝘳𝘢𝘮 𝘍𝘰𝘯𝘵𝘴</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Bold
-								Italic</span>
-							<p class="boldItalicCharMap">𝙄𝙣𝙨𝙩𝙜𝙧𝙖𝙢 𝙁𝙤𝙣𝙩𝙨</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Mono
-								Space</span>
-							<p class="monospaceCharMap">𝙸𝚗𝚜𝚝𝚐𝚛𝚊𝚖 𝙵𝚘𝚗𝚝𝚜</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Lunitools bubbles</span>
-							<p class="lunitoolsbubbles">Ⓘⓝⓢⓣⓖⓡⓐⓜ Ⓕⓞⓝⓣⓢ</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Inverted
-								Squares</span>
-							<p class="invertedSquaresCharMap">🅸🅽🆂🆃🅶🆁🅰🅼 🅵🅾🅽🆃🆂</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Fat
-								Text</span>
-							<p class="result result-s7">Ꭵᑎᔕ丅Ǥᖇᗩᗰ ᖴᗝᑎ丅ᔕ</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>WideText</span>
-							<p class="wideTextCharMap">Ｉｎｓｔｇｒａｍ Ｆｏｎｔｓ</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Bold</span>
-							<p class="boldCharMap">𝐈𝐧𝐬𝐭𝐠𝐫𝐚𝐦 𝐅𝐨𝐧𝐭𝐬</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Luni
-								Tools Flip</span>
-							<p class="lunitoolsflipencode">sʇuoℲ ɯɐɹɓʇsuI</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Reverse
-								Mirror</span>
-							<p class="result result-s4">ᴉusʇƃɹɐɯ ɟouʇs</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squares</span>
-							<p class="squaresCharMap">🄸🄽🅂🅃🄶🅁🄰🄼 🄵🄾🄽🅃🅂</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Luni
-								Tools Mirror</span>
-							<p class="lunitoolsmirrorencode">ꙅƚᴎoꟻ mɒɿǫƚꙅᴎI</p>
-						</div>
-
-
-					</div>
-					<div class="aryafontslist" id="cute">
-						<h2>Cute Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Cute</span>
-							<p class="cuteText1">stylish name with cute symbols is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Cute</span>
-							<p class="cuteText2">stylish name with cute symbols is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Cute</span>
-							<p class="cuteText3">stylish name with cute symbols is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Cute</span>
-							<p class="cuteText4">stylish name with cute symbols is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Cute</span>
-							<p class="cuteText5">stylish name with cute symbols is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Wingdings</span>
-							<p class="wingdings">stylish name with cute symbols is loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist">
-						<h2>Symbolic Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Asian
-								Style</span>
-							<p class="asianStyleCharMap">Asian way stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Asian
-								Style2</span>
-							<p class="asianStyle2CharMap">Asian way 2 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Indian
-								Way</span>
-							<p class="result result-s19">Indian way stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Russian
-								Way</span>
-							<p class="result result-s20">Russian way stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Big
-								Russian</span>
-							<p class="result result-s11">Big russian stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Squiggle
-								Symbols</span>
-							<p class="result result-s10">Squiggle 1 symbol stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Squiggle
-								Symbols</span>
-							<p class="result result-s12">Squiggle 2 symbol stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Squiggle
-								Symbols</span>
-							<p class="result result-s18">Squiggle 3 symbol stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Squiggle
-								Symbols</span>
-							<p class="result result-s5">Squiggle 4 symbol stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Squiggle
-								Symbols</span>
-							<p class="result result-s12">Squiggle 5 symbol stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Squiggle
-								Symbols</span>
-							<p class="result result-s13">Squiggle 6 symbol stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="small">
-						<h2>Small Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Super
-								Script (Small)</span>
-							<p class="superscriptCharMap">Mini stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Sub
-								Script (Small)</span>
-							<p class="subscriptCharMap">Mini and Big stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Luni
-								Tool Stiny</span>
-							<p class="lunitoolstinyencode">Small Upper stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist">
-						<h2>Lines Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Strike
-								Through</span>
-							<p class="strikeThrough">Strike through stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Tilde
-								Strike Through</span>
-							<p class="tildeStrikeThrough">Tilde strike through stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Slash
-								Through</span>
-							<p class="result result-s29">Slash through stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Slash
-								Through</span>
-							<p class="slashThrough">Slash through 2 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Underline</span>
-							<p class="underline">Underline stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Double
-								Underline</span>
-							<p class="doubleUnderline">Double underline stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Arrow
-								Underline</span>
-							<p class="result result-s30">Arrow underline stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="squiggle">
-						<h2>Squiggle Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle</span>
-							<p class="squiggleCharMap">Squiggle 1 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle2</span>
-							<p class="squiggle2CharMap">Squiggle 2 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle3</span>
-							<p class="squiggle3CharMap">Squiggle 3 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle4</span>
-							<p class="squiggle4CharMap">Squiggle 4 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle5</span>
-							<p class="squiggle5CharMap">Squiggle 5 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle6</span>
-							<p class="squiggle6CharMap">Squiggle 6 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle7</span>
-							<p class="result result-s1">Squiggle 7 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle8</span>
-							<p class="result result-s3">Squiggle 8 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle9</span>
-							<p class="result result-s14">Squiggle 9 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle10</span>
-							<p class="result result-s15">Squiggle 10 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle11</span>
-							<p class="result result-s17">Squiggle 11 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle14</span>
-							<p class="result result-s6">Squiggle 12 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle15</span>
-							<p class="result result-s8">Squiggle 13 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Squiggle16</span>
-							<p class="result result-s9">Squiggle 14 stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="ugly">
-						<h2>Glitch (Zalgo) Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Luni
-								creepify</span>
-							<p class="lunicreepify">Zalgo and ugly stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist">
-						<h2>Weird Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Fire
-								Work</span>
-							<p class="firework">Firework text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Bat
-								Man</span>
-							<p class="result result-s31">Bat man text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Top
-								Border</span>
-							<p class="result result-s22">Top border text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Bottom
-								Border</span>
-							<p class="result result-s23">Bottom border text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Bottom
-								Star</span>
-							<p class="result result-s24">Bottom star text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Bottom
-								Plus</span>
-							<p class="result result-s25">Bottom plus text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Bottom
-								Arrow</span>
-							<p class="result result-s26">Bottom arrow text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Cross
-								Top &amp; Bottom</span>
-							<p class="result result-s27">Cross top & bottom text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Stinky</span>
-							<p class="stinky">Stinky text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Cross
-								Above Below</span>
-							<p class="crossAboveBelow">Ctoss above below text stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Arrow
-								Below</span>
-							<p class="arrowBelow">Arrow below text fonts loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="joiner">
-						<h2>Joiner Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Dot
-								Joiner</span>
-							<p class="dotBoxtwo">Dot joiner type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Connected Joiner</span>
-							<p class="connectedJoiner">Connected joiner type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Arrow
-								Joiner</span>
-							<p class="arrowjoin">Arrow joiner type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								Joiner</span>
-							<p class="starJoiner">Star joiner stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Hash
-								Joiner</span>
-							<p class="hashJoiner">Hash joiner stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Zigzag
-								Joiner</span>
-							<p class="zigzagJoiner">Zigzag joiner stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Wavy
-								Joiner</span>
-							<p class="wavyJoiner">Wavy joiner type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Hearts
-								Between</span>
-							<p class="heartsBetween">Hearts Between type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Single
-								Wavy Joiner</span>
-							<p class="singlewavyJoiner">Single Wavy Joiner type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Dotty
-								Joiner</span>
-							<p class="dottyJoiner">Dotty Joiner type stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist">
-						<h2>Boxed Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Curly
-								Brackets</span>
-							<p class="curlybrackets">Curly Brackets type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Weird
-								Box</span>
-							<p class="weirdBox">Weird Box type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thick
-								Box</span>
-							<p class="thickBox">Thick Box type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Dot
-								Box</span>
-							<p class="dotBox">Dot Box type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Arrow
-								Box</span>
-							<p class="arrowBox">Arrow Box type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Diametric Box</span>
-							<p class="diametricBox">Diametric Box type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Luni
-								Round Squares</span>
-							<p class="luniroundsquares">Round Squares type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Luni
-								Squares</span>
-							<p class="lunisquares">Squares type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thick
-								Block Framed</span>
-							<p class="thickBlockFramed">Thick Block Framed type stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button
-									class="icon-heart"></button></span><span>Diametric Angle Frame</span>
-							<p class="diametricAngleFrame">Diametric Angle Frame type stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="stardecorated">
-						<h2>Star Decorated Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								0</span>
-							<p class="satr0">Star 0 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								1</span>
-							<p class="satr1">Star 1 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								2</span>
-							<p class="satr2">Star 2 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								3</span>
-							<p class="satr10">Star 3 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								4</span>
-							<p class="satr3">Star 4 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								5</span>
-							<p class="satr4">Star 5 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								6</span>
-							<p class="satr5">Star 6 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								7</span>
-							<p class="satr6">Star 7 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								8</span>
-							<p class="satr7">Star 8 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								9</span>
-							<p class="satr8">Star 9 Decorated stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Star
-								10</span>
-							<p class="satr9">Star 10 Decorated stylish name loading...٭</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="heartdecorated">
-
-						<h2>Heart Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								0</span>
-							<p class="heart0">Heart decoration 0 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								1</span>
-							<p class="heart1">Heart decoration 1 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								2</span>
-							<p class="heart2">Heart decoration 2 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								3</span>
-							<p class="heart3">Heart decoration 3 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								4</span>
-							<p class="heart4">Heart decoration 4 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								5</span>
-							<p class="heart5">Heart decoration 5 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								6</span>
-							<p class="heart6">Heart decoration 6 stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>heart
-								7</span>
-							<p class="heart7">Heart decoration 7 stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="emoticon">
-						<h2>Emoticon Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								0</span>
-							<p class="emoticon0">stylish name with emoticon 0 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								1</span>
-							<p class="emoticon1">stylish name with emoticon 1 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								2</span>
-							<p class="emoticon2">stylish name with emoticon 2 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								3</span>
-							<p class="emoticon3">stylish name with emoticon 3 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								4</span>
-							<p class="emoticon4">stylish name with emoticon 4 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								5</span>
-							<p class="emoticon5">stylish name with emoticon 5 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								6</span>
-							<p class="emoticon6">stylish name with emoticon 6 is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Emoticon
-								7</span>
-							<p class="emoticon7">stylish name with emoticon 7 is loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="thankyou">
-						<h2>Thankyou Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								0</span>
-							<p class="thankyou0">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								1</span>
-							<p class="thankyou1">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								2</span>
-							<p class="thankyou2">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								3</span>
-							<p class="thankyou3">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								4</span>
-							<p class="thankyou4">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								5</span>
-							<p class="thankyou5">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								6</span>
-							<p class="thankyou6">Thankyou stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Thankyou
-								7</span>
-							<p class="thankyou7">Thankyou stylish name loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="sad">
-
-						<h2>Sad Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								0</span>
-							<p class="sad0">stylish name with sad face is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								1</span>
-							<p class="sad1">stylish name with sad face is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								2</span>
-							<p class="sad2">stylish name with sad face is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								3</span>
-							<p class="sad3">stylish name with sad face is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								4</span>
-							<p class="sad4">stylish name with sad face is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								5</span>
-							<p class="sad5">stylish name with sad face is loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>sad
-								6</span>
-							<p class="sad6">stylish name with sad face is loading...</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="asian">
-						<h2>Asian Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Indian
-								Way</span>
-							<p class="result result-s19">ɿՈς੮૭Րคɱ Բ૦Ո੮ς</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Russian
-								Way</span>
-							<p class="result result-s20">Їп$тgяаѫ Fѳпт$</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Big
-								Russian</span>
-							<p class="result result-s11">IИSΓGЯДM FФИΓS</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Asian
-								Style</span>
-							<p class="asianStyleCharMap">丨几丂ㄒᎶ尺卂爪 千ㄖ几ㄒ丂</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Asian
-								Style2</span>
-							<p class="asianStyle2CharMap">ﾉ刀丂ｲム尺ﾑﾶ ｷの刀ｲ丂</p>
-						</div>
-					</div>
-
-					<div class="aryafontslist" id="random">
-						<h2>Random Fonts</h2>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Random
-								Cute</span>
-							<p class="wrapInFlourish">Random stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Random
-								FullCrazy</span>
-							<p class="wrapInFlourish">Random stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Random
-								Crazy Symbols</span>
-							<p class="wrapInFlourish">Random stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Random
-								Flourish</span>
-							<p class="wrapInFlourish">Random stylish name loading...</p>
-						</div>
-						<div class="aryafonts">
-							<span class="sb"><button class="icon-export"></button><button
-									class="icon-docs"></button><button class="icon-heart"></button></span><span>Random
-								Flourish</span>
-							<p class="wrapInFlourish">Random stylish name loading...</p>
-						</div>
-						<p class="pagination" style="display: none;">
-						</p>
-						<div class="randlist"></div>
-						<p class="loadmore"><button id="load-more">Load More...</button></p>
-					
-</div>
-</div>
-</div>
-</div>
-
-
-			<!-- <div class="links">
-		  <p style="text-transform: uppercase;">Other Tools</p>
-			</div> -->
-
-		</main>
-
-		<div id="overlay"></div>
-		<div class="copiedalerts">
-			<div id="clock"><span id="seconds">15</span></div>
-			<button class="close-top">x</button>
-			<div class="alert-header"></div>
-			<div class="ads-sec">
-				<ins class="adsbygoogle"
-				style="display:block"
-				data-ad-client="ca-pub-4493747699129738"
-				data-ad-slot="5609110082"
-				data-ad-format="auto"
-				data-full-width-responsive="true"></ins>
-		   <script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
-			<button class="close-alert">X Close</button>
-		</div>
-
-
-		<div class="infoBox">
-			<div class="info-title">
-				<h1>symbolsemoji.com: The #1 Font & Text Generator</h1>
-				<hr>
-				<div class="info">
-
-					<p>symbolsemoji.com is an online font generator and font changer that transforms any text into cool, fancy fonts for Instagram and other social networks. It converts normal text into various free styles, such as tattoo fonts, calligraphy fonts, web script fonts, cursive fonts, handwriting fonts, old English fonts, and more. These stylish fonts will make your Instagram images stand out and impress your friends. This tool is perfect for generating fonts for Facebook, Twitter, WhatsApp, Snapchat, TikTok, and other platforms.</p>
-
-					<h2>Why Choose symbolsemoji.com?</h2>
-					<ul>
-						<li><strong>Versatile Styles:</strong> Choose from a wide range of styles, including pretty fonts, font art, and weird text generators.</li>
-						<li><strong>Easy to Use:</strong> Just copy and paste the generated text anywhere online.</li>
-						
-					</ul>
-
-					<h2>Popular Use Cases</h2>
-					<p>
-						We love seeing so many of you create amazing text for various purposes every day. Whether for social media bios, posts, stories, videos, gaming, art, messaging, education, or design, our fonts help emphasize your message and attract attention.
-					</p>
-
-					<h3>How to Use symbolsemoji.com</h3>
-					<ol>
-						<li><strong>Type Your Text:</strong> Enter your text in the input box.</li>
-						<li><strong>Find Your Favorite Font:</strong> Browse through the generated fonts.</li>
-						<li><strong>Copy and Paste:</strong> Click to copy your favorite font and paste it anywhere
-							online.
-						</li>
-					</ol>
-					<p class="img"><img src="img/symbolsemoji.com.png" alt="Symbols Emoji"></p>
-
-					<h3>List Of Popular Font Copy Paste Text Styles</h3>
-					<ul>
-						<li><strong>OLD ENGLISH:</strong> 𝔉𝔬𝔫𝔱 𝔊𝔢𝔫𝔢𝔯𝔞𝔱𝔬𝔯</li>
-						<li><strong>CURSIVE:</strong> 𝓕𝓸𝓷𝓽 𝓖𝓮𝓷𝓮𝓻𝓪𝓽𝓸𝓻</li>
-						<li><strong>DOUBLE STRUCK:</strong> 𝔽𝕠𝕟𝕥 𝔾𝕖𝕟𝕖𝕣𝕒𝕥𝕠𝕣</li>
-						<li><strong>BOLD ITALIC:</strong> 𝙁𝙤𝙣𝙩 𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙤𝙧</li>
-						<li><strong>BUBBLES:</strong> Ⓕⓞⓝⓣ Ⓖⓔⓝⓔⓡⓐⓣⓞⓡ</li>
-						<li><strong>INVERTED SQUARES:</strong> 🅵🅾🅽🆃 🅶🅴🅽🅴🆁🅰🆃🅾🆁</li>
-						<li><strong>WIDE TEXT:</strong> Ｆｏｎｔ Ｇｅｎｅｒａｔｏｒ</li>
-						<li><strong>SQUARES:</strong> 🄵🄾🄽🅃 🄶🄴🄽🄴🅁🄰🅃🄾🅁</li>
-						<li><strong>FLIP:</strong> ǝɹʇɐɹǝuǝ⅁ ʇuoℲ</li>
-						<li><strong>MIRROR TEXT:</strong> ɿoʇɐɹǝuǝ⅁ ʇuoℲ</li>
-						<li><strong>BENT:</strong> Ƒօղէ ↻օքվ φąʂէҽ</li>
-						<li><strong>NEON:</strong> ᖴOᑎT ᘜEᑎEᖇᗩTOᖇ</li>
-						<li><strong>FUTURE ALIEN:</strong> ᖴᓍᘉᖶ ᘜEᑎEᖇᗩTOᖇ</li>
-						<li><strong>STRIKE THROUGH:</strong> F̶o̶n̶t̶ ̶G̶e̶n̶e̶r̶a̶t̶o̶r̶</li>
-						<li><strong>TILDE STRIKE THROUGH:</strong> F̴o̴n̴t̴ ̴G̴e̴n̴e̴r̴a̴t̴o̴r̴</li>
-						<li><strong>SLASH THROUGH:</strong> F̷o̷n̷t̷ ̷G̷e̷n̷e̷r̷a̷t̷o̷r̷</li>
-						<li><strong>UNDERLINE:</strong> F̲o̲n̲t̲ ̲G̲e̲n̲e̲r̲a̲t̲o̲r̲</li>
-						<li><strong>DOUBLE UNDERLINE:</strong> F̳o̳n̳t̳ ̳G̳e̳n̳e̳r̳a̳t̳o̳r̳</li>
-						<li><strong>CREEPIFY:</strong> F̷̢̝͙̼̪̩̘̈͂͘o̸̢͇̺͕͇̗̾̓̚n̸̡̟͍͈͊̀̓̋̏̕t̷̘̪̍͋͒̅́̏̌̈̚͠
-							G̶̩̯̼͗͊̇̓͛̃̐͝ẻ̶̡͊n̴̡͉̜͍͐̑̈́̓̔̓̿͊͜e̴̟͋͐̉̄͐̈́̚r̶̳̟̲̤̮͎̱̞̱͑̈̕̚ͅa̶̪̰͉͖̭̣̪̠̒͂́̓̅̐ͅt̶̩̥̯̮͉̞͎̙͌̚o̷̤̰̪̤͎̗͓̒̄̏̈́͐͘r̴̗̲͚̟̠̯̥̩̹̒̆͆̾̔
-						</li>
-						<li><strong>SQUIGGLE:</strong> Ŧ๏ภՇ ς๏קץ קครՇє</li>
-						<li><strong>BOLD:</strong> 𝐅𝐨𝐧𝐭 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫</li>
-						<li><strong>UPPER ANGLES:</strong> FӨПƬ ᄃӨPY PΛƧƬΣ</li>
-						<li><strong>GREEK:</strong> ƒσηт ¢σρу ραѕтє</li>
-						<li><strong>SIGN:</strong> £ðñ† Çðþ¥ þå§†ê</li>
-						<li><strong>CURRENCY:</strong> ₣Ø₦₮ ₵Ø₱Ɏ ₱₳₴₮Ɇ</li>
-						<li><strong>ASIAN:</strong> 千ㄖ几ㄒ 匚ㄖ卩ㄚ 卩卂丂ㄒ乇</li>
-						<li><strong>THICK BLOCK FRAMED:</strong> 【F】【o】【n】【t】 【G】【e】【n】【e】【r】【a】【t】【o】【r】</li>
-						<li><strong>DIAMETRIC ANGLE FRAME:</strong> 『F』『o』『n』『t』 『G』『e』『n』『e』『r』『a』『t』『o』『r』</li>
-						<li><strong>WAVY JOINER:</strong> ≋F≋o≋n≋t≋ ≋G≋e≋n≋e≋r≋a≋t≋o≋r≋</li>
-						<li><strong>DOTTY JOINER:</strong> ░F░o░n░t░ ░G░e░n░e░r░a░t░o░r░</li>
-						<li><strong>KIRBY HUG:</strong> (っ◔◡◔)っ ♥ Font Generator ♥</li>
-						<li><strong>VAPORWAVE:</strong> Ｆｏｎｔ　Ｇｅｎｅｒａｔｏｒ</li>
-						<li><strong>LITTLE SPARKLES:</strong> ˜”*°•.˜”*°• Font Generator •°*”˜.•°*”˜</li>
-						<li><strong>WEIRD BOX:</strong> [̲̅F][̲̅o][̲̅n][̲̅t]
-							[̲̅G][̲̅e][̲̅n][̲̅e][̲̅r][̲̅a][̲̅t][̲̅o][̲̅r]
-						</li>
-						<li><strong>FIREWORK:</strong> F҉o҉n҉t҉ ҉G҉e҉n҉e҉r҉a҉t҉o҉r҉</li>
-						<li><strong>STINKY:</strong> F̾o̾n̾t̾ ̾G̾e̾n̾e̾r̾a̾t̾o̾r̾</li>
-						<li><strong>HEARTS BETWEEN:</strong> F♥o♥n♥t♥ ♥G♥e♥n♥e♥r♥a♥t♥o♥r</li>
-						<li><strong>ARROW BELOW:</strong> F͎o͎n͎t͎ ͎G͎e͎n͎e͎r͎a͎t͎o͎r͎</li>
-						<li><strong>CROSS ABOVE BELOW:</strong> F͓̽o͓̽n͓̽t͓̽ ͓̽G͓̽e͓̽n͓̽e͓̽r͓̽a͓̽t͓̽o͓̽r͓̽</li>
-						<li><strong>FULL CRAZY:</strong> ♩🏆 Ⓕ𝔬𝐍𝕋 G𝐞𝓷eяatoя ♖♢</li>
-						<li><strong>CRAZY:</strong> 😲🔥 ｆ𝐎Ň𝕋 G𝐞𝓷eяatoя ♬🎅</li>
-						<li><strong>CUTE:</strong> 🐰 🎀 𝐹💞𝓃𝓉 𝒞🏵𝓅𝓎 𝒫𝒶𝓈𝓉𝑒 🎀 🐰</li>
-					</ul>
-
-				
-</div>
-
-</div>
-</div>
-</div>
-
-
-<!-- Sidebar Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7064720037053690"
-     data-ad-slot="7432399625"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Page loaded, initializing dropdown');
+    
+    // Close dropdown on outside click
+    document.addEventListener('click', function(e) {
+        const btn = document.getElementById('languageBtn');
+        const dropdown = document.getElementById('languageDropdown');
+        
+        if (btn && dropdown && !btn.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.style.display = 'none';
+            dropdown.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    });
+    
+    // Load saved language
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    selectLanguage(savedLang);
+});
 </script>
-<!-- Rectangle Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7064720037053690"
-     data-ad-slot="4594822602"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+// Performance monitoring
+window.addEventListener('load', function() {
+    if ('performance' in window) {
+        const perfData = performance.getEntriesByType('navigation')[0];
+        const loadTime = perfData.loadEventEnd - perfData.fetchStart;
+        console.log('🚀 Page load time:', Math.round(loadTime) + 'ms');
+        
+        // Core Web Vitals monitoring
+        if ('PerformanceObserver' in window) {
+            // Largest Contentful Paint
+            new PerformanceObserver((list) => {
+                const entries = list.getEntries();
+                const lastEntry = entries[entries.length - 1];
+                console.log('📊 LCP:', Math.round(lastEntry.startTime) + 'ms');
+            }).observe({entryTypes: ['largest-contentful-paint']});
+            
+            // First Input Delay
+            new PerformanceObserver((list) => {
+                const entries = list.getEntries();
+                entries.forEach(entry => {
+                    console.log('⚡ FID:', Math.round(entry.processingStart - entry.startTime) + 'ms');
+                });
+            }).observe({entryTypes: ['first-input']});
+            
+            // Cumulative Layout Shift
+            let clsValue = 0;
+            new PerformanceObserver((list) => {
+                for (const entry of list.getEntries()) {
+                    if (!entry.hadRecentInput) {
+                        clsValue += entry.value;
+                    }
+                }
+                console.log('📏 CLS:', clsValue.toFixed(4));
+            }).observe({entryTypes: ['layout-shift']});
+        }
+    }
+});
 </script>
-<div class="footer">
-		<p>© Copyright 2025</p><a class="footlinks" href="index.html">symbolsemoji.com</a>
-		<div>
-			<a class="footlinks" href="privacy.html">Privacy</a>
-			<a class="footlinks" href="terms.html">Terms</a>
-			<a class="footlinks" href="contact.html">Contact</a>
-		</div>
-	</div>
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-97SRPXV879"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-97SRPXV879');
-	</script>
-
-	<script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script-phphp.js"></script>
-	<script type="text/javascript" src="script-phphp8a5c.js?ver=20"></script>
-
-
+<!-- Universal Share Modal with Social Logos -->
+    <script defer src="universal-share-modal.js"></script>
 </body>
 
-
 </html>
+
