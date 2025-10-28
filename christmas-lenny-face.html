@@ -1,382 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
-<!-- Preconnect for faster loading --><link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-	<noscript><link rel="stylesheet" href="main.css" /></noscript>
-	<style>
-		* {
-			box-sizing:border-box;
-			padding:0;
-			margin:0
-		}
-		body {
-			font-family:arial,serif;
-			background-color:#ebecef;
-			margin:0;
-			font-display:swap
-		}
-		header {
-			width:100%;
-			background-color:#230AC7;
-			min-height:60px;
-			contain:layout style paint
-		}
-		.headCont {
-			max-width:1168px;
-			margin:0 auto;
-			text-align:center
-		}
-		.mainlogo {
-			width:100%;
-			font-size:15px;
-			text-align:center;
-			background-color:#230AC7;
-			color:#fff;
-			font-family:arial;
-			padding:5px 0;
-			min-height:50px;
-			contain:layout style paint
-		}
-		.mainlogo img {
-			width:270px;
-			padding-top:2px;
-			height:auto;
-			min-height:50px;
-			contain:layout style paint
-		}
-		.mainlogo a {
-			color:white;
-			font-size:2rem;
-			text-decoration:none
-		}
-		#target {
-			position:fixed;
-			bottom:0;
-			width:100%;
-			background:#fff;
-			z-index:9;
-			box-shadow:0 0 5px rgba(0,0,0,0.15);
-			padding:5px
-		}
-		.symbol {
-			text-align:center;
-			margin:0 0 0.5rem 0.1rem;
-			border-radius:5px;
-			color:#424949;
-			border:1px solid #d3d3d3;
-			display:inline-block;
-			min-width:50px;
-			min-height:50px;
-			font-size:20px;
-			line-height:50px;
-			transition:transform .2s;
-			cursor:pointer;
-			contain:layout style paint;
-			will-change:transform;
-			backface-visibility:hidden;
-			transform:translateZ(0)
-		}
-		.symbol:hover {
-			background-color:#ececec;
-			transform:translateY(-5px);
-			box-shadow:4px 4px 4px 1px rgba(157,154,154,0.2)
-		}
-		.maindata {
-			min-height:200px;
-			contain:layout style paint
-		}
-		.footer {
-			min-height:80px;
-			contain:layout style paint
-		}
-		img:not([width]):not([height]) {
-			min-height:50px;
-			background:#f0f0f0;
-			contain:layout style paint
-		}
-		.mainlogo img {
-			image-rendering: optimizeQuality;
-			image-rendering: -webkit-optimize-contrast;
-			background: #230AC7;
-			transition: opacity 0.3s ease
-		}
-		.mainlogo img:not([src*="data:"]) {
-			background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-			background-size: 200% 100%;
-			animation: shimmer 1.5s infinite
-		}
-		@keyframes shimmer {
-			0% {
-			background-position: 200% 0
-		}
-		100% {
-			background-position: -200% 0
-		}
-
-		}
-		h1 {
-			font-size: 25px !important
-		}
-		article h1, aside h1, nav h1, section h1 {
-			font-size: 25px !important
-		}
-		.modern-header {
-			background: #230AC7;
-			padding: 0;
-			box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 1000;
-			height: 60px;
-			contain: none !important;
-			overflow: visible !important
-		}
-		.main-nav {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 0 24px;
-			height: 100%
-		}
-		.main-logo {
-			font-size: 24px;
-			font-weight: bold;
-			color: white;
-			text-decoration: none;
-			display: flex;
-			align-items: center;
-			gap: 8px
-		}
-		.main-logo img {
-			width: 32px;
-			height: 32px
-		}
-		.nav-center {
-			display: flex;
-			gap: 32px;
-			align-items: center
-		}
-		.nav-item {
-			color: white;
-			text-decoration: none;
-			font-size: 14px;
-			font-weight: 500;
-			padding: 8px 12px;
-			border-radius: 4px;
-			transition: background-color 0.2s ease
-		}
-		.nav-item:hover {
-			background-color: rgba(255, 255, 255, 0.1)
-		}
-		.nav-right {
-			display: flex;
-			align-items: center;
-			gap: 16px
-		}
-		.language-selector {
-			position: relative !important;
-			display: inline-block !important;
-			z-index: 1000 !important
-		}
-		.language-btn {
-			background: white !important;
-			border: 1px solid #ddd !important;
-			border-radius: 4px !important;
-			padding: 6px 10px !important;
-			cursor: pointer !important;
-			font-size: 14px !important;
-			color: #333 !important;
-			display: flex !important;
-			align-items: center !important;
-			gap: 4px !important;
-			transition: all 0.2s ease !important;
-			min-width: 60px !important;
-			justify-content: center !important;
-			font-weight: 500 !important;
-			z-index: 10000 !important;
-			position: relative !important;
-			pointer-events: auto !important;
-			user-select: none !important
-		}
-		.language-btn * {
-			pointer-events: none !important
-		}
-		.language-btn:hover {
-			background-color: #f8f9fa;
-			border-color: #bbb
-		}
-		.globe-icon {
-			font-size: 16px
-		}
-		.lang-code {
-			font-weight: 600;
-			font-size: 13px;
-			color: #333
-		}
-		.dropdown-arrow {
-			font-size: 10px;
-			color: #666;
-			margin-left: 2px
-		}
-		.language-dropdown {
-			position: absolute !important;
-			top: calc(100% + 5px) !important;
-			right: 0 !important;
-			background: #ffffff !important;
-			border: 1px solid #e0e0e0 !important;
-			border-radius: 8px !important;
-			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-			min-width: 180px !important;
-			z-index: 999999 !important;
-			display: none !important;
-			margin: 0 !important;
-			max-height: 320px !important;
-			overflow-y: auto !important;
-			opacity: 0 !important;
-			visibility: hidden !important;
-			transform: translateY(-10px) !important;
-			transition: all 0.2s ease !important
-		}
-		.language-dropdown.open {
-			display: block !important;
-			visibility: visible !important;
-			opacity: 1 !important;
-			transform: translateY(0) !important
-		}
-		.language-option {
-			display: block !important;
-			padding: 10px 16px !important;
-			color: #333 !important;
-			text-decoration: none !important;
-			font-size: 14px !important;
-			transition: background-color 0.2s ease !important;
-			border-bottom: 1px solid #f0f0f0 !important;
-			background: white !important;
-			width: 100% !important
-		}
-		.language-option:hover {
-			background-color: #f8f9fa !important
-		}
-		.language-option:last-child {
-			border-bottom: none !important
-		}
-		.language-option.active {
-			background-color: #e3f2fd !important;
-			color: #1976d2 !important;
-			font-weight: 500 !important
-		}
-		.language-option[dir="rtl"] {
-			text-align: right;
-			direction: rtl
-		}
-		body {
-			padding-top: 60px !important;
-			pointer-events: auto !important;
-			margin: 0 !important;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-			background: #f5f5f5 !important;
-			overflow: visible !important
-		}
-		header, nav, .nav-right, .language-selector, .language-btn {
-			pointer-events: auto !important;
-			position: relative !important;
-			overflow: visible !important
-		}
-		.language-dropdown.show {
-			display: block !important;
-			position: fixed !important;
-			top: 60px !important;
-			right: 20px !important;
-			z-index: 2147483647 !important;
-			background: white !important;
-			border: 2px solid #333 !important;
-			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important
-		}
-		@media (max-width: 1024px) {
-			.nav-center {
-			gap: 20px
-		}
-		.nav-item {
-			font-size: 13px;
-			padding: 6px 8px
-		}
-
-		}
-		@media (max-width: 768px) {
-			.main-nav {
-			padding: 0 16px
-		}
-		.nav-center {
-			display: none
-		}
-		.main-logo {
-			font-size: 20px
-		}
-		.main-logo img {
-			width: 28px;
-			height: 28px
-		}
-
-		}
-		@media (max-width: 480px) {
-			.main-nav {
-			padding: 0 12px
-		}
-	</style>
-        <link rel="preload" href="main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="main.min.css" /></noscript>
-		<style> .symbol{font-size: 30px !important;} </style>
-		<title>?? Christmas Lenny Face Copy & Paste ((???)??, ?(???)?, ??(???)??) Holiday Faces</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Resource hints for performance -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//www.google-analytics.com" />
-		<meta name="description" content="Copy and paste Christmas Lenny face emoticons ??( ?� ?? ?�) ??( ?� ?? ?�)?? for festive holiday messages and Christmas social media posts." />
-		<meta name="keywords" content="begging lenny face, pleading emoticons, desperate face, asking emoticons, lenny face variations, text faces, ascii art, emoticon copy paste" />
-		<meta name="robots" content="index,follow" />
-		<link rel="canonical" href="https://www.symbolsemoji.com/lenny-face.html" />
-		<!-- Open Graph Tags -->
-		<!-- Twitter Card Tags -->
-		<!-- Favicon and Apple Touch Icons -->
-		<link rel="icon" href="/img/favicon.ico" sizes="any" />
-		<link rel="icon" href="/img/coolsymbol.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<meta name="theme-color" content="#230AC7" />
-		<style> @media only screen and (max-width: 600px){.lennyface{font-size: 17px} } </style>
+	<title>Christmas ☃️ Lenny Face ᒄ₍⁽ˆ⁰ˆ⁾₎ᒃ♪♬ ʕ•̫͡•ॽु✚⃞ྉ*✲ﾟ*｡⋆</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Christmas Lenny face ◟₍⁽⁰꒫⁰⁾₎◞  (╯^□^)❄☃❄  * . ` ✧*♡ᑕू∙ો ੍✧ ✶ *  .*̣̥☆·͙̥‧❄‧̩̥·‧•̥̩̥͙‧·‧̩̥˟͙☃˟͙‧̩̥·‧•̥̩̥͙‧·‧̩̥❄‧·͙̥̣☆*̣̥ (ૂ⋅۬৹৴)ૂ ～ΜᎧrRγ  сняᎥᎦτмᏜs." />
+	<meta name="keywords" content="Good night Lenny Face copy and paste , copy paste Good night Lenny Face, Good night Lenny Faces copy paste, symbol copy paste">
+	<meta name="robots" content="index, follow">
+	<meta name="theme-color" content="#c71585">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#c71585">
+	<meta name="apple-mobile-web-app-title" content="Symbols Emojis">
+	<link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+	<link rel="stylesheet" href="main.css">
+	<link rel="canonical" href="christmas-lenny-face.html">
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="christmas-lenny-face.html">
+	<meta property="og:title" content="Christmas ☃️ Lenny Face ᒄ₍⁽ˆ⁰ˆ⁾₎ᒃ♪♬ ʕ•̫͡•ॽु✚⃞ྉ*✲ﾟ*｡⋆">
+	<meta property="og:description"	content="Christmas Lenny face ◟₍⁽⁰꒫⁰⁾₎◞  (╯^□^)❄☃❄  * . ` ✧*♡ᑕू∙ો ੍✧ ✶ *  .*̣̥☆·͙̥‧❄‧̩̥·‧•̥̩̥͙‧·‧̩̥˟͙☃˟͙‧̩̥·‧•̥̩̥͙‧·‧̩̥❄‧·͙̥̣☆*̣̥ (ૂ⋅۬৹৴)ૂ ～ΜᎧrRγ  сняᎥᎦτмᏜs.">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="christmas-lenny-face.html">
+	<meta property="twitter:title" content="Christmas ☃️ Lenny Face ᒄ₍⁽ˆ⁰ˆ⁾₎ᒃ♪♬ ʕ•̫͡•ॽु✚⃞ྉ*✲ﾟ*｡⋆">
+	<meta property="twitter:description" content="Christmas Lenny face ◟₍⁽⁰꒫⁰⁾₎◞  (╯^□^)❄☃❄  * . ` ✧*♡ᑕू∙ો ੍✧ ✶ *  .*̣̥☆·͙̥‧❄‧̩̥·‧•̥̩̥͙‧·‧̩̥˟͙☃˟͙‧̩̥·‧•̥̩̥͙‧·‧̩̥❄‧·͙̥̣☆*̣̥ (ૂ⋅۬৹৴)ૂ ～ΜᎧrRγ  сняᎥᎦτмᏜs.">
+	<link rel="icon" type="png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="apple-touch-icon" type="png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="icon" type="png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="apple-touch-icon" type="png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	
-    <style>
-        /* Critical CSS for faster LCP */
-        .symbol { 
-            font-size: 30px !important; 
-            cursor: pointer; 
-            transition: transform 0.2s ease;
-        }
-        .symbol:hover { 
-            transform: scale(1.1); 
-        }
-        .main-nav { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 0 20px; 
-        }
-        .modern-header { 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            color: white; 
-            padding: 10px 0; 
-        }
-    </style>
+		<style>
+			@media only screen and (max-width: 600px) {
+			.lennyface {
+					font-size: 17px;
+				}
+			}
+	</style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+		<header class="modern-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 		<nav class="main-nav">
 			<!-- Left: Logo -->
 			<a href="index.html" class="main-logo">Symbols Emoji</a>
@@ -390,48 +58,12 @@
 				<a href="arrow-symbol.html" class="nav-item">Arrow</a>
 			</div>
 
-			<!-- Right: Language Selector -->
-			<div class="nav-right">
-				<div class="language-selector">
-					<div class="language-btn" id="languageBtn" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="languageDropdown" tabindex="0" onclick="toggleDropdown()" style="pointer-events: auto !important; z-index: 10000 !important; cursor: pointer !important; user-select: none !important;">
-						<span class="globe-icon" style="pointer-events: none;">??</span>
-						<span class="lang-code" style="pointer-events: none;">EN</span>
-						<span class="dropdown-arrow" style="pointer-events: none;">?</span>
-					</div>
-					<div class="language-dropdown" id="languageDropdown" role="menu" aria-labelledby="languageBtn" aria-hidden="true">
-						<a href="javascript:void(0)" class="language-option active" role="menuitem" tabindex="-1" onclick="selectLanguage('en')">???? English</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('hi')">???? ?????</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('es')">???? Español</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('fr')">???? Français</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('de')">???? Deutsch</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ja')">???? ???</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ko')">???? ???</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('zh')">???? ??</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" dir="rtl" onclick="selectLanguage('ar')">???? ???????</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('pt')">???? Português</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ru')">???? ???????</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('it')">???? Italiano</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('nl')">???? Nederlands</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('tr')">???? T�rk�e</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('pl')">???? Polski</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('sv')">???? Svenska</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('da')">???? Dansk</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('no')">???? Norsk</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('fi')">???? Suomi</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('th')">???? ???</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('vi')">???? Tiếng Việt</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('id')">???? Bahasa Indonesia</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" onclick="selectLanguage('ms')">???? Bahasa Melayu</a>
-						<a href="javascript:void(0)" class="language-option" role="menuitem" tabindex="-1" dir="rtl" onclick="selectLanguage('he')">???? ?????</a>
-					</div>
-				</div>
+			
 			</div>
 
 		</nav>
 	</header>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7064720037053690"
-     crossorigin="anonymous"></script>
-<!-- top-banner -->
+<!-- AdSense Banner -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-7064720037053690"
@@ -441,19 +73,95 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</a>
+
+
+	<div id="target">
+		<div class="copyboard">
+
+			<div class="symbolBox">
+				<div id="symbol-container" onclick="addSymbolToTextbox(event)"></div>
+				<button onclick="clearStoredSymbols()" class="clear">&#10006;</button>
+			</div>
+
+			<div class="input">
+				<span><input type="text" id="symbol-textbox" value="" placeholder="Copy Symbols Emojis">
+					<button onclick="clearTextbox()" id="clearButton">&#10006;</button></span>
+			</div>
+
+			<div class="copy">
+				<button onclick="copyAllToClipboard()" id="copyButton">Copy</button>
+			</div>
+
+			<div class="share">
+				<span class="sharetext">SHARE IT -</span>
+				<!-- Sharingbutton Facebook -->
+				<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsymbolsemoji.com" target="_blank" rel="noopener" aria-label="">
+					<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+					</div>
+					</div>
+				</a>
+				
+				<!-- Sharingbutton Twitter -->
+				<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Copy%20and%20Paste%20Cool%20Symbols%20%3A%20%CC%97%CC%80%E2%9E%9B%20%CB%9A%E2%82%8A%C2%B7%20%CD%9F%CD%9F%CD%9E%CD%9E%E2%9E%B3%E2%9D%A5%20%E2%95%B0%E2%94%88%E2%9E%A4%20%CB%8F%CB%8B%C2%B0%E2%80%A2*%E2%81%80%E2%9E%B7%20%EF%B8%B6%EA%92%A6%EA%92%B7%E2%99%A1%EA%92%B7%EA%92%A6%EF%B8%B6%20%E2%96%91%E2%96%92%E2%96%92%20%F0%9F%92%80%20%E2%96%92%E2%96%92%E2%96%91%09%E2%89%A1%3B-%20%EA%92%B0%20%C2%B0text%20%EA%92%B1%20%EF%B8%B6%EF%B8%B5%EF%B8%B6%EF%BD%9F%F0%9F%92%9C%EF%BD%A0%EF%B8%B6%EF%B8%B5%EF%B8%B6%20%E2%80%A2%E2%9D%80.%E2%80%A2%E2%9D%A4%E2%80%A2.%C2%B8%E2%9C%BF%C2%B8.%E2%80%A2%E2%9D%A4%E2%80%A2.%E2%9D%80%E2%80%A2%20%EA%A7%81%E2%99%A5%F0%9F%96%A4%EF%B8%8F%E2%99%A5%EA%A7%82&amp;url=https%3A%2F%2Fsymbolsemoji.com" target="_blank" rel="noopener" aria-label="">
+					<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+					</div>
+					</div>
+				</a>
+				
+				<!-- Sharingbutton Tumblr -->
+				<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Copy%20and%20Paste%20Cool%20Symbols%20%3A%20%CC%97%CC%80%E2%9E%9B%20%CB%9A%E2%82%8A%C2%B7%20%CD%9F%CD%9F%CD%9E%CD%9E%E2%9E%B3%E2%9D%A5%20%E2%95%B0%E2%94%88%E2%9E%A4%20%CB%8F%CB%8B%C2%B0%E2%80%A2*%E2%81%80%E2%9E%B7%20%EF%B8%B6%EA%92%A6%EA%92%B7%E2%99%A1%EA%92%B7%EA%92%A6%EF%B8%B6%20%E2%96%91%E2%96%92%E2%96%92%20%F0%9F%92%80%20%E2%96%92%E2%96%92%E2%96%91%09%E2%89%A1%3B-%20%EA%92%B0%20%C2%B0text%20%EA%92%B1%20%EF%B8%B6%EF%B8%B5%EF%B8%B6%EF%BD%9F%F0%9F%92%9C%EF%BD%A0%EF%B8%B6%EF%B8%B5%EF%B8%B6%20%E2%80%A2%E2%9D%80.%E2%80%A2%E2%9D%A4%E2%80%A2.%C2%B8%E2%9C%BF%C2%B8.%E2%80%A2%E2%9D%A4%E2%80%A2.%E2%9D%80%E2%80%A2%20%EA%A7%81%E2%99%A5%F0%9F%96%A4%EF%B8%8F%E2%99%A5%EA%A7%82&amp;caption=Copy%20and%20Paste%20Cool%20Symbols%20%3A%20%CC%97%CC%80%E2%9E%9B%20%CB%9A%E2%82%8A%C2%B7%20%CD%9F%CD%9F%CD%9E%CD%9E%E2%9E%B3%E2%9D%A5%20%E2%95%B0%E2%94%88%E2%9E%A4%20%CB%8F%CB%8B%C2%B0%E2%80%A2*%E2%81%80%E2%9E%B7%20%EF%B8%B6%EA%92%A6%EA%92%B7%E2%99%A1%EA%92%B7%EA%92%A6%EF%B8%B6%20%E2%96%91%E2%96%92%E2%96%92%20%F0%9F%92%80%20%E2%96%92%E2%96%92%E2%96%91%09%E2%89%A1%3B-%20%EA%92%B0%20%C2%B0text%20%EA%92%B1%20%EF%B8%B6%EF%B8%B5%EF%B8%B6%EF%BD%9F%F0%9F%92%9C%EF%BD%A0%EF%B8%B6%EF%B8%B5%EF%B8%B6%20%E2%80%A2%E2%9D%80.%E2%80%A2%E2%9D%A4%E2%80%A2.%C2%B8%E2%9C%BF%C2%B8.%E2%80%A2%E2%9D%A4%E2%80%A2.%E2%9D%80%E2%80%A2%20%EA%A7%81%E2%99%A5%F0%9F%96%A4%EF%B8%8F%E2%99%A5%EA%A7%82&amp;content=https%3A%2F%2Fsymbolsemoji.com&amp;canonicalUrl=https%3A%2F%2Fsymbolsemoji.com&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="">
+					<div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5.5v5h5v4h-5V15c0 5 3.5 4.4 6 2.8v4.4c-6.7 3.2-12 0-12-4.2V9.5h-3V6.7c1-.3 2.2-.7 3-1.3.5-.5 1-1.2 1.4-2 .3-.7.6-1.7.7-3h3.8z"/></svg>
+					</div>
+					</div>
+				</a>
+				
+				<!-- Sharingbutton Pinterest -->
+				<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fsymbolsemoji.com&amp;media=https%3A%2F%2Fsymbolsemoji.com&amp;description=Copy%20and%20Paste%20Cool%20Symbols%20%3A%20%CC%97%CC%80%E2%9E%9B%20%CB%9A%E2%82%8A%C2%B7%20%CD%9F%CD%9F%CD%9E%CD%9E%E2%9E%B3%E2%9D%A5%20%E2%95%B0%E2%94%88%E2%9E%A4%20%CB%8F%CB%8B%C2%B0%E2%80%A2*%E2%81%80%E2%9E%B7%20%EF%B8%B6%EA%92%A6%EA%92%B7%E2%99%A1%EA%92%B7%EA%92%A6%EF%B8%B6%20%E2%96%91%E2%96%92%E2%96%92%20%F0%9F%92%80%20%E2%96%92%E2%96%92%E2%96%91%09%E2%89%A1%3B-%20%EA%92%B0%20%C2%B0text%20%EA%92%B1%20%EF%B8%B6%EF%B8%B5%EF%B8%B6%EF%BD%9F%F0%9F%92%9C%EF%BD%A0%EF%B8%B6%EF%B8%B5%EF%B8%B6%20%E2%80%A2%E2%9D%80.%E2%80%A2%E2%9D%A4%E2%80%A2.%C2%B8%E2%9C%BF%C2%B8.%E2%80%A2%E2%9D%A4%E2%80%A2.%E2%9D%80%E2%80%A2%20%EA%A7%81%E2%99%A5%F0%9F%96%A4%EF%B8%8F%E2%99%A5%EA%A7%82" target="_blank" rel="noopener" aria-label="">
+					<div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.14.5C5.86.5 2.7 5 2.7 8.75c0 2.27.86 4.3 2.7 5.05.3.12.57 0 .66-.33l.27-1.06c.1-.32.06-.44-.2-.73-.52-.62-.86-1.44-.86-2.6 0-3.33 2.5-6.32 6.5-6.32 3.55 0 5.5 2.17 5.5 5.07 0 3.8-1.7 7.02-4.2 7.02-1.37 0-2.4-1.14-2.07-2.54.4-1.68 1.16-3.48 1.16-4.7 0-1.07-.58-1.98-1.78-1.98-1.4 0-2.55 1.47-2.55 3.42 0 1.25.43 2.1.43 2.1l-1.7 7.2c-.5 2.13-.08 4.75-.04 5 .02.17.22.2.3.1.14-.18 1.82-2.26 2.4-4.33.16-.58.93-3.63.93-3.63.45.88 1.8 1.65 3.22 1.65 4.25 0 7.13-3.87 7.13-9.05C20.5 4.15 17.18.5 12.14.5z"/></svg>
+					</div>
+					</div>
+				</a>
+				
+				<!-- Sharingbutton Telegram -->
+				<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Copy%20and%20Paste%20Cool%20Symbols%20%3A%20%CC%97%CC%80%E2%9E%9B%20%CB%9A%E2%82%8A%C2%B7%20%CD%9F%CD%9F%CD%9E%CD%9E%E2%9E%B3%E2%9D%A5%20%E2%95%B0%E2%94%88%E2%9E%A4%20%CB%8F%CB%8B%C2%B0%E2%80%A2*%E2%81%80%E2%9E%B7%20%EF%B8%B6%EA%92%A6%EA%92%B7%E2%99%A1%EA%92%B7%EA%92%A6%EF%B8%B6%20%E2%96%91%E2%96%92%E2%96%92%20%F0%9F%92%80%20%E2%96%92%E2%96%92%E2%96%91%09%E2%89%A1%3B-%20%EA%92%B0%20%C2%B0text%20%EA%92%B1%20%EF%B8%B6%EF%B8%B5%EF%B8%B6%EF%BD%9F%F0%9F%92%9C%EF%BD%A0%EF%B8%B6%EF%B8%B5%EF%B8%B6%20%E2%80%A2%E2%9D%80.%E2%80%A2%E2%9D%A4%E2%80%A2.%C2%B8%E2%9C%BF%C2%B8.%E2%80%A2%E2%9D%A4%E2%80%A2.%E2%9D%80%E2%80%A2%20%EA%A7%81%E2%99%A5%F0%9F%96%A4%EF%B8%8F%E2%99%A5%EA%A7%82&amp;url=https%3A%2F%2Fsymbolsemoji.com" target="_blank" rel="noopener" aria-label="">
+					<div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.707 8.475C.275 8.64 0 9.508 0 9.508s.284.867.718 1.03l5.09 1.897 1.986 6.38a1.102 1.102 0 0 0 1.75.527l2.96-2.41a.405.405 0 0 1 .494-.013l5.34 3.87a1.1 1.1 0 0 0 1.046.135 1.1 1.1 0 0 0 .682-.803l3.91-18.795A1.102 1.102 0 0 0 22.5.075L.706 8.475z"/></svg>
+					</div>
+					</div>
+				</a>				
 			</div>
 		</div>
 	</div>
+
+
 	<div class="mainbox">
 		<div class="outcont">
 			<div class="symbolContainer">
 				<div class="rightContainer">
+
 					<div class="maindata">
-		<h1 class="titlesymbol">????���????��?�? Christmas Lenny Face</h1>
-			<div class="symbol lennyface" onclick="copyToClipboard('??', event)">??
+
+		<h1 class="titlesymbol">⸝₍̗⁽ˆ⁰ˆ⁾₎͕⸍∘˚˳°✧ Christmas Lenny Face</h1>
+
+			<div class="symbol lennyface" onclick="copyToClipboard('🎄', event)">🎄</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('☃', event)">☃</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('ᒄ₍⁽ˆ⁰ˆ⁾₎ᒃ♪♬', event)">ᒄ₍⁽ˆ⁰ˆ⁾₎ᒃ♪♬</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('⁂̊⁑̥⍋ ´•௰•`๑ ⁑̥⁂̊⍋', event)">⁂̊⁑̥⍋ ´•௰•`๑ ⁑̥⁂̊⍋</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('˗ˏˋᗰદ૨૨ʏ ᘓમ૨ıડτന੨ડˎˊ˗', event)">˗ˏˋᗰદ૨૨ʏ ᘓમ૨ıડτന੨ડˎˊ˗</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('(╯^□^)❄☃❄', event)">(╯^□^)❄☃❄</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('⋆(ㆆᴗㆆ)*✲ﾟ*｡⋆', event)">⋆(ㆆᴗㆆ)*✲ﾟ*｡⋆</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('｡*ﾟ✲*☆(๑òᆺó๑)｡*ﾟ✲*☆', event)">｡*ﾟ✲*☆(๑òᆺó๑)｡*ﾟ✲*☆</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('*ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚', event)">*</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('(◞ꈍ∇ꈍ)◞⋆**✚⃞ྉ', event)">(◞ꈍ∇ꈍ)◞⋆**✚⃞ྉ</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('༶･･ᗰદ૨૨ʏ ᘓમ૨ıડτന੨ડ･･༶', event)">༶･･ᗰદ૨૨ʏ ᘓમ૨ıડτന੨ડ･･༶</div>
+			<div class="symbol lennyface" onclick="copyToClipboard('・:，。★＼(*’v｀*)♪Merry X’mas♪(*’v｀*)/★，。・:・゜', event)">・:，。★＼(*’v｀*)♪Merry X’mas♪(*’v｀*)/★，。・:・゜</div>
+		
 		</div>
-		</div>
+
 		<div class="symbolcat">
 			<a href="cute-lenny-face.html">Cute</a>
 			<a href="sunglasses-lenny-face.html">Glass</a>
@@ -507,809 +215,193 @@
 			<a href="good-morning-lenny-face.html">Good Morning</a>
 			<a href="christmas-lenny-face.html">Christmas</a>
 		</div>
+
 		<div class="symbolcat">
-			<a href="heart-symbol.html">??? Heart</a>
-			<a href="check-mark-symbol.html">??Check Mark</a>
-			<a href="text-animal-symbol.html">?? Text Animal Symbols</a>
-			<a href="star-symbol.html">? Star</a>
-			<a href="sun-symbol.html">?? Sun</a>
-			<a href="moon-symbol.html">?? Moon</a>
-			<a href="music-symbol.html">?? Music</a>
-			<a href="cross-symbol.html">? Cross</a>
-			<a href="zodiac-symbol.html">? Zodiac</a>
-			<a href="number-symbols.html">? Numbers</a>
-			<a href="arrow-symbol.html">? Arrow</a>
-			<a href="up-arrow-symbol.html">? Up Arrow</a>
-			<a href="down-arrow-symbol.html">? Down Arrow</a>
-			<a href="flower-symbol.html">? Flower</a>
-			<a href="gender-symbol.html">?? Gender</a>
-			<a href="infinity-symbol.html">? Infinity</a>
-			<a href="medical-symbol.html">?? Medical</a>
+			<a href="heart-symbol.html">❤️️ Heart</a>
+			<a href="check-mark-symbol.html">✔️Check Mark</a>
+			<a href="text-animal-symbol.html">𓆣 Text Animal Symbols</a>
+			<a href="star-symbol.html">⭐ Star</a>
+			<a href="sun-symbol.html">🌞 Sun</a>
+			<a href="moon-symbol.html">🌝 Moon</a>
+			<a href="music-symbol.html">🎵 Music</a>
+			<a href="cross-symbol.html">❌ Cross</a>
+			<a href="zodiac-symbol.html">♈ Zodiac</a>
+			<a href="number-symbols.html">① Numbers</a>
+			<a href="arrow-symbol.html">⇨ Arrow</a>
+			<a href="up-arrow-symbol.html">⇧ Up Arrow</a>
+			<a href="down-arrow-symbol.html">⇩ Down Arrow</a>
+			<a href="flower-symbol.html">✿ Flower</a>
+			<a href="gender-symbol.html">♀♂ Gender</a>
+			<a href="infinity-symbol.html">Ꝏ Infinity</a>
+			<a href="medical-symbol.html">💉 Medical</a>
 			<a href="currency-symbol.html">$ Currency</a>
-			<a href="chess-symbol.html">? Chess</a>
-			<a href="weather-symbol.html">?? Weather</a>
-			<a href="bracket-symbol.html">? Bracket</a>
-			<a href="religion-symbol.html">? Religion</a>
-			<a href="copyright-trademark-symbols.html">� Copyright, Trademark</a>
-			<a href="unit-symbol.html">? Unit</a>
-			<a href="card-symbol.html">? Card Symbol</a>
-			<a href="dice-symbol.html">? Dice</a>
-			<a href="transport-symbol.html">?? Transport</a>
-			<a href="office-symbol.html">? Office</a>
-			<a href="trophy-medal-symbol.html">?? Trophy Medals</a>
-			<a href="lock-and-key.html">?? Lock and Key</a>
-			<a href="warning-symbol.html">?? Warning</a>
-			<a href="writing-symbol.html">? Writing</a>
-			<a href="weapon-symbol.html">?? Weapon</a>
-			<a href="roman-numerals-symbol.html">? Roman Numerals</a>
-			<a href="greek-alphabet-symbol.html">a Greek alphabet</a>
-			<a href="bullet-points-symbol.html">? Bullet Point</a>
-			<a href="smiley-face-symbol.html">?? Smiley Face</a>
-			<a href="fraction-symbol.html">� Fraction</a>
-			<a href="pi-symbol.html">?? PI Symbol</a>
+			<a href="chess-symbol.html">♔ Chess</a>
+			<a href="weather-symbol.html">🌧 Weather</a>
+			<a href="bracket-symbol.html">﹛ Bracket</a>
+			<a href="religion-symbol.html">✟ Religion</a>
+			<a href="copyright-trademark-symbols.html">© Copyright, Trademark</a>
+			<a href="unit-symbol.html">℃ Unit</a>
+			<a href="card-symbol.html">♤ Card Symbol</a>
+			<a href="dice-symbol.html">⚄ Dice</a>
+			<a href="transport-symbol.html">🚄 Transport</a>
+			<a href="office-symbol.html">✍ Office</a>
+			<a href="trophy-medal-symbol.html">🥇 Trophy Medals</a>
+			<a href="lock-and-key.html">🔑 Lock and Key</a>
+			<a href="warning-symbol.html">⚠️ Warning</a>
+			<a href="writing-symbol.html">✎ Writing</a>
+			<a href="weapon-symbol.html">⚔️ Weapon</a>
+			<a href="roman-numerals-symbol.html">Ⅺ Roman Numerals</a>
+			<a href="greek-alphabet-symbol.html">α Greek alphabet</a>
+			<a href="bullet-points-symbol.html">☛ Bullet Point</a>
+			<a href="smiley-face-symbol.html">🥰 Smiley Face</a>
+			<a href="fraction-symbol.html">¼ Fraction</a>
+			<a href="pi-symbol.html">𝝅 PI Symbol</a>
 			<a href="comparison-symbol.html">> Comparison</a>
-			<a href="line-symbol.html">� Line</a>
-			<a href="circle-symbol.html">? Circle</a>
-			<a href="triangle-symbol.html">? Triangle</a>
-			<a href="square-symbol.html">? Square</a>
-			<a href="rectangle-symbol.html">? Rectangle</a>
-			<a href="corner-symbols.html">? Corner</a>
-			<a href="punctuation-mark-symbol.html">� Punctuation</a>
-			<a href="chinese-symbol.html">? Chinese</a>
-			<a href="japanese-symbols.html">? Japanese</a>
-			<a href="korean-symbols.html">? Korean</a>
-			<a href="hand-symbols.html">? Hand</a>
-			<a href="bubble-text.html">? Bubble Text</a>
-			<a href="cursive-letters.html">?? Cursive Letter</a>
-			<a href="upside-down-text.html">? Upside Down Text</a>
-			<a href="old-english-text.html">?? Old Enlish Text</a>
-			<a href="house-symbol.html">?? House</a>
-			<a href="crown-symbol.html">?? Crown</a>
-			<a href="daimond-symbol.html">?? Daimond</a>
-			<a href="quotation-mark-symbol.html">? Quotation Mark</a>
-			<a href="cryptocurrency-symbols.html">? Cryptocurrency</a>
-			<a href="keyboard-symbols.html">?? Keyboard</a></div>
+			<a href="line-symbol.html">║ Line</a>
+			<a href="circle-symbol.html">◐ Circle</a>
+			<a href="triangle-symbol.html">⟁ Triangle</a>
+			<a href="square-symbol.html">⊡ Square</a>
+			<a href="rectangle-symbol.html">▇ Rectangle</a>
+			<a href="corner-symbols.html">┕ Corner</a>
+			<a href="punctuation-mark-symbol.html">» Punctuation</a>
+			<a href="chinese-symbol.html">㊊ Chinese</a>
+			<a href="japanese-symbols.html">お Japanese</a>
+			<a href="korean-symbols.html">ㅄ Korean</a>
+			<a href="hand-symbols.html">✌ Hand</a>
+			<a href="bubble-text.html">ⓐ Bubble Text</a>
+			<a href="cursive-letters.html">𝓐 Cursive Letter</a>
+			<a href="upside-down-text.html">Ɐ Upside Down Text</a>
+			<a href="old-english-text.html">𝕯 Old Enlish Text</a>
+			<a href="house-symbol.html">🏡 House</a>
+			<a href="crown-symbol.html">👑 Crown</a>
+			<a href="daimond-symbol.html">💎 Daimond</a>
+			<a href="quotation-mark-symbol.html">❝ Quotation Mark</a>
+			<a href="cryptocurrency-symbols.html">₿ Cryptocurrency</a>
+		</div>
+
 		<div class="leftsection">
 			<button class="close">X</button>
 			<h2><a href="index.html">Symbols Emojis</a></h2>
 			<div class="bookmarks">
-				<a href="cute-lenny-face.html">Cute - (?o?O?)</a>
-				<a href="sunglasses-lenny-face.html">Glass - (��? ??�)</a>
-				<a href="crying-lenny-face.html">Crying - ( ?? ?? ?)</a>
-				<a href="dongers-lenny-face.html">Dongers - ?? ? ??</a>
-				<a href="sad-lenny-face.html">Sad - (?????)</a>
-				<a href="shy-lenny-face.html">Shy - (//?//)</a>
-				<a href="blush-lenny-face.html">Blush - (? ?? ??? ?? )/a>
-				<a href="surprised-lenny-face.html">Surprised - ( ? o ? )</a>
-				<a href="nervous-lenny-face.html">Nervous - (???)</a>
-				<a href="scared-lenny-face.html">Scared - ?(???)??</a>
-				<a href="confused-lenny-face.html">Confused - ?????</a>
-				<a href="shrug-lenny-face.html">Shrug - ?( ?� ?? ?�)?</a>
-				<a href="dog-lenny-face.html">Dog - ? ? ?</a>
-				<a href="cat-lenny-face.html">Cat - (=???=)?</a>
-				<a href="bear-lenny-face.html">Bear - \? �?�?/</a>
-				<a href="weird-lenny-face.html">Weird - ?_?</a>
-				<a href="run-lenny-face.html">Run - ?(^o^ )??</a>
-				<a href="dance-lenny-face.html">Dance - +(???)+</a>
-				<a href="strong-lenny-face.html">Strong - ?(?_?)?</a>
-				<a href="eating-lenny-face.html">Eating - ( ??? )??</a>
-				<a href="vomit-lenny-face.html">Vomit - (�?`*)</a>
-				<a href="wink-lenny-face.html">Wink - ( ?�_? ~)</a>
-				<a href="hiding-lenny-face.html">Hiding - ??|???)/</a>
-				<a href="kiss-lenny-face.html">Kiss - (?e???)</a>
-				<a href="hug-lenny-face.html">Hug - ( ?�?�)?</a>
-				<a href="devil-lenny-face.html">Devil - ( �`?�� )? ??</a>
-				<a href="evil-lenny-face.html">Evil - ?(`? �)?</a>
-				<a href="happy-lenny-face.html">Happy - (???)</a>
-				<a href="depressed-lenny-face.html">Depressed - ?( �� ? �` )?</a>
-				<a href="disapproval-lenny-face.html">Disapproval - (? ???)?n?</a>
-				<a href="angry-lenny-face.html">Angry - (?_?)</a>
-				<a href="spider-lenny-face.html">Spider - /|\(?.?)/|\</a>
-				<a href="middle-finger-lenny-face.html">Middle Finger - n?(?_?)?n?</a>
-				<a href="flip-table-lenny-face.html">Flipping Tables - ---- ?( -?)</a>
-				<a href="flirty-lenny-face.html">Flirty - (?!?)</a>
-				<a href="laughing-lenny-face.html">Laughing - ( ^??^??)</a>
-				<a href="thinking-lenny-face.html">Thinking - (.�???�?? )</a>
-				<a href="heart-lenny-face.html">Heart - ( ? ?? ?)</a>
-				<a href="sword-lenny-face.html">Sword - ( `?� )???-------? </a>
-				<a href="gun-lenny-face.html">Gun - ??-?-?(? ??? )</a>
-				<a href="excited-lenny-face.html">Excited - ?( ??? )?</a>
-				<a href="tired-lenny-face.html">Tired - (�_`;)</a>
-				<a href="helpless-lenny-face.html">Helpless - ( ???)</a>
-				<a href="beg-lenny-face.html">Beg - ( ???)</a>
-				<a href="hello-lenny-face.html">Hello - (?^_�)?</a>
+				<a href="cute-lenny-face.html">Cute - (͡o‿O͡)</a>
+				<a href="sunglasses-lenny-face.html">Glass - (⌐▀͡ ̯ʖ▀)</a>
+				<a href="crying-lenny-face.html">Crying - ( ㄕཀ ʖ̯ ཀ)</a>
+				<a href="dongers-lenny-face.html">Dongers - ༼ಠ ل ಠ༽</a>
+				<a href="sad-lenny-face.html">Sad - (▰˘︹˘▰)</a>
+				<a href="shy-lenny-face.html">Shy - (//∀//)</a>
+				<a href="blush-lenny-face.html">Blush - (つ ͡ꈍ ͜ʖ̫ ͡ꈍ )/a>
+				<a href="surprised-lenny-face.html">Surprised - ( ◐ o ◑ )</a>
+				<a href="nervous-lenny-face.html">Nervous - (꒪⌓꒪)</a>
+				<a href="scared-lenny-face.html">Scared - ヾ(ﾟдﾟ)ﾉ゛</a>
+				<a href="confused-lenny-face.html">Confused - ٩◔̯◔۶</a>
+				<a href="shrug-lenny-face.html">Shrug - 乁( ͡° ͜ʖ ͡°)ㄏ</a>
+				<a href="dog-lenny-face.html">Dog - ▼ ᴥ ▼</a>
+				<a href="cat-lenny-face.html">Cat - (=ʘᆽʘ=)∫</a>
+				<a href="bear-lenny-face.html">Bear - ＼ʕ •ᴥ•ʔ／</a>
+				<a href="weird-lenny-face.html">Weird - 〠_〠</a>
+				<a href="run-lenny-face.html">Run - ┗(^o^　)┓三</a>
+				<a href="dance-lenny-face.html">Dance - ┌(ﾟдﾟ)┘</a>
+				<a href="strong-lenny-face.html">Strong - ᕙ(の_の)ᕗ</a>
+				<a href="eating-lenny-face.html">Eating - (　ﾟДﾟ )⊃旦</a>
+				<a href="vomit-lenny-face.html">Vomit - （´艸｀＊）</a>
+				<a href="wink-lenny-face.html">Wink - ( ͡°_ʖ ~)</a>
+				<a href="hiding-lenny-face.html">Hiding - ┻┳|･ω･)/</a>
+				<a href="kiss-lenny-face.html">Kiss - （￣ε￣ʃƪ）</a>
+				<a href="hug-lenny-face.html">Hug - ( ⊃・ω・)⊃</a>
+				<a href="devil-lenny-face.html">Devil - ( •̀ᴗ•́ )و ̑̑</a>
+				<a href="evil-lenny-face.html">Evil - ψ(｀∇ ´)ψ</a>
+				<a href="happy-lenny-face.html">Happy - (◕‿◕)</a>
+				<a href="depressed-lenny-face.html">Depressed - ໒( •́ ∧ •̀ )७</a>
+				<a href="disapproval-lenny-face.html">Disapproval - (ಥ ͜ʖಥ)╭∩╮</a>
+				<a href="angry-lenny-face.html">Angry - (⩺_⩹)</a>
+				<a href="spider-lenny-face.html">Spider - /|\(◦.◦)/|\</a>
+				<a href="middle-finger-lenny-face.html">Middle Finger - ∩╮(◣_◢)╭∩╮</a>
+				<a href="flip-table-lenny-face.html">Flipping Tables - ┬──┬ ノ( -ノ)</a>
+				<a href="flirty-lenny-face.html">Flirty - (‿!‿)</a>
+				<a href="laughing-lenny-face.html">Laughing - ( ^ิ艸^ิﾟ)</a>
+				<a href="thinking-lenny-face.html">Thinking - (.•̵̑⌓•̵̑ )</a>
+				<a href="heart-lenny-face.html">Heart - ( ♥ ͜ʖ ♥)</a>
+				<a href="sword-lenny-face.html">Sword - ( `ω´ )۶▭ι═══════ﺤ </a>
+				<a href="gun-lenny-face.html">Gun - ╾━╤デ╦︻(˙ ͜ʟ˙ )</a>
+				<a href="excited-lenny-face.html">Excited - ٩( θ‿θ )۶</a>
+				<a href="tired-lenny-face.html">Tired - （´＿｀;）</a>
+				<a href="helpless-lenny-face.html">Helpless - (　◜◡‾)</a>
+				<a href="beg-lenny-face.html">Beg - ( ￣十￣)</a>
+				<a href="hello-lenny-face.html">Hello - (。^_・)ノ</a>
 				<a href="thumbs-up-lenny-face.html">Thumbs Up - d(-_^)</a>
-				<a href="thank-you-lenny-face.html">Thank You - (?�?`*)</a>
+				<a href="thank-you-lenny-face.html">Thank You - （人´∀`*）</a>
 				<a href="good-night-lenny-face.html">Good Night - (_ _ ) Zzz z</a>
-				<a href="good-morning-lenny-face.html">Good Morning - (????? )??</a>
-				<a href="christmas-lenny-face.html">Christmas - ????���????��?�?</a>
+				<a href="good-morning-lenny-face.html">Good Morning - (๑╹ω╹๑ )☀️</a>
+				<a href="christmas-lenny-face.html">Christmas - ⸝₍̗⁽ˆ⁰ˆ⁾₎͕⸍∘˚˳°✧</a>
+
 			</div>
-		</div>
-	<div class="info-title">
-		<h2>Christmas Lenny Face (?^?^)???(?�?�) Copy and Paste</h2>
+
+</div>
+<div class="info-title"
+		<h2>Christmas Lenny Face (╯^□^)❄☃❄(๑•﹏•) Copy and Paste</h2>
 		<div class="info">
-			<p>Good Christmas eve faces ?�???????*??*?? (????)??**??? *?(?*�?`)?* ????� ?�??????? ?�??�?????(?^?^)??? ??*? ?? ????*? ??(?�?�)??*? ?? ????*? ?? ?(???)*??*?? 7???????7 // /�??�?�??? // /// ?�??? ��?�`? ???�? ???���????? ????� ???? ???�?`??? ????.</p>
-
-			<main class="semantic-content">
-        <section class="symbol-info">
-            <h2>Christmas Lenny Face Collection</h2>
-            <p>Discover the ultimate collection of Lenny face symbols ( ?� ?? ?�) and emoticon characters, featuring thousands of Unicode Lenny face symbols ( ?~ ?? ?�) carefully organized for easy access and instant copying. Our comprehensive Lenny face database includes happy faces, sad faces, angry faces ?_?, cute faces (�?`), weird faces ????, expressive emoticons ( ?o ?? ?o), and ASCII art elements ( ?? ?? ??) that enhance any type of digital content. Whether you're creating humorous documents, designing expressive social media posts, developing entertaining websites, or working on comedic creative projects, our Lenny face collection ( ?? ?? ??) provides the perfect emoticon characters to express your humorous ideas clearly and attractively.</p>
-            
-            <h3>Complete Lenny Face Symbols ( ?~ ?? ?�) ( ?o ?? ?o) and Emoticon Unicode Characters</h3>
-            <p>Lenny face symbols and emoticon characters play a crucial role in modern digital communication, helping to convey emotional information more effectively than words alone. They're essential for expressive documentation, meme creation, chat conversations ( ?? ?? ??), and humorous content where precise emotional notation ( ?� ?? ? -) can prevent misunderstandings and improve humorous clarity. In creative fields, Lenny face symbols add emotional visual interest and can help establish expressive brand identity or humorous artistic style ( ?� ?? ?�)?n?. For international communication, many Lenny face symbols ( ?� ?? ?�)? transcend language barriers, making emotional content more accessible to global audiences.</p>
-            
-            <h3>How to Copy and Use These Symbols</h3>
-            <p>We maintain our Lenny face collection with rigorous attention to emotional quality and expressive compatibility, regularly testing each Lenny face character ( ?� ?? ?�)???~* across different platforms and updating our emoticon database as new Unicode Lenny face standards are released. This ensures that every Lenny face symbol in our collection works reliably across various devices and applications. Our Lenny faces are perfect for adding humor and personality to your messages, social media posts, and digital conversations.</p>
-
-        </section>
-    </main>
-		</div>
+			<p>Good Christmas eve faces ʕ”̮ुॽु✚⃞ྉ*✲ﾟ*｡⋆ (◞ꈍ∇ꈍ)◞⋆**✚⃞ྉ *ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚ ʕ”̮ुॽु✚⃞ྉ ʕ•̫͡•ॽु✚⃞ྉ(╯^□^)❄☃❄ ⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛(๑•﹏•)⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ ⋆(ㆆᴗㆆ)*✲ﾟ*｡⋆ ⁷₍⁽՚ᵕ՝⁾₎₇ ⁄⁄ ⁄‹₍⁽⁰⁻⁰⁺⁾₎ ⁄⁄ ⁄⁄⁄ ⁂̊⁑̥⍋ ´•௰•`๑ ⁑̥⁂̊⍋ ᒄ₍⁽ˆ⁰ˆ⁾₎ᒃ♪♬ ℺ຶཽྈ” ༝﹡˖˟ ⸜₍⁽ˊ꒳ˋ⁾₎⸝ ༝﹡˖˟.</p>
+			</div>
 		</div>
 	</div>
 	<div id="sidebar">
 		<div id="sticky">
-		</div>
-		</div>
-	</div>
+			
+		
 </div>
 </div>
 </div>
 
-		<div class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
-		<div class="footer-content">
-			<div class="footer-left">
-				<p class="site-name">Symbols Emoji.com</p>
-			</div>
-			<div class="footer-links">
-				<a href="privacy.html" class="footer-link">Privacy</a>
-				<a href="terms.html" class="footer-link">Terms</a>
-				<a href="contact.html" class="footer-link">Contact</a>
-			</div>
-			<div class="footer-copyright">
-				<p class="copyright">� 2025 SymbolsEmoji.com</p>
-			</div>
-		</div>
-	</div>
-	<link rel="stylesheet" href="footer-fix.css" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="footer-fix.css" /></noscript>
+</div>
+</div>
+</div>
 
-	<script src="script.min.js" defer></script>
-
-<script defer>
-// Global dropdown toggle function
-function toggleDropdown() {
-    console.log('??? Dropdown toggle clicked');
-    const dropdown = document.getElementById('languageDropdown');
-    const btn = document.getElementById('languageBtn');
-    
-    if (!dropdown) {
-        console.error('? Dropdown not found');
-        return;
-    }
-    
-    const isVisible = dropdown.style.display === 'block';
-    
-    if (isVisible) {
-        dropdown.style.display = 'none';
-        dropdown.classList.remove('open');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-        console.log('?? Dropdown closed');
-    } else {
-        dropdown.style.display = 'block';
-        dropdown.classList.add('open');
-        if (btn) btn.setAttribute('aria-expanded', 'true');
-        console.log('?? Dropdown opened');
-    }
-}
-
-// Language selection function
-function selectLanguage(langCode) {
-    console.log('?? Language selected:', langCode);
-    
-    // Update button text
-    const langBtn = document.querySelector('.lang-code');
-    if (langBtn) {
-        const langNames = {
-            'en': 'EN', 'hi': 'HI', 'es': 'ES', 'fr': 'FR', 'de': 'DE', 'ja': 'JP', 'ko': 'KR', 'zh': 'CN',
-            'ar': 'AR', 'pt': 'PT', 'ru': 'RU', 'it': 'IT', 'nl': 'NL', 'tr': 'TR', 'pl': 'PL', 'sv': 'SV',
-            'da': 'DK', 'no': 'NO', 'fi': 'FI', 'th': 'TH', 'vi': 'VN', 'id': 'ID', 'ms': 'MY', 'he': 'HE'
-        };
-        langBtn.textContent = langNames[langCode] || 'EN';
-    }
-    
-    // Set document language and direction
-    document.documentElement.lang = langCode;
-    document.documentElement.dir = (langCode === 'ar' || langCode === 'he') ? 'rtl' : 'ltr';
-    
-    // Update active state
-    document.querySelectorAll('.language-option').forEach(option => {
-        option.classList.remove('active');
-    });
-    const selectedOption = document.querySelector(`[onclick="selectLanguage('${langCode}')"]`);
-    if (selectedOption) {
-        selectedOption.classList.add('active');
-    }
-    
-    // Close dropdown
-    const dropdown = document.getElementById('languageDropdown');
-    const btn = document.getElementById('languageBtn');
-    if (dropdown) {
-        dropdown.style.display = 'none';
-        dropdown.classList.remove('open');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-    }
-    
-    // Save preference
-    localStorage.setItem('selectedLanguage', langCode);
-    
-    // Translate content if function exists
-    if (typeof translatePageContent === 'function') {
-        translatePageContent(langCode);
-    }
-}
-
-// Translations object (keeping existing translations)
-const translations = {
-    en: {
-        allSymbols: "All Symbols",
-        coolFlower: "cool flower", 
-        aesthetic: "Aesthetic",
-        heart: "Heart",
-        arrow: "Arrow",
-        mainTitle: "Cool Symbols Copy and Paste",
-        fontGenerator: "Font Generator",
-        lennyFace: "Lenny Face",
-        logoText: "Symbols Emoji"
-    },
-    hi: {
-        allSymbols: "??? ??????",
-        coolFlower: "??? ???",
-        aesthetic: "???????",
-        heart: "???",
-        arrow: "???",
-        mainTitle: "??? ?????? ???? ?? ?????",
-        fontGenerator: "????? ???????",
-        lennyFace: "???? ???",
-        logoText: "Symbols Emoji"
-    },
-    es: {
-        allSymbols: "Todos los Símbolos",
-        coolFlower: "flor genial",
-        aesthetic: "Estético",
-        heart: "Corazón",
-        arrow: "Flecha",
-        mainTitle: "Símbolos Geniales Copiar y Pegar",
-        fontGenerator: "Generador de Fuentes",
-        lennyFace: "Cara Lenny",
-        logoText: "Symbols Emoji"
-    },
-    fr: {
-        allSymbols: "Tous les Symboles",
-        coolFlower: "fleur cool",
-        aesthetic: "Esth�tique",
-        heart: "Cœur",
-        arrow: "Fl�che",
-        mainTitle: "Symboles Cool Copier et Coller",
-        fontGenerator: "Générateur de Police",
-        lennyFace: "Visage Lenny",
-        logoText: "Symbols Emoji"
-    },
-    de: {
-        allSymbols: "Alle Symbole",
-        coolFlower: "coole Blume",
-        aesthetic: "Ästhetisch",
-        heart: "Herz",
-        arrow: "Pfeil",
-        mainTitle: "Coole Symbole Kopieren und Einfügen",
-        fontGenerator: "Schrift Generator",
-        lennyFace: "Lenny Gesicht",
-        logoText: "Symbols Emoji"
-    },
-    ja: {
-        allSymbols: "??????",
-        coolFlower: "?????",
-        aesthetic: "??",
-        heart: "???",
-        arrow: "??",
-        mainTitle: "??????? ???&????",
-        fontGenerator: "???????????",
-        lennyFace: "???????",
-        logoText: "Symbols Emoji"
-    },
-    ko: {
-        allSymbols: "?? ??",
-        coolFlower: "?? ?",
-        aesthetic: "??",
-        heart: "??",
-        arrow: "???",
-        mainTitle: "?? ?? ?? ? ????",
-        fontGenerator: "?? ???",
-        lennyFace: "?? ???",
-        logoText: "Symbols Emoji"
-    },
-    zh: {
-        allSymbols: "????",
-        coolFlower: "??",
-        aesthetic: "??",
-        heart: "?",
-        arrow: "??",
-        mainTitle: "???????",
-        fontGenerator: "?????",
-        lennyFace: "???",
-        logoText: "Symbols Emoji"
-    },
-    ar: {
-        allSymbols: "???? ??????",
-        coolFlower: "???? ?????",
-        aesthetic: "?????",
-        heart: "???",
-        arrow: "???",
-        mainTitle: "???? ????? ??? ????",
-        fontGenerator: "???? ????",
-        lennyFace: "??? ????",
-        logoText: "Symbols Emoji"
-    },
-    pt: {
-        allSymbols: "Todos os Símbolos",
-        coolFlower: "flor legal",
-        aesthetic: "Estético",
-        heart: "Coração",
-        arrow: "Seta",
-        mainTitle: "Símbolos Legais Copiar e Colar",
-        fontGenerator: "Gerador de Fonte",
-        lennyFace: "Cara Lenny",
-        logoText: "Symbols Emoji"
-    },
-    ru: {
-        allSymbols: "??? ???????",
-        coolFlower: "?????? ??????",
-        aesthetic: "????????????",
-        heart: "??????",
-        arrow: "???????",
-        mainTitle: "?????? ??????? ?????????? ? ????????",
-        fontGenerator: "????????? ???????",
-        lennyFace: "???? ?????",
-        logoText: "Symbols Emoji"
-    },
-    it: {
-        allSymbols: "Tutti i Simboli",
-        coolFlower: "fiore figo",
-        aesthetic: "Estetico",
-        heart: "Cuore",
-        arrow: "Freccia",
-        mainTitle: "Simboli Fighi Copia e Incolla",
-        fontGenerator: "Generatore di Font",
-        lennyFace: "Faccia Lenny",
-        logoText: "Symbols Emoji"
-    },
-    nl: {
-        allSymbols: "Alle Symbolen",
-        coolFlower: "coole bloem",
-        aesthetic: "Esthetisch",
-        heart: "Hart",
-        arrow: "Pijl",
-        mainTitle: "Coole Symbolen Kopiëren en Plakken",
-        fontGenerator: "Lettertype Generator",
-        lennyFace: "Lenny Gezicht",
-        logoText: "Symbols Emoji"
-    },
-    tr: {
-        allSymbols: "T�m Semboller",
-        coolFlower: "havali çiçek",
-        aesthetic: "Estetik",
-        heart: "Kalp",
-        arrow: "Ok",
-        mainTitle: "Havali Semboller Kopyala ve Yapistir",
-        fontGenerator: "Font Üretici",
-        lennyFace: "Lenny Yüz",
-        logoText: "Symbols Emoji"
-    },
-    pl: {
-        allSymbols: "Wszystkie Symbole",
-        coolFlower: "fajny kwiat",
-        aesthetic: "Estetyczny",
-        heart: "Serce",
-        arrow: "Strzalka",
-        mainTitle: "Fajne Symbole Kopiuj i Wklej",
-        fontGenerator: "Generator Czcionek",
-        lennyFace: "Twarz Lenny",
-        logoText: "Symbols Emoji"
-    },
-    sv: {
-        allSymbols: "Alla Symboler",
-        coolFlower: "cool blomma",
-        aesthetic: "Estetisk",
-        heart: "Hjärta",
-        arrow: "Pil",
-        mainTitle: "Coola Symboler Kopiera och Klistra",
-        fontGenerator: "Typsnitt Generator",
-        lennyFace: "Lenny Ansikte",
-        logoText: "Symbols Emoji"
-    },
-    da: {
-        allSymbols: "Alle Symboler",
-        coolFlower: "cool blomst",
-        aesthetic: "Æstetisk",
-        heart: "Hjerte",
-        arrow: "Pil",
-        mainTitle: "Fede Symboler Kopier og Indsæt",
-        fontGenerator: "Skrifttype Generator",
-        lennyFace: "Lenny Ansigt",
-        logoText: "Symbols Emoji"
-    },
-    no: {
-        allSymbols: "Alle Symboler",
-        coolFlower: "kul blomst",
-        aesthetic: "Estetisk",
-        heart: "Hjerte",
-        arrow: "Pil",
-        mainTitle: "Kule Symboler Kopier og Lim Inn",
-        fontGenerator: "Font Generator",
-        lennyFace: "Lenny Ansikt",
-        logoText: "Symbols Emoji"
-    },
-    fi: {
-        allSymbols: "Kaikki Symbolit",
-        coolFlower: "siisti kukka",
-        aesthetic: "Esteettinen",
-        heart: "Sydän",
-        arrow: "Nuoli",
-        mainTitle: "Siistit Symbolit Kopioi ja Liitä",
-        fontGenerator: "Fontti Generaattori",
-        lennyFace: "Lenny Kasvot",
-        logoText: "Symbols Emoji"
-    },
-    th: {
-        allSymbols: "????????????????",
-        coolFlower: "?????????",
-        aesthetic: "??????",
-        heart: "?????",
-        arrow: "?????",
-        mainTitle: "???????????? ????????????",
-        fontGenerator: "????????????????????",
-        lennyFace: "??????????",
-        logoText: "Symbols Emoji"
-    },
-    vi: {
-        allSymbols: "Tất cả Ký hiệu",
-        coolFlower: "hoa tuyệt vời",
-        aesthetic: "Thẩm mỹ",
-        heart: "Trái tim",
-        arrow: "Mũi tên",
-        mainTitle: "K� hi?u Tuy?t v?i Sao ch�p v� D�n",
-        fontGenerator: "Tr�nh t?o Font",
-        lennyFace: "M?t Lenny",
-        logoText: "Symbols Emoji"
-    },
-    id: {
-        allSymbols: "Semua Simbol",
-        coolFlower: "bunga keren",
-        aesthetic: "Estetis",
-        heart: "Hati",
-        arrow: "Panah",
-        mainTitle: "Simbol Keren Salin dan Tempel",
-        fontGenerator: "Generator Font",
-        lennyFace: "Wajah Lenny",
-        logoText: "Symbols Emoji"
-    },
-    ms: {
-        allSymbols: "Semua Simbol",
-        coolFlower: "bunga sejuk",
-        aesthetic: "Estetik",
-        heart: "Hati",
-        arrow: "Anak panah",
-        mainTitle: "Simbol Sejuk Salin dan Tampal",
-        fontGenerator: "Penjana Font",
-        lennyFace: "Muka Lenny",
-        logoText: "Symbols Emoji"
-    },
-    he: {
-        allSymbols: "?? ??????",
-        coolFlower: "??? ?????",
-        aesthetic: "?????",
-        heart: "??",
-        arrow: "??",
-        mainTitle: "????? ??????? ???? ?????",
-        fontGenerator: "????? ??????",
-        lennyFace: "????? ???",
-        logoText: "Symbols Emoji"
-    }
-};
-
-// Page content translation function
-function translatePageContent(langCode) {
-    const translation = translations[langCode] || translations.en;
-    
-    // Get page-specific semantic translations
-    const pageCategory = 'lenny';
-    const semanticTranslations = {
-    "arrow": {
-        "en": {
-            "h2": "Arrow Symbol Collection - Copy & Paste ? Special Characters",
-            "p1": "Discover the ultimate collection of arrow symbols ? and directional characters, featuring thousands of Unicode arrow symbols ? carefully organized for easy access and instant copying.",
-            "h3": "Complete Arrow Symbols ? ? ? ? and Directional Unicode Characters",
-            "p2": "Arrow symbols and directional characters play a crucial role in modern digital communication, helping to convey navigational information more effectively than words alone."
-        },
-        "hi": {
-            "h2": "??? ?????? ?????? - ???? ?? ????? ? ????? ????",
-            "p1": "??? ???????? ? ?? ???????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ??? ?????? ? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "????? ??? ?????? ? ? ? ? ?? ???????? ??????? ????",
-            "p2": "??? ?????? ?? ???????? ???? ?????? ?????? ????? ??? ?????????? ?????? ?????? ???, ?????? ?? ????? ??? ????????? ??????? ?? ???? ??????? ??? ?? ?????? ???? ??? ??? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Símbolos de Flecha - Copiar y Pegar ? Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de s�mbolos de flecha ? y caracteres direccionales, con miles de s�mbolos de flecha Unicode ? cuidadosamente organizados para f�cil acceso y copiado instant�neo.",
-            "h3": "Símbolos de Flecha Completos ? ? ? ? y Caracteres Unicode Direccionales",
-            "p2": "Los s�mbolos de flecha y caracteres direccionales juegan un papel crucial en la comunicaci�n digital moderna, ayudando a transmitir informaci�n de navegaci�n m�s efectivamente que las palabras solas."
-        }
-    },
-    "heart": {
-        "en": {
-            "h2": "Heart Symbol Collection - Copy & Paste ? Special Characters",
-            "p1": "Discover the ultimate collection of heart symbols ? and love characters, featuring thousands of Unicode heart symbols ? carefully organized for easy access and instant copying.",
-            "h3": "Complete Heart Symbols ? ? ? ?? and Love Unicode Characters",
-            "p2": "Heart symbols and love characters play a crucial role in modern digital communication, helping to express emotions and feelings more effectively than words alone."
-        },
-        "hi": {
-            "h2": "??? ?????? ?????? - ???? ?? ????? ? ????? ????",
-            "p1": "??? ???????? ? ?? ????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ??? ?????? ? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "????? ??? ?????? ? ? ? ?? ?? ????? ??????? ????",
-            "p2": "??? ?????? ?? ????? ???? ?????? ?????? ????? ??? ?????????? ?????? ?????? ???, ?????? ?? ????? ??? ??????? ?? ??????? ?? ???? ??????? ??? ?? ?????? ???? ??? ??? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Símbolos de Corazón - Copiar y Pegar ? Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de s�mbolos de coraz�n ? y caracteres de amor, con miles de s�mbolos de coraz�n Unicode ? cuidadosamente organizados para f�cil acceso y copiado instant�neo.",
-            "h3": "Símbolos de Corazón Completos ? ? ? ?? y Caracteres Unicode de Amor",
-            "p2": "Los s�mbolos de coraz�n y caracteres de amor juegan un papel crucial en la comunicaci�n digital moderna, ayudando a expresar emociones y sentimientos m�s efectivamente que las palabras solas."
-        }
-    },
-    "flower": {
-        "en": {
-            "h2": "Flower Symbol Collection - Copy & Paste ?? Special Characters",
-            "p1": "Discover the ultimate collection of flower symbols ?? and botanical characters, featuring thousands of Unicode flower symbols ?? carefully organized for easy access and instant copying.",
-            "h3": "Complete Flower Symbols ?? ?? ?? ?? and Botanical Unicode Characters",
-            "p2": "Flower symbols and botanical characters play a crucial role in modern digital communication, helping to express nature and beauty more effectively than words alone."
-        },
-        "hi": {
-            "h2": "??? ?????? ?????? - ???? ?? ????? ?? ????? ????",
-            "p1": "??? ???????? ?? ?? ??????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ??? ?????? ?? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "????? ??? ?????? ?? ?? ?? ?? ?? ??????? ??????? ????",
-            "p2": "??? ?????? ?? ??????? ???? ?????? ?????? ????? ??? ?????????? ?????? ?????? ???, ?????? ?? ????? ??? ??????? ?? ??????? ?? ???? ??????? ??? ?? ?????? ???? ??? ??? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Símbolos de Flor - Copiar y Pegar ?? Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de s�mbolos de flor ?? y caracteres bot�nicos, con miles de s�mbolos de flor Unicode ?? cuidadosamente organizados para f�cil acceso y copiado instant�neo.",
-            "h3": "Símbolos de Flor Completos ?? ?? ?? ?? y Caracteres Unicode Bot�nicos",
-            "p2": "Los s�mbolos de flor y caracteres bot�nicos juegan un papel crucial en la comunicaci�n digital moderna, ayudando a expresar naturaleza y belleza m�s efectivamente que las palabras solas."
-        }
-    },
-    "star": {
-        "en": {
-            "h2": "Star Symbol Collection - Copy & Paste ? Special Characters",
-            "p1": "Discover the ultimate collection of star symbols ? and celestial characters, featuring thousands of Unicode star symbols ? carefully organized for easy access and instant copying.",
-            "h3": "Complete Star Symbols ? ? ? ?? and Celestial Unicode Characters",
-            "p2": "Star symbols and celestial characters play a crucial role in modern digital communication, helping to express excellence and achievement more effectively than words alone."
-        },
-        "hi": {
-            "h2": "???? ?????? ?????? - ???? ?? ????? ? ????? ????",
-            "p1": "???? ???????? ? ?? ?????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ???? ?????? ? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "????? ???? ?????? ? ? ? ?? ?? ?????? ??????? ????",
-            "p2": "???? ?????? ?? ?????? ???? ?????? ?????? ????? ??? ?????????? ?????? ?????? ???, ?????? ?? ????? ??? ?????????? ?? ??????? ?? ???? ??????? ??? ?? ?????? ???? ??? ??? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Símbolos de Estrella - Copiar y Pegar ? Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de s�mbolos de estrella ? y caracteres celestiales, con miles de s�mbolos de estrella Unicode ? cuidadosamente organizados para f�cil acceso y copiado instant�neo.",
-            "h3": "Símbolos de Estrella Completos ? ? ? ?? y Caracteres Unicode Celestiales",
-            "p2": "Los s�mbolos de estrella y caracteres celestiales juegan un papel crucial en la comunicaci�n digital moderna, ayudando a expresar excelencia y logros m�s efectivamente que las palabras solas."
-        }
-    },
-    "lenny": {
-        "en": {
-            "h2": "Lenny Face Collection - Copy & Paste ( ?� ?? ?�) Special Characters",
-            "p1": "Discover the ultimate collection of Lenny faces ( ?� ?? ?�) and emoticon characters, featuring thousands of Unicode Lenny expressions ?_? carefully organized for easy access and instant copying.",
-            "h3": "Complete Lenny Faces ( ?� ?? ?�) ?_? (?�?�)? and Emoticon Characters",
-            "p2": "Lenny faces and emoticon characters play a crucial role in modern digital communication, helping to express emotions and reactions more effectively than words alone."
-        },
-        "hi": {
-            "h2": "???? ??? ?????? - ???? ?? ????? ( ?� ?? ?�) ????? ????",
-            "p1": "???? ????? ( ?� ?? ?�) ?? ???????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ???? ?????????? ?_? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "????? ???? ????? ( ?� ?? ?�) ?_? (?�?�)? ?? ???????? ????",
-            "p2": "???? ????? ?? ???????? ???? ?????? ?????? ????? ??? ?????????? ?????? ?????? ???, ?????? ?? ????? ??? ??????? ?? ????????????? ?? ???? ??????? ??? ?? ?????? ???? ??? ??? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Caras Lenny - Copiar y Pegar ( ?� ?? ?�) Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de caras Lenny ( ?� ?? ?�) y caracteres de emoticones, con miles de expresiones Lenny Unicode ?_? cuidadosamente organizadas para f�cil acceso y copiado instant�neo.",
-            "h3": "Caras Lenny Completas ( ?� ?? ?�) ?_? (?�?�)? y Caracteres de Emoticones",
-            "p2": "Las caras Lenny y caracteres de emoticones juegan un papel crucial en la comunicaci�n digital moderna, ayudando a expresar emociones y reacciones m�s efectivamente que las palabras solas."
-        }
-    },
-    "animal": {
-        "en": {
-            "h2": "Animal Emoji Collection - Copy & Paste ?? Special Characters",
-            "p1": "Discover the ultimate collection of animal emojis ?? and wildlife characters, featuring thousands of Unicode animal symbols ?? carefully organized for easy access and instant copying.",
-            "h3": "Complete Animal Emojis ?? ?? ?? ?? and Wildlife Unicode Characters",
-            "p2": "Animal emojis and wildlife characters play a crucial role in modern digital communication, helping to express nature and wildlife more effectively than words alone."
-        },
-        "hi": {
-            "h2": "??? ????? ?????? - ???? ?? ????? ?? ????? ????",
-            "p1": "??? ????? ?? ?? ??????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ??? ?????? ?? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "????? ??? ????? ?? ?? ?? ?? ?? ??????? ??????? ????",
-            "p2": "??? ????? ?? ??????? ???? ?????? ?????? ????? ??? ?????????? ?????? ?????? ???, ?????? ?? ????? ??? ??????? ?? ????????? ?? ???? ??????? ??? ?? ?????? ???? ??? ??? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Emojis de Animales - Copiar y Pegar ?? Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de emojis de animales ?? y caracteres de vida silvestre, con miles de s�mbolos de animales Unicode ?? cuidadosamente organizados para f�cil acceso y copiado instant�neo.",
-            "h3": "Emojis de Animales Completos ?? ?? ?? ?? y Caracteres Unicode de Vida Silvestre",
-            "p2": "Los emojis de animales y caracteres de vida silvestre juegan un papel crucial en la comunicaci�n digital moderna, ayudando a expresar naturaleza y vida silvestre m�s efectivamente que las palabras solas."
-        }
-    },
-    "default": {
-        "en": {
-            "h2": "Symbol Collection - Copy & Paste ? Special Characters",
-            "p1": "Discover the ultimate collection of symbols and special characters, featuring thousands of Unicode symbols carefully organized for easy access and instant copying.",
-            "h3": "How to Copy and Use These Symbols",
-            "p2": "We maintain our symbol collection with rigorous attention to quality and compatibility, regularly testing each character across different platforms."
-        },
-        "hi": {
-            "h2": "?????? ?????? - ???? ?? ????? ? ????? ????",
-            "p1": "???????? ?? ????? ?????? ?? ????? ?????? ?????, ?????? ?????? ??????? ?????? ??? ?? ???? ????? ?? ?????? ???? ???? ?? ??? ????????????? ????????? ????",
-            "h3": "?? ???????? ?? ???? ?? ????? ???? ????",
-            "p2": "?? ???? ?????? ?????? ?? ???????? ?? ?????? ?? ???? ????? ?? ??? ???? ???? ???, ?????? ??? ?? ??????? ?????????? ?? ???????? ???? ?? ??????? ???? ????"
-        },
-        "es": {
-            "h2": "Colecci�n de Símbolos - Copiar y Pegar ? Caracteres Especiales",
-            "p1": "Descubre la colecci�n definitiva de s�mbolos y caracteres especiales, con miles de s�mbolos Unicode cuidadosamente organizados para f�cil acceso y copiado instant�neo.",
-            "h3": "C�mo Copiar y Usar Estos Símbolos",
-            "p2": "Mantenemos nuestra colecci�n de s�mbolos con rigurosa atenci�n a la calidad y compatibilidad, probando regularmente cada car�cter en diferentes plataformas."
-        }
-    }
-};
-    
-    const pageTranslation = semanticTranslations[pageCategory] && semanticTranslations[pageCategory][langCode] 
-        ? semanticTranslations[pageCategory][langCode]
-        : semanticTranslations[pageCategory] && semanticTranslations[pageCategory].en
-        ? semanticTranslations[pageCategory].en
-        : semanticTranslations.default[langCode] || semanticTranslations.default.en;
-    
-    // Translate navigation items
-    const navItems = document.querySelectorAll('.nav-item');
-    if (navItems.length >= 5) {
-        navItems[0].textContent = translation.allSymbols;
-        navItems[1].textContent = translation.coolFlower;
-        navItems[2].textContent = translation.aesthetic;
-        navItems[3].textContent = translation.heart;
-        navItems[4].textContent = translation.arrow;
-    }
-    
-    // Translate main title
-    const mainTitle = document.querySelector('.titlesymbol');
-    if (mainTitle) {
-        mainTitle.textContent = translation.mainTitle;
-    }
-    
-    // Translate tool links
-    const toolLinks = document.querySelectorAll('.tools a');
-    toolLinks.forEach(link => {
-        if (link.textContent.includes('All Symbols') || link.textContent.includes('??? ??????') || link.textContent.includes('Todos los Símbolos')) {
-            link.textContent = translation.allSymbols;
-        } else if (link.textContent.includes('Font Generator') || link.textContent.includes('????? ???????') || link.textContent.includes('Generador de Fuentes')) {
-            link.textContent = translation.fontGenerator;
-        } else if (link.textContent.includes('Lenny Face') || link.textContent.includes('???? ???') || link.textContent.includes('Cara Lenny')) {
-            link.textContent = translation.lennyFace;
-        }
-    });
-    
-    // Update logo text
-    const logoText = document.querySelector('.main-logo');
-    if (logoText && logoText.childNodes.length > 1) {
-        logoText.childNodes[logoText.childNodes.length - 1].textContent = translation.logoText;
-    }
-    
-    // *** TRANSLATE SEMANTIC CONTENT (H1, H2, H3, PARAGRAPHS) ***
-    const semanticSection = document.querySelector('.semantic-content .symbol-info');
-    if (semanticSection && pageTranslation) {
-        console.log('?? Translating semantic content for category:', pageCategory);
-        
-        // Translate H2 heading
-        const h2Element = semanticSection.querySelector('h2');
-        if (h2Element && pageTranslation.h2) {
-            h2Element.textContent = pageTranslation.h2;
-            console.log('? H2 translated:', pageTranslation.h2);
-        }
-        
-        // Translate first paragraph
-        const paragraphs = semanticSection.querySelectorAll('p');
-        if (paragraphs.length > 0 && pageTranslation.p1) {
-            paragraphs[0].textContent = pageTranslation.p1;
-            console.log('? First paragraph translated');
-        }
-        
-        // Translate H3 heading (usually the second or last h3)
-        const h3Elements = semanticSection.querySelectorAll('h3');
-        if (h3Elements.length > 0 && pageTranslation.h3) {
-            // Translate the last h3 (usually "How to Copy and Use These Symbols")
-            h3Elements[h3Elements.length - 1].textContent = pageTranslation.h3;
-            console.log('? H3 translated:', pageTranslation.h3);
-        }
-        
-        // Translate last paragraph
-        if (paragraphs.length > 1 && pageTranslation.p2) {
-            paragraphs[paragraphs.length - 1].textContent = pageTranslation.p2;
-            console.log('? Last paragraph translated');
-        }
-    } else {
-        console.log('?? Semantic section not found or no translations available');
-    }
-}
-
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('?? Page loaded, initializing dropdown');
-    
-    // Close dropdown on outside click
-    document.addEventListener('click', function(e) {
-        const btn = document.getElementById('languageBtn');
-        const dropdown = document.getElementById('languageDropdown');
-        
-        if (btn && dropdown && !btn.contains(e.target) && !dropdown.contains(e.target)) {
-            dropdown.style.display = 'none';
-            dropdown.classList.remove('open');
-            btn.setAttribute('aria-expanded', 'false');
-        }
-    });
-    
-    // Load saved language
-    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-    selectLanguage(savedLang);
-});
-</script>
-
+<!-- Sidebar Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7064720037053690"
+     data-ad-slot="7432399625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
-// Performance monitoring
-window.addEventListener('load', function() {
-    if ('performance' in window) {
-        const perfData = performance.getEntriesByType('navigation')[0];
-        const loadTime = perfData.loadEventEnd - perfData.fetchStart;
-        console.log('?? Page load time:', Math.round(loadTime) + 'ms');
-        
-        // Core Web Vitals monitoring
-        if ('PerformanceObserver' in window) {
-            // Largest Contentful Paint
-            new PerformanceObserver((list) => {
-                const entries = list.getEntries();
-                const lastEntry = entries[entries.length - 1];
-                console.log('?? LCP:', Math.round(lastEntry.startTime) + 'ms');
-            }).observe({entryTypes: ['largest-contentful-paint']});
-            
-            // First Input Delay
-            new PerformanceObserver((list) => {
-                const entries = list.getEntries();
-                entries.forEach(entry => {
-                    console.log('? FID:', Math.round(entry.processingStart - entry.startTime) + 'ms');
-                });
-            }).observe({entryTypes: ['first-input']});
-            
-            // Cumulative Layout Shift
-            let clsValue = 0;
-            new PerformanceObserver((list) => {
-                for (const entry of list.getEntries()) {
-                    if (!entry.hadRecentInput) {
-                        clsValue += entry.value;
-                    }
-                }
-                console.log('?? CLS:', clsValue.toFixed(4));
-            }).observe({entryTypes: ['layout-shift']});
-        }
-    }
-});
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<!-- Rectangle Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7064720037053690"
+     data-ad-slot="4594822602"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="footer">
+		<p>© Copyright 2025</p><a class="footlinks" href="index.html">symbolsemoji.com</a>
+	<div>
+		<a class="footlinks" href="privacy.html">Privacy</a>
+		<a class="footlinks" href="terms.html">Terms</a>
+		<a class="footlinks" href="contact.html">Contact</a>
+	</div>
+</div>
 
-  <!-- Universal Share Modal with Social Logos -->
-    <script defer src="universal-share-modal.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-97SRPXV879"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	
+	gtag('config', 'G-97SRPXV879');
+	</script>
+	
+	
+
+	<script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="script.js"></script>
+
+
 </body>
-</html>
 
-    <!-- Universal Share Modal with Social Logos -->
-    <script defer src="universal-share-modal.js"></script>
-</body>
-</html>
 
+</html>
